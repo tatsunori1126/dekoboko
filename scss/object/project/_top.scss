@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@use "../../foundation/mixin";
+@use "../utility/color";
+.p-top-mv {
+    position: relative;
+    z-index: 0;
+    padding: 95px 0 0;
+    .p-top-mv__bg-circle-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32%;
+        z-index: -1;
+        .p-top-mv__bg-circle {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+    .p-top-mv__container {
+        .p-top-mv__box {
+            position: relative;
+            .mv-scroll {
+                width: 112px;
+                height: 112px;
+                position: absolute;
+                left: 0;
+                bottom: 5%;
+                .mv-scroll__circle {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    .mv-scroll__text {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        animation: rotateText 12s linear infinite; /* 無限回転 */
+                        transform-origin: 50% 50%; /* 中心を基準に回転 */
+                    }
+                    .mv-scroll__arrow {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%); /* 完全中央固定 */
+                        width: 18px;   /* 矢印サイズ調整 */
+                        height: auto;
+                        z-index: 2;
+                        pointer-events: none; /* クリック操作など無効化 */
+                    }
+                    @keyframes rotateText {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+            .p-top-mv__img-wrapper {
+                width: 93%;
+                margin: 0 auto;
+                .p-top-mv__img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+            .p-top-mv__main-title-box {
+                writing-mode: vertical-rl; /* ←縦書き（右→左方向） */
+                display: inline-flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.2em; /* 行間調整 */
+                position: absolute;
+                top: 7%;
+                right: 0;
+            }
+            .p-top-mv__main-title {
+                font-size: 3.5rem;
+                font-weight: 500;
+                letter-spacing: 0.14em;
+                color: color.$textColor;
+            }
+        }
+    }
+}
