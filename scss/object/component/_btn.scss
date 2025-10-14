@@ -1,3 +1,18 @@
 @charset "UTF-8";
 @use "../../foundation/mixin";
 @use "../../object/utility/color";
+.c-btn__wrapper {
+    .c-btn {
+        background: color.$mainColor;
+        color: color.$subColor;
+        padding: 0 11px 0 30px;
+        font-size: 1.6rem;
+        letter-spacing: 0.14em;
+        font-weight: 500;
+        .c-btn__circle-arrow {
+            width: 30px;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+}

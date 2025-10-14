@@ -1,23 +1,32 @@
 @charset "UTF-8";
 @use "../../foundation/mixin";
 @use "../utility/color";
-.c-section-title-box {
-    text-align: center;
-    .c-section-title {
-        font-size: 4rem;
-        letter-spacing: 0.1em;
-        font-weight: 400;
-        @include mixin.mid {
-            font-size: 5rem;
-        }
+.c-section__title-wrapper {
+    .c-section__title-en {
+        font-size: 1.5rem;
+        letter-spacing: 0.14em;
+        font-weight: 500;
+        color: #388d60;
     }
-    .c-section-title-ja {
-        font-size: 1.4rem;
-        letter-spacing: 0.1em;
-        margin-top: 5px;
-        display: inline-block;
-        @include mixin.mid {
-            font-size: 1.6rem;
-        }
+    .c-section__title-ja {
+        font-size: 3rem;
+        letter-spacing: 0.14em;
+        font-weight: 500;
+        margin-top: 15px;
+        color: color.$textColor;
+    }
+}
+
+// 緑のモクモク
+.c-section__bg-circle-wrapper {
+    position: absolute;
+    top: 335px;
+    right: 0;
+    width: 20%;
+    z-index: -1;
+    .c-section__bg-circle {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
     }
 }

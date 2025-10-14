@@ -17,6 +17,10 @@
 </head>
 <body ontouchstart="" <?php body_class(); ?>> <!-- ontouchstart="" スマホ2回タップしないとリンク先に飛ばない問題の対策 -->
     <?php wp_body_open(); ?>
+    <div class="fixed-cv-wrapper">
+        <a class="fixed-cv-link fixed-cv-link-orange" href=""><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon1.png" alt="説明会の参加">説明会の参加</a>
+        <a class="fixed-cv-link fixed-cv-link-green" href=""><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon2.png" alt="資料請求する">資料請求する</a>
+    </div>
     <header class="l-header p-header">
     <?php if (is_front_page() || is_home()) : ?>
         <div class="p-header__logo-link">

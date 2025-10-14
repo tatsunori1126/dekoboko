@@ -207,5 +207,72 @@ add_action('wp_logout', 'end_session');
 add_action('wp_login', 'end_session');
 
 
+// NoImage画像選択メタボックス（カスタム投稿対応）
+function add_noimage_select_box_for_custom_posts() {
+  $custom_post_types = get_post_types(['_builtin' => false], 'names');
 
+  foreach ($custom_post_types as $post_type) {
+      add_meta_box(
+          'noimage_select_box',
+          'NoImage画像の選択',
+          'noimage_select_box_html',
+          $post_type,
+          'side',
+          'low'
+      );
+  }
+}
+add_action('add_meta_boxes', 'add_noimage_select_box_for_custom_posts');
 
+function noimage_select_box_html($post) {
+  $value = get_post_meta($post->ID, '_noimage_select', true);
+  if (empty($value)) {
+      $value = 'noimage1'; // 初期選択を noimage1 に
+  }
+
+  $theme_dir = get_template_directory_uri() . '/images/noimage/';
+  $options = [
+      'noimage1' => 'NoImage①',
+      'noimage2' => 'NoImage②',
+      'noimage3' => 'NoImage③',
+      'noimage4' => 'NoImage④',
+  ];
+
+  echo '<p>アイキャッチ未設定時に表示されるNoImage画像を選択してください。</p>';
+  echo '<div style="display:flex; flex-wrap:wrap; gap:10px;">';
+  foreach ($options as $key => $label) {
+      $checked = checked($value, $key, false);
+      $img_src = esc_url($theme_dir . $key . '.png');
+      echo '<label style="text-align:center; width:48%; display:block; border:1px solid #ccc; border-radius:6px; padding:8px;">';
+      echo "<img src='{$img_src}' alt='{$label}' style='max-width:100%; height:auto; display:block; margin-bottom:6px; border-radius:4px;'>";
+      echo "<input type='radio' name='noimage_select' value='{$key}' {$checked}> {$label}";
+      echo '</label>';
+  }
+  echo '</div>';
+}
+
+// 選択内容を保存
+function save_noimage_select_meta_for_custom_posts($post_id) {
+  if (isset($_POST['noimage_select'])) {
+      update_post_meta(
+          $post_id,
+          '_noimage_select',
+          sanitize_text_field($_POST['noimage_select'])
+      );
+  } else {
+      // 未選択時は noimage1 を自動セット
+      update_post_meta($post_id, '_noimage_select', 'noimage1');
+  }
+}
+add_action('save_post', 'save_noimage_select_meta_for_custom_posts');
+
+// アイキャッチ画像が設定されていない場合にNoImageを表示する関数
+function custom_get_noimage($post_id) {
+  $selected = get_post_meta($post_id, '_noimage_select', true);
+  if (empty($selected)) {
+      $selected = 'noimage1'; // 選択がない場合もデフォルトに
+  }
+
+  $theme_dir = get_template_directory_uri() . '/images/noimage/';
+  return $theme_dir . $selected . '.png';
+}

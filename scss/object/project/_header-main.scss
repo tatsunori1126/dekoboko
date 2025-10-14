@@ -1,6 +1,47 @@
 @charset "UTF-8";
 @use "../../foundation/mixin";
 @use "../utility/color";
+.fixed-cv-wrapper {
+    position: fixed;
+    right: 0;
+    top: 185px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    z-index: 5000;
+    .fixed-cv-link {
+        width: 50px;
+        height: 155px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 8px;
+        writing-mode: vertical-rl;
+        background: color.$subColor;
+        border-radius: 25px 0 0 25px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        box-shadow: 0px 5px 5px 0px rgba(86, 85, 84, 0.15);
+        .fixed-cv-icon {
+            width: 16px;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+    .fixed-cv-link-orange {
+        color: #db7a27;
+        border-top: 1px solid #db7a27;
+        border-left: 1px solid #db7a27;
+        border-bottom: 1px solid #db7a27;
+    }
+    .fixed-cv-link-green {
+        color: #008f5c;
+        border-top: 1px solid #008f5c;
+        border-left: 1px solid #008f5c;
+        border-bottom: 1px solid #008f5c;
+    }
+}
 .p-header {
     display: flex;
     align-items: center;

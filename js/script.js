@@ -78,45 +78,6 @@ if (jQuery(window).width() >= 1000) {
 }
 });
 
-
-// Swiper
-// let swiper = null; // Swiperインスタンスのための変数
-
-// function initializeSwiper() {
-//   if (window.innerWidth >= 1000) {
-//     if (!swiper) { // swiperが初期化されていない場合のみ初期化
-//       swiper = new Swiper('.swiper-container', {
-//         slidesPerView: 2, // 1ページに表示するスライド数
-//         spaceBetween: 60, // スライド間のスペース
-//         loop: false, // スライダーをループさせない
-//         navigation: {
-//           nextEl: '.swiper-button-next',
-//           prevEl: '.swiper-button-prev',
-//         },
-//         pagination: {
-//           el: '.swiper-pagination',
-//           type: 'fraction', // ページネーションをフラクション形式に設定
-//         },
-//         scrollbar: {
-//           el: '.swiper-scrollbar',
-//           draggable: true, // スクロールバーをドラッグ可能に
-//         },
-//       });
-//     }
-//   } else {
-//     if (swiper) { // 1000px以下の場合、Swiperを削除
-//       swiper.destroy(true, true); // 完全にSwiperを削除
-//       swiper = null;
-//     }
-//   }
-// }
-// // 初期化時にSwiperを確認
-// initializeSwiper();
-
-// // ウィンドウがリサイズされた時にSwiperを再度チェック
-// window.addEventListener('resize', initializeSwiper);
-
-
 jQuery(function () {
     // スクロールトリガーのアニメーション（fadeUp, fadeLeft, fadeRight）
     const animations = [
@@ -155,3 +116,8 @@ jQuery(function () {
         });
     });
 });
+
+
+document.getElementById('mv-fixed-close').addEventListener('click', function() {
+    document.getElementById('mv-fixed-banner').style.display = 'none';
+  });
