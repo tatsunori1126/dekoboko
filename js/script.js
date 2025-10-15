@@ -117,7 +117,41 @@ jQuery(function () {
     });
 });
 
-
+// 固定バナーの閉じるボタンのイベントリスナー
 document.getElementById('mv-fixed-close').addEventListener('click', function() {
     document.getElementById('mv-fixed-banner').style.display = 'none';
-  });
+});
+
+
+// お客様の声のスライダー
+jQuery(function () {
+    const swiperVoice = new Swiper('.p-top__voice-slider', {
+        slidesPerView: 1.5, // スライド幅自動
+        spaceBetween: 40,
+        centeredSlides: true,
+        loop: true,
+        speed: 800, // スクロールスピード（大きいほどゆっくり）
+        navigation: {
+            nextEl: '.p-top__voice-next',
+            prevEl: '.p-top__voice-prev',
+        },
+        autoplay: {
+            delay: 15000, // 自動スライドの遅延時間（ミリ秒）
+            disableOnInteraction: false, // ユーザー操作後も自動再生を続ける
+        },
+        pagination: {
+            el: '.p-top__voice-pagination', // 👈 ドットナビの要素を指定
+            clickable: true,                // 👈 クリックでスライド可能に
+        },
+        breakpoints: {
+            800: {
+                slidesPerView: 3.5,
+                spaceBetween: 45,
+            },
+            1200: {
+                slidesPerView: 1.6,
+                spaceBetween: 80,
+            },
+        },
+    });
+});

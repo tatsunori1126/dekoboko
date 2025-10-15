@@ -47,6 +47,9 @@
                         <a class="p-header__nav-link" href="<?php echo home_url('lecturer'); ?>">講師</a>
                     </li>
                     <li class="p-header__nav-list">
+                        <a class="p-header__nav-link" href="<?php echo home_url('lecturer'); ?>">教室</a>
+                    </li>
+                    <li class="p-header__nav-list">
                         <a class="p-header__nav-link" href="<?php echo home_url('guide'); ?>">入塾案内</a>
                     </li>
                     <li class="p-header__nav-list">
