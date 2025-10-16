@@ -27,8 +27,8 @@
             <img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="Co-Learning park DEKOboko 明日が来るのが、ちょっと楽しみになる学習塾。">
         </div>
     <?php else : ?>
-        <a class="p-header__logo-link" href="<?php echo esc_url( home_url('/')); ?>">
-            <img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="Co-Learning park DEKOboko 明日が来るのが、ちょっと楽しみになる学習塾。">
+        <a class="p-header__logo-link p-header__logo-link-page" href="<?php echo esc_url( home_url('/')); ?>">
+            <img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/images/common/logo-ver2.png" alt="Co-Learning park DEKOboko">
         </a>
     <?php endif; ?>
         <div class="p-header__nav-container">
@@ -47,7 +47,7 @@
                         <a class="p-header__nav-link" href="<?php echo home_url('lecturer'); ?>">講師</a>
                     </li>
                     <li class="p-header__nav-list">
-                        <a class="p-header__nav-link" href="<?php echo home_url('lecturer'); ?>">教室</a>
+                        <a class="p-header__nav-link" href="<?php echo home_url('lecturer'); ?>">施設</a>
                     </li>
                     <li class="p-header__nav-list">
                         <a class="p-header__nav-link" href="<?php echo home_url('guide'); ?>">入塾案内</a>

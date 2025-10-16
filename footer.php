@@ -1,4 +1,5 @@
 <footer class="l-footer p-footer">
+    <div class="p-footer__bg"></div>
     <div class="c-inner">
         <div class="p-footer__container">
             <div class="p-footer__access-wrapper">
@@ -129,10 +130,10 @@
                                     <a class="p-footer__nav-menu-bottom-link" href="">よくあるご質問</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">説明会予約</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('reservation/#session'); ?>">説明会予約</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">個別相談予約</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('reservation/#consulting'); ?>">個別相談予約</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
                                     <a class="p-footer__nav-menu-bottom-link" href="">資料請求</a>
@@ -145,22 +146,22 @@
         </div>
         <small class="p-footer__nav-copyright">© Co-learning park DEKOboko　子どもたちの居場所から生まれる未来を守ります。</small>
     </div>
-</footer>
-<?php if (is_front_page()) : ?>
-<!-- ✅ wp_footer() の前に配置 -->
-<div id="mv-fixed-banner" class="mv-fixed-banner">
-    <button class="mv-fixed-banner__close" id="mv-fixed-close">×</button>
-    <div class="mv-fixed-banner__inner">
-        <div class="mv-fixed-banner__text">
-            <h2 class="mv-fixed-banner__title">自習室レンタル</h2>
-            <a href="/rental" class="mv-fixed-banner__btn">ご案内はこちら</a>
-        </div>
-        <div class="mv-fixed-banner__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-fixed-img.png" alt="自習室レンタル">
+    <?php if (is_front_page()) : ?>
+    <!-- ✅ wp_footer() の前に配置 -->
+    <div id="mv-fixed-banner" class="mv-fixed-banner">
+        <button class="mv-fixed-banner__close" id="mv-fixed-close">×</button>
+        <div class="mv-fixed-banner__inner">
+            <div class="mv-fixed-banner__text">
+                <h2 class="mv-fixed-banner__title">自習室レンタル</h2>
+                <a href="/rental" class="mv-fixed-banner__btn">ご案内はこちら</a>
+            </div>
+            <div class="mv-fixed-banner__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-fixed-img.png" alt="自習室レンタル">
+            </div>
         </div>
     </div>
-</div>
-<?php endif; ?>
+    <?php endif; ?>
+</footer>
 <?php wp_footer(); ?>
 
 </body>

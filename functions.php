@@ -105,29 +105,23 @@ add_action('wp_enqueue_scripts', 'enqueue_gsap_with_scrolltrigger');
 /***********************************************************
 * カスタム投稿によって表示件数を変える
 ***********************************************************/
-// function change_posts_per_page($query) {
-//   if ( is_admin() || ! $query->is_main_query() )
-//       return;
+function change_posts_per_page($query) {
+  if ( is_admin() || ! $query->is_main_query() )
+      return;
 
-//   // カスタム投稿タイプ "news" のアーカイブページの場合
-//   if ( $query->is_post_type_archive('news') ) {
-//       $query->set( 'posts_per_page', 12 );
-//       return;
-//   }
+  // カスタム投稿タイプ "news" のアーカイブページの場合
+  if ( $query->is_post_type_archive('news') ) {
+      $query->set( 'posts_per_page', 16 );
+      return;
+  }
 
-//   // カスタム投稿タイプ "achievements" のアーカイブページの場合
-//   if ( $query->is_post_type_archive('achievements') ) {
-//       $query->set( 'posts_per_page', 12 );
-//       return;
-//   }
-
-//   // タクソノミー "news_category" のアーカイブページの場合
-//   if ( $query->is_tax('news_category') ) {
-//       $query->set( 'posts_per_page', 12 );
-//       return;
-//   }
-// }
-// add_action( 'pre_get_posts', 'change_posts_per_page' );
+  // タクソノミー "news_category" のアーカイブページの場合
+  if ( $query->is_tax('news_category') ) {
+      $query->set( 'posts_per_page', 16 );
+      return;
+  }
+}
+add_action( 'pre_get_posts', 'change_posts_per_page' );
 
 
 /***********************************************************

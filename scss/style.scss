@@ -27,6 +27,7 @@
    @use "object/component/breadcrumb";
    @use "object/component/pagenavi";
    @use "object/component/inner";
+   @use "object/component/circle";
 
 /* Project
    ----------------------------------------------------------------- */
@@ -35,6 +36,10 @@
    @use "object/project/footer-main";
    @use "object/project/top";
    @use "object/project/error-404";
+   @use "object/project/news";
+   @use "object/project/results";
+   @use "object/project/lecturer";
+   @use "object/project/reservation";
 
 /* Utility
    ----------------------------------------------------------------- */

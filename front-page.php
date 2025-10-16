@@ -4,8 +4,8 @@
         <div class="p-top__mv__bg-circle-wrapper">
             <img class="p-top__mv__bg-circle" src="<?php echo get_template_directory_uri(); ?>/images/top/mv-bg-circle.png" alt="">
         </div>
-        <div class="c-section__bg-circle-wrapper">
-            <img class="c-section__bg-circle" src="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" alt="">
+        <div class="c-circle__page-right-img-wrapper">
+            <img class="c-circle__page-right-img" src="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" alt="">
         </div>
         <div class="p-top__mv__container">
             <div class="c-inner">

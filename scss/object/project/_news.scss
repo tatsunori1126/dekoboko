@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@use "../../foundation/mixin";
+@use "../utility/color";
+.p-news {
+    position: relative;
+    z-index: 1;
+    padding: 170px 0 230px;
+    margin-bottom: -15%;
+    .p-news__bread-category-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .p-news__category-container {
+            display: flex;
+            column-gap: 50px;
+            li {
+                .p-news__category-link {
+                    font-size: 1.5rem;
+                    letter-spacing: 0.14em;
+                    font-weight: 500;
+                    color: color.$textColor;
+                }
+                .active {
+                    color: #388d60;
+                    border-bottom: 2px solid #388d60;
+                    padding: 0 2px 3px 2px;
+                }
+            }
+        }
+    }
+    article {
+        background: color.$subColor;
+        border-radius: 50px;
+        padding: 90px 100px 60px;
+        margin: 50px 0 60px;
+        /* ▼ 二重グリッド構造（細かい線＋太い線） */
+        background-image:
+        /* 細かいグリッド（薄い） */
+        linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+
+        /* 広いグリッド（少し濃い） */
+        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+
+        /* ▼ グリッドの間隔設定 */
+        background-size:
+        20px 20px, /* 細かいピッチ */
+        20px 20px,
+        40px 40px, /* 広いピッチ */
+        40px 40px;
+        background-repeat: repeat;
+        /* ▼ 全レイヤーを右下に同じだけずらす（例：5px） */
+        background-position:
+        0px 5px,  /* 細かい縦線 */
+        5px 5px,  /* 細かい横線 */
+        0px 5px,  /* 広い縦線 */
+        5px 5px;  /* 広い横線 */
+        .p-news__single-post-category-box {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            .p-news__post-category {
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: #266b45;
+                letter-spacing: 0.1em;
+                height: 25px;
+                border: 1px solid #266b45;
+                border-radius: 12px;
+                padding: 0 12px;
+                display: flex;
+                align-items: center;
+            }
+            .p-news__post-date {
+                font-size: 1.2rem;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                color: #939b89;
+                font-family: "Montserrat", serif;
+            }
+        }
+        .p-news__entry-header {
+            margin: 35px 0;
+            .p-news__entry-title {
+                font-size: 2.1rem;
+                letter-spacing: 0.1em;
+                font-weight: 500;
+                color: color.$textColor;
+                border-bottom: 1px solid #266b45;
+                padding-bottom: 20px;
+                line-height: 1.7;
+            }
+        }
+        .p-news__contents {
+            p {
+                font-size: 1.6rem;
+                letter-spacing: 0.14em;
+                font-weight: 500;
+                line-height: 2.187;
+                margin-bottom: 45px;
+                word-break: break-all;
+            }
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 30px;
+                letter-spacing: 0.14em;
+                line-height: 1.7;
+                border-bottom: 1px solid color.$mainColor;
+                padding-bottom: 10px;
+                font-weight: 500;
+                word-break: break-all;
+                @include mixin.mid {
+                    font-size: 2rem;
+                }
+            }
+            h3 {
+                font-size: 2.2rem;
+                margin-bottom: 30px;
+                letter-spacing: 0.14em;
+                line-height: 1.7;
+                border-left: 4px solid color.$mainColor;
+                padding-left: 15px;
+                font-weight: 500;
+                word-break: break-all;
+                @include mixin.mid {
+                    font-size: 1.8rem;
+                }
+            }
+            h4 {
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+                letter-spacing: 0.14em;
+                line-height: 1.7;
+                font-weight: 500;
+                word-break: break-all;
+                @include mixin.mid {
+                    font-size: 1.8rem;
+                }
+            }
+            h5 {
+                font-size: 1.6rem;
+                margin-bottom: 30px;
+                letter-spacing: 0.14em;
+                line-height: 1.875;
+                font-weight: 500;
+                word-break: break-all;
+                @include mixin.mid {
+                    font-size: 1.6rem;
+                }
+            }
+            h6 {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+                letter-spacing: 0.14em;
+                line-height: 1.875;
+                word-break: break-all;
+                font-weight: 500;
+            }
+            figure {
+                margin-bottom: 30px;
+            }
+            ul {
+                list-style-type: disc;
+                margin-bottom: 40px;
+                padding-left: 20px;
+                li {
+                    list-style-type: disc;
+                    line-height: 1.875;
+                    word-break: break-all;
+                    font-weight: 500;
+                    letter-spacing: 0.14em;
+                }
+            }
+            .wp-block-gallery {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+// ニュース一覧（共通）
+.p-news__contents-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 21.5% 21.5% 21.5% 21.5%;
+    margin: 43px 0 65px;
+    row-gap: 50px;
+    .p-news__contents-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 100%;
+        .p-news__contents-img-wrapper {
+            width: 100%;
+            .p-news__contents-img {
+                width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border-radius: 5px;
+            }
+        }
+        .p-news__contents-box {
+            display: flex;
+            flex-direction: column;
+            row-gap: 28px;
+            .p-news__contents-category-box {
+                display: flex;
+                align-items: center;
+                column-gap: 13px;
+                .p-news__item-categories {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    li {
+                        .p-news__contents-category {
+                            height: 25px;
+                            border: 1px solid #266b45;
+                            border-radius: 12px;
+                            padding: 0 12px;
+                            color: #266b45;
+                            font-size: 1.3rem;
+                            font-weight: 500;
+                            letter-spacing: 0.1em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+                .p-news__contents-date {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    color: #939b89;
+                    font-family: "Montserrat", serif;
+                }
+            }
+            .p-news__contents-title {
+                font-size: 1.5rem;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                color: #0d3425;
+                line-height: 2;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
