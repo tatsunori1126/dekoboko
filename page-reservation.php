@@ -13,7 +13,7 @@
         <div class="p-reservation__bottom-main-img-wrapper">
             <img class="p-reservation__bottom-main-img" src="<?php echo get_template_directory_uri(); ?>/images/reservation/bottom-bg-circle.png" alt="">
         </div>
-        <div class="p-reservation__inner">
+        <div class="c-inner">
             <div class="c-section__page-title-wrapper">
                 <h1 class="c-section__page-title">説明会・面談<br>のご予約</h1>
                 <span class="c-section__page-title-en">Reservation</span>

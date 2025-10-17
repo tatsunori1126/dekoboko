@@ -2400,47 +2400,43 @@ body::before {
   height: auto;
   vertical-align: middle;
 }
-.p-reservation .p-reservation__inner {
-  max-width: 962px;
-  margin: 0 auto;
-}
-.p-reservation .p-reservation__inner .p-reservation__container {
+.p-reservation .p-reservation__container {
   margin: 310px 0 0;
   display: flex;
   flex-direction: column;
   row-gap: 195px;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__title-wrapper {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__title-wrapper {
   text-align: center;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__title-wrapper .p-reservation__page-title-en {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__title-wrapper .p-reservation__page-title-en {
   font-size: 1.5rem;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__column-container {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container {
   display: flex;
   justify-content: space-between;
   margin: 40px 0 100px;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-img-wrapper {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-img-wrapper {
   width: 36.6%;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-img-wrapper .p-reservation__column-img {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-img-wrapper .p-reservation__column-img {
   width: 100%;
   height: auto;
   vertical-align: middle;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper {
-  width: 59%;
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper {
+  width: 57.4%;
   margin-top: 20px;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-title {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-title {
   font-size: 3rem;
   letter-spacing: 0.14em;
   font-weight: 500;
   color: #266b45;
   line-height: 1.83;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text {
   font-size: 1.6rem;
   letter-spacing: 0.14em;
   font-weight: 500;
@@ -2448,7 +2444,7 @@ body::before {
   line-height: 2.187;
   margin: 35px 0 40px;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link {
   height: 55px;
   display: flex;
   align-items: center;
@@ -2459,13 +2455,13 @@ body::before {
        column-gap: 30px;
   border-radius: 27px;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 70px;
   margin-bottom: 55px;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title {
   font-size: 2.5rem;
   letter-spacing: 0.14em;
   font-weight: 500;
@@ -2474,21 +2470,21 @@ body::before {
   align-items: center;
   justify-content: space-between;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title::before, .p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title::after {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title::before, .p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title::after {
   content: "";
   width: 34.3%;
   border-bottom: 2px dotted #226b4e; /* 点線の色 */
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container {
   display: flex;
   justify-content: space-between;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper {
   width: 31.2%;
   position: relative;
   background: #fffaed;
   border-radius: 50px;
-  padding: 55px 25px 45px;
+  padding: 55px 24px 45px;
   /* ▼ 二重グリッド構造（細かい線＋太い線） */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   /* ▼ グリッドの間隔設定 */
@@ -2497,38 +2493,38 @@ body::before {
   /* ▼ 全レイヤーを右下に同じだけずらす（例：5px） */
   background-position: 0px 5px, 5px 5px; /* 細かい横線 */
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper {
   position: absolute;
   width: 46px;
   top: -17px;
   left: 50%;
   transform: translateX(-50%);
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper .p-reservation__merit-item-number {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper .p-reservation__merit-item-number {
   width: 100%;
   height: auto;
   vertical-align: middle;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper02,
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper03 {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper02,
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper03 {
   width: 52px;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
-  font-size: 2rem;
-  letter-spacing: 0.12em;
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
+  font-size: 2.1rem;
+  letter-spacing: 0.14em;
   font-weight: 500;
   color: #266b45;
   line-height: 1.67;
   text-align: center;
   margin-bottom: 30px;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-text {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-text {
   font-size: 1.6rem;
   letter-spacing: 0.14em;
   font-weight: 500;
   line-height: 2.187;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link {
   height: 85px;
   display: flex;
   align-items: center;
@@ -2537,11 +2533,332 @@ body::before {
   position: relative;
   font-size: 1.8rem;
 }
-.p-reservation .p-reservation__inner .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__circle-arrow {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__circle-arrow {
   position: absolute;
   right: 20px;
   width: 45px;
   height: auto;
+}
+
+.p-facility {
+  padding: 200px 0 100px;
+  position: relative;
+  z-index: 1;
+}
+.p-facility .p-facility__container {
+  margin: 340px 0 0;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__subtitle {
+  font-size: 2.8rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__subtitle::before {
+  content: "";
+  width: 5px;
+  height: 25.5px;
+  background: #266b45;
+  border-radius: 2.5px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__title-wrapper {
+  text-align: center;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__title-wrapper .p-facility__page-title-en {
+  font-size: 1.5rem;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__column-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__column-wrapper .p-facility__img-wrapper {
+  width: 41.67%;
+  margin-top: -11%;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__column-wrapper .p-facility__img-wrapper .p-facility__img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__column-wrapper .p-facility__text-wrapper {
+  width: 45.83%;
+  margin-right: 8.33%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 42px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__column-wrapper .p-facility__text-wrapper .p-facility__text-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__column-wrapper .p-facility__text-wrapper .p-facility__text-title-wrapper .p-facility__text-title {
+  font-size: 3rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+  background: #f5f4ec;
+  height: 55px;
+  padding: 0 18px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__column-wrapper .p-facility__text-wrapper .p-facility__text {
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #0d3425;
+  line-height: 2.187;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area {
+  position: relative;
+  z-index: 0;
+  padding: 80px 0 0;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("../images/facility/bg-wave.png");
+  z-index: -1;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container {
+  padding: 200px 0 210px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 115px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  margin-top: 35px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container .p-facility__area-wrapper {
+  width: 47.6%;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container .p-facility__area-wrapper .p-facility__area-img-wrapper {
+  width: 100%;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container .p-facility__area-wrapper .p-facility__area-img-wrapper .p-facility__area-img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container .p-facility__area-wrapper .p-facility__area-title {
+  font-size: 2.1rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+  margin: 34px 0 31px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container .p-facility__area-wrapper .p-facility__area-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  line-height: 2.187;
+  color: #0d3425;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container .p-facility__area-wrapper .p-facility__area-btn-wrapper {
+  margin-top: 18px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container .p-facility__area-wrapper .p-facility__area-btn-wrapper .p-facility__area-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #f5f4ec;
+  height: 36px;
+  width: 150px;
+  border-radius: 18px;
+  background: #266b45;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__area-container .p-facility__area-wrapper .p-facility__area-btn-wrapper .p-facility__area-btn .fa-chevron-right {
+  font-size: 1.1rem;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__equipment-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 47px;
+  margin-top: 35px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__equipment-container .p-facility__equipment-wrapper {
+  width: 21.5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__equipment-container .p-facility__equipment-wrapper .p-facility__equipment-img-wrapper {
+  width: 100%;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__equipment-container .p-facility__equipment-wrapper .p-facility__equipment-img-wrapper .p-facility__equipment-img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.p-facility .p-facility__container .p-facility__wrapper .p-facility__wave-area .p-facility__wave-container .p-facility__box .p-facility__equipment-container .p-facility__equipment-wrapper .p-facility__equipment-title {
+  font-size: 1.8rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental {
+  position: relative;
+  padding: 180px 0 0;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-link {
+  background: #005a38;
+  height: 55px;
+  padding: 0 12px 0 44px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 27px;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box {
+  max-width: 1000px;
+  margin: 65px auto 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 95px;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-price-container .p-facility__rental-price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 35px 0 23px;
+  font-size: 1.9rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #005a38;
+  background: #f5f4ec;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-price-container .p-facility__rental-price-table thead th {
+  background-color: rgba(0, 109, 65, 0.2);
+  padding: 16px 20px;
+  font-weight: 500;
+  text-align: left;
+  border-top: 1px solid #266b45;
+  border-bottom: 1px solid #266b45;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-price-container .p-facility__rental-price-table .center {
+  text-align: center;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-price-container .p-facility__rental-price-table tbody td {
+  border-top: 1px solid #266b45;
+  border-bottom: 1px solid #266b45;
+  padding: 16px 20px;
+  text-align: center;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-price-container .p-facility__rental-price-table tbody td:first-child {
+  text-align: left;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-price-container .p-facility__rental-price-text {
+  font-size: 1.4rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-equipment-container .p-facility__rental-equipment-box {
+  margin: 35px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-equipment-container .p-facility__rental-equipment-box .p-facility__rental-equipment-wrapper {
+  width: 21.5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-equipment-container .p-facility__rental-equipment-box .p-facility__rental-equipment-wrapper .p-facility__rental-equipment-img-wrapper {
+  width: 100%;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-equipment-container .p-facility__rental-equipment-box .p-facility__rental-equipment-wrapper .p-facility__rental-equipment-img-wrapper .p-facility__rental-equipment-img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-equipment-container .p-facility__rental-equipment-box .p-facility__rental-equipment-wrapper .p-facility__rental-equipment-title {
+  font-size: 1.8rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-user-container .p-facility__user-list {
+  background: #f5f4ec;
+  padding: 40px;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 23px;
+  margin: 35px 0 62px;
+  /* ▼ 二重グリッド構造（細かい線＋太い線） */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  /* ▼ グリッドの間隔設定 */
+  background-size: 20px 20px, 20px 20px, 40px 40px, 40px 40px;
+  background-repeat: repeat;
+  /* ▼ 全レイヤーを右下に同じだけずらす（例：5px） */
+  background-position: 3px 5px, 5px 5px, 3px 5px, 5px 5px; /* 広い横線 */
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-user-container .p-facility__user-list .p-facility__user-item {
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #0d3425;
+  width: 39%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-user-container .p-facility__user-list .p-facility__user-item::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #266b45;
+  display: inline-block;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-user-container .p-facility__rental-user-link {
+  height: 85px;
+  background: #005a38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 42px;
+  font-size: 1.8rem;
+}
+.p-facility .p-facility__container .p-facility__wrapper--rental .p-facility__rental-box .p-facility__rental-user-container .p-facility__rental-user-link .p-facility__circle-arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: auto;
+  vertical-align: middle;
 }
 
 /* Utility

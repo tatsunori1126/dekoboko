@@ -41,16 +41,16 @@
                         <a class="p-header__nav-link" href="<?php echo home_url('course'); ?>">コース</a>
                     </li>
                     <li class="p-header__nav-list">
-                        <a class="p-header__nav-link" href="<?php echo home_url('works'); ?>">実績</a>
+                        <a class="p-header__nav-link" href="<?php echo home_url('results'); ?>">実績</a>
                     </li>
                     <li class="p-header__nav-list">
                         <a class="p-header__nav-link" href="<?php echo home_url('lecturer'); ?>">講師</a>
                     </li>
                     <li class="p-header__nav-list">
-                        <a class="p-header__nav-link" href="<?php echo home_url('lecturer'); ?>">施設</a>
+                        <a class="p-header__nav-link" href="<?php echo home_url('facility'); ?>">施設</a>
                     </li>
                     <li class="p-header__nav-list">
-                        <a class="p-header__nav-link" href="<?php echo home_url('guide'); ?>">入塾案内</a>
+                        <a class="p-header__nav-link" href="<?php echo home_url('reservation'); ?>">入塾案内</a>
                     </li>
                     <li class="p-header__nav-list">
                         <a class="p-header__nav-link" href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a>

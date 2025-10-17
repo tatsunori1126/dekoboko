@@ -61,18 +61,18 @@
                                 <a class="p-footer__nav-menu-link" href="">アクセス</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">合格実績</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('results'); ?>">合格実績</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">講師紹介</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('lecturer'); ?>">講師紹介</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">教室紹介</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('facility'); ?>">教室紹介</a>
                             </li>
                         </ul>
                         <ul class="p-footer__nav-menu-list">
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">NEWS</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
                                 <a class="p-footer__nav-menu-link" href="">お問い合わせ</a>

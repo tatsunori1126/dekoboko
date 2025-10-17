@@ -1,0 +1,341 @@
+@charset "UTF-8";
+@use "../../foundation/mixin";
+@use "../utility/color";
+.p-facility {
+    padding: 200px 0 100px;
+    position: relative;
+    z-index: 1;
+    .p-facility__container {
+        margin: 340px 0 0;
+        .p-facility__wrapper {
+            .p-facility__subtitle {
+                font-size: 2.8rem;
+                letter-spacing: 0.14em;
+                font-weight: 500;
+                color: #266b45;
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                &::before {
+                    content: "";
+                    width: 5px;
+                    height: 25.5px;
+                    background: #266b45;
+                    border-radius: 2.5px;
+                }
+            }
+            .p-facility__title-wrapper {
+                text-align: center;
+                .p-facility__page-title-en {
+                    font-size: 1.5rem;
+                }
+            }
+            .p-facility__column-wrapper {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 65px;
+                .p-facility__img-wrapper {
+                    width: 41.67%;
+                    margin-top: -11%;
+                    .p-facility__img {
+                        width: 100%;
+                        height: auto;
+                        vertical-align: middle;
+                    }
+                }
+                .p-facility__text-wrapper {
+                    width: 45.83%;
+                    margin-right: 8.33%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 42px;
+                    .p-facility__text-title-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 6px;
+                        .p-facility__text-title {
+                            font-size: 3rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: #266b45;
+                            background: color.$subColor;
+                            height: 55px;
+                            padding: 0 18px;
+                            border-radius: 5px;
+                            display: flex;
+                            align-items: center;
+                            width: fit-content;
+                        }
+                    }
+                    .p-facility__text {
+                        font-size: 1.6rem;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        color: color.$textColor;
+                        line-height: 2.187;
+                    }
+                }
+            }
+            .p-facility__wave-area {
+                position: relative;
+                z-index: 0;
+                padding: 80px 0 0;
+                .p-facility__wave-bg {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-size: 100% 100%;
+                    background-position: center;
+                    background-image: url('../images/facility/bg-wave.png');
+                    z-index: -1;
+                }
+                .p-facility__wave-container {
+                    padding: 200px 0 210px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 115px;
+                    .p-facility__box {
+                        max-width: 1000px;
+                        margin: 0 auto;
+                        .p-facility__area-container {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            row-gap: 40px;
+                            margin-top: 35px;
+                            .p-facility__area-wrapper {
+                                width: 47.6%;
+                                .p-facility__area-img-wrapper {
+                                    width: 100%;
+                                    .p-facility__area-img {
+                                        width: 100%;
+                                        height: auto;
+                                        vertical-align: middle;
+                                    }
+                                }
+                                .p-facility__area-title {
+                                    font-size: 2.1rem;
+                                    letter-spacing: 0.14em;
+                                    font-weight: 500;
+                                    color: #266b45;
+                                    margin: 34px 0 31px;
+                                }
+                                .p-facility__area-text {
+                                    font-size: 1.6rem;
+                                    letter-spacing: 0.14em;
+                                    font-weight: 500;
+                                    line-height: 2.187;
+                                    color: color.$textColor;
+                                }
+                                .p-facility__area-btn-wrapper {
+                                    margin-top: 18px;
+                                    .p-facility__area-btn {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        column-gap: 5px;
+                                        font-size: 1.6rem;
+                                        letter-spacing: 0.14em;
+                                        font-weight: 500;
+                                        color: color.$subColor;
+                                        height: 36px;
+                                        width: 150px;
+                                        border-radius: 18px;
+                                        background: #266b45;
+                                        .fa-chevron-right {
+                                            font-size: 1.1rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .p-facility__equipment-container {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            row-gap: 47px;
+                            margin-top: 35px;
+                            .p-facility__equipment-wrapper {
+                                width: 21.5%;
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 23px;
+                                .p-facility__equipment-img-wrapper {
+                                    width: 100%;
+                                    .p-facility__equipment-img {
+                                        width: 100%;
+                                        height: auto;
+                                        vertical-align: middle;
+                                    }
+                                }
+                                .p-facility__equipment-title {
+                                    font-size: 1.8rem;
+                                    letter-spacing: 0.14em;
+                                    font-weight: 500;
+                                    color: #266b45;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .p-facility__wrapper--rental {
+            position: relative;
+            padding: 180px 0 0;
+            .p-facility__rental-link {
+                background: color.$mainColor;
+                height: 55px;
+                padding: 0 12px 0 44px;
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+                width: fit-content;
+                border-radius: 27px;
+            }
+            .p-facility__rental-box {
+                max-width: 1000px;
+                margin: 65px auto 0;
+                display: flex;
+                flex-direction: column;
+                row-gap: 95px;
+                .p-facility__rental-price-container {
+                    .p-facility__rental-price-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 35px 0 23px;
+                        font-size: 1.9rem;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        color: #005a38; // テキスト色（深緑）
+                        background: color.$subColor; // 背景色（薄いベージュ）
+                        thead th {
+                            background-color: rgba(0, 109, 65, 0.2); // ヘッダー背景（くすんだグリーン系）
+                            padding: 16px 20px;
+                            font-weight: 500;
+                            text-align: left;
+                            border-top: 1px solid #266b45; // 境界線
+                            border-bottom: 1px solid #266b45; // 境界線
+                        }
+                        .center {
+                            text-align: center;
+                        }
+                        tbody td {
+                            border-top: 1px solid #266b45;
+                            border-bottom: 1px solid #266b45;
+                            padding: 16px 20px;
+                            text-align: center;
+                        }
+                        tbody td:first-child {
+                            text-align: left;
+                        }
+                    }
+                    .p-facility__rental-price-text {
+                        font-size: 1.4rem;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        color: #266b45;
+                    }
+                }
+                .p-facility__rental-equipment-container {
+                    .p-facility__rental-equipment-box {
+                        margin: 35px 0 0;
+                        display: flex;
+                        justify-content: space-between;
+                        .p-facility__rental-equipment-wrapper {
+                            width: 21.5%;
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 23px;
+                            .p-facility__rental-equipment-img-wrapper {
+                                width: 100%;
+                                .p-facility__rental-equipment-img {
+                                    width: 100%;
+                                    height: auto;
+                                    vertical-align: middle;
+                                }
+                            }
+                            .p-facility__rental-equipment-title {
+                                font-size: 1.8rem;
+                                letter-spacing: 0.14em;
+                                font-weight: 500;
+                                color: #266b45;
+                            }
+                        }
+                    }
+                }
+                .p-facility__rental-user-container {
+                    .p-facility__user-list {
+                        background: color.$subColor;
+                        padding: 40px;
+                        border-radius: 25px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        row-gap: 23px;
+                        margin: 35px 0 62px;
+                        /* ▼ 二重グリッド構造（細かい線＋太い線） */
+                        background-image:
+                        /* 細かいグリッド（薄い） */
+                        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+
+                        /* 広いグリッド（少し濃い） */
+                        linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+
+                        /* ▼ グリッドの間隔設定 */
+                        background-size:
+                        20px 20px, /* 細かいピッチ */
+                        20px 20px,
+                        40px 40px, /* 広いピッチ */
+                        40px 40px;
+                        background-repeat: repeat;
+                        /* ▼ 全レイヤーを右下に同じだけずらす（例：5px） */
+                        background-position:
+                        3px 5px,  /* 細かい縦線 */
+                        5px 5px,  /* 細かい横線 */
+                        3px 5px,  /* 広い縦線 */
+                        5px 5px;  /* 広い横線 */
+                        .p-facility__user-item {
+                            font-size: 1.6rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: #0d3425;
+                            width: 39%;
+                            display: flex;
+                            align-items: center;
+                            column-gap: 8px;
+                            &::before {
+                                content: "";
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background: #266b45;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .p-facility__rental-user-link {
+                        height: 85px;
+                        background: color.$mainColor;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        border-radius: 42px;
+                        font-size: 1.8rem;
+                        .p-facility__circle-arrow {
+                            position: absolute;
+                            right: 20px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 45px;
+                            height: auto;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

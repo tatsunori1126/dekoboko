@@ -17,157 +17,153 @@
             vertical-align: middle;
         }
     }
-    .p-reservation__inner {
-        max-width: 962px;
-        margin: 0 auto;
-        .p-reservation__container {
-            margin: 310px 0 0;
-            display: flex;
-            flex-direction: column;
-            row-gap: 195px;
-            .p-reservation__wrapper {
-                .p-reservation__title-wrapper {
-                    text-align: center;
-                    .p-reservation__page-title-en {
-                        font-size: 1.5rem;
+    .p-reservation__container {
+        margin: 310px 0 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 195px;
+        .p-reservation__wrapper {
+            .p-reservation__title-wrapper {
+                text-align: center;
+                .p-reservation__page-title-en {
+                    font-size: 1.5rem;
+                }
+            }
+            .p-reservation__column-container {
+                display: flex;
+                justify-content: space-between;
+                margin: 40px 0 100px;
+                .p-reservation__column-img-wrapper {
+                    width: 36.6%;
+                    .p-reservation__column-img {
+                        width: 100%;
+                        height: auto;
+                        vertical-align: middle;
                     }
                 }
-                .p-reservation__column-container {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 40px 0 100px;
-                    .p-reservation__column-img-wrapper {
-                        width: 36.6%;
-                        .p-reservation__column-img {
-                            width: 100%;
-                            height: auto;
-                            vertical-align: middle;
-                        }
-                    }
-                    .p-reservation__column-text-wrapper {
-                        width: 59%;
-                        margin-top: 20px;
-                        .p-reservation__column-text-title {
-                            font-size: 3rem;
-                            letter-spacing: 0.14em;
-                            font-weight: 500;
-                            color: #266b45;
-                            line-height: 1.83;
-                        }
-                        .p-reservation__column-text {
-                            font-size: 1.6rem;
-                            letter-spacing: 0.14em;
-                            font-weight: 500;
-                            color: color.$textColor;
-                            line-height: 2.187;
-                            margin: 35px 0 40px;
-                        }
-                        .p-reservation__btn-wrapper {
-                            .p-reservation__link {
-                                height: 55px;
-                                display: flex;
-                                align-items: center;
-                                width: fit-content;
-                                padding: 0 12px 0 44px;
-                                column-gap: 30px;
-                                border-radius: 27px;
-                            }
-                        }
-                    }
-                }
-                .p-reservation__merit-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    row-gap: 70px;
-                    margin-bottom: 55px;
-                    .p-reservation__merit-title {
-                        font-size: 2.5rem;
+                .p-reservation__column-text-wrapper {
+                    width: 57.4%;
+                    margin-top: 20px;
+                    .p-reservation__column-text-title {
+                        font-size: 3rem;
                         letter-spacing: 0.14em;
                         font-weight: 500;
                         color: #266b45;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        &::before,
-                        &::after {
-                            content: "";
-                            width: 34.3%;
-                            border-bottom: 2px dotted #226b4e; /* 点線の色 */
-                        }
+                        line-height: 1.83;
                     }
-                    .p-reservation__merit-item-container {
-                        display: flex;
-                        justify-content: space-between;
-                        .p-reservation__merit-item-wrapper {
-                            width: 31.2%;
-                            position: relative;
-                            background: #fffaed;
-                            border-radius: 50px;
-                            padding: 55px 25px 45px;
-                            /* ▼ 二重グリッド構造（細かい線＋太い線） */
-                            background-image:
-                            /* 細かいグリッド（薄い） */
-                            linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-                            linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-
-                            /* ▼ グリッドの間隔設定 */
-                            background-size:
-                            20px 20px, /* 細かいピッチ */
-                            20px 20px;
-                            background-repeat: repeat;
-                            /* ▼ 全レイヤーを右下に同じだけずらす（例：5px） */
-                            background-position:
-                            0px 5px,  /* 細かい縦線 */
-                            5px 5px;  /* 細かい横線 */
-                            .p-reservation__merit-item-number-wrapper {
-                                position: absolute;
-                                width: 46px;
-                                top: -17px;
-                                left: 50%;
-                                transform: translateX(-50%);
-                                .p-reservation__merit-item-number {
-                                    width: 100%;
-                                    height: auto;
-                                    vertical-align: middle;
-                                }
-                            }
-                            .p-reservation__merit-item-number-wrapper02,
-                            .p-reservation__merit-item-number-wrapper03 {
-                                width: 52px;
-                            }
-                            .p-reservation__merit-item-title {
-                                font-size: 2rem;
-                                letter-spacing: 0.12em;
-                                font-weight: 500;
-                                color: #266b45;
-                                line-height: 1.67;
-                                text-align: center;
-                                margin-bottom: 30px;
-                            }
-                            .p-reservation__merit-text {
-                                font-size: 1.6rem;
-                                letter-spacing: 0.14em;
-                                font-weight: 500;
-                                line-height: 2.187;
-                            }
+                    .p-reservation__column-text {
+                        font-size: 1.6rem;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        color: color.$textColor;
+                        line-height: 2.187;
+                        margin: 35px 0 40px;
+                    }
+                    .p-reservation__btn-wrapper {
+                        .p-reservation__link {
+                            height: 55px;
+                            display: flex;
+                            align-items: center;
+                            width: fit-content;
+                            padding: 0 12px 0 44px;
+                            column-gap: 30px;
+                            border-radius: 27px;
                         }
                     }
                 }
-                .p-reservation__btn-wrapper {
-                    .p-reservation__link {
-                        height: 85px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 42px;
+            }
+            .p-reservation__merit-wrapper {
+                display: flex;
+                flex-direction: column;
+                row-gap: 70px;
+                margin-bottom: 55px;
+                .p-reservation__merit-title {
+                    font-size: 2.5rem;
+                    letter-spacing: 0.14em;
+                    font-weight: 500;
+                    color: #266b45;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &::before,
+                    &::after {
+                        content: "";
+                        width: 34.3%;
+                        border-bottom: 2px dotted #226b4e; /* 点線の色 */
+                    }
+                }
+                .p-reservation__merit-item-container {
+                    display: flex;
+                    justify-content: space-between;
+                    .p-reservation__merit-item-wrapper {
+                        width: 31.2%;
                         position: relative;
-                        font-size: 1.8rem;
-                        .p-reservation__circle-arrow {
+                        background: #fffaed;
+                        border-radius: 50px;
+                        padding: 55px 24px 45px;
+                        /* ▼ 二重グリッド構造（細かい線＋太い線） */
+                        background-image:
+                        /* 細かいグリッド（薄い） */
+                        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+
+                        /* ▼ グリッドの間隔設定 */
+                        background-size:
+                        20px 20px, /* 細かいピッチ */
+                        20px 20px;
+                        background-repeat: repeat;
+                        /* ▼ 全レイヤーを右下に同じだけずらす（例：5px） */
+                        background-position:
+                        0px 5px,  /* 細かい縦線 */
+                        5px 5px;  /* 細かい横線 */
+                        .p-reservation__merit-item-number-wrapper {
                             position: absolute;
-                            right: 20px;
-                            width: 45px;
-                            height: auto;
+                            width: 46px;
+                            top: -17px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            .p-reservation__merit-item-number {
+                                width: 100%;
+                                height: auto;
+                                vertical-align: middle;
+                            }
                         }
+                        .p-reservation__merit-item-number-wrapper02,
+                        .p-reservation__merit-item-number-wrapper03 {
+                            width: 52px;
+                        }
+                        .p-reservation__merit-item-title {
+                            font-size: 2.1rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: #266b45;
+                            line-height: 1.67;
+                            text-align: center;
+                            margin-bottom: 30px;
+                        }
+                        .p-reservation__merit-text {
+                            font-size: 1.6rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            line-height: 2.187;
+                        }
+                    }
+                }
+            }
+            .p-reservation__btn-wrapper {
+                .p-reservation__link {
+                    height: 85px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 42px;
+                    position: relative;
+                    font-size: 1.8rem;
+                    .p-reservation__circle-arrow {
+                        position: absolute;
+                        right: 20px;
+                        width: 45px;
+                        height: auto;
                     }
                 }
             }
