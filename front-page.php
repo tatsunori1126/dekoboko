@@ -154,14 +154,13 @@
             </div>
         </div>
     </section>
-    
-    <!-- DEKObokoイラスト -->
-    <div class="p-top__message-dekoboko-main-img-wrapper">
-        <img class="p-top__message-dekoboko-main-img" src="<?php echo get_template_directory_uri(); ?>/images/top/main-dekoboko-img.png" alt="">
-    </div>
-    
+
     <!-- about -->
     <section class="p-top__about">
+        <!-- DEKObokoイラスト -->
+        <div class="p-top__message-dekoboko-main-img-wrapper">
+            <img class="p-top__message-dekoboko-main-img" src="<?php echo get_template_directory_uri(); ?>/images/top/main-dekoboko-img.png" alt="">
+        </div>
         <div class="p-top__about-bg"></div>
         <div class="p-top__about-container">
             <h2 class="p-top__about-title">その想い、デコボコでカタチに。</h2>

@@ -118,9 +118,12 @@ jQuery(function () {
 });
 
 // 固定バナーの閉じるボタンのイベントリスナー
-document.getElementById('mv-fixed-close').addEventListener('click', function() {
-    document.getElementById('mv-fixed-banner').style.display = 'none';
-});
+const closeBtn = document.getElementById('mv-fixed-close');
+if (closeBtn) {
+    closeBtn.addEventListener('click', function() {
+        document.getElementById('mv-fixed-banner').style.display = 'none';
+    });
+}
 
 
 // お客様の声のスライダー
@@ -153,5 +156,13 @@ jQuery(function () {
                 spaceBetween: 80,
             },
         },
+    });
+});
+
+// よくある質問のアコーディオン
+jQuery(function () {
+    jQuery(".p-faq__question-text-block").on('click', function() {
+        jQuery(this).next().stop().slideToggle(200);
+        jQuery(".toggle-btn",this).toggleClass("open");
     });
 });

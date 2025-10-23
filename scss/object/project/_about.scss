@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@use "../../foundation/mixin";
+@use "../utility/color";
+.p-about {
+    padding: 200px 0 100px;
+    position: relative;
+    z-index: 1;
+
+    // Concept
+    .p-about__concept {
+        margin: 340px 0 0;
+        .p-about__concept-container {
+            display: flex;
+            justify-content: space-between;
+            .p-about__concept-img-wrapper {
+                width: 37%;
+                .p-about__concept-img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+            .p-about__concept-text-wrapper {
+                width: 59.17%;
+                margin-top: 50px;
+                display: flex;
+                column-gap: 32px;
+                .p-about__concept-title-en {
+                    writing-mode: vertical-rl;
+                    font-size: 1.5rem;
+                    letter-spacing: 0.14em;
+                    font-weight: 500;
+                    color: #388d60;
+                }
+                .p-about__concept-column-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 50px;
+                    .p-about__concept-title-ja-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 7px;
+                        .p-about__concept-title-ja {
+                            font-size: 3rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: color.$textColor;
+                            background: color.$subColor;
+                            border-radius: 5px;
+                            height: 55px;
+                            display: flex;
+                            align-items: center;
+                            padding: 0 20px;
+                            width: fit-content;
+                        }
+                    }
+                    .p-about__concept-text {
+                        font-size: 1.6rem;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        color: color.$textColor;
+                        line-height: 2.187;
+                    }
+                }
+            }
+        }
+    }
+
+    // 大切にしている４つのこと
+    .p-about__important {
+        position: relative;
+        z-index: 0;
+        margin: 120px 0 0;
+        .p-about__important-bg-wave {
+            background-image: url("../images/about/important-bg-wave.png");
+            background-size: 100% 100%;
+            background-position: center;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .p-about__important-container {
+            padding: 200px 0 250px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 65px;
+            .p-about__important-title {
+                font-size: 3rem;
+                letter-spacing: 0.14em;
+                font-weight: 500;
+                color: color.$textColor;
+                text-align: center;
+                .p-about__important-title-font {
+                    font-size: 6rem;
+                    color: #005a38;
+                    margin: 0 10px;
+                    line-height: 1;
+                    vertical-align: bottom;
+                }
+            }
+            .p-about__important-box {
+                display: flex;
+                flex-direction: column;
+                row-gap: 25px;
+                .p-about__important-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 54px;
+                    padding: 65px 70px;
+                    background: color.$subColor;
+                    border-radius: 50px;
+                    /* ▼ 二重グリッド構造（細かい線＋太い線） */
+                    background-image:
+                    /* 細かいグリッド（薄い） */
+                    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+
+                    /* 広いグリッド（少し濃い） */
+                    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+
+                    /* ▼ グリッドの間隔設定 */
+                    background-size:
+                    20px 20px, /* 細かいピッチ */
+                    20px 20px,
+                    40px 40px, /* 広いピッチ */
+                    40px 40px;
+                    background-repeat: repeat;
+                    /* ▼ 全レイヤーを右下に同じだけずらす（例：5px） */
+                    background-position:
+                    3px 5px,  /* 細かい縦線 */
+                    5px 5px,  /* 細かい横線 */
+                    3px 5px,  /* 広い縦線 */
+                    5px 5px;  /* 広い横線 */
+                    .p-about__important-item-title-wrapper {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 40px;
+                        .p-about__important-item-number-wrapper {
+                            width: 53px;
+                            .p-about__important-item-number {
+                                width: 100%;
+                                height: auto;
+                                vertical-align: middle;
+                            }
+                        }
+                        .p-about__important-item-title {
+                            font-size: 2.8rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: color.$textColor;
+                        }
+                    }
+                    .p-about__important-item-text-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        .p-about__important-item-text-block {
+                            width: 70.93%;
+                            .p-about__important-item-text {
+                                font-size: 1.6rem;
+                                letter-spacing: 0.14em;
+                                font-weight: 500;
+                                line-height: 2.187;
+                                color: color.$textColor;
+                                .p-about__important-item-text-font {
+                                    color: #db7a27;
+                                }
+                            }
+                            .p-about__important-item-text-list {
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 8px;
+                                margin: 15px 0;
+                                .p-about__important-item-text-list-item {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 1.6rem;
+                                    letter-spacing: 0.14em;
+                                    font-weight: 500;
+                                    color: color.$textColor;
+                                    line-height: 2.187;
+                                    .p-about__important-item-text-list-item-number {
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 50%;
+                                        background: #005a38;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 1.5rem;
+                                        font-weight: 500;
+                                        color: color.$subColor;
+                                        letter-spacing: normal;
+                                    }
+                                    .p-about__important-item-text-list-item-font {
+                                        font-size: 2.1rem;
+                                        letter-spacing: 0.14em;
+                                        font-weight: 500;
+                                        color: color.$textColor;
+                                        margin: 0 11px 0 20px;
+                                        line-height: 1;
+                                    }
+                                }
+                            }
+                        }
+                        .p-about__important-item-text-block-02 {
+                            width: 72.1%;
+                        }
+                        .p-about__important-item-img-wrapper {
+                            width: 23.02%;
+                            .p-about__important-item-img {
+                                width: 100%;
+                                height: auto;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

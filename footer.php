@@ -124,7 +124,7 @@
                         <div class="p-footer__nav-menu-bottom-box">
                             <ul class="p-footer__nav-menu-bottom-list">
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">入塾・受講の流れ</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('flow'); ?>">入塾・受講の流れ</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
                                     <a class="p-footer__nav-menu-bottom-link" href="">よくあるご質問</a>
