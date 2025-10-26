@@ -11,11 +11,14 @@
         color: #388d60;
     }
     .c-section__title-ja {
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: 0.14em;
         font-weight: 500;
         margin-top: 15px;
         color: color.$textColor;
+        @include mixin.mid {
+            font-size: 3rem;
+        }
     }
 }
 

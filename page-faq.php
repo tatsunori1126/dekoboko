@@ -25,10 +25,6 @@
                 </div>
             <?php endif; ?>
             <div class="p-faq__container">
-                <div class="c-section__page-title-wrapper p-faq__title-wrapper">
-                    <h2 class="c-section__page-title">入塾までの流れ</h2>
-                    <span class="c-section__page-title-en p-faq__page-title-en">Enrollment</span>
-                </div>
                 <div class="p-faq__question-container">
                     <div class="p-faq__question-wrapper">
                         <h3 class="p-faq__question-title">全体・基本情報</h3>

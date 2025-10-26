@@ -270,3 +270,10 @@ function custom_get_noimage($post_id) {
   $theme_dir = get_template_directory_uri() . '/images/noimage/';
   return $theme_dir . $selected . '.png';
 }
+
+
+// カスタム投稿タイプ 'course' からエディターサポートを削除
+function remove_course_editor_support() {
+  remove_post_type_support('course', 'editor');
+}
+add_action('init', 'remove_course_editor_support');

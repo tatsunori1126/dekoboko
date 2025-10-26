@@ -2,10 +2,16 @@
 <main class="l-main p-main">
     <div class="p-top__mv">
         <div class="p-top__mv__bg-circle-wrapper">
-            <img class="p-top__mv__bg-circle" src="<?php echo get_template_directory_uri(); ?>/images/top/mv-bg-circle.png" alt="">
+            <picture class="p-top__mv__bg-circle">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/mv-bg-circle.png" media="(min-width: 800px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-bg-circle-sp.png" alt="">
+            </picture>
         </div>
         <div class="c-circle__page-right-img-wrapper">
-            <img class="c-circle__page-right-img" src="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" alt="">
+            <picture class="c-circle__page-right-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" media="(min-width: 800px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" alt="">
+            </picture>
         </div>
         <div class="p-top__mv__container">
             <div class="c-inner">
@@ -17,7 +23,10 @@
                         </div>
                     </div>
                     <div class="p-top__mv__img-wrapper">
-                        <img class="p-top__mv__img" src="<?php echo get_template_directory_uri(); ?>/images/top/mv.png" alt="">
+                        <picture class="p-top__mv-img">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/mv.png" media="(min-width: 800px)">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-sp.png" alt="">
+                        </picture>
                     </div>
                     <div class="p-top__mv__main-title-wrapper">
                         <h1 class="p-top__mv__main-title-box">
@@ -131,26 +140,40 @@
         <div class="p-top__message-bg"></div> <!-- 背景画像・テクスチャ -->
         <div class="p-top__message-column-wrapper">
             <div class="p-top__message-images-left-wrapper">
-                <img class="p-top__message-image p-top__message-image-left01" src="<?php echo get_template_directory_uri(); ?>/images/top/message-img01.png" alt="">
-                <img class="p-top__message-image p-top__message-image-left02" src="<?php echo get_template_directory_uri(); ?>/images/top/message-img02.png" alt="">
+                <picture class="p-top__message-image p-top__message-image-left01">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img01.png" media="(min-width: 800px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img04.png" alt="">
+                </picture>
+                <picture class="p-top__message-image p-top__message-image-left02">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img02.png" media="(min-width: 800px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img03.png" alt="">
+                </picture>
             </div>
             <div class="p-top__message-text-wrapper">
-                <p class="p-top__message-text p-top__message-text01">ここは、学習習慣や思考力、<br>コミュニケーション力を育む<br>“自分を育てる学びの場”。</p>
-                <p class="p-top__message-text p-top__message-text02">Co-learning park DEKObokoは、<br>点数や偏差値ではなく、<br>「その人らしさ」を大切にする学習塾です。</p>
-                <p class="p-top__message-text p-top__message-text03">不登校や学校に行けない時期があっても、<br>安心して学びを続けられる場所でありたい。</p>
-                <p class="p-top__message-text p-top__message-text04">ここで育むのは、未来へつながる力。<br>さあ、自分らしい歩みをここからはじめよう。</p>
+                <p class="p-top__message-text p-top__message-text01">ここは、学習習慣や思考力、<br class="c-sp-hidden">コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。</p>
+                <p class="p-top__message-text p-top__message-text02">Co-learning park DEKObokoは、<br>点数や偏差値ではなく、<br class="c-sp-hidden">「その人らしさ」を大切にする学習塾です。</p>
+                <p class="p-top__message-text p-top__message-text03">不登校や学校に行けない時期があっても、<br class="c-sp-hidden">安心して学びを続けられる場所でありたい。</p>
+                <p class="p-top__message-text p-top__message-text04">ここで育むのは、未来へつながる力。<br class="c-sp-hidden">さあ、自分らしい歩みをここからはじめよう。</p>
             </div>
-            <div class="p-top__message-title-wrapper">
-                <h2 class="p-top__message-title-box">
-                    <span class="p-top__message-title p-top__message-title01">明日が来るのが、</span>
-                    <span class="p-top__message-title p-top__message-title02">ちょっと楽しみになる</span>
-                    <span class="p-top__message-title p-top__message-title03">学習塾。</span>
-                </h2>
-                <span class="p-top__message-title-en">Message</span>
-            </div>
-            <div class="p-top__message-images-right-wrapper">
-                <img class="p-top__message-image p-top__message-image-right01" src="<?php echo get_template_directory_uri(); ?>/images/top/message-img03.png" alt="">
-                <img class="p-top__message-image p-top__message-image-right02" src="<?php echo get_template_directory_uri(); ?>/images/top/message-img04.png" alt="">
+            <div class="p-top__message-title-container">
+                <div class="p-top__message-title-wrapper">
+                    <h2 class="p-top__message-title-box">
+                        <span class="p-top__message-title p-top__message-title01">明日が来るのが、</span>
+                        <span class="p-top__message-title p-top__message-title02">ちょっと楽しみになる</span>
+                        <span class="p-top__message-title p-top__message-title03">学習塾。</span>
+                    </h2>
+                    <span class="p-top__message-title-en">Message</span>
+                </div>
+                <div class="p-top__message-images-right-wrapper">
+                    <picture class="p-top__message-image p-top__message-image-right01">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img03.png" media="(min-width: 800px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img01.png" alt="">
+                    </picture>
+                    <picture class="p-top__message-image p-top__message-image-right02">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img04.png" media="(min-width: 800px)">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img02.png" alt="">
+                    </picture>
+                </div>
             </div>
         </div>
     </section>

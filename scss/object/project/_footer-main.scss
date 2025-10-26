@@ -15,9 +15,13 @@
     }
     .p-footer__container {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 60px;
-        padding: 160px 0 0;
+        flex-direction: column;
+        @include mixin.mid {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            padding: 160px 0 0;
+        }
         .p-footer__access-wrapper {
             width: 20.6%;
             .p-footer__logo-wrapper {
@@ -111,7 +115,11 @@
             padding-top: 90px;
             .p-footer__nav-reservation-wrapper {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                @include mixin.mid {
+                    flex-direction: row;
+                    align-items: center;
+                }
                 .p-footer__nav-reservation-title {
                     font-size: 1.9rem;
                     letter-spacing: 0.14em;
@@ -126,7 +134,11 @@
                 }
                 .p-footer__nav-reservation-btn-wrapper {
                     display: flex;
-                    column-gap: 17px;
+                    flex-direction: column;
+                    @include mixin.mid {
+                        flex-direction: row;
+                        column-gap: 17px;
+                    }
                     .p-footer__nav-reservation-link {
                         background: color.$mainColor;
                         height: 55px;
@@ -264,42 +276,60 @@
 // 追従自習レンタル案内ポップ
 .mv-fixed-banner {
     position: fixed; /* ← fixed禁止でもOK */
-    bottom: 40px;
-    right: 20px;
-    width: 232px;
+    width: 130px;
+    border-radius: 10px;
+    right: 4%;
+    bottom: 53px;
     background: color.$subColor;
-    border-radius: 20px;
     box-shadow: 0px 5px 5px rgba(86, 85, 84, 0.05);
     z-index: 999999;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    @include mixin.mid {
+        bottom: 40px;
+        right: 20px;
+        width: 232px;
+        border-radius: 20px;
+    }
     .mv-fixed-banner__close {
         position: absolute;
         top: -5px;
         left: -5px;
-        width: 26px;
-        height: 26px;
+        width: 18px;
+        height: 18px;
         background: #b4c3be;
         border: none;
+        font-size: 1rem;
         border-radius: 50%;
-        font-size: 1.3rem;
         font-weight: 500;
         color: color.$subColor;
         cursor: pointer;
         transition: background 0.3s ease;
         z-index: 100000;
+        @include mixin.mid {
+            font-size: 1.3rem;
+            width: 26px;
+            height: 26px;
+        }
     }
     .mv-fixed-banner__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 16px 20px;
+        padding: 8px 7px 8px 13px;
         gap: 10px;
+        @include mixin.mid {
+            padding: 16px 20px;
+        }
         .mv-fixed-banner__text {
             .mv-fixed-banner__title {
-                font-size: 1.7rem;
+                font-size: 0.9rem;
                 font-weight: 500;
-                margin-bottom: 10px;
+                margin-bottom: 8px;
                 color: color.$textColor;
+                @include mixin.mid {
+                    margin-bottom: 10px;
+                    font-size: 1.7rem;
+                }
             }
             .mv-fixed-banner__btn {
                 display: flex;
@@ -307,19 +337,28 @@
                 justify-content: center;
                 background: color.$mainColor;
                 color: color.$subColor;
-                width: 135px;
-                height: 30px;
-                font-size: 1.2rem;
-                border-radius: 15px;
+                width: 75px;
+                height: 17px;
+                font-size: 0.67rem;
+                border-radius: 8.5px;
                 text-decoration: none;
                 font-weight: 500;
                 transition: background-color 0.3s ease;
+                @include mixin.mid {
+                    width: 135px;
+                    height: 30px;
+                    font-size: 1.2rem;
+                    border-radius: 15px;
+                }
             }
         }
         .mv-fixed-banner__img img {
-            width: 55px;
+            width: 31px;
             height: auto;
             display: block;
+            @include mixin.mid {
+                width: 55px;
+            }
         }
     }
 }

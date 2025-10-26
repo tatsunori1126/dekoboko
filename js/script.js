@@ -129,8 +129,8 @@ if (closeBtn) {
 // お客様の声のスライダー
 jQuery(function () {
     const swiperVoice = new Swiper('.p-top__voice-slider', {
-        slidesPerView: 1.5, // スライド幅自動
-        spaceBetween: 40,
+        slidesPerView: 1.2, // スライド幅自動
+        spaceBetween: 10,
         centeredSlides: true,
         loop: true,
         speed: 800, // スクロールスピード（大きいほどゆっくり）
@@ -164,5 +164,31 @@ jQuery(function () {
     jQuery(".p-faq__question-text-block").on('click', function() {
         jQuery(this).next().stop().slideToggle(200);
         jQuery(".toggle-btn",this).toggleClass("open");
+    });
+});
+
+// コース詳細の開閉
+jQuery(function($){
+    $('.p-course__detail-container').hide();
+
+    $('.p-course__list-open-wrapper').on('click', function(){
+        var $container = $(this).next('.p-course__detail-container');
+        var $btn = $(this).find('.p-course__toggle-btn');
+        var $text = $btn.find('.p-course__toggle-text');
+        var $icon = $btn.find('.p-course__toggle-icon');
+
+        if(!$container.is(':animated')) {
+            $container.slideToggle(400);
+            $(this).toggleClass('is-active');
+
+            // テキストとアイコンの切り替え
+            if($(this).hasClass('is-active')) {
+                $text.text('閉じる');
+                $icon.text('－');
+            } else {
+                $text.text('詳しくみる');
+                $icon.text('＋');
+            }
+        }
     });
 });

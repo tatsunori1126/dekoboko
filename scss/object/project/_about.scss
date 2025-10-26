@@ -223,4 +223,362 @@
             }
         }
     }
+    // DEKOメソッド
+    .p-about__method {
+        padding: 60px 0 70px;
+        .p-about__method-title-wrapper {
+            text-align: center;
+            .p-about__method-page-title-en {
+                font-size: 1.5rem;
+            }
+        }
+        .p-about__method-top-text {
+            font-size: 1.6rem;
+            letter-spacing: 0.14em;
+            font-weight: 500;
+            color: color.$textColor;
+            text-align: center;
+            line-height: 2.187;
+            margin: 50px 0;
+        }
+        .p-about__method-container {
+            .p-about__method-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                border-bottom: 2px dotted #388d60;
+                &:first-child {
+                    border-top: 2px dotted #388d60;
+                }
+                .p-about__method-item-title-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 26.7%;
+                    background: rgba(177, 207, 160, 0.3);
+                    .p-about__method-item-title-en-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        .p-about__method-item-title-big-en {
+                            font-size: 3.5rem;
+                            font-weight: 700;
+                            color: #388d60;
+                            line-height: 1;
+                        }
+                        .p-about__method-item-title-en {
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                            letter-spacing: 0.14em;
+                            color: #388d60;
+                        }
+                    }
+                    .p-about__method-item-title {
+                        font-size: 2rem;
+                        font-weight: 500;
+                        letter-spacing: 0.14em;
+                        color: color.$textColor;
+                        line-height: 1.75;
+                    }
+                }
+                .p-about__method-item-img-wrapper {
+                    width: 70%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 35px 0;
+                    .p-about__method-item-img-box {
+                        width: 26.43%;
+                        .p-about__method-item-img {
+                            width: 100%;
+                            height: auto;
+                            vertical-align: middle;
+                        }
+                    }
+                    .p-about__method-item-text {
+                        width: 68.14%;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        letter-spacing: 0.14em;
+                        line-height: 2.187;
+                        color: color.$textColor;
+                    }
+                }
+            }
+        }
+    }
+    // 教育理念
+    .p-about__philosophy {
+        padding: 70px 0 125px;
+        .p-about__philosophy-title-wrapper {
+            text-align: center;
+            .p-about__philosophy-page-title-en {
+                font-size: 1.5rem;
+            }
+        }
+        .p-about__philosophy-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 70px 0 0;
+            .p-about__philosophy-text-wrapper {
+                width: 57%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 45px;
+                .p-about__philosophy-text {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    letter-spacing: 0.14em;
+                    color: color.$textColor;
+                    line-height: 2.187;
+                }
+            }
+            .p-about__philosophy-img-wrapper {
+                width: 38%;
+                .p-about__philosophy-img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    // Message
+    .p-about__message {
+        position: relative;
+        z-index: 0;
+        .p-about__message-bg-wave {
+            background-image: url("../images/about/message-bg-wave.png");
+            background-size: 100% 100%;
+            background-position: center;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .p-about__message-container {
+            padding: 230px 0;
+            display: flex;
+            justify-content: space-between;
+            .p-about__message-img-wrapper {
+                width: 39.5%;
+                .p-about__message-img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+            .p-about__message-text-container {
+                width: 53.5%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 50px;
+                .p-about__message-text-title-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    .p-about__message-text-title-en {
+                        font-size: 1.5rem;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        color: #388d60;
+                    }
+                    .p-about__message-text-title-box {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 6px;
+                        .p-about__message-text-title {
+                            width: fit-content;
+                            background: color.$subColor;
+                            height: 55px;
+                            display: flex;
+                            align-items: center;
+                            font-size: 3rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: color.$textColor;
+                            border-radius: 5px;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+                .p-about__message-text-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    .p-about__message-text {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        letter-spacing: 0.14em;
+                        color: color.$textColor;
+                        line-height: 2.187;
+                    }
+                    .p-about__message-post-name {
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        letter-spacing: 0.14em;
+                        color: color.$textColor;
+                        display: flex;
+                        align-items: baseline;
+                        column-gap: 20px;
+                        .p-about__message-name {
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 会社概要
+    .p-about__company {
+        padding: 80px 0 65px;
+        .p-about__company-title-wrapper {
+            flex-direction: row;
+            align-items: center;
+            column-gap: 20px;
+            .p-about__company-page-title {
+                font-size: 3.5rem;
+            }
+            .p-about__company-page-title-en {
+                font-size: 1.5rem;
+            }
+        }
+        .p-about__company-info-list {
+            display: flex;
+            flex-direction: column;
+            margin-top: 70px;
+            .p-about__company-info-item {
+                display: flex;
+                padding: 30px 10px;
+                border-bottom: 1px solid #aabea9;
+                align-items: center;
+                dt {
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    letter-spacing: 0.14em;
+                    color: #388d60;
+                    width: 135px;
+                }
+                dd {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    letter-spacing: 0.14em;
+                    color: color.$textColor;
+                }
+            }
+        }
+    }
+    // アクセス案内
+    .p-about__access {
+        padding: 65px 0 0;
+        .p-about__access-title-wrapper {
+            flex-direction: row;
+            align-items: center;
+            column-gap: 20px;
+            .p-about__access-page-title {
+                font-size: 3.5rem;
+            }
+            .p-about__access-page-title-en {
+                font-size: 1.5rem;
+            }
+        }
+        .p-about__access-container {
+            display: flex;
+            column-gap: 50px;
+            margin-top: 70px;
+            .p-about__access-img-wrapper {
+                width: 42.2%;
+                .p-about__access-img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+            .p-about__access-detail-wrapper {
+                width: 52.5%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                .p-about__access-detail-box {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+                    .p-about__access-detail-title {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        letter-spacing: 0.14em;
+                        color: #388d60;
+                    }
+                    .p-about__access-detail-text {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        letter-spacing: 0.14em;
+                        color: color.$textColor;
+                        line-height: 1.56;
+                    }
+                }
+            }
+        }
+        .p-about__access-map-container {
+            margin: 95px 0 80px;
+        }
+        .p-about__access-means-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            .p-about__access-means-title {
+                font-size: 1.6rem;
+                font-weight: 500;
+                letter-spacing: 0.14em;
+                color: #388d60;
+            }
+            .p-about__access-means-contents-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                .p-about__access-means-wrapper {
+                    width: 32%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 18px;
+                    padding: 5px 0 5px 25px;
+                    border-left: 1.5px solid #aabea9;
+                    .p-about__access-means-item-title {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        letter-spacing: 0.14em;
+                        color: color.$textColor;
+                        display: flex;
+                        align-items: center;
+                        column-gap: 5px;
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background: #388d60;
+                        }
+                    }
+                    .p-about__access-means-item-text {
+                        font-size: 1.5rem;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        line-height: 1.53;
+                        color: color.$textColor;
+                    }
+                    .p-about__access-means-item-detail {
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        line-height: 1.53;
+                    }
+                }
+            }
+        }
+    }
 }

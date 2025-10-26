@@ -16,14 +16,22 @@
 
 .c-circle__page-right-img-wrapper {
     position: absolute;
-    top: 495px;
     right: 0;
-    width: 15%;
+    top: 300px;
+    width: 32%;
     z-index: -1;
+    @include mixin.mid {
+        top: 495px;
+        width: 15%;
+    }
     .c-circle__page-right-img {
         width: 100%;
-        height: auto;
-        vertical-align: middle;
+        display: block;
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
     }
 }
 

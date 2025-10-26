@@ -2,6 +2,10 @@
 @use "../../foundation/mixin";
 @use "../../object/utility/color";
 .c-inner {
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 0 6.67%;
+    @include mixin.pc {
+        padding: 0;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }
