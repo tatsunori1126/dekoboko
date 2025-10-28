@@ -1,6 +1,6 @@
 <footer class="l-footer p-footer">
     <div class="p-footer__bg"></div>
-    <div class="c-inner">
+    <div class="p-footer__inner">
         <div class="p-footer__container">
             <div class="p-footer__access-wrapper">
                 <div class="p-footer__logo-wrapper">
@@ -144,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <small class="p-footer__nav-copyright">© Co-learning park DEKOboko　子どもたちの居場所から生まれる未来を守ります。</small>
+        <small class="p-footer__nav-copyright">© Co-learning park DEKOboko　<br class="c-pc-hidden">子どもたちの居場所から生まれる未来を守ります。</small>
     </div>
     <?php if (is_front_page()) : ?>
     <!-- ✅ wp_footer() の前に配置 -->

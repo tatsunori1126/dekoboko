@@ -2,11 +2,17 @@
 @use "../../foundation/mixin";
 @use "../utility/color";
 .p-flow {
-    padding: 200px 0 100px;
+    padding: 115px 0;
     position: relative;
     z-index: 1;
+    @include mixin.mid {
+        padding: 200px 0 100px;
+    }
     .p-flow__container {
-        margin: 340px 0 0;
+        margin: 80px 0 0;
+        @include mixin.mid {
+            margin: 340px 0 0;
+        }
         .p-flow__title-wrapper {
             text-align: center;
             .p-flow__page-title-en {
@@ -25,36 +31,47 @@
                     margin-top: 60px;
                     .p-flow__wrapper {
                         display: flex;
-                        justify-content: space-between;
-                        position: relative; // ← 縦線の基準になる
+                        flex-direction: column;
+                        @include mixin.mid {
+                            flex-direction: row;
+                            justify-content: space-between;
+                            position: relative; // ← 縦線の基準になる
+                        }
                         // 縦点線を wrapper 全体に合わせて描画
                         &::before {
-                            content: "";
-                            position: absolute;
-                            left: 50px; // アイコンの中心に合わせる（後で微調整OK）
-                            top: 150px; // アイコン下から開始（画像サイズによって調整）
-                            width: 2px;
-                            height: calc(100% - 125px); // wrapperの高さに追従
-                            background: repeating-linear-gradient(
-                                to bottom,
-                                #388d60,
-                                #388d60 2px,
-                                transparent 2px,
-                                transparent 6px
-                            );
-                            z-index: 0;
+                            display: none;
+                            @include mixin.mid {
+                                display: block;
+                                content: "";
+                                position: absolute;
+                                left: 50px; // アイコンの中心に合わせる（後で微調整OK）
+                                top: 150px; // アイコン下から開始（画像サイズによって調整）
+                                width: 2px;
+                                height: calc(100% - 125px); // wrapperの高さに追従
+                                background: repeating-linear-gradient(
+                                    to bottom,
+                                    #388d60,
+                                    #388d60 2px,
+                                    transparent 2px,
+                                    transparent 6px
+                                );
+                                z-index: 0;
+                            }
                         }
                         &:last-child::before {
                             display: none; // 最後のステップでは線を消す
                         }
                         .p-flow__icon {
-                            width: 100px;
                             display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            row-gap: 10px;
-                            position: relative;
-                            z-index: 1; // 縦線より前に出す
+                            column-gap: 15px;
+                            @include mixin.mid {
+                                width: 100px;
+                                position: relative;
+                                z-index: 1; // 縦線より前に出す
+                                flex-direction: column;
+                                row-gap: 10px;
+                                align-items: center;
+                            }
                             .p-flow__num {
                                 font-size: 1.6rem;
                                 font-weight: 500;
@@ -69,25 +86,33 @@
                                 }
                             }
                             img {
-                                width: 100%;
+                                width: 20%;
                                 height: auto;
                                 vertical-align: middle;
+                                @include mixin.mid {
+                                    width: 100%;
+                                }
                             }
                         }
                         .p-flow__content {
                             display: flex;
                             flex-direction: column;
                             row-gap: 20px;
-                            width: 84.4%;
                             margin-top: 8px;
+                            @include mixin.mid {
+                                width: 84.4%;
+                            }
                             .p-flow__title {
-                                font-size: 2.8rem;
+                                font-size: 2.4rem;
                                 font-weight: 500;
                                 letter-spacing: 0.14em;
                                 color: color.$textColor;
+                                @include mixin.mid {
+                                    font-size: 2.8rem;
+                                }
                             }
                             .p-flow__text-wrapper {
-                                padding: 20px 35px;
+                                padding: 20px 20px;
                                 border-radius: 15px;
                                 background: color.$subColor;
                                 /* ▼ 二重グリッド構造（細かい線＋太い線） */
@@ -104,6 +129,9 @@
                                 background-position:
                                 3px 5px,  /* 細かい縦線 */
                                 5px 5px;  /* 細かい横線 */
+                                @include mixin.mid {
+                                    padding: 20px 35px;
+                                }
                                 .p-flow__text {
                                     font-size: 1.6rem;
                                     color: color.$textColor;

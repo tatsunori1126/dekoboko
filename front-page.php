@@ -14,7 +14,7 @@
             </picture>
         </div>
         <div class="p-top__mv__container">
-            <div class="c-inner">
+            <div class="p-top__mv-inner">
                 <div class="p-top__mv__box">
                     <div class="mv-scroll">
                         <div class="mv-scroll__circle">
@@ -186,7 +186,7 @@
         </div>
         <div class="p-top__about-bg"></div>
         <div class="p-top__about-container">
-            <h2 class="p-top__about-title">その想い、デコボコでカタチに。</h2>
+            <h2 class="p-top__about-title">その想い、<br class="c-pc-hidden">デコボコでカタチに。</h2>
             <div class="p-top__about-contents-wrapper">
                 <div class="p-top__about-wrapper">
                     <img class="p-top__about-number p-top__about-number01" src="<?php echo get_template_directory_uri(); ?>/images/top/about-number01.png" alt="01">
@@ -384,7 +384,7 @@
                     </div>
                 </div>
             </div>
-            <div class="p-top__guide-wrapper p-top">
+            <div class="p-top__guide-wrapper p-top__guide-wrapper-reverse">
                 <div class="p-top__guide-btn-container p-top__guide-btn-container-reverse">
                     <div class="c-section__title-wrapper">
                         <span class="c-section__title-en">Admission Info</span>

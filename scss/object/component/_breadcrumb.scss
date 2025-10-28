@@ -9,10 +9,14 @@
     .c-breadcrumbs__inner {
         display: flex;
         align-items: center;
+        flex-wrap: nowrap; // 改行しない
         span {
+            flex-shrink: 0;
             a {
                 text-decoration: none;
                 color: color.$textColor;
+                display: inline-flex;
+                align-items: center;
                 span {
                     color: color.$textColor;
                     .fa-house {
@@ -22,10 +26,20 @@
                 }
             }
         }
+        // ▼ 一番右の「タイトル部分」のみを省略対象に
+        > span:last-of-type {
+            flex: 1; /* ← これが重要！残り幅をすべて使う */
+            min-width: 0; /* ← ellipsis動作のため必須 */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: block;
+        }
         .fa-chevron-right {
             margin: 0 10px;
             font-size: 1rem;
             color: #006D41;
+            flex-shrink: 0; // 矢印を潰さない
         }
     }
 }

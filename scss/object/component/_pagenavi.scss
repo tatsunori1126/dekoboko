@@ -63,6 +63,11 @@
     justify-content: center;
     align-items: center;
     column-gap: 15px;
+    position: relative;
+    @include mixin.mid {
+        max-width: 450px;
+        margin: 0 auto;
+    }
     .post-previous, .post-next {
         a {
             display: flex;
@@ -84,7 +89,20 @@
             }
         }
     }
+    .post-previous {
+        position: absolute;
+        left: 0;
+    }
+    .post-next {
+        position: absolute;
+        right: 0;
+    }
     .c-single__pagenavi-return-box {
+        transform: translateY(60px);
+        @include mixin.mid {
+            position: static;
+            transform: none;
+        }
         .c-single__pagenavi-return {
             background: color.$subColor;
             border: 1px solid #266b45;

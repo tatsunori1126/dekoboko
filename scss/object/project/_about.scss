@@ -2,18 +2,31 @@
 @use "../../foundation/mixin";
 @use "../utility/color";
 .p-about {
-    padding: 200px 0 100px;
+    padding: 115px 0;
     position: relative;
     z-index: 1;
+    @include mixin.mid {
+        padding: 200px 0 100px;
+    }
 
     // Concept
     .p-about__concept {
-        margin: 340px 0 0;
+        margin: 60px 0 0;
+        @include mixin.mid {
+            margin: 340px 0 0;
+        }
         .p-about__concept-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            @include mixin.mid {
+                flex-direction: row;
+                justify-content: space-between;
+            }
             .p-about__concept-img-wrapper {
-                width: 37%;
+                width: 88%;
+                @include mixin.mid {
+                    width: 37%;
+                }
                 .p-about__concept-img {
                     width: 100%;
                     height: auto;
@@ -21,10 +34,17 @@
                 }
             }
             .p-about__concept-text-wrapper {
-                width: 59.17%;
-                margin-top: 50px;
                 display: flex;
-                column-gap: 32px;
+                padding: 0 6.67%;
+                margin-top: 50px;
+                column-gap: 12px;
+                @include mixin.mid {
+                    width: 59.17%;
+                    column-gap: 32px;
+                }
+                @include mixin.pc {
+                    padding: 0;
+                }
                 .p-about__concept-title-en {
                     writing-mode: vertical-rl;
                     font-size: 1.5rem;
@@ -41,7 +61,7 @@
                         flex-direction: column;
                         row-gap: 7px;
                         .p-about__concept-title-ja {
-                            font-size: 3rem;
+                            font-size: 2.2rem;
                             letter-spacing: 0.14em;
                             font-weight: 500;
                             color: color.$textColor;
@@ -52,6 +72,9 @@
                             align-items: center;
                             padding: 0 20px;
                             width: fit-content;
+                            @include mixin.mid {
+                                font-size: 3rem;
+                            }
                         }
                     }
                     .p-about__concept-text {
@@ -88,17 +111,23 @@
             flex-direction: column;
             row-gap: 65px;
             .p-about__important-title {
-                font-size: 3rem;
+                font-size: 2.2rem;
                 letter-spacing: 0.14em;
                 font-weight: 500;
                 color: color.$textColor;
                 text-align: center;
+                @include mixin.mid {
+                    font-size: 3rem;
+                }
                 .p-about__important-title-font {
-                    font-size: 6rem;
+                    font-size: 4.8rem;
                     color: #005a38;
                     margin: 0 10px;
                     line-height: 1;
                     vertical-align: bottom;
+                    @include mixin.mid {
+                        font-size: 6rem;
+                    }
                 }
             }
             .p-about__important-box {
@@ -108,10 +137,9 @@
                 .p-about__important-wrapper {
                     display: flex;
                     flex-direction: column;
-                    row-gap: 54px;
-                    padding: 65px 70px;
-                    background: color.$subColor;
                     border-radius: 50px;
+                    padding: 20px 25px 25px;
+                    background: color.$subColor;
                     /* ▼ 二重グリッド構造（細かい線＋太い線） */
                     background-image:
                     /* 細かいグリッド（薄い） */
@@ -135,10 +163,19 @@
                     5px 5px,  /* 細かい横線 */
                     3px 5px,  /* 広い縦線 */
                     5px 5px;  /* 広い横線 */
+                    @include mixin.mid {
+                        row-gap: 54px;
+                        padding: 65px 70px;
+                    }
                     .p-about__important-item-title-wrapper {
                         display: flex;
+                        flex-direction: column;
+                        row-gap: 20px;
                         align-items: center;
-                        column-gap: 40px;
+                        @include mixin.mid {
+                            flex-direction: row;
+                            column-gap: 40px;
+                        }
                         .p-about__important-item-number-wrapper {
                             width: 53px;
                             .p-about__important-item-number {
@@ -148,18 +185,27 @@
                             }
                         }
                         .p-about__important-item-title {
-                            font-size: 2.8rem;
+                            font-size: 2rem;
                             letter-spacing: 0.14em;
                             font-weight: 500;
                             color: color.$textColor;
+                            @include mixin.mid {
+                                font-size: 2.8rem;
+                            }
                         }
                     }
                     .p-about__important-item-text-wrapper {
                         display: flex;
-                        justify-content: space-between;
-                        align-items: flex-start;
+                        flex-direction: column-reverse;
+                        @include mixin.mid {
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                        }
                         .p-about__important-item-text-block {
-                            width: 70.93%;
+                            @include mixin.mid {
+                                width: 70.93%;
+                            }
                             .p-about__important-item-text {
                                 font-size: 1.6rem;
                                 letter-spacing: 0.14em;
@@ -173,16 +219,37 @@
                             .p-about__important-item-text-list {
                                 display: flex;
                                 flex-direction: column;
-                                row-gap: 8px;
+                                row-gap: 12px;
                                 margin: 15px 0;
+                                @include mixin.mid {
+                                    row-gap: 8px;
+                                }
                                 .p-about__important-item-text-list-item {
                                     display: flex;
-                                    align-items: center;
+                                    flex-direction: column;
+                                    align-items: flex-start;
                                     font-size: 1.6rem;
                                     letter-spacing: 0.14em;
                                     font-weight: 500;
                                     color: color.$textColor;
                                     line-height: 2.187;
+                                    row-gap: 8px;
+                                    @include mixin.mid {
+                                        row-gap: 0;
+                                        align-items: center;
+                                        flex-direction: row;
+                                    }
+                                    .p-about__important-item-text-list-item-dot {
+                                        display: none;
+                                        @include mixin.mid {
+                                            display: inline-block;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                    .p-about__important-item-text-list-item-box {
+                                        display: flex;
+                                        align-items: center;
+                                    }
                                     .p-about__important-item-text-list-item-number {
                                         width: 30px;
                                         height: 30px;
@@ -208,10 +275,17 @@
                             }
                         }
                         .p-about__important-item-text-block-02 {
-                            width: 72.1%;
+                            @include mixin.mid {
+                                width: 72.1%;
+                            }
                         }
                         .p-about__important-item-img-wrapper {
-                            width: 23.02%;
+                            width: 56%;
+                            margin: 20px auto;
+                            @include mixin.mid {
+                                margin: 0;
+                                width: 23.02%;
+                            }
                             .p-about__important-item-img {
                                 width: 100%;
                                 height: auto;
@@ -242,13 +316,25 @@
             margin: 50px 0;
         }
         .p-about__method-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            @include mixin.mid {
+                row-gap: 0;
+            }
             .p-about__method-wrapper {
                 display: flex;
-                justify-content: space-between;
-                align-items: stretch;
-                border-bottom: 2px dotted #388d60;
+                flex-direction: column;
+                @include mixin.mid {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    border-bottom: 2px dotted #388d60;
+                }
                 &:first-child {
-                    border-top: 2px dotted #388d60;
+                    @include mixin.mid {
+                        border-top: 2px dotted #388d60;
+                    }
                 }
                 .p-about__method-item-title-wrapper {
                     display: flex;
@@ -257,8 +343,12 @@
                     align-items: center;
                     justify-content: center;
                     text-align: center;
-                    width: 26.7%;
                     background: rgba(177, 207, 160, 0.3);
+                    padding: 20px 0;
+                    @include mixin.mid {
+                        width: 26.7%;
+                        padding: 0;
+                    }
                     .p-about__method-item-title-en-wrapper {
                         display: flex;
                         flex-direction: column;
@@ -285,13 +375,19 @@
                     }
                 }
                 .p-about__method-item-img-wrapper {
-                    width: 70%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 35px 0;
+                    @include mixin.mid {
+                        width: 70%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 35px 0;
+                    }
                     .p-about__method-item-img-box {
-                        width: 26.43%;
+                        margin: 20px 0;
+                        @include mixin.mid {
+                            width: 26.43%;
+                            margin: 0;
+                        }
                         .p-about__method-item-img {
                             width: 100%;
                             height: auto;
@@ -299,12 +395,14 @@
                         }
                     }
                     .p-about__method-item-text {
-                        width: 68.14%;
                         font-size: 1.6rem;
                         font-weight: 500;
                         letter-spacing: 0.14em;
                         line-height: 2.187;
                         color: color.$textColor;
+                        @include mixin.mid {
+                            width: 68.14%;
+                        }
                     }
                 }
             }
@@ -321,13 +419,22 @@
         }
         .p-about__philosophy-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column-reverse;
             margin: 70px 0 0;
+            row-gap: 30px;
+            @include mixin.mid {
+                flex-direction: row;
+                row-gap: 0;
+                justify-content: space-between;
+            }
             .p-about__philosophy-text-wrapper {
-                width: 57%;
                 display: flex;
                 flex-direction: column;
-                row-gap: 45px;
+                row-gap: 30px;
+                @include mixin.mid {
+                    row-gap: 45px;
+                    width: 57%;
+                }
                 .p-about__philosophy-text {
                     font-size: 1.6rem;
                     font-weight: 500;
@@ -337,7 +444,9 @@
                 }
             }
             .p-about__philosophy-img-wrapper {
-                width: 38%;
+                @include mixin.mid {
+                    width: 38%;
+                }
                 .p-about__philosophy-img {
                     width: 100%;
                     height: auto;
@@ -362,11 +471,20 @@
             height: 100%;
         }
         .p-about__message-container {
-            padding: 230px 0;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            padding: 150px 0;
+            @include mixin.mid {
+                flex-direction: row;
+                padding: 230px 0;
+                justify-content: space-between;
+            }
             .p-about__message-img-wrapper {
-                width: 39.5%;
+                display: none;
+                @include mixin.mid {
+                    display: block;
+                    width: 39.5%;
+                }
                 .p-about__message-img {
                     width: 100%;
                     height: auto;
@@ -374,10 +492,12 @@
                 }
             }
             .p-about__message-text-container {
-                width: 53.5%;
                 display: flex;
                 flex-direction: column;
                 row-gap: 50px;
+                @include mixin.mid {
+                    width: 53.5%;
+                }
                 .p-about__message-text-title-wrapper {
                     display: flex;
                     flex-direction: column;
@@ -395,16 +515,32 @@
                         .p-about__message-text-title {
                             width: fit-content;
                             background: color.$subColor;
-                            height: 55px;
                             display: flex;
                             align-items: center;
-                            font-size: 3rem;
+                            font-size: 2rem;
                             letter-spacing: 0.14em;
                             font-weight: 500;
                             color: color.$textColor;
                             border-radius: 5px;
-                            padding: 0 20px;
+                            padding: 0 15px;
+                            height: 45px;
+                            @include mixin.mid {
+                                height: 55px;
+                                padding: 0 20px;
+                                font-size: 3rem;
+                            }
                         }
+                    }
+                }
+                .p-about__message-img-wrapper-sp {
+                    width: 100%;
+                    @include mixin.mid {
+                        display: none;
+                    }
+                    .p-about__message-img-sp {
+                        width: 100%;
+                        height: auto;
+                        vertical-align: middle;
                     }
                 }
                 .p-about__message-text-wrapper {
@@ -454,21 +590,34 @@
             margin-top: 70px;
             .p-about__company-info-item {
                 display: flex;
+                justify-content: space-between;
                 padding: 30px 10px;
                 border-bottom: 1px solid #aabea9;
                 align-items: center;
+                @include mixin.mid {
+                    justify-content: left;
+                }
                 dt {
                     font-weight: 500;
-                    font-size: 1.6rem;
+                    font-size: 1.5rem;
                     letter-spacing: 0.14em;
                     color: #388d60;
-                    width: 135px;
+                    width: 35%;
+                    @include mixin.mid {
+                        font-size: 1.6rem;
+                        width: 135px;
+                    }
                 }
                 dd {
-                    font-size: 1.6rem;
+                    font-size: 1.5rem;
                     font-weight: 500;
                     letter-spacing: 0.14em;
                     color: color.$textColor;
+                    width: 60%;
+                    @include mixin.mid {
+                        width: auto;
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -489,10 +638,18 @@
         }
         .p-about__access-container {
             display: flex;
-            column-gap: 50px;
+            flex-direction: column;
             margin-top: 70px;
+            row-gap: 20px;
+            @include mixin.mid {
+                flex-direction: row;
+                row-gap: 0;
+                column-gap: 50px;
+            }
             .p-about__access-img-wrapper {
-                width: 42.2%;
+                @include mixin.mid {
+                    width: 42.2%;
+                }
                 .p-about__access-img {
                     width: 100%;
                     height: auto;
@@ -500,10 +657,12 @@
                 }
             }
             .p-about__access-detail-wrapper {
-                width: 52.5%;
                 display: flex;
                 flex-direction: column;
                 row-gap: 30px;
+                @include mixin.mid {
+                    width: 52.5%;
+                }
                 .p-about__access-detail-box {
                     display: flex;
                     flex-direction: column;
@@ -526,6 +685,9 @@
         }
         .p-about__access-map-container {
             margin: 95px 0 80px;
+            iframe {
+                width: 100%;
+            }
         }
         .p-about__access-means-container {
             display: flex;
@@ -539,15 +701,24 @@
             }
             .p-about__access-means-contents-box {
                 display: flex;
-                justify-content: space-between;
-                align-items: baseline;
+                flex-direction: column;
+                row-gap: 30px;
+                @include mixin.mid {
+                    flex-direction: row;
+                    row-gap: 0;
+                    justify-content: space-between;
+                    align-items: baseline;
+                }
                 .p-about__access-means-wrapper {
-                    width: 32%;
                     display: flex;
                     flex-direction: column;
                     row-gap: 18px;
-                    padding: 5px 0 5px 25px;
+                    padding: 5px 0 5px 15px;
                     border-left: 1.5px solid #aabea9;
+                    @include mixin.mid {
+                        padding: 5px 0 5px 25px;
+                        width: 32%;
+                    }
                     .p-about__access-means-item-title {
                         font-size: 1.6rem;
                         font-weight: 500;

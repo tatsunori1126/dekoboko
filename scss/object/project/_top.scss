@@ -28,6 +28,12 @@
         }
     }
     .p-top__mv__container {
+        .p-top__mv-inner {
+            @include mixin.pc {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+        }
         .p-top__mv__box {
             position: relative;
             .mv-scroll {
@@ -277,7 +283,7 @@
     .p-top__message-column-wrapper {
         display: flex;
         flex-direction: column-reverse;
-        padding: 100px 0 200px;
+        padding: 100px 0 250px;
         @include mixin.mid {
             flex-direction: row;
             justify-content: space-between;
@@ -446,6 +452,7 @@
 .p-top__about {
     position: relative;
     z-index: 0;
+    margin-top: -23%;
     @include mixin.mid {
         display: flex;
         margin-top: -14%;
@@ -456,7 +463,7 @@
         width: 100%;
         position: absolute;
         left: 50%;
-        top: -5%;
+        top: -4%;
         transform: translateX(-50%);
         @include mixin.mid {
             top: -6%;
@@ -477,34 +484,52 @@
         height: 100%;
         background-size: 100% 100%;
         background-position: center;
-        background-image: url('../images/top/about-bg-wave.png');
         z-index: -1;
+        background-image: url('../images/top/about-bg-wave-sp.png');
+        @include mixin.mid {
+            background-image: url('../images/top/about-bg-wave.png');
+        }
     }
     .p-top__about-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 340px 0 250px;
+        padding: 150px 10.13%;
+        @include mixin.mid {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 340px 0 250px;
+        }
         .p-top__about-title {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             letter-spacing: 0.14em;
             font-weight: 500;
             color: color.$textColor;
             text-align: center;
+            line-height: 1.6;
+            @include mixin.mid {
+                font-size: 2.8rem;
+            }
         }
         .p-top__about-contents-wrapper {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 66px 44px;
-            margin-top: 87px;
+            flex-direction: column;
+            row-gap: 52px;
+            margin-top: 80px;
+            @include mixin.mid {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 66px 44px;
+                margin-top: 87px;
+            }
             .p-top__about-wrapper {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 46%;
                 background: color.$subColor;
-                border-radius: 50px;
                 padding: 0 0 30px;
+                border-radius: 50px;
+                @include mixin.mid {
+                    width: 46%;
+                }
                 /* ▼ 二重グリッド構造（細かい線＋太い線） */
                 background-image:
                 /* 細かいグリッド（薄い） */
@@ -534,25 +559,42 @@
                     margin: -18px auto 0;
                 }
                 .p-top__about-number01 {
-                    width: 53px;
+                    width: 40px;
+                    @include mixin.mid {
+                        width: 53px;
+                    }
                 }
                 .p-top__about-number02 {
-                    width: 63px;
+                    width: 50px;
+                    @include mixin.mid {
+                        width: 63px;
+                    }
                 }
                 .p-top__about-number03 {
-                    width: 63px;
+                    width: 50px;
+                    @include mixin.mid {
+                        width: 63px;
+                    }
                 }
                 .p-top__about-number04 {
-                    width: 70px;
+                    width: 54px;
+                    @include mixin.mid {
+                        width: 70px;
+                    }
                 }
                 .p-top__about-item-title {
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     letter-spacing: 0.14em;
                     color: color.$textColor;
                     font-weight: 500;
                     text-align: center;
-                    margin: 35px 0 20px;
-                    line-height: 1.94;
+                    line-height: 1.875;
+                    margin: 28px 0;
+                    @include mixin.mid {
+                        font-size: 1.8rem;
+                        margin: 35px 0 20px;
+                        line-height: 1.94;
+                    }
                 }
                 .p-top__about-item-img-wrapper {
                     aspect-ratio: 4 / 3; /* 一番大きい画像の比率に合わせる（例） */
@@ -560,35 +602,60 @@
                     align-items: center;
                     justify-content: center;
                     .p-top__about-item-img01 {
-                        width: 113px;
+                        width: 88px;
+                        @include mixin.mid {
+                            width: 113px;
+                        }
                     }
                     .p-top__about-item-img02 {
-                        width: 211px;
+                        width: 153px;
+                        @include mixin.mid {
+                            width: 211px;
+                        }
                     }
                     .p-top__about-item-img03 {
-                        width: 203px;
+                        width: 151px;
+                        @include mixin.mid {
+                            width: 203px;
+                        }
                     }
                     .p-top__about-item-img04 {
-                        width: 110px;
+                        width: 85px;
+                        @include mixin.mid {
+                            width: 110px;
+                        }
                     }
                 }
             }
         }
         .p-top__about-more-btn-wrapper {
-            margin-top: 60px;
+            margin-top: 45px;
+            @include mixin.mid {
+                margin-top: 60px;
+            }
             .p-top__about-more-btn {
                 display: flex;
                 align-items: center;
-                column-gap: 30px;
                 width: fit-content;
-                height: 85px;
-                padding: 0 62px 0 23px;
-                border-radius: 43px;
-                font-size: 1.8rem;
-                margin: 0 auto;
+                height: 70px;
+                padding: 0 40px 0 20px;
+                border-radius: 35px;
+                font-size: 1.5rem;
+                column-gap: 24px;
+                @include mixin.mid {
+                    column-gap: 30px;
+                    margin: 0 auto;
+                    height: 85px;
+                    padding: 0 62px 0 23px;
+                    border-radius: 43px;
+                    font-size: 1.8rem;
+                }
                 .p-top__about-btn-circle-arrow {
-                    width: 48px;
+                    width: 40px;
                     height: auto;
+                    @include mixin.mid {
+                        width: 48px;
+                    }
                 }
             }
         }
@@ -597,16 +664,22 @@
 
 // voice
 .p-top__voice {
-    padding: 5% 0 0;
+    padding: 18% 0 25%;
+    overflow-x: hidden;
+    @include mixin.mid {
+        padding: 5% 0 0;
+        overflow-x: visible;
+    }
     .p-top__voice-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         letter-spacing: 0.14em;
         font-weight: 500;
         color: color.$textColor;
         display: flex;
         justify-content: center;
-        column-gap: 35px;
+        column-gap: 20px;
         @include mixin.mid {
+            column-gap: 35px;
             font-size: 2.3rem;
         }
         &::before {
@@ -638,13 +711,16 @@
             top: 50%;
             transform: translateX(-50%);
             z-index: 10;
-            width: 67%;
+            width: 92%;
+            @include mixin.mid {
+                width: 67%;
+            }
             .swiper-button-prev::after,
             .swiper-button-next::after {
                 display: none;
             }
             .p-top__voice-prev {
-                width: 14%;
+                width: 48px;
                 position: static;
                 transition: opacity 0.3s ease;
                 @include mixin.sub {
@@ -660,7 +736,7 @@
                 }
             }
             .p-top__voice-next {
-                width: 14%;
+                width: 48px;
                 position: static;
                 transition: opacity 0.3s ease;
                 @include mixin.sub {
@@ -679,9 +755,7 @@
         .p-top__voice-slider {
             margin: 35px auto 0;
             position: relative;
-            @include mixin.mid {
-                overflow: visible;
-            }
+            overflow: visible;
             .p-top__voice-slider-box {
                 display: flex;
                 align-items: stretch;
@@ -691,10 +765,10 @@
                         background: color.$subColor;
                         border-radius: 50px;
                         border: 1.5px solid #388d60;
-                        padding: 37px 60px 30px 65px;
+                        padding: 35px 33px 40px 35px;
                         display: flex;
                         flex-direction: column;
-                        row-gap: 30px;
+                        row-gap: 25px;
                         height: -webkit-fill-available; /* Safari, Chrome, Edge */
                         height: -moz-available;         /* Firefox用（非標準） */
                         height: fill-available;         /* 仕様上の標準（将来用） */
@@ -713,6 +787,10 @@
                         background-position:
                         3px 5px,  /* 細かい縦線 */
                         5px 5px;  /* 細かい横線 */
+                        @include mixin.mid {
+                            padding: 37px 60px 30px 65px;
+                            row-gap: 30px;
+                        }
                         .p-top__voice-slider-item-top-wrapper {
                             display: flex;
                             align-items: center;
@@ -733,6 +811,10 @@
                                     display: flex;
                                     flex-direction: column;
                                     row-gap: 5px;
+                                    width: 48%;
+                                    @include mixin.mid {
+                                        width: auto;
+                                    }
                                     .p-top__voice-slider-item-top-title {
                                         font-size: 1.6rem;
                                         letter-spacing: 0.14em;
@@ -748,9 +830,12 @@
                                 }
                             }
                             .p-top__voice-slider-item-top-star-wrapper {
-                                display: flex;
-                                align-items: center;
-                                column-gap: 15px;
+                                display: none;
+                                @include mixin.mid {
+                                    display: flex;
+                                    align-items: center;
+                                    column-gap: 15px;
+                                }
                                 .p-top__voice-slider-item-top-star-title {
                                     font-size: 1.6rem;
                                     letter-spacing: 0.14em;
@@ -811,29 +896,46 @@
     position: relative;
     z-index: 0;
     display: flex;
-    margin-top: 10%;
-    margin-bottom: -15%;
+    margin-top: 30%;
+    margin-bottom: -35%;
+    @include mixin.mid {
+        margin-top: 10%;
+        margin-bottom: -15%;
+    }
     .p-top__guide-bg {
         position: absolute;
         width: 100%;
         height: 100%;
         background-size: 100% 100%;
         background-position: center;
-        background-image: url('../images/top/guide-bg-wave.png');
+        background-image: url('../images/top/guide-bg-wave-sp.png');
         z-index: -1;
+        @include mixin.mid {
+            background-image: url('../images/top/guide-bg-wave.png');
+        }
     }
     .p-top__guide-container {
-        padding: 0 0 20%;
+        padding: 0 0 65%;
+        @include mixin.mid {
+            padding: 0 0 20%;
+        }
         .p-top__guide-wrapper {
             display: flex;
             flex-direction: column;
+            row-gap: 55px;
             @include mixin.mid {
                 flex-direction: row;
+                row-gap: 0;
                 justify-content: space-between;
                 align-items: center;
             }
             .p-top__guide-img-wrapper {
-                width: 50.83%;
+                width: 93.33%;
+                margin: -23% 0 0 0;
+                @include mixin.mid {
+                    width: 50.83%;
+                    margin: 0;
+                }
                 .p-top__guide-img {
                     width: 100%;
                     height: auto;
@@ -844,25 +946,34 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 40px;
-                margin: 0 7.08% 0 0;
+                padding: 0 6.67%;
+                @include mixin.mid {
+                    margin: 0 7.08% 0 0;
+                }
+                @include mixin.pc {
+                    padding: 0;
+                }
                 .p-top__guide-btn-wrapper {
                     display: flex;
                     flex-direction: column;
                     row-gap: 8px;
                     .p-top__guide-btn {
-                        height: 78px;
-                        padding: 0 23px 0 33px;
+                        height: 73px;
+                        padding: 0 23px 0 28px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
                         background: color.$subColor;
                         border-radius: 10px;
-                        font-size: 2rem;
                         letter-spacing: 0.14em;
                         font-weight: 500;
+                        font-size: 1.7rem;
                         color: color.$textColor;
                         @include mixin.mid {
+                            font-size: 2rem;
+                            height: 78px;
+                            padding: 0 23px 0 33px;
                             width: 436px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
                         }
                         .p-top__guide-arrow {
                             width: 22px;
@@ -891,7 +1002,23 @@
                 }
             }
             .p-top__guide-btn-container-reverse {
-                margin: 0 0 0 7.08%;
+                @include mixin.mid {
+                    margin: 0 0 0 7.08%;
+                }
+            }
+        }
+        .p-top__guide-wrapper-reverse {
+            flex-direction: column-reverse;
+            margin-top: 42px;
+            @include mixin.mid {
+                flex-direction: row;
+                margin-top: 0;
+            }
+            .p-top__guide-img-wrapper {
+                margin: 0 0 0 auto;
+                @include mixin.mid {
+                    margin: 0;
+                }
             }
         }
     }

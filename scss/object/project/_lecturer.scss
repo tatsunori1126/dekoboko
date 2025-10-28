@@ -2,122 +2,156 @@
 @use "../../foundation/mixin";
 @use "../utility/color";
 .p-lecturer {
-    padding: 270px 0 100px;
+    padding: 115px 0;
     position: relative;
     z-index: 1;
+    @include mixin.mid {
+        padding: 270px 0 100px;
+    }
     .p-lecturer__inner {
-        max-width: 962px;
-        margin: 0 auto;
-        .p-lecturer__container {
-            margin: 310px 0 0;
-            display: flex;
+        padding: 0 10%;
+        @include mixin.pc {
+            padding: 0;
+            max-width: 962px;
+            margin: 0 auto;
+        }
+    }
+    .p-lecturer__container {
+        margin: 80px 0 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+        @include mixin.mid {
+            flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            row-gap: 70px;
-            .p-lecturer__wrapper {
+            margin: 310px 0 0;
+        }
+        .p-lecturer__wrapper {
+            @include mixin.mid {
                 width: 43.87%;
-                .p-lecturer__img-wrapper {
-                    position: relative;
-                    .p-lecturer__img {
-                        width: 100%;
-                        height: auto;
-                        vertical-align: middle;
-                        border-radius: 5px;
-                    }
-                    .p-lecturer__nickname {
-                        font-size: 1.6rem;
-                        letter-spacing: 0.14em;
-                        font-weight: 500;
-                        color: #388d60;
-                        padding: 0 20px;
-                        height: 35.5px;
-                        display: flex;
-                        align-items: center;
-                        border: 1px solid #388d60;
-                        border-radius: 18px;
-                        width: fit-content;
-                        background: color.$subColor;
-                        position: absolute;
+            }
+            .p-lecturer__img-wrapper {
+                position: relative;
+                .p-lecturer__img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                    border-radius: 5px;
+                }
+                .p-lecturer__nickname {
+                    font-size: 1.4rem;
+                    letter-spacing: 0.14em;
+                    font-weight: 500;
+                    color: #388d60;
+                    padding: 0 20px;
+                    height: 35.5px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #388d60;
+                    border-radius: 18px;
+                    width: fit-content;
+                    background: color.$subColor;
+                    position: absolute;
+                    right: -18px;
+                    top: -15px;
+                    @include mixin.mid {
                         top: -10px;
-                        right: -18px;
+                        font-size: 1.6rem;
                     }
                 }
-                .p-lecturer__text-wrapper {
-                    .p-lecturer__name-wrapper {
-                        display: flex;
-                        flex-direction: column;
-                        row-gap: 5px;
-                        margin: -18px 0 30px -23px;
-                        position: relative;
-                        .p-lecturer__name {
-                            height: 36px;
-                            padding: 0 12px;
-                            display: flex;
-                            align-items: center;
-                            background: #388d60;
-                            border-radius: 2px;
-                            font-size: 1.9rem;
-                            letter-spacing: 0.14em;
-                            font-weight: 500;
-                            color: color.$subColor;
-                            width: fit-content;
-                        }
-                        .p-lecturer__subname {
-                            height: 26px;
-                            padding: 0 12px;
-                            display: flex;
-                            align-items: center;
-                            background: #388d60;
-                            border-radius: 2px;
-                            font-size: 1.3rem;
-                            letter-spacing: 0.14em;
-                            font-weight: 500;
-                            color: color.$subColor;
-                            width: fit-content;
-                        }
-                    }
-                    .p-lecturer__text {
-                        font-size: 1.6rem;
-                        letter-spacing: 0.14em;
-                        font-weight: 500;
-                        color: color.$textColor;
-                        line-height: 1.875;
-                    }
-                    .p-lecturer__hobby-container {
+            }
+            .p-lecturer__text-wrapper {
+                .p-lecturer__name-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 5px;
+                    margin: -18px 0 30px -23px;
+                    position: relative;
+                    .p-lecturer__name {
+                        font-size: 1.7rem;
+                        padding: 0 12px;
                         display: flex;
                         align-items: center;
+                        background: #388d60;
+                        border-radius: 2px;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        color: color.$subColor;
+                        width: fit-content;
+                        height: 28px;
+                        @include mixin.mid {
+                            height: 36px;
+                            font-size: 1.9rem;
+                        }
+                    }
+                    .p-lecturer__subname {
+                        padding: 0 12px;
+                        display: flex;
+                        align-items: center;
+                        background: #388d60;
+                        border-radius: 2px;
+                        font-size: 1.1rem;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        color: color.$subColor;
+                        width: fit-content;
+                        height: 18px;
+                        @include mixin.mid {
+                            height: 26px;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                .p-lecturer__text {
+                    font-size: 1.6rem;
+                    letter-spacing: 0.14em;
+                    font-weight: 500;
+                    color: color.$textColor;
+                    line-height: 1.875;
+                }
+                .p-lecturer__hobby-container {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 28px;
+                    column-gap: 15px;
+                    @include mixin.mid {
                         column-gap: 23px;
                         margin-top: 40px;
-                        .p-lecturer__hobby-wrapper {
+                    }
+                    .p-lecturer__hobby-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 18px;
+                        line-height: 1;
+                        .p-lecturer__hobby-title {
+                            font-size: 1.6rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: #005a38;
+                        }
+                        .p-lecturer__hobby-list {
                             display: flex;
                             flex-direction: column;
-                            row-gap: 18px;
-                            line-height: 1;
-                            .p-lecturer__hobby-title {
-                                font-size: 1.6rem;
-                                letter-spacing: 0.14em;
+                            row-gap: 8px;
+                            .p-lecturer__hobby-item {
+                                font-size: 1.3rem;
                                 font-weight: 500;
-                                color: #005a38;
-                            }
-                            .p-lecturer__hobby-list {
-                                display: flex;
-                                flex-direction: column;
-                                row-gap: 8px;
-                                .p-lecturer__hobby-item {
-                                    font-size: 1.4rem;
+                                letter-spacing: 0.1em;
+                                color: color.$textColor;
+                                @include mixin.mid {
                                     letter-spacing: 0.14em;
-                                    font-weight: 500;
-                                    color: color.$textColor;
+                                    font-size: 1.4rem;
                                 }
                             }
                         }
-                        &::before {
-                            content: "";
-                            width: 1px;
-                            height: 96px;
-                            background: #388d60;
-                            display: inline-block;
-                        }
+                    }
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        height: 96px;
+                        background: #388d60;
+                        display: inline-block;
                     }
                 }
             }

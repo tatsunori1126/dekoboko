@@ -10,12 +10,24 @@
         height: 100%;
         background-size: 100% 100%;
         background-position: center;
-        background-image: url('../images/footer/bg-wave.png');
+        background-image: url('../images/footer/bg-wave-sp.png');
         z-index: -1;
+        @include mixin.mid {
+            background-image: url('../images/footer/bg-wave.png');
+        }
+    }
+    .p-footer__inner {
+        padding: 0 10.67%;
+        @include mixin.pc {
+            padding: 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
     }
     .p-footer__container {
         display: flex;
         flex-direction: column;
+        padding: 85px 0 0;
         @include mixin.mid {
             flex-direction: row;
             justify-content: space-between;
@@ -23,9 +35,16 @@
             padding: 160px 0 0;
         }
         .p-footer__access-wrapper {
-            width: 20.6%;
+            @include mixin.mid {
+                width: 20.6%;
+            }
             .p-footer__logo-wrapper {
-                width: 100%;
+                width: 177px;
+                margin: 0 auto;
+                @include mixin.mid {
+                    width: 100%;
+                    margin: 0;
+                }
                 .p-footer__logo {
                     width: 100%;
                     height: auto;
@@ -33,10 +52,14 @@
                 }
             }
             .p-footer__access-text-wrapper {
+                text-align: center;
                 display: flex;
                 flex-direction: column;
                 row-gap: 10px;
                 margin: 35px 0;
+                @include mixin.mid {
+                    text-align: left;
+                }
                 .p-footer__access-company-name {
                     font-size: 1.5rem;
                     font-weight: 500;
@@ -53,9 +76,14 @@
             }
             .p-footer__access-sns-wrapper {
                 display: flex;
-                flex-direction: column;
-                row-gap: 20px;
                 margin-bottom: 50px;
+                justify-content: center;
+                column-gap: 27px;
+                @include mixin.mid {
+                    row-gap: 20px;
+                    column-gap: 0;
+                    flex-direction: column;
+                }
                 .p-footer__access-sns-link {
                     color: #008f5c;
                     font-size: 1.5rem;
@@ -80,28 +108,38 @@
                 flex-direction: column;
                 row-gap: 20px;
                 .p-footer__access-contact-title {
-                    font-size: 1.5rem;
-                    font-weight: 500;
+                    font-size: 1.6rem;
                     letter-spacing: 0.14em;
                     color: color.$textColor;
+                    font-weight: 500;
+                    @include mixin.mid {
+                        font-size: 1.5rem;
+                    }
                 }
                 .p-footer__access-contact-btn-wrapper {
                     display: flex;
                     flex-direction: column;
-                    row-gap: 13px;
+                    row-gap: 16px;
+                    @include mixin.mid {
+                        row-gap: 13px;
+                    }
                     .p-footer__access-contact-link {
-                        font-size: 1.4rem;
+                        font-size: 1.5rem;
                         letter-spacing: 0.14em;
                         font-weight: 500;
                         color: #008f5c;
                         background: color.$subColor;
                         height: 44px;
-                        width: 187px;
-                        padding: 0 18px 0 20px;
+                        padding: 0 24px 0 17px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                         border-radius: 22px;
+                        @include mixin.mid {
+                            font-size: 1.4rem;
+                            width: 187px;
+                            padding: 0 18px 0 20px;
+                        }
                         .p-footer__access-contact-arrow-right {
                             width: 13px;
                             height: auto;
@@ -111,51 +149,74 @@
             }
         }
         .p-footer__nav-wrapper {
-            width: 71.7%;
-            padding-top: 90px;
+            padding-top: 38px;
+            @include mixin.mid {
+                width: 71.7%;
+                padding-top: 90px;
+            }
             .p-footer__nav-reservation-wrapper {
                 display: flex;
                 flex-direction: column;
+                row-gap: 18px;
                 @include mixin.mid {
                     flex-direction: row;
+                    row-gap: 0;
                     align-items: center;
                 }
                 .p-footer__nav-reservation-title {
-                    font-size: 1.9rem;
+                    font-size: 1.6rem;
                     letter-spacing: 0.14em;
                     color: color.$textColor;
                     font-weight: 500;
+                    @include mixin.mid {
+                        font-size: 1.9rem;
+                    }
                 }
                 .p-footer__nav-reservation-line {
-                    width: 1px;
-                    height: 57px;
-                    background: color.$textColor;
-                    margin: 0 30px 0 53px;
+                    display: none;
+                    @include mixin.mid {
+                        display: block;
+                        width: 1px;
+                        height: 57px;
+                        background: color.$textColor;
+                        margin: 0 30px 0 53px;
+                    }
                 }
                 .p-footer__nav-reservation-btn-wrapper {
                     display: flex;
                     flex-direction: column;
+                    row-gap: 15px;
                     @include mixin.mid {
                         flex-direction: row;
+                        row-gap: 0;
                         column-gap: 17px;
                     }
                     .p-footer__nav-reservation-link {
                         background: color.$mainColor;
-                        height: 55px;
-                        border-radius: 28px;
-                        width: 216px;
-                        padding: 0 20px 0 30px;
+                        height: 44px;
+                        border-radius: 22px;
+                        padding: 0 17px 0 24px;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        font-size: 1.6rem;
+                        font-size: 1.5rem;
                         letter-spacing: 0.14em;
                         font-weight: 500;
                         color: color.$subColor;
+                        @include mixin.mid {
+                            height: 55px;
+                            border-radius: 28px;
+                            width: 216px;
+                            padding: 0 20px 0 30px;
+                            font-size: 1.6rem;
+                        }
                         .p-footer__nav-reservation-arrow-right {
-                            width: 15px;
+                            width: 13px;
                             height: auto;
                             vertical-align: middle;
+                            @include mixin.mid {
+                                width: 15px;
+                            }
                         }
                     }
                 }
@@ -183,11 +244,18 @@
                 }
                 .p-footer__nav-menu-box {
                     display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    @include mixin.mid {
+                        flex-direction: row;
+                    }
                     .p-footer__nav-menu-list {
-                        width: 34.87%;
                         display: flex;
                         flex-direction: column;
                         row-gap: 10px;
+                        @include mixin.mid {
+                            width: 34.87%;
+                        }
                         .p-footer__nav-menu-list-item {
                             .p-footer__nav-menu-link {
                                 font-size: 1.5rem;
@@ -211,11 +279,19 @@
             }
             .p-footer__nav-menu-bottom-container {
                 display: flex;
+                flex-direction: column;
+                row-gap: 60px;
+                @include mixin.mid {
+                    flex-direction: row;
+                    row-gap: 0;
+                }
                 .p-footer__nav-menu-bottom-wrapper {
                     display: flex;
                     flex-direction: column;
                     row-gap: 15px;
-                    width: 34.87%;
+                    @include mixin.mid {
+                        width: 34.87%;
+                    }
                     .p-footer__nav-menu-bottom-title {
                         font-size: 1.5rem;
                         letter-spacing: 0.14em;
@@ -267,9 +343,15 @@
         letter-spacing: 0.14em;
         color: color.$textColor;
         font-weight: 500;
-        text-align: right;
+        text-align: center;
         display: block;
-        padding-bottom: 85px;
+        padding-bottom: 40px;
+        margin-top: 60px;
+        @include mixin.mid {
+            text-align: right;
+            margin-top: 0;
+            padding-bottom: 85px;
+        }
     }
 }
 

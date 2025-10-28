@@ -2,9 +2,12 @@
 @use "../../foundation/mixin";
 @use "../utility/color";
 .p-course {
-    padding: 200px 0 100px;
+    padding: 115px 0;
     position: relative;
     z-index: 1;
+    @include mixin.mid {
+        padding: 200px 0 100px;
+    }
     .p-course__bottom-main-img-wrapper {
         position: absolute;
         left: 0;
@@ -18,13 +21,25 @@
         }
     }
     .p-course__container {
-        margin: 250px 0 0;
+        margin: 60px 0 0;
+        @include mixin.mid {
+            margin: 250px 0 0;
+        }
         .p-course__column-wrapper {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            row-gap: 30px;
+            @include mixin.mid {
+                row-gap: 0;
+                flex-direction: row;
+                justify-content: space-between;
+            }
             .p-course__column-img-wrapper {
-                width: 35.5%;
-                margin-top: 80px;
+                width: 88%;
+                @include mixin.mid {
+                    margin-top: 80px;
+                    width: 35.5%;
+                }
                 .p-course__column-img {
                     width: 100%;
                     height: auto;
@@ -32,41 +47,67 @@
                 }
             }
             .p-course__column-main-wrapper {
-                width: 59.83%;
+                padding: 0 6.67%;
+                @include mixin.mid {
+                    width: 59.83%;
+                }
+                @include mixin.pc {
+                    padding: 0;
+                }
                 .p-course__column-main-title-wrapper {
                     display: flex;
                     flex-direction: column;
                     row-gap: 6px;
-                    margin-left: -150px;
+                    @include mixin.mid {
+                        margin-left: -150px;
+                    }
                     .p-course__column-main-title {
                         background: color.$subColor;
                         border-radius: 5px;
-                        padding: 0 15px;
-                        height: 55px;
+                        padding: 7px 15px;
                         display: flex;
                         align-items: center;
                         width: fit-content;
-                        font-size: 3rem;
+                        font-size: 1.8rem;
                         font-weight: 500;
                         letter-spacing: 0.14em;
                         color: #266b45;
+                        @include mixin.mid {
+                            height: 55px;
+                            font-size: 3rem;
+                            padding: 0 15px;
+                        }
                     }
                 }
                 .p-course__column-main-icon-wrapper {
                     display: flex;
-                    align-items: flex-end;
-                    justify-content: space-between;
-                    padding: 0 120px 0 0;
+                    flex-direction: column;
                     margin: 25px 0 60px;
+                    row-gap: 20px;
+                    @include mixin.mid {
+                        flex-direction: row;
+                        row-gap: 0;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        padding: 0 120px 0 0;
+                    }
                     .p-course__column-main-icon-title {
-                        font-size: 2.5rem;
+                        font-size: 2.2rem;
                         font-weight: 500;
                         letter-spacing: 0.14em;
                         color: #266b45;
                         line-height: 1.8;
+                        @include mixin.mid {
+                            font-size: 2.5rem;
+                        }
                     }
                     .p-course__column-main-icon-img-wrapper {
-                        width: 27.5%;
+                        width: 52%;
+                        margin: 0 auto;
+                        @include mixin.mid {
+                            width: 27.5%;
+                            margin: 0;
+                        }
                         .p-course__column-main-icon-img {
                             width: 100%;
                             height: auto;
@@ -80,7 +121,9 @@
                     letter-spacing: 0.14em;
                     color: color.$textColor;
                     line-height: 2.187;
-                    width: 87%;
+                    @include mixin.mid {
+                        width: 87%;
+                    }
                 }
                 .p-course__column-sub-text {
                     font-size: 1.4rem;
@@ -93,11 +136,16 @@
                 }
                 .p-course__btn-container {
                     display: flex;
-                    column-gap: 20px;
-                    margin-top: 50px;
+                    flex-direction: column;
+                    margin-top: 30px;
+                    row-gap: 10px;
+                    @include mixin.mid {
+                        flex-direction: row;
+                        column-gap: 20px;
+                        margin-top: 50px;
+                    }
                     .p-course__btn-wrapper {
                         .p-course__btn {
-                            width: 287px;
                             height: 70px;
                             display: flex;
                             align-items: center;
@@ -109,6 +157,9 @@
                             font-weight: 500;
                             letter-spacing: 0.14em;
                             position: relative;
+                            @include mixin.mid {
+                                width: 287px;
+                            }
                             .p-course__btn-arrow {
                                 width: 16px;
                                 height: auto;
@@ -141,12 +192,16 @@
                     overflow: hidden;
                     .p-course__list-open-wrapper {
                         background: #266b45;
-                        padding: 18px 37px;
-                        min-height: 120px;
+                        padding: 14px 20px;
                         display: flex;
                         align-items: center;
                         cursor: pointer;
+                        min-height: 95px;
                         transition: background 0.3s ease;
+                        @include mixin.mid {
+                            min-height: 120px;
+                            padding: 18px 37px;
+                        }
                         &:hover {
                             background: #2c7a50;
                         }
@@ -158,18 +213,27 @@
                             .p-course__list-title-wrapper {
                                 display: flex;
                                 flex-direction: column;
-                                row-gap: 15px;
-                                .p-course__list-title {
-                                    font-size: 3rem;
-                                    letter-spacing: 0.14em;
-                                    color: color.$subColor;
-                                    font-weight: 500;
+                                row-gap: 10px;
+                                @include mixin.mid {
+                                    row-gap: 15px;
                                 }
-                                .p-course__list-simple {
+                                .p-course__list-title {
                                     font-size: 1.8rem;
                                     letter-spacing: 0.14em;
+                                    color: color.$subColor;
+                                    font-weight: 500;
+                                    @include mixin.mid {
+                                        font-size: 3rem;
+                                    }
+                                }
+                                .p-course__list-simple {
+                                    font-size: 1.2rem;
+                                    letter-spacing: 0.14em;
                                     font-weight: 500;
                                     color: color.$subColor;
+                                    @include mixin.mid {
+                                        font-size: 1.8rem;
+                                    }
                                 }
                             }
                             /* 右端のトグルボタン */
@@ -179,24 +243,33 @@
                                 column-gap: 15px;
                                 transition: color 0.3s ease;
                                 .p-course__toggle-text {
-                                    font-size: 1.5rem;
-                                    color: color.$subColor;
-                                    font-weight: 500;
-                                    letter-spacing: 0.14em;
+                                    display: none;
+                                    @include mixin.mid {
+                                        display: block;
+                                        font-size: 1.5rem;
+                                        color: color.$subColor;
+                                        font-weight: 500;
+                                        letter-spacing: 0.14em;
+                                    }
                                 }
                                 .p-course__toggle-icon {
                                     display: inline-flex;
                                     justify-content: center;
                                     align-items: center;
-                                    width: 40px;
-                                    height: 40px;
+                                    width: 30px;
+                                    height: 30px;
                                     color: color.$textColor;
                                     background: #c7e2be;
                                     border-radius: 50%;
-                                    font-size: 2.4rem;
                                     font-weight: 700;
                                     line-height: 1;
+                                    font-size: 2rem;
                                     transition: transform 0.3s ease;
+                                    @include mixin.mid {
+                                        width: 40px;
+                                        height: 40px;
+                                        font-size: 2.4rem;
+                                    }
                                 }
                             }
                         }
@@ -212,7 +285,7 @@
                         }
                     }
                     .p-course__detail-container {
-                        padding: 50px 65px 55px 65px;
+                        padding: 20px;
                         background: color.$subColor;
                         /* ▼ 二重グリッド構造（細かい線＋太い線） */
                         background-image:
@@ -237,34 +310,55 @@
                         5px 5px,  /* 細かい横線 */
                         3px 5px,  /* 広い縦線 */
                         5px 5px;  /* 広い横線 */
+                        @include mixin.mid {
+                            padding: 50px 65px 55px 65px;
+                        }
                         .p-course__list-heading {
                             position: relative;
-                            padding-left: 20px; /* 線とテキストの間 */
-                            font-size: 2.5rem;
                             line-height: 1.8;
                             letter-spacing: 0.14em;
                             font-weight: 500;
                             color: color.$textColor;
-                            width: 82%;
-                            margin-bottom: 48px;
+                            font-size: 1.8rem;
+                            padding-left: 15px;
+                            margin-bottom: 25px;
+                            @include mixin.mid {
+                                margin-bottom: 48px;
+                                padding-left: 20px; /* 線とテキストの間 */
+                                font-size: 2.5rem;
+                                width: 82%;
+                            }
                             &::before {
                                 content: "";
                                 position: absolute;
                                 top: 50%;
                                 transform: translateY(-50%);
                                 left: 0;
-                                width: 5px;
+                                width: 3px;
+                                border-radius: 1.5px;
                                 height: 95%;
                                 background-color: #388d60;
-                                border-radius: 2.5px; /* 線を少し丸める場合 */
+                                @include mixin.mid {
+                                    width: 5px;
+                                    border-radius: 2.5px; /* 線を少し丸める場合 */
+                                }
                             }
                         }
                         .p-course__list-column-wrapper {
                             display: flex;
-                            justify-content: space-between;
-                            margin-bottom: 38px;
+                            flex-direction: column;
+                            row-gap: 20px;
+                            margin-bottom: 20px;
+                            @include mixin.mid {
+                                flex-direction: row;
+                                row-gap: 0;
+                                justify-content: space-between;
+                                margin-bottom: 38px;
+                            }
                             .p-course__list-thumb {
-                                width: 28.74%;
+                                @include mixin.mid {
+                                    width: 28.74%;
+                                }
                                 .p-course__list-thumb-img {
                                     width: 100%;
                                     height: auto;
@@ -272,12 +366,14 @@
                                 }
                             }
                             .p-course__list-desc {
-                                width: 67.24%;
                                 font-size: 1.6rem;
                                 font-weight: 500;
                                 letter-spacing: 0.14em;
                                 color: color.$textColor;
                                 line-height: 2.187;
+                                @include mixin.mid {
+                                    width: 67.24%;
+                                }
                             }
                         }
                         .p-course__list-detail-table {
@@ -289,11 +385,16 @@
                             th,
                             td {
                                 border-bottom: 2px dotted #388d60;
-                                font-size: 1.6rem;
+                                font-size: 1.4rem;
                                 font-weight: 500;
                                 letter-spacing: 0.14em;
                                 vertical-align: middle;
-                                padding: 12px 20px;
+                                padding: 10px 15px;
+                                line-height: 1.7;
+                                @include mixin.mid {
+                                    padding: 12px 20px;
+                                    font-size: 1.6rem;
+                                }
                             }
                             th {
                                 width: 1px; /* ← 自動調整 */
@@ -309,6 +410,7 @@
                                     list-style-type: disc;
                                     li {
                                         list-style-type: disc;
+                                        line-height: 1.7;
                                     }
                                 }
                             }
@@ -319,14 +421,27 @@
                         }
                         .p-course__list-recommend {
                             display: flex;
-                            align-items: center;
-                            padding: 23px 28px;
+                            flex-direction: column;
+                            padding: 18px;
                             background: #ebe9d5;
                             border-radius: 15px;
-                            column-gap: 20px;
                             margin-bottom: 36px;
+                            column-gap: 12px;
+                            row-gap: 20px;
+                            @include mixin.mid {
+                                flex-direction: row;
+                                align-items: center;
+                                row-gap: 0;
+                                column-gap: 20px;
+                                padding: 23px 28px;
+                            }
                             .p-course__list-recommend-title {
-                                width: 125px;
+                                width: 80px;
+                                margin: 0 auto;
+                                @include mixin.mid {
+                                    width: 125px;
+                                    margin: 0;
+                                }
                                 .p-course__list-recommend-bubble {
                                     width: 100%;
                                     height: auto;
@@ -335,18 +450,25 @@
                             }
                             .p-course__list-recommend-list {
                                 display: flex;
-                                flex-wrap: wrap;
+                                flex-direction: column;
                                 row-gap: 10px;
-                                width: 80%;
+                                @include mixin.mid {
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    width: 80%;
+                                }
                                 .p-course__list-recommend-item {
-                                    width: 48%;
-                                    font-size: 1.6rem;
                                     letter-spacing: 0.14em;
                                     font-weight: 500;
                                     color: color.$textColor;
                                     display: flex;
                                     align-items: baseline;
                                     column-gap: 8px;
+                                    font-size: 1.4rem;
+                                    @include mixin.mid {
+                                        font-size: 1.6rem;
+                                        width: 48%;
+                                    }
                                     &::before {
                                         content: "";
                                         display: inline-block;
@@ -360,11 +482,16 @@
                         }
                         .p-course__bottom-btn-container {
                             display: flex;
-                            justify-content: center;
-                            column-gap: 30px;
+                            flex-direction: column;
+                            row-gap: 10px;
+                            @include mixin.mid {
+                                row-gap: 0;
+                                flex-direction: row;
+                                justify-content: center;
+                                column-gap: 30px;
+                            }
                             .p-course__bottom-btn-wrapper {
                                 .p-course__bottom-btn {
-                                    width: 340px;
                                     height: 70px;
                                     display: flex;
                                     align-items: center;
@@ -377,6 +504,9 @@
                                     font-weight: 500;
                                     color: #266b45;
                                     position: relative;
+                                    @include mixin.mid {
+                                        width: 340px;
+                                    }
                                     .p-course__bottom-btn-arrow {
                                         width: 16px;
                                         height: auto;
@@ -416,65 +546,89 @@
                 flex-direction: column;
                 row-gap: 25px;
                 .p-course__price-title {
-                    font-size: 2.8rem;
+                    font-size: 2.2rem;
                     font-weight: 500;
                     letter-spacing: 0.14em;
                     color: #266b45;
                     position: relative;
-                    padding-left: 20px;
-                    line-height: 1;
+                    line-height: 1.6;
+                    padding-left: 15px;
+                    @include mixin.mid {
+                        padding-left: 20px;
+                        font-size: 2.8rem;
+                    }
                     &::before {
                         content: "";
                         position: absolute;
-                        width: 5px;
-                        height: 100%;
+                        width: 3px;
+                        border-radius: 1.5px;
+                        height: 80%;
                         display: inline-block;
-                        border-radius: 2.5px;
                         left: 0;
                         top: 50%;
                         transform: translateY(-50%);
                         background: #266b45;
-                    }
-                }
-                .p-course__price-table {
-                    width: 100%;
-                    border-collapse: collapse;
-                    font-size: 1.9rem;
-                    letter-spacing: 0.14em;
-                    color: color.$mainColor;
-                    text-align: center;
-                    background: color.$subColor;
-                    th,
-                    td {
-                        border-bottom: 1px solid #266b45;
-                        border-top: 1px solid #266b45;
-                        padding: 18px 16px;
-                        .min-font {
-                            font-size: 1.6rem;
+                        @include mixin.mid {
+                            width: 5px;
+                            height: 100%;
+                            border-radius: 2.5px;
                         }
                     }
-                    thead th {
-                        background: rgba(0, 109, 65, 0.1);
-                        font-weight: 500;
+                }
+                .p-course__price-table-container {
+                    overflow-x: scroll;
+                    padding-bottom:5px;
+                    @include mixin.mid {
+                        overflow-x: hidden;
+                        padding-bottom: 0;
                     }
-                    tbody td {
-                        font-weight: 500;
-                    }
-                    /* ▼ 左端列（1列目）を左寄せに */
-                    tbody td:first-child,
-                    thead th:first-child,
-                    .p-course__price-section th:first-child {
-                        text-align: left;
-                        padding-left: 30px;
-                    }
-                    /* ▼ セクション見出し（維持費） */
-                    .p-course__price-section th {
-                        background: rgba(0, 109, 65, 0.1);
-                        font-weight: 500;
-                    }
-                    .p-course__price-section .p-course__section-title {
-                        text-align: left;
-                        padding-left: 14px;
+                    .p-course__price-table {
+                        width: 200%;
+                        font-size: 1.5rem;
+                        border-collapse: collapse;
+                        letter-spacing: 0.14em;
+                        color: color.$mainColor;
+                        text-align: center;
+                        background: color.$subColor;
+                        @include mixin.mid {
+                            font-size: 1.9rem;
+                            width: 100%;
+                        }
+                        th,
+                        td {
+                            border-bottom: 1px solid #266b45;
+                            border-top: 1px solid #266b45;
+                            padding: 18px 16px;
+                            .min-font {
+                                font-size: 1.2rem;
+                                @include mixin.mid {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                        thead th {
+                            background: rgba(0, 109, 65, 0.1);
+                            font-weight: 500;
+                        }
+                        tbody td {
+                            font-weight: 500;
+                        }
+                        /* ▼ 左端列（1列目）を左寄せに */
+                        tbody td:first-child,
+                        thead th:first-child,
+                        .p-course__price-section th:first-child {
+                            text-align: left;
+                            padding-left: 30px;
+                        }
+                        /* ▼ セクション見出し（維持費） */
+                        .p-course__price-section th {
+                            background: rgba(0, 109, 65, 0.1);
+                            font-weight: 500;
+                        }
+                        .p-course__price-section .p-course__section-title {
+                            text-align: left;
+                            padding-left: 14px;
+                        }
                     }
                 }
                 .p-course__price-note {
@@ -483,10 +637,13 @@
                     flex-direction: column;
                     row-gap: 3px;
                     .p-course__price-note-text {
-                        font-size: 1.4rem;
+                        font-size: 1.2rem;
                         color: #266b45;
                         letter-spacing: 0.14em;
                         font-weight: 500;
+                        @include mixin.mid {
+                            font-size: 1.4rem;
+                        }
                     }
                 }
             }

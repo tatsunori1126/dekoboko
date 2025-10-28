@@ -2,7 +2,10 @@
 <main class="l-main p-main">
     <div class="p-reservation">
         <div class="c-circle__page-top-img-wrapper">
-            <img class="c-circle__page-top-img" src="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle.png" alt="">
+            <picture class="c-circle__page-top-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle.png" media="(min-width: 800px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle-sp.png" alt="">
+            </picture>
         </div>
         <div class="c-circle__page-right-img-wrapper">
             <img class="c-circle__page-right-img" src="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" alt="">
@@ -18,6 +21,11 @@
                 <h1 class="c-section__page-title">説明会・面談<br>のご予約</h1>
                 <span class="c-section__page-title-en">Reservation</span>
             </div>
+        </div>
+        <div class="c-circle__page-top-main-img-wrapper-sp">
+            <img class="c-circle__page-top-main-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/reservation/page-main-img.png" alt="">
+        </div>
+        <div class="c-inner">
             <?php if(!is_front_page()): ?>
                 <div class="c-breadcrumbs">
                     <div class="c-breadcrumbs__inner" typeof="BreadcrumbList" vocab="https://schema.org/">
@@ -41,7 +49,7 @@
                             <h3 class="p-reservation__column-text-title">DEKObokoの想いや<br>学びのスタイルを、<br>まずは説明会で体感ください。</h3>
                             <p class="p-reservation__column-text">DEKObokoの雰囲気や学びのスタイルを、まずは知っていただくために説明会を開催しています。教室の環境やカリキュラムについて、実際にご覧いただきながらご説明します。「自分に合っているかな？」という疑問を解消する場として、お気軽にご参加ください。</p>
                             <div class="c-btn__wrapper p-reservation__btn-wrapper">
-                                <a class="c-btn p-reservation__link" href="">LINE予約へ進む<img class="c-btn__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
+                                <a class="c-btn p-reservation__link" href="">LINE予約へ進む<img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +83,7 @@
                         <a class="c-btn p-reservation__link" href="">LINEで説明会の予約へ進む<img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
                     </div>
                 </div>
-
+    
                 <div id="consulting" class="p-reservation__wrapper">
                     <div class="c-section__page-title-wrapper p-reservation__title-wrapper">
                         <h2 class="c-section__page-title">個別面談のご予約</h2>

@@ -49,7 +49,7 @@
                             <li><a href="<?php echo home_url('course/shougakusei'); ?>">小学生コース</a></li>
                             <li><a href="<?php echo home_url('course/chuukousei'); ?>">中高生コース</a></li>
                             <li><a href="<?php echo home_url('course/daigakusei'); ?>">大学生・社会人コース</a></li>
-                            <li><a href="<?php echo home_url('course/teacher'); ?>">教育関係者・保護者コース</a></li>
+                            <li><a href="<?php echo home_url('course/kyoiku-hogosha'); ?>">教育関係者・保護者コース</a></li>
                         </ul>
                     </li>
                     <li class="p-header__nav-list">

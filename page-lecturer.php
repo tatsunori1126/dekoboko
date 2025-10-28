@@ -2,7 +2,10 @@
 <main class="l-main p-main">
     <div class="p-lecturer">
         <div class="c-circle__page-top-img-wrapper">
-            <img class="c-circle__page-top-img" src="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle.png" alt="">
+            <picture class="c-circle__page-top-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle.png" media="(min-width: 800px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle-sp.png" alt="">
+            </picture>
         </div>
         <div class="c-circle__page-right-img-wrapper">
             <img class="c-circle__page-right-img" src="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" alt="">
@@ -15,6 +18,11 @@
                 <h1 class="c-section__page-title">講師紹介</h1>
                 <span class="c-section__page-title-en">Our team</span>
             </div>
+        </div>
+        <div class="c-circle__page-top-main-img-wrapper-sp">
+            <img class="c-circle__page-top-main-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/page-main-img.png" alt="">
+        </div>
+        <div class="p-lecturer__inner">
             <?php if(!is_front_page()): ?>
                 <div class="c-breadcrumbs">
                     <div class="c-breadcrumbs__inner" typeof="BreadcrumbList" vocab="https://schema.org/">

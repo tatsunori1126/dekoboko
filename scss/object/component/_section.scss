@@ -27,18 +27,28 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    text-align: center;
+    @include mixin.mid {
+        text-align: left;
+    }
     .c-section__page-title {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 500;
         letter-spacing: 0.14em;
         color: color.$textColor;
         line-height: 1.5;
+        @include mixin.mid {
+            font-size: 4rem;
+        }
     }
     .c-section__page-title-en {
-        font-size: 2rem;
+        font-size: 1.5rem;
         letter-spacing: 0.14em;
         font-weight: 500;
         color: #388d60;
         line-height: 1;
+        @include mixin.mid {
+            font-size: 2rem;
+        }
     }
 }

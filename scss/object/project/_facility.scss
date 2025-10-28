@@ -2,20 +2,30 @@
 @use "../../foundation/mixin";
 @use "../utility/color";
 .p-facility {
-    padding: 200px 0 100px;
+    padding: 115px 0;
     position: relative;
     z-index: 1;
+    @include mixin.mid {
+        padding: 200px 0 100px;
+    }
     .p-facility__container {
-        margin: 340px 0 0;
+        margin: 80px 0 0;
+        @include mixin.mid {
+            margin: 340px 0 0;
+        }
         .p-facility__wrapper {
             .p-facility__subtitle {
-                font-size: 2.8rem;
+                font-size: 2.2rem;
                 letter-spacing: 0.14em;
                 font-weight: 500;
                 color: #266b45;
                 display: flex;
                 align-items: center;
-                column-gap: 15px;
+                column-gap: 10px;
+                @include mixin.mid {
+                    column-gap: 15px;
+                    font-size: 2.8rem;
+                }
                 &::before {
                     content: "";
                     width: 5px;
@@ -32,11 +42,18 @@
             }
             .p-facility__column-wrapper {
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
                 margin-top: 65px;
+                @include mixin.mid {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
                 .p-facility__img-wrapper {
-                    width: 41.67%;
-                    margin-top: -11%;
+                    width: 88%;
+                    @include mixin.mid {
+                        width: 41.67%;
+                        margin-top: -11%;
+                    }
                     .p-facility__img {
                         width: 100%;
                         height: auto;
@@ -44,17 +61,21 @@
                     }
                 }
                 .p-facility__text-wrapper {
-                    width: 45.83%;
-                    margin-right: 8.33%;
                     display: flex;
                     flex-direction: column;
                     row-gap: 42px;
+                    padding: 0 6.67%;
+                    @include mixin.mid {
+                        padding: 0;
+                        width: 45.83%;
+                        margin-right: 8.33%;
+                    }
                     .p-facility__text-title-wrapper {
                         display: flex;
                         flex-direction: column;
                         row-gap: 6px;
                         .p-facility__text-title {
-                            font-size: 3rem;
+                            font-size: 2.2rem;
                             letter-spacing: 0.14em;
                             font-weight: 500;
                             color: #266b45;
@@ -65,6 +86,9 @@
                             display: flex;
                             align-items: center;
                             width: fit-content;
+                            @include mixin.mid {
+                                font-size: 3rem;
+                            }
                         }
                     }
                     .p-facility__text {
@@ -95,16 +119,26 @@
                     flex-direction: column;
                     row-gap: 115px;
                     .p-facility__box {
-                        max-width: 1000px;
-                        margin: 0 auto;
+                        padding: 0 6.67%;
+                        @include mixin.pc {
+                            padding: 0;
+                            max-width: 1000px;
+                            margin: 0 auto;
+                        }
                         .p-facility__area-container {
                             display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
+                            flex-direction: column;
                             row-gap: 40px;
                             margin-top: 35px;
+                            @include mixin.mid {
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                            }
                             .p-facility__area-wrapper {
-                                width: 47.6%;
+                                @include mixin.mid {
+                                    width: 47.6%;
+                                }
                                 .p-facility__area-img-wrapper {
                                     width: 100%;
                                     .p-facility__area-img {
@@ -156,10 +190,13 @@
                             row-gap: 47px;
                             margin-top: 35px;
                             .p-facility__equipment-wrapper {
-                                width: 21.5%;
+                                width: 46%;
                                 display: flex;
                                 flex-direction: column;
                                 row-gap: 23px;
+                                @include mixin.mid {
+                                    width: 21.5%;
+                                }
                                 .p-facility__equipment-img-wrapper {
                                     width: 100%;
                                     .p-facility__equipment-img {
@@ -194,40 +231,55 @@
                 border-radius: 27px;
             }
             .p-facility__rental-box {
-                max-width: 1000px;
-                margin: 65px auto 0;
+                padding: 0 6.67%;
                 display: flex;
                 flex-direction: column;
                 row-gap: 95px;
+                margin: 40px 0 0;
+                @include mixin.pc {
+                    padding: 0;
+                    max-width: 1000px;
+                    margin: 65px auto 0;
+                }
                 .p-facility__rental-price-container {
-                    .p-facility__rental-price-table {
-                        width: 100%;
-                        border-collapse: collapse;
-                        margin: 35px 0 23px;
-                        font-size: 1.9rem;
-                        letter-spacing: 0.14em;
-                        font-weight: 500;
-                        color: #005a38; // テキスト色（深緑）
-                        background: color.$subColor; // 背景色（薄いベージュ）
-                        thead th {
-                            background-color: rgba(0, 109, 65, 0.2); // ヘッダー背景（くすんだグリーン系）
-                            padding: 16px 20px;
+                    .p-facility__rental-price-table-container {
+                        overflow-x: auto;
+                        @include mixin.mid {
+                            overflow-x: hidden;
+                        }
+                        .p-facility__rental-price-table {
+                            width: 170%;
+                            border-collapse: collapse;
+                            margin: 35px 0 23px;
+                            letter-spacing: 0.14em;
                             font-weight: 500;
-                            text-align: left;
-                            border-top: 1px solid #266b45; // 境界線
-                            border-bottom: 1px solid #266b45; // 境界線
-                        }
-                        .center {
-                            text-align: center;
-                        }
-                        tbody td {
-                            border-top: 1px solid #266b45;
-                            border-bottom: 1px solid #266b45;
-                            padding: 16px 20px;
-                            text-align: center;
-                        }
-                        tbody td:first-child {
-                            text-align: left;
+                            font-size: 1.6rem;
+                            color: #005a38; // テキスト色（深緑）
+                            background: color.$subColor; // 背景色（薄いベージュ）
+                            @include mixin.mid {
+                                font-size: 1.9rem;
+                                width: 100%;
+                            }
+                            thead th {
+                                background-color: rgba(0, 109, 65, 0.2); // ヘッダー背景（くすんだグリーン系）
+                                padding: 16px 20px;
+                                font-weight: 500;
+                                text-align: left;
+                                border-top: 1px solid #266b45; // 境界線
+                                border-bottom: 1px solid #266b45; // 境界線
+                            }
+                            .center {
+                                text-align: center;
+                            }
+                            tbody td {
+                                border-top: 1px solid #266b45;
+                                border-bottom: 1px solid #266b45;
+                                padding: 16px 20px;
+                                text-align: center;
+                            }
+                            tbody td:first-child {
+                                text-align: left;
+                            }
                         }
                     }
                     .p-facility__rental-price-text {
@@ -241,12 +293,21 @@
                     .p-facility__rental-equipment-box {
                         margin: 35px 0 0;
                         display: flex;
+                        flex-wrap: wrap;
                         justify-content: space-between;
+                        row-gap: 47px;
+                        @include mixin.mid {
+                            flex-wrap: nowrap;
+                            row-gap: 0;
+                        }
                         .p-facility__rental-equipment-wrapper {
-                            width: 21.5%;
                             display: flex;
                             flex-direction: column;
                             row-gap: 23px;
+                            width: 46%;
+                            @include mixin.mid {
+                                width: 21.5%;
+                            }
                             .p-facility__rental-equipment-img-wrapper {
                                 width: 100%;
                                 .p-facility__rental-equipment-img {
@@ -267,11 +328,11 @@
                 .p-facility__rental-user-container {
                     .p-facility__user-list {
                         background: color.$subColor;
-                        padding: 40px;
-                        border-radius: 25px;
+                        padding: 20px;
+                        border-radius: 15px;
                         display: flex;
                         flex-wrap: wrap;
-                        row-gap: 23px;
+                        row-gap: 15px;
                         margin: 35px 0 62px;
                         /* ▼ 二重グリッド構造（細かい線＋太い線） */
                         background-image:
@@ -296,15 +357,24 @@
                         5px 5px,  /* 細かい横線 */
                         3px 5px,  /* 広い縦線 */
                         5px 5px;  /* 広い横線 */
+                        @include mixin.mid {
+                            padding: 40px;
+                            border-radius: 25px;
+                            row-gap: 23px;
+                        }
                         .p-facility__user-item {
-                            font-size: 1.6rem;
                             letter-spacing: 0.14em;
                             font-weight: 500;
                             color: #0d3425;
-                            width: 39%;
                             display: flex;
+                            font-size: 1.4rem;
+                            column-gap: 5px;
                             align-items: center;
-                            column-gap: 8px;
+                            @include mixin.mid {
+                                font-size: 1.6rem;
+                                column-gap: 8px;
+                                width: 39%;
+                            }
                             &::before {
                                 content: "";
                                 width: 15px;
@@ -316,22 +386,31 @@
                         }
                     }
                     .p-facility__rental-user-link {
-                        height: 85px;
                         background: color.$mainColor;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         position: relative;
-                        border-radius: 42px;
-                        font-size: 1.8rem;
+                        font-size: 1.6rem;
+                        height: 65px;
+                        border-radius: 32px;
+                        @include mixin.mid {
+                            font-size: 1.8rem;
+                            border-radius: 42px;
+                            height: 85px;
+                        }
                         .p-facility__circle-arrow {
                             position: absolute;
-                            right: 20px;
                             top: 50%;
+                            width: 38px;
                             transform: translateY(-50%);
-                            width: 45px;
                             height: auto;
+                            right: 15px;
                             vertical-align: middle;
+                            @include mixin.mid {
+                                right: 20px;
+                                width: 45px;
+                            }
                         }
                     }
                 }

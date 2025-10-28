@@ -2,7 +2,10 @@
 <main class="l-main p-main">
     <div class="p-about">
         <div class="c-circle__page-top-img-wrapper">
-            <img class="c-circle__page-top-img" src="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle.png" alt="">
+            <picture class="c-circle__page-top-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle.png" media="(min-width: 800px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle-sp.png" alt="">
+            </picture>
         </div>
         <div class="c-circle__page-right-img-wrapper">
             <img class="c-circle__page-right-img" src="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" alt="">
@@ -15,6 +18,11 @@
                 <h1 class="c-section__page-title">デコボコとは</h1>
                 <span class="c-section__page-title-en p-about__page-title-en">About</span>
             </div>
+        </div>
+        <div class="c-circle__page-top-main-img-wrapper-sp">
+            <img class="c-circle__page-top-main-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/about/page-main-img.png" alt="">
+        </div>
+        <div class="c-inner">
             <?php if(!is_front_page()): ?>
                 <div class="c-breadcrumbs">
                     <div class="c-breadcrumbs__inner" typeof="BreadcrumbList" vocab="https://schema.org/">
@@ -38,7 +46,7 @@
                             <span class="p-about__concept-title-ja">ちょっと楽しみになる</span>
                             <span class="p-about__concept-title-ja">学習塾。</span>
                         </h2>
-                        <p class="p-about__concept-text">学習習慣と思考力、コミュニケーション力を育む<br>“自分を育てる学びの場”。<br>それが、「 Co-learning park DEKOboko 」です。<br>私たちは、学びをテストの点数や偏差値だけで評価しません。<br>一人ひとりが“その人”になっていくこと、<br>“自分らしい生き方”を歩んでいける力を育んでいくこと。<br>それを何より大切にしています。</p>
+                        <p class="p-about__concept-text">学習習慣と思考力、コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。<br>それが、「 Co-learning park DEKOboko 」です。<br>私たちは、学びをテストの点数や偏差値だけで評価しません。<br>一人ひとりが“その人”になっていくこと、<br class="c-sp-hidden">“自分らしい生き方”を歩んでいける力を育んでいくこと。<br>それを何より大切にしています。</p>
                     </div>
                 </div>
             </div>
@@ -47,7 +55,7 @@
             <div class="p-about__important-bg-wave"></div>
             <div class="c-inner">
                 <div class="p-about__important-container">
-                    <h2 class="p-about__important-title">大切にしている<span class="p-about__important-title-font">4</span>つのこと</h2>
+                    <h2 class="p-about__important-title">大切にしている<br class="c-pc-hidden"><span class="p-about__important-title-font">4</span>つのこと</h2>
                     <div class="p-about__important-box">
                         <div class="p-about__important-wrapper">
                             <div class="p-about__important-item-title-wrapper">
@@ -76,9 +84,27 @@
                                 <div class="p-about__important-item-text-block p-about__important-item-text-block-02">
                                     <p class="p-about__important-item-text"><span class="p-about__important-item-text-font">「なぜ学ぶのか？」</span>という問いから学びが始まります。<br>そのために、以下の3ステップを取り入れています。</p>
                                     <ul class="p-about__important-item-text-list">
-                                        <li class="p-about__important-item-text-list-item"><span class="p-about__important-item-text-list-item-number">1</span><span class="p-about__important-item-text-list-item-font">メタ学習</span>… 自分のクセや傾向を知り、学習スタイルを整える</li>
-                                        <li class="p-about__important-item-text-list-item"><span class="p-about__important-item-text-list-item-number">2</span><span class="p-about__important-item-text-list-item-font">伴走学習</span>… 講師と一緒に計画を立て、自分のペースで進めていく</li>
-                                        <li class="p-about__important-item-text-list-item"><span class="p-about__important-item-text-list-item-number">3</span><span class="p-about__important-item-text-list-item-font">自走学習</span>… 自分で問いを立て、自ら学び、仲間と共有する</li>
+                                        <li class="p-about__important-item-text-list-item">
+                                            <div class="p-about__important-item-text-list-item-box">
+                                                <span class="p-about__important-item-text-list-item-number">1</span>
+                                                <span class="p-about__important-item-text-list-item-font">メタ学習</span>
+                                            </div>
+                                            <span class="p-about__important-item-text-list-item-dot">…</span>自分のクセや傾向を知り、学習スタイルを整える
+                                        </li>
+                                        <li class="p-about__important-item-text-list-item">
+                                            <div class="p-about__important-item-text-list-item-box">
+                                                <span class="p-about__important-item-text-list-item-number">2</span>
+                                                <span class="p-about__important-item-text-list-item-font">伴走学習</span>
+                                            </div>
+                                            <span class="p-about__important-item-text-list-item-dot">…</span>講師と一緒に計画を立て、自分のペースで進めていく
+                                        </li>
+                                        <li class="p-about__important-item-text-list-item">
+                                            <div class="p-about__important-item-text-list-item-box">
+                                                <span class="p-about__important-item-text-list-item-number">3</span>
+                                                <span class="p-about__important-item-text-list-item-font">自走学習</span>
+                                            </div>
+                                            <span class="p-about__important-item-text-list-item-dot">…</span>自分で問いを立て、自ら学び、仲間と共有する
+                                        </li>
                                     </ul>
                                     <p class="p-about__important-item-text">こうしたプロセスを通して、学びが<span class="p-about__important-item-text-font">「自分ごと」</span>になっていきます。</p>
                                 </div>
@@ -227,6 +253,9 @@
                                 <span class="p-about__message-text-title">「デコボコ」をうけとめ、</span>
                                 <span class="p-about__message-text-title">ともに育つ場へ</span>
                             </h2>
+                        </div>
+                        <div class="p-about__message-img-wrapper-sp">
+                            <img class="p-about__message-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/about/message-img.png" alt="代表取締役 熊谷 歩真">
                         </div>
                         <div class="p-about__message-text-wrapper">
                             <p class="p-about__message-text">人にはそれぞれ、得意や不得意、心の揺らぎがあります。DEKObokoは、そうした違いや個性をありのままに“その人らしさ”として受けとめることから始まります。<br>自分のペースで意味のある学びを重ね、迷いながらでも前に進めるように、必要なときは支え合える関係を大切にしています。<br>安心できる空間と、前に進みたくなる気持ちの両方が積み重なっていく“学びの場”を、これからも丁寧に育て続けます。</p>

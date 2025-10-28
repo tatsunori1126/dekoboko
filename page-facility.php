@@ -2,7 +2,10 @@
 <main class="l-main p-main">
     <div class="p-facility">
         <div class="c-circle__page-top-img-wrapper">
-            <img class="c-circle__page-top-img" src="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle.png" alt="">
+            <picture class="c-circle__page-top-img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle.png" media="(min-width: 800px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/common/page-top-bg-circle-sp.png" alt="">
+            </picture>
         </div>
         <div class="c-circle__page-right-img-wrapper">
             <img class="c-circle__page-right-img" src="<?php echo get_template_directory_uri(); ?>/images/common/bg-circle.png" alt="">
@@ -15,6 +18,11 @@
                 <h1 class="c-section__page-title">施設紹介</h1>
                 <span class="c-section__page-title-en p-facility__page-title-en">Facilities</span>
             </div>
+        </div>
+        <div class="c-circle__page-top-main-img-wrapper-sp">
+            <img class="c-circle__page-top-main-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/facility/page-main-img.png" alt="">
+        </div>
+        <div class="c-inner">
             <?php if(!is_front_page()): ?>
                 <div class="c-breadcrumbs">
                     <div class="c-breadcrumbs__inner" typeof="BreadcrumbList" vocab="https://schema.org/">
@@ -163,30 +171,32 @@
                 <div class="p-facility__rental-box">
                     <div class="p-facility__rental-price-container">
                         <h3 class="p-facility__subtitle">料金</h3>
-                        <table class="p-facility__rental-price-table">
-                            <thead>
-                                <tr>
-                                <th>自習席レンタル</th>
-                                <th class="center">1時間</th>
-                                <th class="center">月</th>
-                                <th class="center">年</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>中高生・浪人生・大学生</td>
-                                <td>200円</td>
-                                <td>6,300円</td>
-                                <td>-</td>
-                                </tr>
-                                <tr>
-                                <td>社会人・保護者</td>
-                                <td>300円</td>
-                                <td>8,100円</td>
-                                <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="p-facility__rental-price-table-container">
+                            <table class="p-facility__rental-price-table">
+                                <thead>
+                                    <tr>
+                                    <th>自習席レンタル</th>
+                                    <th class="center">1時間</th>
+                                    <th class="center">月</th>
+                                    <th class="center">年</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>中高生・浪人生・大学生</td>
+                                    <td>200円</td>
+                                    <td>6,300円</td>
+                                    <td>-</td>
+                                    </tr>
+                                    <tr>
+                                    <td>社会人・保護者</td>
+                                    <td>300円</td>
+                                    <td>8,100円</td>
+                                    <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <p class="p-facility__rental-price-text">※現金決済不可。お振込み、クレジット決済、QR決済、引き落としのみ対応。</p>
                     </div>
                     <div class="p-facility__rental-equipment-container">
