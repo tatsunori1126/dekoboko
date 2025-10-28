@@ -16,7 +16,7 @@
         font-weight: 500;
         margin-top: 15px;
         color: color.$textColor;
-        @include mixin.mid {
+        @include mixin.sub {
             font-size: 3rem;
         }
     }

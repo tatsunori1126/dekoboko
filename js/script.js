@@ -148,11 +148,15 @@ jQuery(function () {
         },
         breakpoints: {
             800: {
-                slidesPerView: 3.5,
-                spaceBetween: 45,
+                slidesPerView: 1.4,
+                spaceBetween: 80,
             },
             1200: {
                 slidesPerView: 1.6,
+                spaceBetween: 80,
+            },
+            1440: {
+                slidesPerView: 1.8,
                 spaceBetween: 80,
             },
         },

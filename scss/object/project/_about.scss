@@ -13,7 +13,7 @@
     .p-about__concept {
         margin: 60px 0 0;
         @include mixin.mid {
-            margin: 340px 0 0;
+            margin: 30% 0 0;
         }
         .p-about__concept-container {
             display: flex;
@@ -70,8 +70,11 @@
                             height: 55px;
                             display: flex;
                             align-items: center;
-                            padding: 0 20px;
                             width: fit-content;
+                            padding: 0 13px;
+                            @include mixin.tab {
+                                padding: 0 20px;
+                            }
                             @include mixin.mid {
                                 font-size: 3rem;
                             }
@@ -163,7 +166,11 @@
                     5px 5px,  /* 細かい横線 */
                     3px 5px,  /* 広い縦線 */
                     5px 5px;  /* 広い横線 */
-                    @include mixin.mid {
+                    @include mixin.sub {
+                        padding: 40px 50px;
+                        row-gap: 30px;
+                    }
+                    @include mixin.pc {
                         row-gap: 54px;
                         padding: 65px 70px;
                     }
@@ -172,12 +179,21 @@
                         flex-direction: column;
                         row-gap: 20px;
                         align-items: center;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             flex-direction: row;
+                            column-gap: 20px;
+                        }
+                        @include mixin.pc {
                             column-gap: 40px;
                         }
                         .p-about__important-item-number-wrapper {
                             width: 53px;
+                            @include mixin.sub {
+                                width: 40px;
+                            }
+                            @include mixin.pc {
+                                width: 53px;
+                            }
                             .p-about__important-item-number {
                                 width: 100%;
                                 height: auto;
@@ -189,7 +205,13 @@
                             letter-spacing: 0.14em;
                             font-weight: 500;
                             color: color.$textColor;
+                            @include mixin.sub {
+                                font-size: 2.2rem;
+                            }
                             @include mixin.mid {
+                                font-size: 2.4rem;
+                            }
+                            @include mixin.pc {
                                 font-size: 2.8rem;
                             }
                         }
@@ -197,13 +219,16 @@
                     .p-about__important-item-text-wrapper {
                         display: flex;
                         flex-direction: column-reverse;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             flex-direction: row;
                             justify-content: space-between;
                             align-items: flex-start;
                         }
                         .p-about__important-item-text-block {
-                            @include mixin.mid {
+                            @include mixin.sub {
+                                width: 75%;
+                            }
+                            @include mixin.pc {
                                 width: 70.93%;
                             }
                             .p-about__important-item-text {
@@ -212,6 +237,12 @@
                                 font-weight: 500;
                                 line-height: 2.187;
                                 color: color.$textColor;
+                                @include mixin.sub {
+                                    font-size: 1.5rem;
+                                }
+                                @include mixin.mid {
+                                    font-size: 1.6rem;
+                                }
                                 .p-about__important-item-text-font {
                                     color: #db7a27;
                                 }
@@ -221,7 +252,7 @@
                                 flex-direction: column;
                                 row-gap: 12px;
                                 margin: 15px 0;
-                                @include mixin.mid {
+                                @include mixin.sub {
                                     row-gap: 8px;
                                 }
                                 .p-about__important-item-text-list-item {
@@ -234,14 +265,18 @@
                                     color: color.$textColor;
                                     line-height: 2.187;
                                     row-gap: 8px;
-                                    @include mixin.mid {
+                                    @include mixin.sub {
                                         row-gap: 0;
                                         align-items: center;
                                         flex-direction: row;
+                                        font-size: 1.5rem;
+                                    }
+                                    @include mixin.mid {
+                                        font-size: 1.6rem;
                                     }
                                     .p-about__important-item-text-list-item-dot {
                                         display: none;
-                                        @include mixin.mid {
+                                        @include mixin.sub {
                                             display: inline-block;
                                             margin-right: 5px;
                                         }
@@ -270,19 +305,32 @@
                                         color: color.$textColor;
                                         margin: 0 11px 0 20px;
                                         line-height: 1;
+                                        @include mixin.sub {
+                                            font-size: 1.8rem;
+                                            width: max-content;
+                                            margin: 0 11px 0 11px;
+                                        }
+                                        @include mixin.pc {
+                                            font-size: 2.1rem;
+                                            width: auto;
+                                            margin: 0 11px 0 20px;
+                                        }
                                     }
                                 }
                             }
                         }
                         .p-about__important-item-text-block-02 {
-                            @include mixin.mid {
+                            @include mixin.sub {
+                                width: 75%;
+                            }
+                            @include mixin.pc {
                                 width: 72.1%;
                             }
                         }
                         .p-about__important-item-img-wrapper {
                             width: 56%;
                             margin: 20px auto;
-                            @include mixin.mid {
+                            @include mixin.sub {
                                 margin: 0;
                                 width: 23.02%;
                             }
@@ -319,20 +367,20 @@
             display: flex;
             flex-direction: column;
             row-gap: 40px;
-            @include mixin.mid {
+            @include mixin.sub {
                 row-gap: 0;
             }
             .p-about__method-wrapper {
                 display: flex;
                 flex-direction: column;
-                @include mixin.mid {
+                @include mixin.sub {
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: stretch;
                     border-bottom: 2px dotted #388d60;
                 }
                 &:first-child {
-                    @include mixin.mid {
+                    @include mixin.sub {
                         border-top: 2px dotted #388d60;
                     }
                 }
@@ -345,7 +393,7 @@
                     text-align: center;
                     background: rgba(177, 207, 160, 0.3);
                     padding: 20px 0;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         width: 26.7%;
                         padding: 0;
                     }
@@ -375,7 +423,7 @@
                     }
                 }
                 .p-about__method-item-img-wrapper {
-                    @include mixin.mid {
+                    @include mixin.sub {
                         width: 70%;
                         display: flex;
                         align-items: center;
@@ -384,7 +432,7 @@
                     }
                     .p-about__method-item-img-box {
                         margin: 20px 0;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             width: 26.43%;
                             margin: 0;
                         }
@@ -400,7 +448,7 @@
                         letter-spacing: 0.14em;
                         line-height: 2.187;
                         color: color.$textColor;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             width: 68.14%;
                         }
                     }
@@ -422,7 +470,7 @@
             flex-direction: column-reverse;
             margin: 70px 0 0;
             row-gap: 30px;
-            @include mixin.mid {
+            @include mixin.sub {
                 flex-direction: row;
                 row-gap: 0;
                 justify-content: space-between;
@@ -431,7 +479,7 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 30px;
-                @include mixin.mid {
+                @include mixin.sub {
                     row-gap: 45px;
                     width: 57%;
                 }
@@ -444,7 +492,7 @@
                 }
             }
             .p-about__philosophy-img-wrapper {
-                @include mixin.mid {
+                @include mixin.sub {
                     width: 38%;
                 }
                 .p-about__philosophy-img {
@@ -474,14 +522,14 @@
             display: flex;
             flex-direction: column;
             padding: 150px 0;
-            @include mixin.mid {
+            @include mixin.sub {
                 flex-direction: row;
                 padding: 230px 0;
                 justify-content: space-between;
             }
             .p-about__message-img-wrapper {
                 display: none;
-                @include mixin.mid {
+                @include mixin.sub {
                     display: block;
                     width: 39.5%;
                 }
@@ -495,7 +543,7 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 50px;
-                @include mixin.mid {
+                @include mixin.sub {
                     width: 53.5%;
                 }
                 .p-about__message-text-title-wrapper {
@@ -524,6 +572,10 @@
                             border-radius: 5px;
                             padding: 0 15px;
                             height: 45px;
+                            @include mixin.sub {
+                                font-size: 2.4rem;
+                                height: 50px;
+                            }
                             @include mixin.mid {
                                 height: 55px;
                                 padding: 0 20px;
@@ -534,7 +586,7 @@
                 }
                 .p-about__message-img-wrapper-sp {
                     width: 100%;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         display: none;
                     }
                     .p-about__message-img-sp {
@@ -578,7 +630,10 @@
             align-items: center;
             column-gap: 20px;
             .p-about__company-page-title {
-                font-size: 3.5rem;
+                font-size: 3rem;
+                @include mixin.mid {
+                    font-size: 3.5rem;
+                }
             }
             .p-about__company-page-title-en {
                 font-size: 1.5rem;
@@ -594,7 +649,7 @@
                 padding: 30px 10px;
                 border-bottom: 1px solid #aabea9;
                 align-items: center;
-                @include mixin.mid {
+                @include mixin.sub {
                     justify-content: left;
                 }
                 dt {
@@ -603,7 +658,7 @@
                     letter-spacing: 0.14em;
                     color: #388d60;
                     width: 35%;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         font-size: 1.6rem;
                         width: 135px;
                     }
@@ -614,7 +669,7 @@
                     letter-spacing: 0.14em;
                     color: color.$textColor;
                     width: 60%;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         width: auto;
                         font-size: 1.6rem;
                     }
@@ -630,7 +685,10 @@
             align-items: center;
             column-gap: 20px;
             .p-about__access-page-title {
-                font-size: 3.5rem;
+                font-size: 3rem;
+                @include mixin.mid {
+                    font-size: 3.5rem;
+                }
             }
             .p-about__access-page-title-en {
                 font-size: 1.5rem;
@@ -641,13 +699,13 @@
             flex-direction: column;
             margin-top: 70px;
             row-gap: 20px;
-            @include mixin.mid {
+            @include mixin.sub {
                 flex-direction: row;
                 row-gap: 0;
                 column-gap: 50px;
             }
             .p-about__access-img-wrapper {
-                @include mixin.mid {
+                @include mixin.sub {
                     width: 42.2%;
                 }
                 .p-about__access-img {
@@ -660,7 +718,7 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 30px;
-                @include mixin.mid {
+                @include mixin.sub {
                     width: 52.5%;
                 }
                 .p-about__access-detail-box {
@@ -716,8 +774,11 @@
                     padding: 5px 0 5px 15px;
                     border-left: 1.5px solid #aabea9;
                     @include mixin.mid {
-                        padding: 5px 0 5px 25px;
+                        padding: 5px 0 5px 18px;
                         width: 32%;
+                    }
+                    @include mixin.pc {
+                        padding: 5px 0 5px 25px;
                     }
                     .p-about__access-means-item-title {
                         font-size: 1.6rem;

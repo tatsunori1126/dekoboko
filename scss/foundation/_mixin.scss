@@ -1,10 +1,16 @@
 @charset "UTF-8";
+$pcMax: 1440px; //パソコン最大幅
 $pc: 1200px;    //パソコン
 $mid: 1000px;
 $sub: 800px;
 $tab: 600px;    //タブレット
 
 // パソコン
+@mixin pcMax {
+    @media (min-width: ($pcMax)) {
+        @content;
+    }
+}
 @mixin pc {
     @media (min-width: ($pc)) {
         @content;

@@ -18,16 +18,28 @@
     }
     .p-footer__inner {
         padding: 0 10.67%;
+        @include mixin.sub {
+            padding: 0 6.67%;
+        }
         @include mixin.pc {
             padding: 0;
             max-width: 1000px;
             margin: 0 auto;
+        }
+        @include mixin.pcMax {
+            max-width: 1200px;
         }
     }
     .p-footer__container {
         display: flex;
         flex-direction: column;
         padding: 85px 0 0;
+        @include mixin.tab {
+            padding: 26% 0 0;
+        }
+        @include mixin.sub {
+            padding: 18% 0 0;
+        }
         @include mixin.mid {
             flex-direction: row;
             justify-content: space-between;
@@ -36,6 +48,9 @@
         }
         .p-footer__access-wrapper {
             @include mixin.mid {
+                width: 22.6%;
+            }
+            @include mixin.pc {
                 width: 20.6%;
             }
             .p-footer__logo-wrapper {
@@ -120,7 +135,12 @@
                     display: flex;
                     flex-direction: column;
                     row-gap: 16px;
+                    @include mixin.sub {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
                     @include mixin.mid {
+                        flex-direction: column;
                         row-gap: 13px;
                     }
                     .p-footer__access-contact-link {
@@ -135,6 +155,12 @@
                         justify-content: space-between;
                         align-items: center;
                         border-radius: 22px;
+                        @include mixin.tab {
+                            width: 280px;
+                        }
+                        @include mixin.sub {
+                            width: 48%;
+                        }
                         @include mixin.mid {
                             font-size: 1.4rem;
                             width: 187px;
@@ -159,6 +185,9 @@
                 flex-direction: column;
                 row-gap: 18px;
                 @include mixin.mid {
+                    align-items: flex-start;
+                }
+                @include mixin.pc {
                     flex-direction: row;
                     row-gap: 0;
                     align-items: center;
@@ -174,7 +203,7 @@
                 }
                 .p-footer__nav-reservation-line {
                     display: none;
-                    @include mixin.mid {
+                    @include mixin.pc {
                         display: block;
                         width: 1px;
                         height: 57px;
@@ -186,9 +215,12 @@
                     display: flex;
                     flex-direction: column;
                     row-gap: 15px;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         flex-direction: row;
+                        justify-content: space-between;
                         row-gap: 0;
+                    }
+                    @include mixin.mid {
                         column-gap: 17px;
                     }
                     .p-footer__nav-reservation-link {
@@ -203,6 +235,12 @@
                         letter-spacing: 0.14em;
                         font-weight: 500;
                         color: color.$subColor;
+                        @include mixin.tab {
+                            width: 280px;
+                        }
+                        @include mixin.sub {
+                            width: 48%;
+                        }
                         @include mixin.mid {
                             height: 55px;
                             border-radius: 28px;
@@ -246,14 +284,14 @@
                     display: flex;
                     flex-direction: column;
                     row-gap: 10px;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         flex-direction: row;
                     }
                     .p-footer__nav-menu-list {
                         display: flex;
                         flex-direction: column;
                         row-gap: 10px;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             width: 34.87%;
                         }
                         .p-footer__nav-menu-list-item {
@@ -281,7 +319,7 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 60px;
-                @include mixin.mid {
+                @include mixin.sub {
                     flex-direction: row;
                     row-gap: 0;
                 }
@@ -289,6 +327,9 @@
                     display: flex;
                     flex-direction: column;
                     row-gap: 15px;
+                    @include mixin.sub {
+                        width: 34.87%;
+                    }
                     @include mixin.mid {
                         width: 34.87%;
                     }
@@ -323,6 +364,12 @@
                                     display: flex;
                                     align-items: center;
                                     column-gap: 8px;
+                                    @include mixin.mid {
+                                        align-items: baseline;
+                                    }
+                                    @include mixin.pc {
+                                        align-items: center;
+                                    }
                                     &::before {
                                         content: "";
                                         width: 10px;
@@ -366,11 +413,14 @@
     box-shadow: 0px 5px 5px rgba(86, 85, 84, 0.05);
     z-index: 999999;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    @include mixin.mid {
-        bottom: 40px;
+    @include mixin.tab {
+        bottom: 60px;
         right: 20px;
         width: 232px;
         border-radius: 20px;
+    }
+    @include mixin.sub {
+        bottom: 20px;
     }
     .mv-fixed-banner__close {
         position: absolute;
@@ -387,7 +437,7 @@
         cursor: pointer;
         transition: background 0.3s ease;
         z-index: 100000;
-        @include mixin.mid {
+        @include mixin.tab {
             font-size: 1.3rem;
             width: 26px;
             height: 26px;
@@ -399,7 +449,7 @@
         justify-content: space-between;
         padding: 8px 7px 8px 13px;
         gap: 10px;
-        @include mixin.mid {
+        @include mixin.tab {
             padding: 16px 20px;
         }
         .mv-fixed-banner__text {
@@ -408,7 +458,7 @@
                 font-weight: 500;
                 margin-bottom: 8px;
                 color: color.$textColor;
-                @include mixin.mid {
+                @include mixin.tab {
                     margin-bottom: 10px;
                     font-size: 1.7rem;
                 }
@@ -426,7 +476,7 @@
                 text-decoration: none;
                 font-weight: 500;
                 transition: background-color 0.3s ease;
-                @include mixin.mid {
+                @include mixin.tab {
                     width: 135px;
                     height: 30px;
                     font-size: 1.2rem;
@@ -438,7 +488,7 @@
             width: 31px;
             height: auto;
             display: block;
-            @include mixin.mid {
+            @include mixin.tab {
                 width: 55px;
             }
         }

@@ -29,9 +29,16 @@
     }
     .p-top__mv__container {
         .p-top__mv-inner {
+            @include mixin.mid {
+                padding: 0 6.67%;
+            }
             @include mixin.pc {
+                padding: 0;
                 max-width: 1000px;
                 margin: 0 auto;
+            }
+            @include mixin.pcMax {
+                max-width: 1200px;
             }
         }
         .p-top__mv__box {
@@ -40,13 +47,13 @@
                 width: 87px;
                 height: 87px;
                 position: absolute;
-                bottom: -15%;
+                top: 80%;
                 left: 6.67%;
                 @include mixin.mid {
                     left: 0;
                     width: 112px;
                     height: 112px;
-                    bottom: 13%;
+                    top: 70%;
                 }
                 .mv-scroll__circle {
                     position: relative;
@@ -106,6 +113,9 @@
                 position: absolute;
                 right: 6.67%;
                 top: -10%;
+                @include mixin.tab {
+                    top: -35px;
+                }
                 @include mixin.mid {
                     top: 7%;
                     right: 0;
@@ -116,6 +126,9 @@
                 font-weight: 500;
                 letter-spacing: 0.14em;
                 color: color.$textColor;
+                @include mixin.tab {
+                    font-size: 2.8rem;
+                }
                 @include mixin.mid {
                     font-size: 3.5rem;
                 }
@@ -266,7 +279,6 @@
 .p-top__message {
     position: relative;
     z-index: 0;
-    display: flex;
     margin-top: -6%;
     .p-top__message-bg {
         position: absolute;
@@ -283,7 +295,10 @@
     .p-top__message-column-wrapper {
         display: flex;
         flex-direction: column-reverse;
-        padding: 100px 0 250px;
+        padding: 100px 0 67%;
+        @include mixin.tab {
+            padding: 23% 0 64%;
+        }
         @include mixin.mid {
             flex-direction: row;
             justify-content: space-between;
@@ -335,8 +350,6 @@
             @include mixin.mid {
                 margin-left: 8%;
                 margin-top: 11%;
-            }
-            @include mixin.pc {
                 padding: 0;
             }
             .p-top__message-text {
@@ -368,6 +381,7 @@
             display: flex;
             flex-direction: row-reverse;
             padding: 0 6.67% 0 0;
+            justify-content: space-between;
             @include mixin.mid {
                 width: 35.83%;
                 flex-direction: column;
@@ -397,6 +411,12 @@
                         letter-spacing: 0.14em;
                         font-weight: 500;
                         color: color.$textColor;
+                        @include mixin.tab {
+                            font-size: 2.8rem;
+                        }
+                        @include mixin.sub {
+                            font-size: 3.4rem;
+                        }
                         @include mixin.mid {
                             font-size: 2.8rem;
                         }
@@ -463,13 +483,20 @@
         width: 100%;
         position: absolute;
         left: 50%;
-        top: -4%;
+        top: -5%;
         transform: translateX(-50%);
+        @include mixin.tab {
+            top: -12%;
+        }
+        @include mixin.sub {
+            top: -14%;
+        }
         @include mixin.mid {
-            top: -6%;
             width: 800px;
+            top: -11%;
         }
         @include mixin.pc {
+            top: -6%;
             padding: 0;
         }
         .p-top__message-dekoboko-main-img {
@@ -491,10 +518,16 @@
         }
     }
     .p-top__about-container {
-        padding: 150px 10.13%;
+        padding: 36% 10.13%;
+        @include mixin.tab {
+            padding: 36% 10.13% 25%;
+        }
         @include mixin.mid {
             max-width: 800px;
             margin: 0 auto;
+            padding: 300px 0 250px;
+        }
+        @include mixin.pc {
             padding: 340px 0 250px;
         }
         .p-top__about-title {
@@ -504,7 +537,7 @@
             color: color.$textColor;
             text-align: center;
             line-height: 1.6;
-            @include mixin.mid {
+            @include mixin.sub {
                 font-size: 2.8rem;
             }
         }
@@ -513,12 +546,15 @@
             flex-direction: column;
             row-gap: 52px;
             margin-top: 80px;
-            @include mixin.mid {
+            @include mixin.tab {
                 flex-direction: row;
                 justify-content: center;
                 flex-wrap: wrap;
-                gap: 66px 44px;
                 margin-top: 87px;
+                gap: 60px 30px;
+            }
+            @include mixin.sub {
+                gap: 66px 44px;
             }
             .p-top__about-wrapper {
                 display: flex;
@@ -527,7 +563,7 @@
                 background: color.$subColor;
                 padding: 0 0 30px;
                 border-radius: 50px;
-                @include mixin.mid {
+                @include mixin.tab {
                     width: 46%;
                 }
                 /* ▼ 二重グリッド構造（細かい線＋太い線） */
@@ -560,25 +596,25 @@
                 }
                 .p-top__about-number01 {
                     width: 40px;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         width: 53px;
                     }
                 }
                 .p-top__about-number02 {
                     width: 50px;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         width: 63px;
                     }
                 }
                 .p-top__about-number03 {
                     width: 50px;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         width: 63px;
                     }
                 }
                 .p-top__about-number04 {
                     width: 54px;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         width: 70px;
                     }
                 }
@@ -590,7 +626,7 @@
                     text-align: center;
                     line-height: 1.875;
                     margin: 28px 0;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         font-size: 1.8rem;
                         margin: 35px 0 20px;
                         line-height: 1.94;
@@ -603,25 +639,25 @@
                     justify-content: center;
                     .p-top__about-item-img01 {
                         width: 88px;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             width: 113px;
                         }
                     }
                     .p-top__about-item-img02 {
                         width: 153px;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             width: 211px;
                         }
                     }
                     .p-top__about-item-img03 {
                         width: 151px;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             width: 203px;
                         }
                     }
                     .p-top__about-item-img04 {
                         width: 85px;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             width: 110px;
                         }
                     }
@@ -630,21 +666,27 @@
         }
         .p-top__about-more-btn-wrapper {
             margin-top: 45px;
-            @include mixin.mid {
+            @include mixin.sub {
                 margin-top: 60px;
             }
             .p-top__about-more-btn {
                 display: flex;
                 align-items: center;
-                width: fit-content;
+                justify-content: center;
                 height: 70px;
-                padding: 0 40px 0 20px;
                 border-radius: 35px;
                 font-size: 1.5rem;
+                position: relative;
                 column-gap: 24px;
-                @include mixin.mid {
-                    column-gap: 30px;
+                padding: 0 0 0 30px;
+                @include mixin.tab {
+                    width: 360px;
                     margin: 0 auto;
+                }
+                @include mixin.mid {
+                    justify-content: flex-start;
+                    width: fit-content;
+                    column-gap: 30px;
                     height: 85px;
                     padding: 0 62px 0 23px;
                     border-radius: 43px;
@@ -653,8 +695,11 @@
                 .p-top__about-btn-circle-arrow {
                     width: 40px;
                     height: auto;
+                    position: absolute;
+                    left: 20px;
                     @include mixin.mid {
                         width: 48px;
+                        position: static;
                     }
                 }
             }
@@ -678,7 +723,7 @@
         display: flex;
         justify-content: center;
         column-gap: 20px;
-        @include mixin.mid {
+        @include mixin.sub {
             column-gap: 35px;
             font-size: 2.3rem;
         }
@@ -712,8 +757,14 @@
             transform: translateX(-50%);
             z-index: 10;
             width: 92%;
-            @include mixin.mid {
+            @include mixin.sub {
+                width: 78%;
+            }
+            @include mixin.pc {
                 width: 67%;
+            }
+            @include mixin.pcMax {
+                width: 59%;
             }
             .swiper-button-prev::after,
             .swiper-button-next::after {
@@ -811,7 +862,7 @@
                                     display: flex;
                                     flex-direction: column;
                                     row-gap: 5px;
-                                    width: 48%;
+                                    // width: 48%;
                                     @include mixin.mid {
                                         width: auto;
                                     }
@@ -898,6 +949,9 @@
     display: flex;
     margin-top: 30%;
     margin-bottom: -35%;
+    @include mixin.sub {
+        margin-top: 20%;
+    }
     @include mixin.mid {
         margin-top: 10%;
         margin-bottom: -15%;
@@ -916,8 +970,18 @@
     }
     .p-top__guide-container {
         padding: 0 0 65%;
+        @include mixin.tab {
+            padding: 0 0 55%;
+        }
         @include mixin.mid {
+            padding: 10% 0 25%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+        }
+        @include mixin.pc {
             padding: 0 0 20%;
+            display: block;
         }
         .p-top__guide-wrapper {
             display: flex;
@@ -948,9 +1012,11 @@
                 row-gap: 40px;
                 padding: 0 6.67%;
                 @include mixin.mid {
-                    margin: 0 7.08% 0 0;
+                    padding: 0 4%;
+                    margin: 0 2% 0 0;
                 }
                 @include mixin.pc {
+                    margin: 0 7.08% 0 0;
                     padding: 0;
                 }
                 .p-top__guide-btn-wrapper {
@@ -1003,6 +1069,9 @@
             }
             .p-top__guide-btn-container-reverse {
                 @include mixin.mid {
+                    margin: 0 0 0 2%;
+                }
+                @include mixin.pc {
                     margin: 0 0 0 7.08%;
                 }
             }

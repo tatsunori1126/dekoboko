@@ -151,7 +151,7 @@
             </div>
             <div class="p-top__message-text-wrapper">
                 <p class="p-top__message-text p-top__message-text01">ここは、学習習慣や思考力、<br class="c-sp-hidden">コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。</p>
-                <p class="p-top__message-text p-top__message-text02">Co-learning park DEKObokoは、<br>点数や偏差値ではなく、<br class="c-sp-hidden">「その人らしさ」を大切にする学習塾です。</p>
+                <p class="p-top__message-text p-top__message-text02">Co-learning park DEKObokoは、<br class="c-sp-hidden">点数や偏差値ではなく、<br class="c-sp-hidden">「その人らしさ」を大切にする学習塾です。</p>
                 <p class="p-top__message-text p-top__message-text03">不登校や学校に行けない時期があっても、<br class="c-sp-hidden">安心して学びを続けられる場所でありたい。</p>
                 <p class="p-top__message-text p-top__message-text04">ここで育むのは、未来へつながる力。<br class="c-sp-hidden">さあ、自分らしい歩みをここからはじめよう。</p>
             </div>
@@ -166,11 +166,11 @@
                 </div>
                 <div class="p-top__message-images-right-wrapper">
                     <picture class="p-top__message-image p-top__message-image-right01">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img03.png" media="(min-width: 800px)">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img03.png" media="(min-width: 1000px)">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img01.png" alt="">
                     </picture>
                     <picture class="p-top__message-image p-top__message-image-right02">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img04.png" media="(min-width: 800px)">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img04.png" media="(min-width: 1000px)">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img02.png" alt="">
                     </picture>
                 </div>

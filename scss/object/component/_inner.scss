@@ -8,4 +8,7 @@
         max-width: 1000px;
         margin: 0 auto;
     }
+    @include mixin.pcMax {
+        max-width: 1200px;
+    }
 }

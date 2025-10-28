@@ -339,16 +339,16 @@
                     <div class="p-about__access-means-contents-box">
                         <div class="p-about__access-means-wrapper">
                             <h4 class="p-about__access-means-item-title">お車・自転車でお越しの場合</h4>
-                            <p class="p-about__access-means-item-text">お近くに有料コインパーキング・<br>有料駐輪場がございます。</p>
+                            <p class="p-about__access-means-item-text">お近くに有料コインパーキング・<br class="c-tab-hidden">有料駐輪場がございます。</p>
                         </div>
                         <div class="p-about__access-means-wrapper">
                             <h4 class="p-about__access-means-item-title">電車でお越しの場合</h4>
-                            <p class="p-about__access-means-item-text">西武新宿線「新所沢駅」から<br>徒歩約2分〜3分。</p>
+                            <p class="p-about__access-means-item-text">西武新宿線「新所沢駅」から<br class="c-tab-hidden">徒歩約2分〜3分。</p>
                         </div>
                         <div class="p-about__access-means-wrapper">
                             <h4 class="p-about__access-means-item-title">バスでお越しの場合</h4>
-                            <p class="p-about__access-means-item-text">所沢市コミュニティバス 西路線<br>「松葉町」バス停下車、徒歩約5分。</p>
-                            <p class="p-about__access-means-item-detail">※「新所沢駅東口」からも徒歩約<br>2〜3分でお越しいただけます。</p>
+                            <p class="p-about__access-means-item-text">所沢市コミュニティバス 西路線<br class="c-tab-hidden">「松葉町」バス停下車、徒歩約5分。</p>
+                            <p class="p-about__access-means-item-detail">※「新所沢駅東口」からも徒歩約<br class="c-tab-hidden">2〜3分でお越しいただけます。</p>
                         </div>
                     </div>
                 </div>

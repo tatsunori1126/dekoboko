@@ -10,7 +10,7 @@
     column-gap: 10px;
     width: 100%;
     z-index: 5000;
-    @include mixin.mid {
+    @include mixin.sub {
         right: 0;
         column-gap: 0;
         top: 185px;
@@ -32,7 +32,10 @@
         letter-spacing: 0.14em;
         box-shadow: 0px 5px 5px 0px rgba(86, 85, 84, 0.15);
         column-gap: 8px;
-        @include mixin.mid {
+        @include mixin.tab {
+            width: 260px;
+        }
+        @include mixin.sub {
             width: 50px;
             height: 155px;
             writing-mode: vertical-rl;
@@ -43,7 +46,7 @@
             width: 12px;
             height: auto;
             vertical-align: middle;
-            @include mixin.mid {
+            @include mixin.sub {
                 width: 16px;
             }
         }
@@ -53,7 +56,7 @@
         border-top: 1px solid #db7a27;
         border-left: 1px solid #db7a27;
         border-right: 1px solid #db7a27;
-        @include mixin.mid {
+        @include mixin.sub {
             border-bottom: 1px solid #db7a27;
             border-right: none;
         }
@@ -63,7 +66,7 @@
         border-top: 1px solid #008f5c;
         border-left: 1px solid #008f5c;
         border-right: 1px solid #008f5c;
-        @include mixin.mid {
+        @include mixin.sub {
             border-bottom: 1px solid #008f5c;
             border-right: none;
         }
