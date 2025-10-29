@@ -28,3 +28,14 @@
         display: none;
     }
 }
+.c-sub-hidden {
+    @include mixin.sub {
+        display: none;
+    }
+}
+.c-sub-block {
+    display: none;
+    @include mixin.sub {
+        display: block;
+    }
+}

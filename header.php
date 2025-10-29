@@ -84,9 +84,9 @@
                 </div>
                 <div class="p-header__hamburger-nav-wrapper">
                     <div class="p-header__hamburger-nav-wrapper-inner">
-                        <div class="p-header__hamburger-logo">
+                        <a href="<?php echo esc_url( home_url('/')); ?>" class="p-header__hamburger-logo">
                             <img class="p-header__hamburger-logo-img" src="<?php echo get_template_directory_uri(); ?>/images/common/logo-ver1.png" alt="Co-Learning park DEKOboko">
-                        </div>
+                        </a>
                         <div class="p-header__hamburger-nav-container">
                             <!-- ▼ デコボコについて -->
                             <div class="p-header__hamburger-nav-list-wrapper">

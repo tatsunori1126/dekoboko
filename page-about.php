@@ -62,7 +62,7 @@
                                 <div class="p-about__important-item-number-wrapper">
                                     <img class="p-about__important-item-number" src="<?php echo get_template_directory_uri(); ?>/images/about/important-number01.png" alt="01">
                                 </div>
-                                <h3 class="p-about__important-item-title">安心して自分を出せる「居場所」であること</h3>
+                                <h3 class="p-about__important-item-title">安心して自分を出せる<br class="c-sub-hidden">「居場所」であること</h3>
                             </div>
                             <div class="p-about__important-item-text-wrapper">
                                 <div class="p-about__important-item-text-block">
@@ -78,7 +78,7 @@
                                 <div class="p-about__important-item-number-wrapper">
                                     <img class="p-about__important-item-number" src="<?php echo get_template_directory_uri(); ?>/images/about/important-number02.png" alt="02">
                                 </div>
-                                <h3 class="p-about__important-item-title">学びを「自分ごと化」する仕組み</h3>
+                                <h3 class="p-about__important-item-title">学びを<br class="c-sub-hidden">「自分ごと化」する<br class="c-sub-hidden">仕組み</h3>
                             </div>
                             <div class="p-about__important-item-text-wrapper">
                                 <div class="p-about__important-item-text-block p-about__important-item-text-block-02">
@@ -118,7 +118,7 @@
                                 <div class="p-about__important-item-number-wrapper">
                                     <img class="p-about__important-item-number" src="<?php echo get_template_directory_uri(); ?>/images/about/important-number03.png" alt="03">
                                 </div>
-                                <h3 class="p-about__important-item-title">対話を通じた自己理解と他者交流</h3>
+                                <h3 class="p-about__important-item-title">対話を通じた<br class="c-sub-hidden">自己理解と他者交流</h3>
                             </div>
                             <div class="p-about__important-item-text-wrapper">
                                 <div class="p-about__important-item-text-block">
@@ -134,7 +134,7 @@
                                 <div class="p-about__important-item-number-wrapper">
                                     <img class="p-about__important-item-number" src="<?php echo get_template_directory_uri(); ?>/images/about/important-number04.png" alt="04">
                                 </div>
-                                <h3 class="p-about__important-item-title">自走力（自己効力感）の育成</h3>
+                                <h3 class="p-about__important-item-title">自走力<br class="c-sub-hidden">（自己効力感）の<br class="c-sub-hidden">育成</h3>
                             </div>
                             <div class="p-about__important-item-text-wrapper">
                                 <div class="p-about__important-item-text-block">

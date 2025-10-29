@@ -5,7 +5,9 @@
     padding: 115px 0;
     position: relative;
     z-index: 1;
+    margin-top: -85px;
     @include mixin.mid {
+        margin-top: -105px;
         padding: 270px 0 100px;
     }
     .p-lecturer__inner {
@@ -25,7 +27,13 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin: 310px 0 0;
+            margin: 30% 0 0;
+        }
+        @include mixin.pc {
+            margin: 40% 0 0;
+        }
+        @include mixin.pcMax {
+            margin: 55% 0 0;
         }
         .p-lecturer__wrapper {
             @include mixin.mid {
@@ -135,11 +143,11 @@
                             flex-direction: column;
                             row-gap: 8px;
                             .p-lecturer__hobby-item {
-                                font-size: 1.3rem;
+                                font-size: 1.2rem;
                                 font-weight: 500;
                                 letter-spacing: 0.1em;
                                 color: color.$textColor;
-                                @include mixin.mid {
+                                @include mixin.tab {
                                     letter-spacing: 0.14em;
                                     font-size: 1.4rem;
                                 }

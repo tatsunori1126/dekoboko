@@ -79,12 +79,10 @@
     height: 85px;
     padding: 0 4%;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5000;
+    position: relative;
+    z-index: 9999;
     @include mixin.mid {
-        padding: 0 20px 0 30px;
+        padding: 0 120px 0 30px;
         height: 105px;
     }
     .p-header__logo-link {
@@ -111,7 +109,7 @@
         column-gap: 32px;
         .p-header__nav {
             display: none;
-            @include mixin.mid {
+            @include mixin.pc {
                 display: block;
                 position: relative;
             }
@@ -197,7 +195,9 @@
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
-                position: relative;
+                position: fixed;
+                right: 20px;
+                top: 16px;
                 z-index: 1000;
                 color: #FFFFFF;
                 text-align: center;
@@ -274,6 +274,7 @@
                     margin: 0 auto;
                     .p-header__hamburger-logo {
                         width: 172px;
+                        display: block;
                         margin: 0 auto 45px;
                         img {
                             width: 100%;

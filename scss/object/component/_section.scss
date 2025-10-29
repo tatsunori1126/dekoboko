@@ -28,6 +28,7 @@
     flex-direction: column;
     row-gap: 10px;
     text-align: center;
+    position: relative;
     @include mixin.mid {
         text-align: left;
     }

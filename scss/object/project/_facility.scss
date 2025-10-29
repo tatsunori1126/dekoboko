@@ -5,23 +5,34 @@
     padding: 115px 0;
     position: relative;
     z-index: 1;
+    margin-top: -85px;
     @include mixin.mid {
+        margin-top: -105px;
         padding: 200px 0 100px;
     }
     .p-facility__container {
         margin: 80px 0 0;
         @include mixin.mid {
-            margin: 340px 0 0;
+            margin: 25% 0 0;
+        }
+        @include mixin.pc {
+            margin: 30% 0 0;
+        }
+        @include mixin.pcMax {
+            margin: 35% 0 0;
         }
         .p-facility__wrapper {
             .p-facility__subtitle {
-                font-size: 2.2rem;
+                font-size: 2rem;
                 letter-spacing: 0.14em;
                 font-weight: 500;
                 color: #266b45;
                 display: flex;
                 align-items: center;
                 column-gap: 10px;
+                @include mixin.tab {
+                    font-size: 2.2rem;
+                }
                 @include mixin.mid {
                     column-gap: 15px;
                     font-size: 2.8rem;
@@ -110,14 +121,20 @@
                     height: 100%;
                     background-size: 100% 100%;
                     background-position: center;
-                    background-image: url('../images/facility/bg-wave.png');
+                    background-image: url('../images/facility/bg-wave-sp.png');
                     z-index: -1;
+                    @include mixin.mid {
+                        background-image: url('../images/facility/bg-wave.png');
+                    }
                 }
                 .p-facility__wave-container {
-                    padding: 200px 0 210px;
+                    padding: 160px 0 135px;
                     display: flex;
                     flex-direction: column;
                     row-gap: 115px;
+                    @include mixin.mid {
+                        padding: 200px 0 210px;
+                    }
                     .p-facility__box {
                         padding: 0 6.67%;
                         @include mixin.pc {
@@ -244,21 +261,24 @@
                 .p-facility__rental-price-container {
                     .p-facility__rental-price-table-container {
                         overflow-x: auto;
+                        margin: 35px 0 23px;
                         @include mixin.mid {
                             overflow-x: hidden;
                         }
                         .p-facility__rental-price-table {
-                            width: 170%;
+                            width: 160%;
                             border-collapse: collapse;
-                            margin: 35px 0 23px;
                             letter-spacing: 0.14em;
                             font-weight: 500;
-                            font-size: 1.6rem;
+                            font-size: 1.5rem;
                             color: #005a38; // テキスト色（深緑）
                             background: color.$subColor; // 背景色（薄いベージュ）
+                            @include mixin.tab {
+                                width: 100%;
+                                font-size: 1.6rem;
+                            }
                             @include mixin.mid {
                                 font-size: 1.9rem;
-                                width: 100%;
                             }
                             thead th {
                                 background-color: rgba(0, 109, 65, 0.2); // ヘッダー背景（くすんだグリーン系）
@@ -279,6 +299,10 @@
                             }
                             tbody td:first-child {
                                 text-align: left;
+                                width: 235px;
+                                @include mixin.tab {
+                                    width: auto;
+                                }
                             }
                         }
                     }
@@ -334,6 +358,7 @@
                         flex-wrap: wrap;
                         row-gap: 15px;
                         margin: 35px 0 62px;
+                        column-gap: 20px;
                         /* ▼ 二重グリッド構造（細かい線＋太い線） */
                         background-image:
                         /* 細かいグリッド（薄い） */
@@ -373,6 +398,9 @@
                             @include mixin.mid {
                                 font-size: 1.6rem;
                                 column-gap: 8px;
+                                width: 45%;
+                            }
+                            @include mixin.pc {
                                 width: 39%;
                             }
                             &::before {

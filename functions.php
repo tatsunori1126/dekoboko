@@ -200,6 +200,62 @@ function end_session() {
 add_action('wp_logout', 'end_session');
 add_action('wp_login', 'end_session');
 
+// メールアドレス確認用
+function add_custom_script_to_footer() {
+  echo '<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var emailField = document.getElementById("your-email");
+    var confirmEmailField = document.getElementById("your-email-confirm");
+    var emailMatchMessage = document.getElementById("email-match-message");
+    var confirmButton = document.querySelector(".p-page-contact-input-confirm-btn");
+
+    function validateEmailMatch() {
+      if (emailField && confirmEmailField && emailMatchMessage) {
+        if (emailField.value !== confirmEmailField.value) {
+          emailMatchMessage.style.display = "inline";
+          return false;
+        } else {
+          emailMatchMessage.style.display = "none";
+          return true;
+        }
+      }
+      return true;
+    }
+
+    if (emailField && confirmEmailField) {
+      emailField.addEventListener("input", validateEmailMatch);
+      confirmEmailField.addEventListener("input", validateEmailMatch);
+    }
+
+    if (confirmButton) {
+      confirmButton.addEventListener("click", function(event) {
+        if (!validateEmailMatch()) {
+          event.preventDefault(); // 確認画面への遷移をブロック
+          alert("メールアドレスが一致していません。フォームを修正してください。");
+        }
+      });
+    }
+  });
+  </script>';
+}
+add_action('wp_footer', 'add_custom_script_to_footer');
+
+/***********************************************************
+* Contact Form7 確認モーダル用スクリプト読み込み
+***********************************************************/
+function enqueue_contact_modal_script() {
+  if (is_page('contact-input')) {
+    wp_enqueue_script(
+      'contact-modal',
+      get_template_directory_uri() . '/js/contact-modal.js',
+      array('jquery'),
+      filemtime(get_template_directory() . '/js/contact-modal.js'),
+      true
+    );
+  }
+}
+add_action('wp_enqueue_scripts', 'enqueue_contact_modal_script');
+
 
 // NoImage画像選択メタボックス（カスタム投稿対応）
 function add_noimage_select_box_for_custom_posts() {

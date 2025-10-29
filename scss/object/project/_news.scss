@@ -5,7 +5,9 @@
     position: relative;
     z-index: 1;
     padding: 115px 0;
+    margin-top: -85px;
     @include mixin.mid {
+        margin-top: -105px;
         margin-bottom: -15%;
         padding: 170px 0 230px;
     }

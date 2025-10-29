@@ -5,7 +5,9 @@
     padding: 115px 0;
     position: relative;
     z-index: 1;
+    margin-top: -85px;
     @include mixin.mid {
+        margin-top: -105px;
         padding: 200px 0 100px;
     }
     .p-reservation__bottom-main-img-wrapper {
@@ -27,7 +29,13 @@
         row-gap: 120px;
         @include mixin.mid {
             row-gap: 195px;
-            margin: 310px 0 0;
+            margin: 30% 0 0;
+        }
+        @include mixin.pc {
+            margin: 35% 0 0;
+        }
+        @include mixin.pcMax {
+            margin: 40% 0 0;
         }
         .p-reservation__wrapper {
             .p-reservation__title-wrapper {
@@ -45,8 +53,13 @@
                     justify-content: space-between;
                 }
                 .p-reservation__column-img-wrapper {
+                    @include mixin.sub {
+                        width: 60%;
+                        margin: 0 auto;
+                    }
                     @include mixin.mid {
                         width: 36.6%;
+                        margin: 0;
                     }
                     .p-reservation__column-img {
                         width: 100%;
@@ -66,6 +79,9 @@
                         color: #266b45;
                         line-height: 1.83;
                         @include mixin.mid {
+                            font-size: 2.8rem;
+                        }
+                        @include mixin.pc {
                             font-size: 3rem;
                         }
                     }
@@ -106,31 +122,33 @@
                 row-gap: 70px;
                 margin-bottom: 55px;
                 .p-reservation__merit-title {
+                    position: relative;
                     font-size: 2rem;
                     letter-spacing: 0.14em;
                     font-weight: 500;
                     color: #266b45;
+                    text-align: center;
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: center;
+                    gap: 1em; /* テキストと点線の間の余白（調整OK） */
+                    white-space: nowrap; /* 改行防止 */
                     @include mixin.mid {
                         font-size: 2.5rem;
                     }
                     &::before,
                     &::after {
                         content: "";
-                        border-bottom: 2px dotted #226b4e; /* 点線の色 */
-                        width: 18%;
-                        @include mixin.mid {
-                            width: 34.3%;
-                        }
+                        flex: 1; /* 点線を自動伸縮 */
+                        border-bottom: 2px dotted #006d41;
+                        height: 1px;
                     }
                 }
                 .p-reservation__merit-item-container {
                     display: flex;
                     flex-direction: column;
                     row-gap: 50px;
-                    @include mixin.mid {
+                    @include mixin.sub {
                         flex-direction: row;
                         row-gap: 0;
                         justify-content: space-between;
@@ -155,7 +173,13 @@
                         background-position:
                         0px 5px,  /* 細かい縦線 */
                         5px 5px;  /* 細かい横線 */
+                        @include mixin.sub {
+                            width: 32%;
+                            padding: 40px 20px 30px;
+                            border-radius: 30px;
+                        }
                         @include mixin.mid {
+                            border-radius: 50px;
                             width: 31.2%;
                             padding: 55px 24px 45px;
                         }
@@ -183,7 +207,16 @@
                             line-height: 1.67;
                             text-align: center;
                             margin-bottom: 20px;
+                            @include mixin.sub {
+                                font-size: 1.5rem;
+                                letter-spacing: 0.06em;
+                            }
                             @include mixin.mid {
+                                font-size: 1.8rem;
+                                letter-spacing: 0.1em;
+                            }
+                            @include mixin.pc {
+                                letter-spacing: 0.14em;
                                 font-size: 2.1rem;
                                 margin-bottom: 30px;
                             }
@@ -193,6 +226,12 @@
                             letter-spacing: 0.14em;
                             font-weight: 500;
                             line-height: 2.187;
+                            @include mixin.sub {
+                                font-size: 1.4rem;
+                            }
+                            @include mixin.mid {
+                                font-size: 1.6rem;
+                            }
                         }
                     }
                 }
@@ -205,8 +244,11 @@
                     align-items: center;
                     justify-content: center;
                     position: relative;
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     padding-right: 25px;
+                    @include mixin.tab {
+                        font-size: 1.8rem;
+                    }
                     @include mixin.mid {
                         height: 85px;
                         padding-left: 0;

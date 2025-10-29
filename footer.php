@@ -3,9 +3,9 @@
     <div class="p-footer__inner">
         <div class="p-footer__container">
             <div class="p-footer__access-wrapper">
-                <div class="p-footer__logo-wrapper">
+                <a class="p-footer__logo-wrapper" href="<?php echo esc_url( home_url('/')); ?>">
                     <img class="p-footer__logo" src="<?php echo get_template_directory_uri(); ?>/images/common/logo-ver1.png" alt="Co-Learning park DEKOboko">
-                </div>
+                </a>
                 <div class="p-footer__access-text-wrapper">
                     <div class="p-footer__access-company-name">株式会社DEKOboko</div>
                     <address>

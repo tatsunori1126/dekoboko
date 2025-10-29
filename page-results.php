@@ -39,25 +39,25 @@
                         <div class="p-results__box">
                             <h3 class="p-results__subtitle">高校</h3>
                             <ul class="p-results__list">
-                                <li class="p-results__item">・クラーク記念国際高等学校<br class="c-pc-hidden">（FYLコース）</li>
-                                <li class="p-results__item">・星野高等学校<br class="c-pc-hidden">（DYLコース）</li>
-                                <li class="p-results__item">・近畿大学工業高等専門学校<br class="c-pc-hidden">（DYLコース）</li>
-                                <li class="p-results__item">・自由の森学園高等学校<br class="c-pc-hidden">（DYLコース）</li>
-                                <li class="p-results__item">・サレジオ工業高等専門学校<br class="c-pc-hidden">（DYLコース）</li>
-                                <li class="p-results__item">・松山女子高等学校<br class="c-pc-hidden">（DYLコース）</li>
-                                <li class="p-results__item">・豊南高等学校<br class="c-pc-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・クラーク記念国際高等学校<br class="c-tab-hidden">（FYLコース）</li>
+                                <li class="p-results__item">・星野高等学校<br class="c-tab-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・近畿大学工業高等専門学校<br class="c-tab-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・自由の森学園高等学校<br class="c-tab-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・サレジオ工業高等専門学校<br class="c-tab-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・松山女子高等学校<br class="c-tab-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・豊南高等学校<br class="c-tab-hidden">（DYLコース）</li>
                             </ul>
                         </div>
                         <div class="p-results__box">
                             <h3 class="p-results__subtitle">大学</h3>
                             <ul class="p-results__list">
-                                <li class="p-results__item">・日本体育大学<br class="c-pc-hidden">（CYLコース）</li>
-                                <li class="p-results__item">・国士館大学<br class="c-pc-hidden">（DYLコース）</li>
-                                <li class="p-results__item">・上智大学<br class="c-pc-hidden">（TYLコース）</li>
-                                <li class="p-results__item">・日本大学<br class="c-pc-hidden">（DYLコース）</li>
-                                <li class="p-results__item">・中央大学<br class="c-pc-hidden">（TYLコース）</li>
-                                <li class="p-results__item">・武蔵野大学<br class="c-pc-hidden">（DYLコース）</li>
-                                <li class="p-results__item">・城西大学<br class="c-pc-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・日本体育大学<br class="c-tab-hidden">（CYLコース）</li>
+                                <li class="p-results__item">・国士館大学<br class="c-tab-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・上智大学<br class="c-tab-hidden">（TYLコース）</li>
+                                <li class="p-results__item">・日本大学<br class="c-tab-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・中央大学<br class="c-tab-hidden">（TYLコース）</li>
+                                <li class="p-results__item">・武蔵野大学<br class="c-tab-hidden">（DYLコース）</li>
+                                <li class="p-results__item">・城西大学<br class="c-tab-hidden">（DYLコース）</li>
                             </ul>
                         </div>
                     </div>

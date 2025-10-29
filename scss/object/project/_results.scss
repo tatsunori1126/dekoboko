@@ -5,7 +5,9 @@
     padding: 115px 0;
     position: relative;
     z-index: 1;
+    margin-top: -85px;
     @include mixin.mid {
+        margin-top: -105px;
         padding: 270px 0 100px;
     }
     .p-results__container {
@@ -14,7 +16,10 @@
         flex-direction: column;
         row-gap: 70px;
         @include mixin.mid {
-            margin: 240px 0 0;
+            margin: 30% 0 0;
+        }
+        @include mixin.pc {
+            margin: 40% 0 0;
         }
         .p-results__wrapper {
             display: flex;
@@ -82,6 +87,10 @@
                             color: #266b45;
                             @include mixin.mid {
                                 width: 50%;
+                                font-size: 1.5rem;
+                            }
+                            @include mixin.pc {
+                                font-size: 1.6rem;
                             }
                         }
                     }

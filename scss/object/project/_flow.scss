@@ -3,15 +3,17 @@
 @use "../utility/color";
 .p-flow {
     padding: 115px 0;
+    margin-top: -85px;
     position: relative;
     z-index: 1;
     @include mixin.mid {
+        margin-top: -105px;
         padding: 200px 0 100px;
     }
     .p-flow__container {
         margin: 80px 0 0;
         @include mixin.mid {
-            margin: 340px 0 0;
+            margin: 30% 0 0;
         }
         .p-flow__title-wrapper {
             text-align: center;
@@ -32,7 +34,7 @@
                     .p-flow__wrapper {
                         display: flex;
                         flex-direction: column;
-                        @include mixin.mid {
+                        @include mixin.sub {
                             flex-direction: row;
                             justify-content: space-between;
                             position: relative; // ← 縦線の基準になる
@@ -40,7 +42,7 @@
                         // 縦点線を wrapper 全体に合わせて描画
                         &::before {
                             display: none;
-                            @include mixin.mid {
+                            @include mixin.sub {
                                 display: block;
                                 content: "";
                                 position: absolute;
@@ -64,7 +66,7 @@
                         .p-flow__icon {
                             display: flex;
                             column-gap: 15px;
-                            @include mixin.mid {
+                            @include mixin.sub {
                                 width: 100px;
                                 position: relative;
                                 z-index: 1; // 縦線より前に出す
@@ -86,10 +88,10 @@
                                 }
                             }
                             img {
-                                width: 20%;
+                                width: 60px;
                                 height: auto;
                                 vertical-align: middle;
-                                @include mixin.mid {
+                                @include mixin.sub {
                                     width: 100%;
                                 }
                             }
@@ -99,6 +101,9 @@
                             flex-direction: column;
                             row-gap: 20px;
                             margin-top: 8px;
+                            @include mixin.sub {
+                                width: 80%;
+                            }
                             @include mixin.mid {
                                 width: 84.4%;
                             }
@@ -107,7 +112,7 @@
                                 font-weight: 500;
                                 letter-spacing: 0.14em;
                                 color: color.$textColor;
-                                @include mixin.mid {
+                                @include mixin.sub {
                                     font-size: 2.8rem;
                                 }
                             }
@@ -129,7 +134,7 @@
                                 background-position:
                                 3px 5px,  /* 細かい縦線 */
                                 5px 5px;  /* 細かい横線 */
-                                @include mixin.mid {
+                                @include mixin.sub {
                                     padding: 20px 35px;
                                 }
                                 .p-flow__text {

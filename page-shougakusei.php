@@ -195,7 +195,10 @@
                                 <?php if ($has_recommend) : ?>
                                     <div class="p-course__list-recommend">
                                         <h4 class="p-course__list-recommend-title">
-                                            <img class="p-course__list-recommend-bubble" src="<?php echo get_template_directory_uri(); ?>/images/course/recommend-bubble.png" alt="こんな人におすすめ">
+                                            <picture class="p-course__list-recommend-bubble">
+                                                <source srcset="<?php echo get_template_directory_uri(); ?>/images/course/recommend-bubble.png" media="(min-width: 800px)">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/course/recommend-bubble-sp.png" alt="こんな人におすすめ">
+                                            </picture>
                                         </h4>
                                         <ul class="p-course__list-recommend-list">
                                             <?php for ($r = 1; $r <= 6; $r++) : ?>
@@ -250,25 +253,25 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>チューター指導<br class="c-pc-hidden"><span class="min-font">（55分：1対2）</span></td>
+                                            <td>チューター指導<br class="c-sp-only"><span class="min-font">（55分：1対2）</span></td>
                                             <td>15,600円</td>
                                             <td>30,000円</td>
                                             <td>-</td>
                                         </tr>
                                         <tr>
-                                            <td>個別指導<br class="c-pc-hidden"><span class="min-font">（80分：1対1）</span></td>
+                                            <td>個別指導<br class="c-sp-only"><span class="min-font">（80分：1対1）</span></td>
                                             <td>21,600円</td>
                                             <td>38,400円</td>
                                             <td>-</td>
                                         </tr>
                                         <tr>
-                                            <td>戦略的学習コース１<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>戦略的学習コース１<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>24,300円</td>
                                             <td>40,320円</td>
                                             <td>-</td>
                                         </tr>
                                         <tr>
-                                            <td>戦略的学習コース２<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>戦略的学習コース２<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>29,700円</td>
                                             <td>48,000円</td>
                                             <td>-</td>
@@ -327,13 +330,13 @@
                                             <td>-</td>
                                         </tr>
                                         <tr>
-                                            <td>授業学習コース<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>授業学習コース<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>16,200円</td>
                                             <td>40,320円</td>
                                             <td>-</td>
                                         </tr>
                                         <tr>
-                                            <td>受験対策コース<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>受験対策コース<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>18,000円</td>
                                             <td>48,000円</td>
                                             <td>-</td>
@@ -380,25 +383,25 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>チューター指導<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>チューター指導<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>16,800円</td>
                                             <td>33,840円</td>
                                             <td>48,600円</td>
                                         </tr>
                                         <tr>
-                                            <td>個別指導<br class="c-pc-hidden"><span class="min-font">（80分：1対1）</span></td>
+                                            <td>個別指導<br class="c-sp-only"><span class="min-font">（80分：1対1）</span></td>
                                             <td>24,000円</td>
                                             <td>43,200円</td>
                                             <td>62,640円</td>
                                         </tr>
                                         <tr>
-                                            <td>戦略的学習コース１<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>戦略的学習コース１<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>24,300円</td>
                                             <td>40,320円</td>
                                             <td>60,480円</td>
                                         </tr>
                                         <tr>
-                                            <td>戦略的学習コース２<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>戦略的学習コース２<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>29,700円</td>
                                             <td>48,000円</td>
                                             <td>72,000円</td>
@@ -457,13 +460,13 @@
                                             <td>-</td>
                                         </tr>
                                         <tr>
-                                            <td>授業学習コース<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>授業学習コース<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>18,000円</td>
                                             <td>34,200円</td>
                                             <td>-</td>
                                         </tr>
                                         <tr>
-                                            <td>受験対策コース<br class="c-pc-hidden"><span class="min-font">（55分：1対1）</span></td>
+                                            <td>受験対策コース<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
                                             <td>21,000円</td>
                                             <td>40,320円</td>
                                             <td>-</td>
@@ -510,13 +513,13 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>１対２<br class="c-pc-hidden"><span class="min-font">（55分）</span></td>
+                                            <td>１対２<br class="c-sp-only"><span class="min-font">（55分）</span></td>
                                             <td>3,600円</td>
                                             <td>3,600円</td>
                                             <td>-</td>
                                         </tr>
                                         <tr>
-                                            <td>１対１<br class="c-pc-hidden"><span class="min-font">（55分）</span></td>
+                                            <td>１対１<br class="c-sp-only"><span class="min-font">（55分）</span></td>
                                             <td>5,100円</td>
                                             <td>5,100円</td>
                                             <td>-</td>
