@@ -34,6 +34,7 @@
             display: flex;
             flex-direction: column;
             row-gap: 30px;
+            margin-bottom: 70px;
             @include mixin.sub {
                 row-gap: 0;
                 flex-direction: row;
@@ -199,7 +200,7 @@
             }
         }
         .p-course__list {
-            padding: 145px 0 70px;
+            padding: 70px 0 70px;
             .p-course__title-wrapper {
                 text-align: center;
                 .p-course__page-title-en {
@@ -576,11 +577,16 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 80px;
+                .p-course__price-none {
+                    letter-spacing: 0.14em;
+                    color: color.$textColor;
+                    text-align: center;
+                }
             }
             .p-course__price-wrapper {
                 display: flex;
                 flex-direction: column;
-                row-gap: 25px;
+                row-gap: 10px;
                 .p-course__price-title {
                     font-size: 2.2rem;
                     font-weight: 500;
@@ -611,72 +617,87 @@
                         }
                     }
                 }
-                .p-course__price-table-container {
-                    overflow-x: scroll;
-                    padding-bottom:5px;
-                    @include mixin.mid {
-                        overflow-x: hidden;
-                        padding-bottom: 0;
-                    }
+                .p-course__price-table-wrapper {
+                    display: flex;
+                    align-items: flex-start;
+                    width: 100%;
                     .p-course__price-table {
-                        width: 200%;
-                        font-size: 1.5rem;
                         border-collapse: collapse;
+                        border-spacing: 0;
                         letter-spacing: 0.14em;
-                        color: color.$mainColor;
-                        text-align: center;
-                        background: color.$subColor;
+                        color: #266b45;
+                        border-top: #266b45;
+                        font-size: 1.4rem;
                         @include mixin.tab {
                             font-size: 1.7rem;
                         }
                         @include mixin.mid {
-                            font-size: 1.6rem;
-                            width: 100%;
+                            font-size: 1.9rem;
+                        }
+                    }
+                    /* 固定列 */
+                    .p-course__price-table--fixed {
+                        min-width: 160px;
+                        width: 160px;
+                        @include mixin.tab {
+                            min-width: 250px;
+                            width: 250px;
+                        }
+                        @include mixin.sub {
+                            min-width: 300px;
+                            width: 300px;
+                        }
+                        @include mixin.mid {
+                            min-width: 350px;
+                            width: 350px;
                         }
                         @include mixin.pc {
-                            font-size: 1.9rem;
+                            min-width: 390px;
+                            width: 390px;
                         }
                         th,
                         td {
+                            text-align: left;
                             border-bottom: 1px solid #266b45;
-                            border-top: 1px solid #266b45;
-                            padding: 18px 16px;
-                            .min-font {
-                                font-size: 1.2rem;
-                                @include mixin.mid {
-                                    font-size: 1.6rem;
-                                }
-                            }
+                            // white-space: nowrap;
+                            padding: 18px 24px;
                         }
-                        thead th {
+                        th {
                             background: rgba(0, 109, 65, 0.1);
                             font-weight: 500;
                         }
-                        tbody td {
+                        td {
+                            background: rgba(245, 244, 236, 0.8);
                             font-weight: 500;
                         }
-                        /* ▼ 左端列（1列目）を左寄せに */
-                        tbody td:first-child,
-                        thead th:first-child,
-                        .p-course__price-section th:first-child {
-                            text-align: left;
-                            padding-left: 30px;
-                            width: 35%;
-                            @include mixin.tab {
-                                width: 25%;
+                    }
+                    /* スクロール側 */
+                    .p-course__price-table-scroll {
+                        overflow-x: auto;
+                        flex: 1;
+                        table {
+                            min-width: 600px;
+                            th,
+                            td {
+                                padding: 18px 16px;
+                                text-align: center;
+                                border-bottom: 1px solid #266b45;
+                                white-space: nowrap;
                             }
-                            @include mixin.pc {
-                                width: 40%;
+                            thead th {
+                                background: rgba(0, 109, 65, 0.1);
+                                font-weight: 500;
+                            }
+                            tbody td {
+                                background: rgba(245, 244, 236, 0.8);
+                                font-weight: 500;
                             }
                         }
-                        /* ▼ セクション見出し（維持費） */
-                        .p-course__price-section th {
-                            background: rgba(0, 109, 65, 0.1);
-                            font-weight: 500;
-                        }
-                        .p-course__price-section .p-course__section-title {
-                            text-align: left;
-                            padding-left: 14px;
+                    }
+                    .min-font {
+                        font-size: 1.2rem;
+                        @include mixin.tab {
+                            font-size: 1.4rem;
                         }
                     }
                 }

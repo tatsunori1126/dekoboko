@@ -1,65 +1,60 @@
-jQuery(function() {
+jQuery(function () {
     const speed = 800; // スクロールスピード
 
-    // ページ全体がロードされた後に実行
-    jQuery(window).on('load', function() {
-        const headerH = jQuery('.l-header').height(); // ヘッダーの高さを取得
+    // ▼ ページ全体がロードされた後にハッシュ付きURLに対応
+    jQuery(window).on('load', function () {
         const hash = window.location.hash;
 
-        // URLにハッシュが存在する場合、対象の位置までスクロール
         if (hash !== '' && hash !== undefined) {
             let target = jQuery(hash);
             target = target.length ? target : jQuery('[name=' + hash.slice(1) + ']');
             if (target.length) {
-                let position = target.offset().top;
-                jQuery('html,body').animate({ scrollTop: position }, speed, 'swing');
+                const position = target.offset().top;
+                jQuery('html, body').animate({ scrollTop: position }, speed, 'swing');
             }
         }
     });
 
-    // ページトップへスクロール
-    jQuery(function () {
-        // ページトップボタンのスムーススクロール
-        jQuery('[data-pagetop]').on('click', function(e) {
-            e.preventDefault();
-            const speed = 800;
-            jQuery('html, body').animate({ scrollTop: 0 }, speed);
+    // ▼ ページトップへスクロール + ページ内リンク処理
+    jQuery(function ($) {
+        const hamburger = $('#js-hamburger');
+        const navWrapper = $('.p-header__hamburger-nav-wrapper');
+
+        // ハンバーガーメニュー開閉
+        hamburger.on('click', function () {
+            $(this).toggleClass('is-open');
+            navWrapper.toggleClass('is-open');
         });
-        // // ページ内リンク + ハンバーガー連動
-        // const header = jQuery('.l-header');
-        // const hamburger = jQuery('#js-hamburger');
-        // const navWrapper = jQuery('.p-header__hamburger-nav-wrapper');
-        // const speed = 800;
-        // jQuery('[data-scroll-link]').on('click', function (e) {
-        //     const href = jQuery(this).attr('href');
-        //     // mailto:リンクは通常通りに実行させる（処理しない）
-        //     if (href.startsWith('mailto:')) {
-        //         return;
-        //     }
-        //     e.preventDefault();
-        //     const target = jQuery(href === '#' || href === '' ? 'html' : href);
-        //     const headerH = header.outerHeight();
-        //     const position = target.offset().top - headerH;
-        //     // ハンバーガーメニューを閉じる
-        //     if (hamburger.hasClass('is-open')) {
-        //         hamburger.removeClass('is-open');
-        //         navWrapper.removeClass('is-open');
-        //     }
-        //     // スムーススクロール
-        //     jQuery('html, body').animate({ scrollTop: position }, speed, 'swing');
-        // });
+
+        // ページ内リンク + ハンバーガー連動
+        $('[data-scroll-link]').on('click', function (e) {
+            const href = $(this).attr('href');
+            const currentPath = window.location.pathname;
+            const linkUrl = new URL(href, window.location.origin);
+            const linkPath = linkUrl.pathname;
+
+            // mailto:リンクは除外
+            if (href.startsWith('mailto:')) return;
+
+            // 同一ページならスムーススクロール
+            if (currentPath === linkPath) {
+                e.preventDefault();
+                const target = $(linkUrl.hash === '' ? 'html' : linkUrl.hash);
+                const position = target.offset().top;
+
+                // ハンバーガー閉じる
+                if (hamburger.hasClass('is-open')) {
+                    hamburger.removeClass('is-open');
+                    navWrapper.removeClass('is-open');
+                }
+
+                // スムーススクロール
+                $('html, body').animate({ scrollTop: position }, speed, 'swing');
+            }
+            // 別ページなら通常遷移（home_url指定でもOK）
+        });
     });
 });
-
-// ハンバーガーメニューのトグル
-jQuery(function($) {
-    $('#js-hamburger').on('click', function () {
-        $(this).toggleClass('is-open');
-        $('.p-header__hamburger-nav-wrapper').toggleClass('is-open');
-    });
-});
-
-
 
 
 jQuery(function () {
@@ -118,6 +113,7 @@ jQuery(function () {
         centeredSlides: true,
         loop: true,
         speed: 800, // スクロールスピード（大きいほどゆっくり）
+        // autoHeight: true, // ✅ これを追加！
         navigation: {
             nextEl: '.p-top__voice-next',
             prevEl: '.p-top__voice-prev',
@@ -145,6 +141,32 @@ jQuery(function () {
             },
         },
     });
+    /** ▼ すべてのスライドの高さを最大値に統一 */
+    function adjustSlideHeights() {
+        let maxHeight = 0;
+
+        $('.p-top__voice-slider-item').each(function () {
+            $(this).css('height', 'auto'); // 一旦リセット
+            const h = $(this).outerHeight(true);
+            if (h > maxHeight) maxHeight = h;
+        });
+
+        // 統一
+        $('.p-top__voice-slider-item').css('height', maxHeight + 'px');
+
+        // Swiperを再描画
+        swiperVoice.update();
+    }
+
+    /** ▼ 初期化・画像読み込み後・リサイズ時に高さを揃える */
+    $(window).on('load', adjustSlideHeights);
+    swiperVoice.on('init', adjustSlideHeights);
+    $(window).on('resize', function () {
+        clearTimeout(window._resizeTimer);
+        window._resizeTimer = setTimeout(adjustSlideHeights, 300);
+    });
+
+    swiperVoice.init();
 });
 
 // よくある質問のアコーディオン
@@ -178,5 +200,67 @@ jQuery(function($){
                 $icon.text('＋');
             }
         }
+    });
+});
+
+// 価格表の行の高さを同期
+function syncAllCourseTableHeights() {
+    // すべての価格表を対象に処理
+    const wrappers = document.querySelectorAll('.p-course__price-table-wrapper');
+
+    wrappers.forEach(wrapper => {
+        const fixedRows = wrapper.querySelectorAll('.p-course__price-table--fixed tbody tr');
+        const scrollRows = wrapper.querySelectorAll('.p-course__price-table-scroll tbody tr');
+        const fixedHeader = wrapper.querySelector('.p-course__price-table--fixed thead tr');
+        const scrollHeader = wrapper.querySelector('.p-course__price-table-scroll thead tr');
+
+        if (!fixedRows.length || !scrollRows.length) return;
+
+        // 一旦リセット
+        fixedRows.forEach((row, i) => {
+            row.style.height = 'auto';
+            if (scrollRows[i]) scrollRows[i].style.height = 'auto';
+        });
+        if (fixedHeader && scrollHeader) {
+            fixedHeader.style.height = 'auto';
+            scrollHeader.style.height = 'auto';
+        }
+
+        // 行の高さを同期
+        fixedRows.forEach((row, i) => {
+            const fixedHeight = row.offsetHeight;
+            const scrollHeight = scrollRows[i]?.offsetHeight || 0;
+            const maxHeight = Math.max(fixedHeight, scrollHeight);
+            row.style.height = `${maxHeight}px`;
+            if (scrollRows[i]) scrollRows[i].style.height = `${maxHeight}px`;
+        });
+
+        // ヘッダーの高さも同期
+        if (fixedHeader && scrollHeader) {
+            const headerHeight = Math.max(fixedHeader.offsetHeight, scrollHeader.offsetHeight);
+            fixedHeader.style.height = `${headerHeight}px`;
+            scrollHeader.style.height = `${headerHeight}px`;
+        }
+    });
+}
+
+// 初回ロード時とリサイズ時に再実行
+window.addEventListener('load', syncAllCourseTableHeights);
+window.addEventListener('resize', () => {
+    clearTimeout(window._courseResizeTimer);
+    window._courseResizeTimer = setTimeout(syncAllCourseTableHeights, 150);
+});
+
+
+// スクロールヒント
+document.addEventListener("DOMContentLoaded", function () {
+    new ScrollHint('.scroll-hint', {
+      suggestiveShadow: true, // スクロールヒントの影を表示
+        i18n: { // ヒントのテキストをカスタマイズ
+            scrollable: 'スクロールできます',
+            scrollableSub: 'スクロールしてください',
+            notScrollable: 'スクロールできません',
+            notScrollableSub: 'このコンテンツはスクロールできません',
+        },
     });
 });

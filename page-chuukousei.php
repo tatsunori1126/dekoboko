@@ -56,15 +56,15 @@
                     <p class="p-course__column-main-text">中高生期は、学力への意欲と同時に、進路や人間関係への迷いや自己不信が生まれる時期です。DEKObokoは「勉強したい」「変わりたい」「ちょっと立ち止まりたい」そのすべての気持ちを尊重し、一人ひとりに合った学び方を提案します。<br>DYLコースでは、学力向上を基盤に、学習計画の立て方や習慣化を身につけ、成績や偏差値の向上だけでなく、自ら選び行動する力を育てます。<br>FYLコースでは、不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。少人数授業や対話を通して、自分のペースで学び直し、再び挑戦する力を育みます。<br>学び方に正解はありません。DEKObokoは、それぞれのペースとタイミングに合わせて、一歩ずつ未来に進むサポートをします。</p>
                     <div class="p-course__btn-container">
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url(''); ?>">コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo home_url('chuukousei/#chuukousei_course'); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
                         </div>
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url(''); ?>">料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo home_url('chuukousei/#chuukousei_price'); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <section class="p-course__list">
+            <section id="chuukousei_course" class="p-course__list">
                 <div class="c-inner">
                     <div class="c-section__page-title-wrapper p-course__title-wrapper">
                         <h2 class="c-section__page-title">コース一覧</h2>
@@ -213,10 +213,10 @@
                                 <?php endif; ?>
                                 <div class="p-course__bottom-btn-container">
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url(''); ?>">料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo home_url('chuukousei/#chuukousei_price'); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
                                     </div>
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url(''); ?>">個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo home_url('reservation/#consulting'); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
                                     </div>
                                 </div>
                                 <?php endif; ?>
@@ -231,7 +231,7 @@
                 </div>
             </section>
 
-            <section class="p-course__price">
+            <section id="chuukousei_price" class="p-course__price">
                 <div class="c-inner">
                     <div class="c-section__page-title-wrapper p-course__title-wrapper">
                         <h2 class="c-section__page-title">料金一覧</h2>
@@ -239,297 +239,240 @@
                     </div>
                     <div class="p-course__price-container">
                         <div class="p-course__price-wrapper">
-                            <h3 class="p-course__price-title">DYLコース/中学生</h3>
-                            <div class="p-course__price-table-container">
-                                <table class="p-course__price-table">
+                            <div class="p-course__price-table-wrapper">
+                                <!-- 固定列 -->
+                                <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
-                                        <tr>
-                                            <th>DYLコース受講費</th>
-                                            <th>週１回</th>
-                                            <th>週２回</th>
-                                            <th>週３回</th>
-                                        </tr>
+                                        <tr><th>DYLコース</th></tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>チューター指導<br class="c-sp-only"><span class="min-font">（55分：1対2）</span></td>
-                                            <td>15,600円</td>
-                                            <td>30,000円</td>
-                                            <td>-</td>
+                                            <td>
+                                                戦略的学習コース<br>
+                                                <span class="min-font">（対面/オンライン）80分</span>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>個別指導<br class="c-sp-only"><span class="min-font">（80分：1対1）</span></td>
-                                            <td>21,600円</td>
-                                            <td>38,400円</td>
-                                            <td>-</td>
+                                            <td>
+                                                鬼のスパルタ学習コース<br>
+                                                <span class="min-font">[定期テスト/受験/小論文/面接]<br>（オンライン）55分</span>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>戦略的学習コース１<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>24,300円</td>
-                                            <td>40,320円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>戦略的学習コース２<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>29,700円</td>
-                                            <td>48,000円</td>
-                                            <td>-</td>
-                                        </tr>
-            
-                                        <!-- ▼ 維持費見出し -->
-                                        <tr class="p-course__price-section">
-                                            <th class="p-course__section-title">維持費<span class="min-font">（固定費）</span></th>
-                                            <th>週１回</th>
-                                            <th>週２回</th>
-                                            <th>週３回</th>
-                                        </tr>
-                                        <tr>
-                                            <td>対面受講</td>
-                                            <td>4,500円</td>
-                                            <td>3,600円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>オンライン受講</td>
-                                            <td>1,500円</td>
-                                            <td>1,500円</td>
-                                            <td>-</td>
+                                            <td>
+                                                カスタム学習コース<br>
+                                                <span class="min-font">[テスト/小論文/面接/特別対応/資格・検定]<br>（対面/オンライン）55分</span>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+
+                                <!-- スクロール部分 -->
+                                <div class="p-course__price-table-scroll scroll-hint">
+                                    <table class="p-course__price-table">
+                                        <thead>
+                                            <tr>
+                                                <th>月4回</th>
+                                                <th>月6回</th>
+                                                <th>月8回</th>
+                                                <th>月10回</th>
+                                                <th>月12回</th>
+                                                <th>1コマ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    27,600円<span class="min-font">（6ヶ月間）</span><br>
+                                                    20,700円<span class="min-font">（6ヶ月以降）</span>
+                                                </td>
+                                                <td>
+                                                    39,600円<span class="min-font">（6ヶ月間）</span><br>
+                                                    29,700円<span class="min-font">（6ヶ月以降）</span>
+                                                </td>
+                                                <td>
+                                                    50,400円<span class="min-font">（6ヶ月間）</span><br>
+                                                    37,800円<span class="min-font">（6ヶ月以降）</span>
+                                                </td>
+                                                <td>
+                                                    60,000円<span class="min-font">（6ヶ月間）</span><br>
+                                                    45,000円<span class="min-font">（6ヶ月以降）</span>
+                                                </td>
+                                                <td>
+                                                    68,300円<span class="min-font">（6ヶ月間）</span><br>
+                                                    51,300円<span class="min-font">（6ヶ月以降）</span>
+                                                </td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>8,100円</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26,400円</td>
+                                                <td>39,600円</td>
+                                                <td>48,000円</td>
+                                                <td>60,000円</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
+
                             <ul class="p-course__price-note">
-                                <li class="p-course__price-note-text">※価格は月額料金です。</li>
-                                <li class="p-course__price-note-text">※価格は税込価格を表示しています。</li>
+                                <li class="p-course__price-note-text">※「鬼のスパルタ学習コース」は、最低10コマ以上です。限定3名までとなります。</li>
                             </ul>
                         </div>
+
                         <div class="p-course__price-wrapper">
-                            <h3 class="p-course__price-title">FYLコース/中学生</h3>
-                            <div class="p-course__price-table-container">
-                                <table class="p-course__price-table">
+                            <div class="p-course__price-table-wrapper">
+                                <!-- 固定列 -->
+                                <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
-                                        <tr>
-                                            <th>FYLコース受講費</th>
-                                            <th>週１回</th>
-                                            <th>週２回</th>
-                                            <th>週３回</th>
-                                        </tr>
+                                        <tr><th>FYLコース</th></tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>居場所コース</td>
-                                            <td>9,720円</td>
-                                            <td>30,000円</td>
-                                            <td>-</td>
+                                            <td>
+                                                居場所コース
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>自学自習コース</td>
-                                            <td>12,000円</td>
-                                            <td>38,400円</td>
-                                            <td>-</td>
+                                            <td>
+                                                居場所学習コース
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>授業学習コース<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>16,200円</td>
-                                            <td>40,320円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>受験対策コース<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>18,000円</td>
-                                            <td>48,000円</td>
-                                            <td>-</td>
-                                        </tr>
-            
-                                        <!-- ▼ 維持費見出し -->
-                                        <tr class="p-course__price-section">
-                                            <th class="p-course__section-title">維持費<span class="min-font">（固定費）</span></th>
-                                            <th>週１回</th>
-                                            <th>週２回</th>
-                                            <th>週３回</th>
-                                        </tr>
-                                        <tr>
-                                            <td>対面受講</td>
-                                            <td>4,500円</td>
-                                            <td>3,600円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>オンライン受講</td>
-                                            <td>1,500円</td>
-                                            <td>1,500円</td>
-                                            <td>-</td>
+                                            <td>
+                                                受験対策コース<br>
+                                                <span class="min-font">（80分まで：1対1）</span>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+
+                                <!-- スクロール部分 -->
+                                <div class="p-course__price-table-scroll scroll-hint">
+                                    <table class="p-course__price-table">
+                                        <thead>
+                                            <tr>
+                                                <th>中学生<br>月4回</th>
+                                                <th>中学生<br>月8回</th>
+                                                <th>高校生<br>月4回</th>
+                                                <th>高校生<br>月8回</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9,720円</td>
+                                                <td>19,440円</td>
+                                                <td>9,720円</td>
+                                                <td>19,440円</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16,200円</td>
+                                                <td>29,160円</td>
+                                                <td>18,000円</td>
+                                                <td>32,400円</td>
+                                            </tr>
+                                            <tr>
+                                                <td>22,800円</td>
+                                                <td>41,040円</td>
+                                                <td>25,200円</td>
+                                                <td>45,360円</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
+
                             <ul class="p-course__price-note">
-                                <li class="p-course__price-note-text">※価格は月額料金です。</li>
-                                <li class="p-course__price-note-text">※価格は税込価格を表示しています。</li>
+                                <li class="p-course__price-note-text">※お子さんに勉強する意思がある場合のみ「居場所学習コース」「受験対策コース」は申し込み可能です。</li>
+                                <li class="p-course__price-note-text">※居場所学習コースの勉強時間は「10:00〜12:00」or「13:00〜15:00」の間です。</li>
                             </ul>
                         </div>
+
                         <div class="p-course__price-wrapper">
-                            <h3 class="p-course__price-title">DYLコース/高校生</h3>
-                            <div class="p-course__price-table-container">
-                                <table class="p-course__price-table">
+                            <div class="p-course__price-table-wrapper">
+                                <!-- 固定列 -->
+                                <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
-                                        <tr>
-                                            <th>DYLコース受講費</th>
-                                            <th>週１回</th>
-                                            <th>週２回</th>
-                                            <th>週３回</th>
-                                        </tr>
+                                        <tr><th>テスト対策/季節講習</th></tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>チューター指導<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>16,800円</td>
-                                            <td>33,840円</td>
-                                            <td>48,600円</td>
+                                            <td>1対2<span class="min-font">（80分）</span></td>
                                         </tr>
                                         <tr>
-                                            <td>個別指導<br class="c-sp-only"><span class="min-font">（80分：1対1）</span></td>
-                                            <td>24,000円</td>
-                                            <td>43,200円</td>
-                                            <td>62,640円</td>
-                                        </tr>
-                                        <tr>
-                                            <td>戦略的学習コース１<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>24,300円</td>
-                                            <td>40,320円</td>
-                                            <td>60,480円</td>
-                                        </tr>
-                                        <tr>
-                                            <td>戦略的学習コース２<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>29,700円</td>
-                                            <td>48,000円</td>
-                                            <td>72,000円</td>
-                                        </tr>
-            
-                                        <!-- ▼ 維持費見出し -->
-                                        <tr class="p-course__price-section">
-                                            <th class="p-course__section-title">維持費<span class="min-font">（固定費）</span></th>
-                                            <th>週１回</th>
-                                            <th>週２回</th>
-                                            <th>週３回</th>
-                                        </tr>
-                                        <tr>
-                                            <td>対面受講</td>
-                                            <td>4,500円</td>
-                                            <td>3,600円</td>
-                                            <td>2,250円</td>
-                                        </tr>
-                                        <tr>
-                                            <td>オンライン受講</td>
-                                            <td>1,500円</td>
-                                            <td>1,500円</td>
-                                            <td>1,500円</td>
+                                            <td>1対1<span class="min-font">（80分）</span></td>
                                         </tr>
                                     </tbody>
                                 </table>
+
+                                <!-- スクロール部分 -->
+                                <div class="p-course__price-table-scroll scroll-hint">
+                                    <table class="p-course__price-table">
+                                        <thead>
+                                            <tr>
+                                                <th>受験生</th>
+                                                <th>非受験生</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3,600円<span class="min-font">/コマ</span></td>
+                                                <td>3,000円<span class="min-font">/コマ</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6,000円<span class="min-font">/コマ</span></td>
+                                                <td>5,400円<span class="min-font">/コマ</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <ul class="p-course__price-note">
-                                <li class="p-course__price-note-text">※価格は月額料金です。</li>
-                                <li class="p-course__price-note-text">※価格は税込価格を表示しています。</li>
-                            </ul>
                         </div>
+
                         <div class="p-course__price-wrapper">
-                            <h3 class="p-course__price-title">FYLコース/高校生</h3>
-                            <div class="p-course__price-table-container">
-                                <table class="p-course__price-table">
+                            <div class="p-course__price-table-wrapper">
+                                <!-- 固定列 -->
+                                <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
-                                        <tr>
-                                            <th>FYLコース受講費</th>
-                                            <th>週１回</th>
-                                            <th>週２回</th>
-                                            <th>週３回</th>
-                                        </tr>
+                                        <tr><th>諸費用<span class="min-font">（月額）</span></th></tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>居場所コース</td>
-                                            <td>9,720円</td>
-                                            <td>18,000円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>自学自習コース</td>
-                                            <td>15,000円</td>
-                                            <td>27,000円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>授業学習コース<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>18,000円</td>
-                                            <td>34,200円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>受験対策コース<br class="c-sp-only"><span class="min-font">（55分：1対1）</span></td>
-                                            <td>21,000円</td>
-                                            <td>40,320円</td>
-                                            <td>-</td>
-                                        </tr>
-            
-                                        <!-- ▼ 維持費見出し -->
-                                        <tr class="p-course__price-section">
-                                            <th class="p-course__section-title">維持費<span class="min-font">（固定費）</span></th>
-                                            <th>週１回</th>
-                                            <th>週２回</th>
-                                            <th>週３回</th>
-                                        </tr>
-                                        <tr>
-                                            <td>対面受講</td>
-                                            <td>4,500円</td>
-                                            <td>3,600円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>オンライン受講</td>
-                                            <td>1,500円</td>
-                                            <td>1,500円</td>
-                                            <td>-</td>
+                                            <td>一律</td>
                                         </tr>
                                     </tbody>
                                 </table>
+
+                                <!-- スクロール部分 -->
+                                <div class="p-course__price-table-scroll scroll-hint">
+                                    <table class="p-course__price-table">
+                                        <thead>
+                                            <tr>
+                                                <th>DYL<span class="min-font">（中学生）</span></th>
+                                                <th>DYL<span class="min-font">（高校生・既卒生）</span></th>
+                                                <th>FYL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1,500円</td>
+                                                <td>3,000円</td>
+                                                <td>4,500円</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <ul class="p-course__price-note">
-                                <li class="p-course__price-note-text">※価格は月額料金です。</li>
-                                <li class="p-course__price-note-text">※価格は税込価格を表示しています。</li>
-                            </ul>
-                        </div>
-                        <div class="p-course__price-wrapper">
-                            <h3 class="p-course__price-title">テスト対策季節講習/中学生・高校生</h3>
-                            <div class="p-course__price-table-container">
-                                <table class="p-course__price-table">
-                                    <thead>
-                                        <tr>
-                                            <th>受講費</th>
-                                            <th>99コマ以下</th>
-                                            <th>100コマ以上</th>
-                                            <th>-</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>１対２<br class="c-sp-only"><span class="min-font">（55分）</span></td>
-                                            <td>3,600円</td>
-                                            <td>3,600円</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>１対１<br class="c-sp-only"><span class="min-font">（55分）</span></td>
-                                            <td>5,100円</td>
-                                            <td>5,100円</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <ul class="p-course__price-note">
-                                <li class="p-course__price-note-text">※価格は１コマあたりの料金です。</li>
-                                <li class="p-course__price-note-text">※価格は税込価格を表示しています。</li>
-                            </ul>
                         </div>
                     </div>
                 </div>

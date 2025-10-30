@@ -304,6 +304,7 @@
                                 display: flex;
                                 align-items: center;
                                 column-gap: 8px;
+                                width: fit-content;
                                 &::before {
                                     content: "";
                                     width: 10px;
@@ -365,6 +366,7 @@
                                     display: flex;
                                     align-items: center;
                                     column-gap: 8px;
+                                    width: fit-content;
                                     @include mixin.mid {
                                         align-items: baseline;
                                     }
@@ -377,6 +379,11 @@
                                         height: 10px;
                                         border-radius: 50%;
                                         background: #008f5c;
+                                    }
+                                    .p-footer__nav-menu-bottom-link-icon {
+                                        width: 12px;
+                                        height: auto;
+                                        vertical-align: middle;
                                     }
                                 }
                             }

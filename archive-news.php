@@ -15,6 +15,11 @@
                 <h1 class="c-section__page-title">新着情報</h1>
                 <span class="c-section__page-title-en">News</span>
             </div>
+        </div>
+        <div class="c-circle__page-top-main-img-wrapper-sp">
+            <img class="c-circle__page-top-main-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/course/shougakusei/page-main-img.png" alt="">
+        </div>
+        <div class="c-inner">
             <div class="p-news__bread-category-wrapper">
             <?php if(!is_front_page()): ?>
                 <div class="c-breadcrumbs">
@@ -43,7 +48,7 @@
                             if (is_tax('news_category', $category->slug)) {
                                 $active_class = ' active'; // 現在のタームに「active」クラスを追加
                             }
-
+    
                             echo '<li><a class="p-news__category-link' . $active_class . '" href="' . get_term_link($category) . '">' . esc_html($category->name) . '</a></li>';
                         }
                     }
@@ -80,7 +85,7 @@
                                 <img src="<?php echo esc_url($noimage_path); ?>" alt="<?php the_title_attribute(); ?>" class="p-news__contents-img no-image" />
                             <?php endif; ?>
                         </div>
-
+    
                         <div class="p-news__contents-box">
                             <div class="p-news__contents-category-box">
                                 <?php

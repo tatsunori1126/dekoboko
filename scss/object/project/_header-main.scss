@@ -125,7 +125,7 @@
                         letter-spacing: 0.14em;
                         font-weight: 500;
                         transition: color 0.3s ease;
-                        cursor: pointer;
+                        // cursor: pointer;
                         &:hover {
                             color: #008f5c; // 緑系のアクセントカラー
                         }
@@ -220,10 +220,16 @@
                     }
                 }
                 .bar-top {
-                    transform: translateX(-5px);
+                    transform: translateX(-4px);
+                    @include mixin.mid {
+                        transform: translateX(-5px);
+                    }
                 }
                 .bar-center {
-                    transform: translateX(5px);
+                    transform: translateX(3px);
+                    @include mixin.mid {
+                        transform: translateX(5px);
+                    }
                 }
                 .p-header__hamburger-text {
                     font-size: 0.8rem;
@@ -248,7 +254,7 @@
                 }
             }
             .p-header__hamburger-nav-wrapper {
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
@@ -270,8 +276,15 @@
                     transform: translateY(0);
                 }
                 .p-header__hamburger-nav-wrapper-inner {
-                    max-width: 800px;
-                    margin: 0 auto;
+                    padding: 0 10%;
+                    @include mixin.sub {
+                        padding: 0 6%;
+                    }
+                    @include mixin.pc {
+                        padding: 0;
+                        max-width: 800px;
+                        margin: 0 auto;
+                    }
                     .p-header__hamburger-logo {
                         width: 172px;
                         display: block;
@@ -300,9 +313,15 @@
                             }
                             .p-header__hamburger-nav-block {
                                 display: flex;
-                                justify-content: space-between;
+                                flex-direction: column;
+                                @include mixin.sub {
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                }
                                 .p-header__hamburger-nav-list {
-                                    width: 33%;
+                                    @include mixin.sub {
+                                        width: 33%;
+                                    }
                                     li {
                                         margin-bottom: 10px;
                                         a {
@@ -334,12 +353,20 @@
                         }
                         .p-header__hamburger-nav-list-column-wrapper {
                             display: flex;
-                            justify-content: space-between;
+                            flex-direction: column;
+                            row-gap: 55px;
+                            @include mixin.sub {
+                                flex-direction: row;
+                                row-gap: 0;
+                                justify-content: space-between;
+                            }
                             .p-header__hamburger-nav-list-wrapper {
                                 display: flex;
                                 flex-direction: column;
                                 row-gap: 25px;
-                                width: 33%;
+                                @include mixin.sub {
+                                    width: 33%;
+                                }
                                 .p-header__hamburger-nav-title {
                                     font-size: 1.6rem;
                                     font-weight: 500;
@@ -373,6 +400,12 @@
                                             &:hover {
                                                 color: #008f5c;
                                             }
+                                            .p-header__hamburger-nav-list-icon {
+                                                width: 12px;
+                                                height: auto;
+                                                vertical-align: middle;
+                                                margin-left: 5px;
+                                            }
                                         }
                                     }
                                 }
@@ -381,8 +414,14 @@
                     }
                     .p-header__hamburger-btn-container {
                         display: flex;
-                        column-gap: 53px;
+                        flex-direction: column;
+                        row-gap: 55px;
                         margin: 38px 0 48px;
+                        @include mixin.sub {
+                            flex-direction: row;
+                            row-gap: 0;
+                            column-gap: 53px;
+                        }
                         .p-header__hamburger-btn-wrapper {
                             display: flex;
                             flex-direction: column;

@@ -66,12 +66,18 @@ function enqueue_theme_assets() {
     // Font Awesome CSS
     wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v6.6.0/css/all.css', array(), null);
 
+    // Scroll Hint CSS
+    wp_enqueue_style('scroll-hint', 'https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css', array(), null);
+
     // Google Fonts（preconnectを追加）
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"', array(), null);
 
     // Custom CSS
     wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/style.min.css', array(), filemtime(get_template_directory() . '/css/style.min.css'));
 
+    // Scroll Hint JS
+    wp_enqueue_script('scroll-hint-js', 'https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js', array(), null, true);
+    
     // jQuery
     wp_enqueue_script('jquery');
 
@@ -100,7 +106,6 @@ function enqueue_gsap_with_scrolltrigger() {
     wp_script_add_data('gsap-scrolltrigger', 'async', true); // 非同期読み込み
 }
 add_action('wp_enqueue_scripts', 'enqueue_gsap_with_scrolltrigger');
-
 
 /***********************************************************
 * カスタム投稿によって表示件数を変える

@@ -33,7 +33,7 @@
                 </div>
             <?php endif; ?>
         </div>
-        <section class="p-about__concept">
+        <section id="concept" class="p-about__concept">
             <div class="p-about__concept-container">
                 <div class="p-about__concept-img-wrapper">
                     <img class="p-about__concept-img" src="<?php echo get_template_directory_uri(); ?>/images/about/concept-img.png" alt="">
@@ -220,7 +220,7 @@
                 </div>
             </div>
         </section>
-        <section class="p-about__philosophy">
+        <section id="philosophy" class="p-about__philosophy">
             <div class="c-inner">
                 <div class="c-section__page-title-wrapper p-about__philosophy-title-wrapper">
                     <h2 class="c-section__page-title">教育理念</h2>
@@ -265,7 +265,7 @@
                 </div>
             </div>
         </section>
-        <section class="p-about__company">
+        <section id="company" class="p-about__company">
             <div class="c-inner">
                 <div class="c-section__page-title-wrapper p-about__company-title-wrapper">
                     <h2 class="c-section__page-title p-about__company-page-title">会社概要</h2>
@@ -304,7 +304,7 @@
                 </dl>
             </div>
         </section>
-        <section class="p-about__access">
+        <section id="access" class="p-about__access">
             <div class="c-inner">
                 <div class="c-section__page-title-wrapper p-about__access-title-wrapper">
                     <h2 class="c-section__page-title p-about__access-page-title">アクセス案内</h2>

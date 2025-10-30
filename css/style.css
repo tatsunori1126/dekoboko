@@ -859,7 +859,6 @@ body::before {
   letter-spacing: 0.14em;
   font-weight: 500;
   transition: color 0.3s ease;
-  cursor: pointer;
 }
 .p-header .p-header__nav-container .p-header__nav .p-header__nav-list-wrapper .p-header__nav-list .p-header__nav-link:hover {
   color: #008f5c;
@@ -953,10 +952,20 @@ body::before {
   }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger .bar-top {
-  transform: translateX(-5px);
+  transform: translateX(-4px);
+}
+@media (min-width: 1000px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger .bar-top {
+    transform: translateX(-5px);
+  }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger .bar-center {
-  transform: translateX(5px);
+  transform: translateX(3px);
+}
+@media (min-width: 1000px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger .bar-center {
+    transform: translateX(5px);
+  }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger .p-header__hamburger-text {
   font-size: 0.8rem;
@@ -986,7 +995,7 @@ body::before {
   }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1009,8 +1018,19 @@ body::before {
   transform: translateY(0);
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner {
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 0 10%;
+}
+@media (min-width: 800px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner {
+    padding: 0 6%;
+  }
+}
+@media (min-width: 1200px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner {
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-logo {
   width: 172px;
@@ -1042,10 +1062,18 @@ body::before {
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-wrapper .p-header__hamburger-nav-block {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
-.p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-wrapper .p-header__hamburger-nav-block .p-header__hamburger-nav-list {
-  width: 33%;
+@media (min-width: 800px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-wrapper .p-header__hamburger-nav-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 800px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-wrapper .p-header__hamburger-nav-block .p-header__hamburger-nav-list {
+    width: 33%;
+  }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-wrapper .p-header__hamburger-nav-block .p-header__hamburger-nav-list li {
   margin-bottom: 10px;
@@ -1076,13 +1104,25 @@ body::before {
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-column-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 55px;
+}
+@media (min-width: 800px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-column-wrapper {
+    flex-direction: row;
+    row-gap: 0;
+    justify-content: space-between;
+  }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-column-wrapper .p-header__hamburger-nav-list-wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  width: 33%;
+}
+@media (min-width: 800px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-column-wrapper .p-header__hamburger-nav-list-wrapper {
+    width: 33%;
+  }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-column-wrapper .p-header__hamburger-nav-list-wrapper .p-header__hamburger-nav-title {
   font-size: 1.6rem;
@@ -1119,11 +1159,25 @@ body::before {
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-column-wrapper .p-header__hamburger-nav-list-wrapper .p-header__hamburger-nav-list li a:hover {
   color: #008f5c;
 }
+.p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-nav-container .p-header__hamburger-nav-list-column-wrapper .p-header__hamburger-nav-list-wrapper .p-header__hamburger-nav-list li a .p-header__hamburger-nav-list-icon {
+  width: 12px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 5px;
+}
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-btn-container {
   display: flex;
-  -moz-column-gap: 53px;
-       column-gap: 53px;
+  flex-direction: column;
+  row-gap: 55px;
   margin: 38px 0 48px;
+}
+@media (min-width: 800px) {
+  .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-btn-container {
+    flex-direction: row;
+    row-gap: 0;
+    -moz-column-gap: 53px;
+         column-gap: 53px;
+  }
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-btn-container .p-header__hamburger-btn-wrapper {
   display: flex;
@@ -1568,6 +1622,8 @@ body::before {
   align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .p-footer .p-footer__container .p-footer__nav-wrapper .p-footer__nav-menu-wrapper .p-footer__nav-menu-box .p-footer__nav-menu-list .p-footer__nav-menu-list-item .p-footer__nav-menu-link::before {
   content: "";
@@ -1636,6 +1692,8 @@ body::before {
   align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media (min-width: 1000px) {
   .p-footer .p-footer__container .p-footer__nav-wrapper .p-footer__nav-menu-bottom-container .p-footer__nav-menu-bottom-wrapper .p-footer__nav-menu-bottom-box .p-footer__nav-menu-bottom-list .p-footer__nav-menu-bottom-list-item .p-footer__nav-menu-bottom-link {
@@ -1653,6 +1711,11 @@ body::before {
   height: 10px;
   border-radius: 50%;
   background: #008f5c;
+}
+.p-footer .p-footer__container .p-footer__nav-wrapper .p-footer__nav-menu-bottom-container .p-footer__nav-menu-bottom-wrapper .p-footer__nav-menu-bottom-box .p-footer__nav-menu-bottom-list .p-footer__nav-menu-bottom-list-item .p-footer__nav-menu-bottom-link .p-footer__nav-menu-bottom-link-icon {
+  width: 12px;
+  height: auto;
+  vertical-align: middle;
 }
 .p-footer .p-footer__nav-copyright {
   font-size: 1rem;
@@ -1864,7 +1927,7 @@ body::before {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  animation: rotateText 12s linear infinite; /* 無限回転 */
+  animation: rotateText 20s linear infinite; /* 無限回転 */
   transform-origin: 50% 50%; /* 中心を基準に回転 */
 }
 .p-top__mv .p-top__mv__container .p-top__mv__box .mv-scroll .mv-scroll__circle .mv-scroll__arrow {
@@ -2718,9 +2781,9 @@ body::before {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  height: -webkit-fill-available; /* Safari, Chrome, Edge */
-  height: -moz-available; /* Firefox用（非標準） */
-  height: fill-available; /* 仕様上の標準（将来用） */
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
   /* ▼ 二重グリッド構造（細かい線＋太い線） */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   /* ▼ グリッドの間隔設定 */
@@ -3023,17 +3086,18 @@ body::before {
 }
 @media (min-width: 1200px) {
   .error-404-container .error-404-box {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0;
   }
 }
 .error-404-container .error-404-box .error-404-title {
   font-size: 4rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin: 60px 0 20px;
   text-align: center;
+  color: #005a38;
 }
 @media (min-width: 1000px) {
   .error-404-container .error-404-box .error-404-title {
@@ -3042,16 +3106,29 @@ body::before {
 }
 .error-404-container .error-404-box .error-404-text {
   font-size: 1.6rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   line-height: 1.8;
   margin-bottom: 40px;
   text-align: center;
+  color: #0d3425;
 }
 @media (min-width: 1000px) {
   .error-404-container .error-404-box .error-404-text {
     font-size: 1.8rem;
     margin-bottom: 80px;
   }
+}
+.error-404-container .error-404-link {
+  color: #0d3425;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  text-underline-offset: 20%;
+  text-align: center;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  letter-spacing: 0.14em;
 }
 
 .p-news {
@@ -5817,6 +5894,7 @@ body::before {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  margin-bottom: 70px;
 }
 @media (min-width: 800px) {
   .p-course .p-course__container .p-course__column-wrapper {
@@ -6016,7 +6094,7 @@ body::before {
   transform: translateY(-50%);
 }
 .p-course .p-course__container .p-course__list {
-  padding: 145px 0 70px;
+  padding: 70px 0 70px;
 }
 .p-course .p-course__container .p-course__list .p-course__title-wrapper {
   text-align: center;
@@ -6426,10 +6504,15 @@ body::before {
   flex-direction: column;
   row-gap: 80px;
 }
+.p-course .p-course__container .p-course__price .p-course__price-container .p-course__price-none {
+  letter-spacing: 0.14em;
+  color: #0d3425;
+  text-align: center;
+}
 .p-course .p-course__container .p-course__price .p-course__price-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 10px;
 }
 .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-title {
   font-size: 2.2rem;
@@ -6465,94 +6548,102 @@ body::before {
     border-radius: 2.5px;
   }
 }
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container {
-  overflow-x: scroll;
-  padding-bottom: 5px;
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  /* 固定列 */
+  /* スクロール側 */
 }
-@media (min-width: 1000px) {
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container {
-    overflow-x: hidden;
-    padding-bottom: 0;
-  }
-}
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table {
-  width: 200%;
-  font-size: 1.5rem;
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table {
   border-collapse: collapse;
+  border-spacing: 0;
   letter-spacing: 0.14em;
-  color: #005a38;
-  text-align: center;
-  background: #f5f4ec;
-  /* ▼ 左端列（1列目）を左寄せに */
-  /* ▼ セクション見出し（維持費） */
+  color: #266b45;
+  border-top: #266b45;
+  font-size: 1.4rem;
 }
 @media (min-width: 600px) {
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table {
+  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table {
     font-size: 1.7rem;
   }
 }
 @media (min-width: 1000px) {
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table {
-    font-size: 1.6rem;
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table {
+  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table {
     font-size: 1.9rem;
   }
 }
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table th,
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table td {
-  border-bottom: 1px solid #266b45;
-  border-top: 1px solid #266b45;
-  padding: 18px 16px;
-}
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table th .min-font,
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table td .min-font {
-  font-size: 1.2rem;
-}
-@media (min-width: 1000px) {
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table th .min-font,
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table td .min-font {
-    font-size: 1.6rem;
-  }
-}
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table thead th {
-  background: rgba(0, 109, 65, 0.1);
-  font-weight: 500;
-}
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table tbody td {
-  font-weight: 500;
-}
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table tbody td:first-child,
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table thead th:first-child,
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table .p-course__price-section th:first-child {
-  text-align: left;
-  padding-left: 30px;
-  width: 35%;
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed {
+  min-width: 160px;
+  width: 160px;
 }
 @media (min-width: 600px) {
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table tbody td:first-child,
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table thead th:first-child,
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table .p-course__price-section th:first-child {
-    width: 25%;
+  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed {
+    min-width: 250px;
+    width: 250px;
+  }
+}
+@media (min-width: 800px) {
+  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed {
+    min-width: 300px;
+    width: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed {
+    min-width: 350px;
+    width: 350px;
   }
 }
 @media (min-width: 1200px) {
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table tbody td:first-child,
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table thead th:first-child,
-  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table .p-course__price-section th:first-child {
-    width: 40%;
+  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed {
+    min-width: 390px;
+    width: 390px;
   }
 }
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table .p-course__price-section th {
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed th,
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed td {
+  text-align: left;
+  border-bottom: 1px solid #266b45;
+  padding: 18px 24px;
+}
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed th {
   background: rgba(0, 109, 65, 0.1);
   font-weight: 500;
 }
-.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-container .p-course__price-table .p-course__price-section .p-course__section-title {
-  text-align: left;
-  padding-left: 14px;
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table--fixed td {
+  background: rgba(245, 244, 236, 0.8);
+  font-weight: 500;
+}
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table-scroll {
+  overflow-x: auto;
+  flex: 1;
+}
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table-scroll table {
+  min-width: 600px;
+}
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table-scroll table th,
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table-scroll table td {
+  padding: 18px 16px;
+  text-align: center;
+  border-bottom: 1px solid #266b45;
+  white-space: nowrap;
+}
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table-scroll table thead th {
+  background: rgba(0, 109, 65, 0.1);
+  font-weight: 500;
+}
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .p-course__price-table-scroll table tbody td {
+  background: rgba(245, 244, 236, 0.8);
+  font-weight: 500;
+}
+.p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .min-font {
+  font-size: 1.2rem;
+}
+@media (min-width: 600px) {
+  .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-table-wrapper .min-font {
+    font-size: 1.4rem;
+  }
 }
 .p-course .p-course__container .p-course__price .p-course__price-wrapper .p-course__price-note {
   list-style: none;

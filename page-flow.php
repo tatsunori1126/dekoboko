@@ -50,7 +50,7 @@
                                 <div class="p-flow__content">
                                     <h3 class="p-flow__title">お問い合わせ</h3>
                                     <div class="p-flow__text-wrapper">
-                                        <p class="p-flow__text">まずはお気軽にお問い合わせください。<br><a href="#">公式LINE</a> または <a href="#">専用フォーム</a> からご連絡いただけます。</p>
+                                        <p class="p-flow__text">まずはお気軽にお問い合わせください。<br><a href="https://lin.ee/ivHAxks" target="_blank">公式LINE</a> または <a href="<?php echo home_url('contact-input'); ?>">専用フォーム</a> からご連絡いただけます。</p>
                                     </div>
                                 </div>
                             </div>

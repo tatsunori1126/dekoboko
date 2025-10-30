@@ -13,11 +13,11 @@
                     </address>
                 </div>
                 <div class="p-footer__access-sns-wrapper">
-                    <a class="p-footer__access-sns-link" href="">
+                    <a class="p-footer__access-sns-link" href="https://maps.app.goo.gl/pgFzt13j8knBvFbH6" target="_blank">
                         <i class="fa-solid fa-location-dot"></i>
                         <span class="p-footer__access-sns-text">GoogleMap</span>
                     </a>
-                    <a class="p-footer__access-sns-link" href="">
+                    <a class="p-footer__access-sns-link" href="https://www.instagram.com/colpa1212?igsh=MWc5aGQ4anFsdndlcw%3D%3D&utm_source=qr" target="_blank">
                         <i class="fa-brands fa-square-instagram"></i>
                         <span class="p-footer__access-sns-text">Instagram</span>
                     </a>
@@ -25,8 +25,8 @@
                 <div class="p-footer__access-contact-wrapper">
                     <h2 class="p-footer__access-contact-title">お問い合わせ</h2>
                     <div class="p-footer__access-contact-btn-wrapper">
-                        <a class="p-footer__access-contact-link" href="">メールフォームへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
-                        <a class="p-footer__access-contact-link" href="">公式LINEへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
+                        <a class="p-footer__access-contact-link" href="<?php echo home_url('contact-input'); ?>">メールフォームへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
+                        <a class="p-footer__access-contact-link" href="https://lin.ee/ivHAxks" target="_blank">公式LINEへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -35,8 +35,8 @@
                     <h2 class="p-footer__nav-reservation-title">ご予約はこちら</h2>
                     <span class="p-footer__nav-reservation-line"></span>
                     <div class="p-footer__nav-reservation-btn-wrapper">
-                        <a class="p-footer__nav-reservation-link" href="">説明会<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
-                        <a class="p-footer__nav-reservation-link" href="">個別面談<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                        <a class="p-footer__nav-reservation-link" href="https://lin.ee/ivHAxks" target="_blank">説明会<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                        <a class="p-footer__nav-reservation-link" href="https://timerex.net/s/colpa22.1212_d4ee/ab0d6dfe" target="_blank">個別面談<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
                     </div>
                 </div>
                 <div class="p-footer__nav-menu-wrapper">
@@ -44,21 +44,21 @@
                     <div class="p-footer__nav-menu-box">
                         <ul class="p-footer__nav-menu-list">
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">デコボコとは</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('about'); ?>">デコボコとは</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">コンセプト</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('about/#concept'); ?>" data-scroll-link>コンセプト</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">教育方針</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('about/#philosophy'); ?>" data-scroll-link>教育方針</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">会社概要</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('about/#company'); ?>" data-scroll-link>会社概要</a>
                             </li>
                         </ul>
                         <ul class="p-footer__nav-menu-list">
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">アクセス</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('about/#access'); ?>" data-scroll-link>アクセス</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
                                 <a class="p-footer__nav-menu-link" href="<?php echo home_url('results'); ?>">合格実績</a>
@@ -75,7 +75,7 @@
                                 <a class="p-footer__nav-menu-link" href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="">お問い合わせ</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo home_url('contact-input'); ?>">お問い合わせ</a>
                             </li>
                         </ul>
                     </div>
@@ -86,16 +86,16 @@
                         <div class="p-footer__nav-menu-bottom-box">
                             <ul class="p-footer__nav-menu-bottom-list">
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">小学生コース</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('shougakusei'); ?>">小学生コース</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">中高生コース</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('chuukousei'); ?>">中高生コース</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">大学生・社会人コース</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('daigakuseishakaijin'); ?>">大学生・社会人コース</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">教育関係者・保護者コース</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('kyoiku-hogosha'); ?>">教育関係者・保護者コース</a>
                                 </li>
                             </ul>
                         </div>
@@ -105,16 +105,16 @@
                         <div class="p-footer__nav-menu-bottom-box">
                             <ul class="p-footer__nav-menu-bottom-list">
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">小学生</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('shougakusei/#shougakusei_price'); ?>" data-scroll-link>小学生</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">中高生</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('chuukousei/#chuukousei_price'); ?>" data-scroll-link>中高生</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">大学生・社会人</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('daigakusei-shakaijin/#daigakusei_price'); ?>" data-scroll-link>大学生・社会人</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">教育関係者・保護者</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('kyoiku-hogosha/#kyoiku_price'); ?>" data-scroll-link>教育関係者・保護者</a>
                                 </li>
                             </ul>
                         </div>
@@ -127,16 +127,16 @@
                                     <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('flow'); ?>">入塾・受講の流れ</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">よくあるご質問</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('faq'); ?>">よくあるご質問</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('reservation/#session'); ?>">説明会予約</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('reservation/#session'); ?>" data-scroll-link>説明会予約</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('reservation/#consulting'); ?>">個別相談予約</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo home_url('reservation/#consulting'); ?>" data-scroll-link>個別相談予約</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="">資料請求</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">資料請求<img class="p-footer__nav-menu-bottom-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
                                 </li>
                             </ul>
                         </div>
@@ -153,7 +153,7 @@
         <div class="mv-fixed-banner__inner">
             <div class="mv-fixed-banner__text">
                 <h2 class="mv-fixed-banner__title">自習室レンタル</h2>
-                <a href="/rental" class="mv-fixed-banner__btn">ご案内はこちら</a>
+                <a href="https://lin.ee/ivHAxks" target="_blank" class="mv-fixed-banner__btn">ご案内はこちら</a>
             </div>
             <div class="mv-fixed-banner__img">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-fixed-img.png" alt="自習室レンタル">

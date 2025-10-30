@@ -218,7 +218,7 @@
                 </div>
             </div>
             <div class="c-btn__wrapper p-top__about-more-btn-wrapper">
-                <a class="c-btn p-top__about-more-btn" href=""><img class="c-btn__circle-arrow p-top__about-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt="">デコボコをもっと知る</a>
+                <a class="c-btn p-top__about-more-btn" href="<?php echo home_url('about'); ?>"><img class="c-btn__circle-arrow p-top__about-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt="">デコボコをもっと知る</a>
             </div>
         </div>
     </section>
@@ -246,7 +246,7 @@
                                     </div>
                                     <div class="p-top__voice-slider-item-top-title-box">
                                         <h3 class="p-top__voice-slider-item-top-title">ワクワクチャレンジママ</h3>
-                                        <a class="p-top__voice-slider-item-top-course-link" href="">#DYLコース</a>
+                                        <span class="p-top__voice-slider-item-top-course-link">#DYLコース</span>
                                     </div>
                                 </div>
                                 <div class="p-top__voice-slider-item-top-star-wrapper">
@@ -270,7 +270,7 @@
                                     </div>
                                     <div class="p-top__voice-slider-item-top-title-box">
                                         <h3 class="p-top__voice-slider-item-top-title">ハンモックのんびりママ</h3>
-                                        <a class="p-top__voice-slider-item-top-course-link" href="">#FYLコース</a>
+                                        <span class="p-top__voice-slider-item-top-course-link">#FYLコース</span>
                                     </div>
                                 </div>
                                 <div class="p-top__voice-slider-item-top-star-wrapper">
@@ -294,7 +294,7 @@
                                     </div>
                                     <div class="p-top__voice-slider-item-top-title-box">
                                         <h3 class="p-top__voice-slider-item-top-title">未来プレゼンターOB</h3>
-                                        <a class="p-top__voice-slider-item-top-course-link" href="">#DYLコース</a>
+                                        <span class="p-top__voice-slider-item-top-course-link">#DYLコース</span>
                                     </div>
                                 </div>
                                 <div class="p-top__voice-slider-item-top-star-wrapper">
@@ -318,7 +318,7 @@
                                     </div>
                                     <div class="p-top__voice-slider-item-top-title-box">
                                         <h3 class="p-top__voice-slider-item-top-title">スマイル全肯定ママ</h3>
-                                        <a class="p-top__voice-slider-item-top-course-link" href="">#DYLコース</a>
+                                        <span class="p-top__voice-slider-item-top-course-link">#DYLコース</span>
                                     </div>
                                 </div>
                                 <div class="p-top__voice-slider-item-top-star-wrapper">
@@ -342,7 +342,7 @@
                                     </div>
                                     <div class="p-top__voice-slider-item-top-title-box">
                                         <h3 class="p-top__voice-slider-item-top-title">マイペースOKパパ</h3>
-                                        <a class="p-top__voice-slider-item-top-course-link" href="">#FYLコース</a>
+                                        <span class="p-top__voice-slider-item-top-course-link">#FYLコース</span>
                                     </div>
                                 </div>
                                 <div class="p-top__voice-slider-item-top-star-wrapper">
@@ -377,10 +377,10 @@
                         <h2 class="c-section__title-ja">コース・料金のご案内</h2>
                     </div>
                     <div class="p-top__guide-btn-wrapper">
-                        <a href="" class="p-top__guide-btn">小学生コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="" class="p-top__guide-btn">中高生コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="" class="p-top__guide-btn">大学生・社会人コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="" class="p-top__guide-btn">教育関係者・保護者コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo home_url('shougakusei'); ?>" class="p-top__guide-btn">小学生コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo home_url('chuukousei'); ?>" class="p-top__guide-btn">中高生コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo home_url('daigakusei-shakaijin'); ?>" class="p-top__guide-btn">大学生・社会人コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo home_url('kyoiku-hogosha'); ?>" class="p-top__guide-btn">教育関係者・保護者コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -391,13 +391,13 @@
                         <h2 class="c-section__title-ja">入塾のご案内</h2>
                     </div>
                     <div class="p-top__guide-btn-wrapper">
-                        <a href="" class="p-top__guide-btn">入塾・受講の流れ<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="" class="p-top__guide-btn">よくあるご質問<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="" class="p-top__guide-btn">説明会について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="" class="p-top__guide-btn">個別相談について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo home_url('flow'); ?>" class="p-top__guide-btn">入塾・受講の流れ<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo home_url('faq'); ?>" class="p-top__guide-btn">よくあるご質問<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo home_url('reservation/#session'); ?>" class="p-top__guide-btn">説明会について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo home_url('reservation/#consulting'); ?>" class="p-top__guide-btn">個別相談について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
                     </div>
                     <div class="p-top__guide-link-wrapper">
-                        <a href="" class="p-top__guide-link">資料請求<img class="p-top__guide-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
+                        <a href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="p-top__guide-link">資料請求<img class="p-top__guide-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
                     </div>
                 </div>
                 <div class="p-top__guide-img-wrapper">

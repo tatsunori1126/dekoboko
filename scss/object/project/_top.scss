@@ -68,7 +68,7 @@
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
-                        animation: rotateText 12s linear infinite; /* 無限回転 */
+                        animation: rotateText 20s linear infinite; /* 無限回転 */
                         transform-origin: 50% 50%; /* 中心を基準に回転 */
                     }
                     .mv-scroll__arrow {
@@ -822,9 +822,12 @@
                         display: flex;
                         flex-direction: column;
                         row-gap: 25px;
-                        height: -webkit-fill-available; /* Safari, Chrome, Edge */
-                        height: -moz-available;         /* Firefox用（非標準） */
-                        height: fill-available;         /* 仕様上の標準（将来用） */
+                        height: auto; // ← fill-availableを削除
+                        min-height: 100%; // ← 安全に高さを確保
+                        box-sizing: border-box; // ← Safari補正
+                        // height: -webkit-fill-available; /* Safari, Chrome, Edge */
+                        // height: -moz-available;         /* Firefox用（非標準） */
+                        // height: fill-available;         /* 仕様上の標準（将来用） */
                         /* ▼ 二重グリッド構造（細かい線＋太い線） */
                         background-image:
                         /* 細かいグリッド（薄い） */

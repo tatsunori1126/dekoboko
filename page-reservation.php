@@ -49,7 +49,7 @@
                             <h3 class="p-reservation__column-text-title">DEKObokoの想いや<br>学びのスタイルを、<br>まずは説明会で体感ください。</h3>
                             <p class="p-reservation__column-text">DEKObokoの雰囲気や学びのスタイルを、まずは知っていただくために説明会を開催しています。教室の環境やカリキュラムについて、実際にご覧いただきながらご説明します。「自分に合っているかな？」という疑問を解消する場として、お気軽にご参加ください。</p>
                             <div class="c-btn__wrapper p-reservation__btn-wrapper">
-                                <a class="c-btn p-reservation__link" href="">LINE予約へ進む<img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
+                                <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">LINE予約へ進む<img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="c-btn__wrapper p-reservation__btn-wrapper">
-                        <a class="c-btn p-reservation__link" href="">LINEで説明会の予約へ進む<img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
+                        <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">LINEで説明会の予約へ進む<img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
                     </div>
                 </div>
     
@@ -97,7 +97,7 @@
                             <h3 class="p-reservation__column-text-title">一人ひとりに合わせた学び方を、<br>じっくりとご相談いただけます。</h3>
                             <p class="p-reservation__column-text">より具体的にご相談されたい方には、個別面談をご用意しています。<br>お子さまの状況やご家庭のご希望をお伺いし、一人ひとりに合わせた学び方をご提案いたします。不登校・発達特性・進学など、どんなテーマでも安心してお話しください。</p>
                             <div class="c-btn__wrapper p-reservation__btn-wrapper">
-                                <a class="c-btn p-reservation__link" href="">LINE予約へ進む<img class="c-btn__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
+                                <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">LINE予約へ進む<img class="c-btn__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="c-btn__wrapper p-reservation__btn-wrapper">
-                        <a class="c-btn p-reservation__link" href="">LINEで説明会の予約へ進む<img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
+                        <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">LINEで説明会の予約へ進む<img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
                     </div>
                 </div>
             </div>
