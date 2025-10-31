@@ -47,6 +47,8 @@
             }
             .p-facility__title-wrapper {
                 text-align: center;
+                opacity: 0;
+                visibility: hidden;
                 .p-facility__page-title-en {
                     font-size: 1.5rem;
                 }
@@ -61,6 +63,8 @@
                 }
                 .p-facility__img-wrapper {
                     width: 88%;
+                    opacity: 0;
+                    visibility: hidden;
                     @include mixin.mid {
                         width: 41.67%;
                         margin-top: -11%;
@@ -97,6 +101,8 @@
                             display: flex;
                             align-items: center;
                             width: fit-content;
+                            opacity: 0;
+                            visibility: hidden;
                             @include mixin.mid {
                                 font-size: 3rem;
                             }
@@ -193,8 +199,16 @@
                                         width: 150px;
                                         border-radius: 18px;
                                         background: #266b45;
+                                        transition: opacity 0.3s ease;
+                                        &:hover {
+                                            opacity: 0.8;
+                                            .fa-chevron-right {
+                                                transform: translateX(3px);
+                                            }
+                                        }
                                         .fa-chevron-right {
                                             font-size: 1.1rem;
+                                            transition: transform 0.3s ease;
                                         }
                                     }
                                 }
@@ -246,6 +260,13 @@
                 column-gap: 30px;
                 width: fit-content;
                 border-radius: 27px;
+                .p-facility__rental-link-circle-bg {
+                    width: 30px;
+                    height: 30px;
+                    .p-facility__circle-arrow {
+                        width: 15px;
+                    }
+                }
             }
             .p-facility__rental-box {
                 padding: 0 6.67%;
@@ -427,17 +448,22 @@
                             border-radius: 42px;
                             height: 85px;
                         }
-                        .p-facility__circle-arrow {
+                        &:hover {
+                            .p-facility__rental-user-link-circle-bg {
+                                transform: translateY(-50%) translateX(5px);
+                            }
+                        }
+                        .p-facility__rental-user-link-circle-bg {
+                            width: 38px;
+                            height: 38px;
                             position: absolute;
                             top: 50%;
-                            width: 38px;
                             transform: translateY(-50%);
-                            height: auto;
                             right: 15px;
-                            vertical-align: middle;
+                            transition: transform 0.3s ease;
                             @include mixin.mid {
-                                right: 20px;
                                 width: 45px;
+                                height: 45px;
                             }
                         }
                     }

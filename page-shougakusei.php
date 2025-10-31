@@ -38,29 +38,29 @@
         </div>
         <div class="p-course__container">
             <div class="p-course__column-wrapper">
-                <div class="p-course__column-img-wrapper">
+                <div class="p-course__column-img-wrapper fadeUp">
                     <img class="p-course__column-img" src="<?php echo get_template_directory_uri(); ?>/images/course/shougakusei/sub-img.png" alt="">
                 </div>
                 <div class="p-course__column-main-wrapper">
                     <h2 class="p-course__column-main-title-wrapper">
-                        <span class="p-course__column-main-title">「やってみたい！」が、</span>
-                        <span class="p-course__column-main-title">未来を切りひらく</span>
-                        <span class="p-course__column-main-title">大切な第一歩。</span>
+                        <span class="p-course__column-main-title fadeUp">「やってみたい！」が、</span>
+                        <span class="p-course__column-main-title fadeUp">未来を切りひらく</span>
+                        <span class="p-course__column-main-title fadeUp">大切な第一歩。</span>
                     </h2>
                     <div class="p-course__column-main-icon-wrapper">
-                        <h3 class="p-course__column-main-icon-title">安心できる居場所で<br>ワクワクを広げながら、<br>「学びたい！」を育むコース</h3>
-                        <div class="p-course__column-main-icon-img-wrapper">
+                        <h3 class="p-course__column-main-icon-title fadeUp">安心できる居場所で<br>ワクワクを広げながら、<br>「学びたい！」を育むコース</h3>
+                        <div class="p-course__column-main-icon-img-wrapper fadeUp">
                             <img class="p-course__column-main-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/course/shougakusei/icon.png" alt="">
                         </div>
                     </div>
-                    <p class="p-course__column-main-text">小学生の毎日は、新しい発見や感情の出会いであふれています。挑戦してうまくいった喜びもあれば、失敗して悔しい思いをする日もあります。DEKObokoでは、その一つひとつを大切に受け止め、学びと成長につなげていきます。<br>主にFYLコースで受け入れております。FYLコースでは宿題や自習のサポートだけでなく、遊びや仲間との関わりも大切にしながら「学ぶって楽しい」と思える体験を重ねます。<br>「できた！」の達成感も、「今日はちょっと休みたい」の気持ちも、その子にとって大切な時間。DEKObokoは、子どもの個性に寄り添いながら、安心できる学びの毎日を支えます。</p>
-                    <p class="p-course__column-sub-text">※DYLコースでは原則小学生の受け入れは行っておりませんが、ご希望の方はぜひご相談ください。</p>
-                    <div class="p-course__btn-container">
+                    <p class="p-course__column-main-text fadeUp">小学生の毎日は、新しい発見や感情の出会いであふれています。挑戦してうまくいった喜びもあれば、失敗して悔しい思いをする日もあります。DEKObokoでは、その一つひとつを大切に受け止め、学びと成長につなげていきます。<br>主にFYLコースで受け入れております。FYLコースでは宿題や自習のサポートだけでなく、遊びや仲間との関わりも大切にしながら「学ぶって楽しい」と思える体験を重ねます。<br>「できた！」の達成感も、「今日はちょっと休みたい」の気持ちも、その子にとって大切な時間。DEKObokoは、子どもの個性に寄り添いながら、安心できる学びの毎日を支えます。</p>
+                    <p class="p-course__column-sub-text fadeUp">※DYLコースでは原則小学生の受け入れは行っておりませんが、ご希望の方はぜひご相談ください。</p>
+                    <div class="p-course__btn-container fadeUp">
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url('shougakusei/#shougakusei_course'); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo esc_url( home_url( '/shougakusei/#shougakusei_course' ) ); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
                         </div>
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url('shougakusei/#shougakusei_price'); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo esc_url( home_url( '/shougakusei/#shougakusei_price' ) ); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
                         </div>
                     </div>
                 </div>
@@ -214,10 +214,10 @@
                                 <?php endif; ?>
                                 <div class="p-course__bottom-btn-container">
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url('shougakusei/#shougakusei_price'); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/shougakusei/#shougakusei_price' ) ); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
                                     </div>
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url('reservation/#consulting'); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
                                     </div>
                                 </div>
                                 <?php endif; ?>

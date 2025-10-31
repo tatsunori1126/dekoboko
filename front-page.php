@@ -29,7 +29,7 @@
                         </picture>
                     </div>
                     <div class="p-top__mv__main-title-wrapper">
-                        <h1 class="p-top__mv__main-title-box">
+                        <h1 class="p-top__mv__main-title-box first-fadein">
                             <span class="p-top__mv__main-title">学びも、</span>
                             <span class="p-top__mv__main-title">関わりも、</span>
                             <span class="p-top__mv__main-title">ここで育つ。</span>
@@ -44,11 +44,11 @@
     <section class="p-top__news">
         <div class="c-inner">
             <div class="p-top__news-section-title-category-container">
-                <div class="c-section__title-wrapper">
+                <div class="c-section__title-wrapper fadeUp">
                     <span class="c-section__title-en">News</span>
                     <h2 class="c-section__title-ja">新着情報</h2>
                 </div>
-                <ul class="p-top__news-category-container">
+                <ul class="p-top__news-category-container fadeUp">
                     <!-- すべて（アーカイブページへのリンク） -->
                     <li>
                         <a class="p-news__category-link p-news__category-link-all<?php if (is_post_type_archive('news')) echo ' active'; ?>" href="<?php echo get_post_type_archive_link('news'); ?>">
@@ -73,7 +73,7 @@
                     ?>
                 </ul>
             </div>
-            <div class="p-top__news-contents-container">
+            <div class="p-top__news-contents-container fadeUp">
                 <?php
                     $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     $args = array(
@@ -90,7 +90,7 @@
                     <a class="p-top__news-contents-wrapper" href="<?php the_permalink(); ?>">
                         <div class="p-top__news-contents-img-wrapper">
                             <?php if (has_post_thumbnail()) : ?>
-                                <?php the_post_thumbnail('full', array('class' => 'p-top__news-contents-img')); ?>
+                                <?php the_post_thumbnail('news-thumb', array('class' => 'p-top__news-contents-img')); ?>
                             <?php else : ?>
                                 <?php
                                 // 🔹 NoImage選択メタデータを取得
@@ -100,7 +100,7 @@
                                 }
                                 $noimage_path = get_template_directory_uri() . '/images/noimage/' . $selected_noimage . '.png';
                                 ?>
-                                <img src="<?php echo esc_url($noimage_path); ?>" alt="<?php the_title_attribute(); ?>" class="p-top__news-contents-img no-image" />
+                                <img src="<?php echo esc_url($noimage_path); ?>" alt="<?php the_title_attribute(); ?>" class="p-top__news-contents-img no-image" width="436" height="326" />
                             <?php endif; ?>
                         </div>
 
@@ -129,8 +129,8 @@
                 ?>
                 <?php wp_reset_postdata(); ?>
             </div>
-            <div class="c-btn__wrapper p-top__news-more-btn-wrapper">
-                <a class="c-btn p-top__news-more-btn" href="<?php echo get_post_type_archive_link('news'); ?>">記事一覧へ<img class="c-btn__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt=""></a>
+            <div class="c-btn__wrapper p-top__news-more-btn-wrapper fadeUp">
+                <a class="c-btn p-top__news-more-btn" href="<?php echo get_post_type_archive_link('news'); ?>">記事一覧へ<span class="c-btn__circle-bg p-top__news-more-btn-circle-bg"><img class="c-btn__circle-arrow p-top__news-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
             </div>
         </div>
     </section>
@@ -140,23 +140,23 @@
         <div class="p-top__message-bg"></div> <!-- 背景画像・テクスチャ -->
         <div class="p-top__message-column-wrapper">
             <div class="p-top__message-images-left-wrapper">
-                <picture class="p-top__message-image p-top__message-image-left01">
+                <picture class="p-top__message-image p-top__message-image-left01 fadeUp">
                     <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img01.png" media="(min-width: 800px)">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img04.png" alt="">
                 </picture>
-                <picture class="p-top__message-image p-top__message-image-left02">
+                <picture class="p-top__message-image p-top__message-image-left02 fadeUp">
                     <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img02.png" media="(min-width: 800px)">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img03.png" alt="">
                 </picture>
             </div>
             <div class="p-top__message-text-wrapper">
-                <p class="p-top__message-text p-top__message-text01">ここは、学習習慣や思考力、<br class="c-sp-hidden">コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。</p>
-                <p class="p-top__message-text p-top__message-text02">Co-learning park DEKObokoは、<br class="c-sp-hidden">点数や偏差値ではなく、<br class="c-sp-hidden">「その人らしさ」を大切にする学習塾です。</p>
-                <p class="p-top__message-text p-top__message-text03">不登校や学校に行けない時期があっても、<br class="c-sp-hidden">安心して学びを続けられる場所でありたい。</p>
-                <p class="p-top__message-text p-top__message-text04">ここで育むのは、未来へつながる力。<br class="c-sp-hidden">さあ、自分らしい歩みをここからはじめよう。</p>
+                <p class="p-top__message-text p-top__message-text01 fadeUp">ここは、学習習慣や思考力、<br class="c-sp-hidden">コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。</p>
+                <p class="p-top__message-text p-top__message-text02 fadeUp">Co-learning park DEKObokoは、<br class="c-sp-hidden">点数や偏差値ではなく、<br class="c-sp-hidden">「その人らしさ」を大切にする学習塾です。</p>
+                <p class="p-top__message-text p-top__message-text03 fadeUp">不登校や学校に行けない時期があっても、<br class="c-sp-hidden">安心して学びを続けられる場所でありたい。</p>
+                <p class="p-top__message-text p-top__message-text04 fadeUp">ここで育むのは、未来へつながる力。<br class="c-sp-hidden">さあ、自分らしい歩みをここからはじめよう。</p>
             </div>
             <div class="p-top__message-title-container">
-                <div class="p-top__message-title-wrapper">
+                <div class="p-top__message-title-wrapper fadeUp">
                     <h2 class="p-top__message-title-box">
                         <span class="p-top__message-title p-top__message-title01">明日が来るのが、</span>
                         <span class="p-top__message-title p-top__message-title02">ちょっと楽しみになる</span>
@@ -165,11 +165,11 @@
                     <span class="p-top__message-title-en">Message</span>
                 </div>
                 <div class="p-top__message-images-right-wrapper">
-                    <picture class="p-top__message-image p-top__message-image-right01">
+                    <picture class="p-top__message-image p-top__message-image-right01 fadeUp">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img03.png" media="(min-width: 1000px)">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img01.png" alt="">
                     </picture>
-                    <picture class="p-top__message-image p-top__message-image-right02">
+                    <picture class="p-top__message-image p-top__message-image-right02 fadeUp">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/images/top/message-img04.png" media="(min-width: 1000px)">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/top/message-img02.png" alt="">
                     </picture>
@@ -181,35 +181,35 @@
     <!-- about -->
     <section class="p-top__about">
         <!-- DEKObokoイラスト -->
-        <div class="p-top__message-dekoboko-main-img-wrapper">
+        <div class="p-top__message-dekoboko-main-img-wrapper fadeUp">
             <img class="p-top__message-dekoboko-main-img" src="<?php echo get_template_directory_uri(); ?>/images/top/main-dekoboko-img.png" alt="">
         </div>
         <div class="p-top__about-bg"></div>
         <div class="p-top__about-container">
-            <h2 class="p-top__about-title">その想い、<br class="c-pc-hidden">デコボコでカタチに。</h2>
+            <h2 class="p-top__about-title fadeUp">その想い、<br class="c-pc-hidden">デコボコでカタチに。</h2>
             <div class="p-top__about-contents-wrapper">
-                <div class="p-top__about-wrapper">
+                <div class="p-top__about-wrapper fadeUp">
                     <img class="p-top__about-number p-top__about-number01" src="<?php echo get_template_directory_uri(); ?>/images/top/about-number01.png" alt="01">
                     <h3 class="p-top__about-item-title">安心して学べる<br>第3の居場所がほしい</h3>
                     <div class="p-top__about-item-img-wrapper">
                         <img class="p-top__about-item-img p-top__about-item-img01" src="<?php echo get_template_directory_uri(); ?>/images/top/about-img01.png" alt="">
                     </div>
                 </div>
-                <div class="p-top__about-wrapper">
+                <div class="p-top__about-wrapper fadeUp">
                     <img class="p-top__about-number p-top__about-number02" src="<?php echo get_template_directory_uri(); ?>/images/top/about-number02.png" alt="02">
                     <h3 class="p-top__about-item-title">がんばらなくても<br>続けられる学びがしたい</h3>
                     <div class="p-top__about-item-img-wrapper">
                         <img class="p-top__about-item-img p-top__about-item-img02" src="<?php echo get_template_directory_uri(); ?>/images/top/about-img02.png" alt="">
                     </div>
                 </div>
-                <div class="p-top__about-wrapper">
+                <div class="p-top__about-wrapper fadeUp">
                     <img class="p-top__about-number p-top__about-number03" src="<?php echo get_template_directory_uri(); ?>/images/top/about-number03.png" alt="03">
                     <h3 class="p-top__about-item-title">仲間と出会い、<br>自分の強みを見つけたい</h3>
                     <div class="p-top__about-item-img-wrapper">
                         <img class="p-top__about-item-img p-top__about-item-img03" src="<?php echo get_template_directory_uri(); ?>/images/top/about-img03.png" alt="">
                     </div>
                 </div>
-                <div class="p-top__about-wrapper">
+                <div class="p-top__about-wrapper fadeUp">
                     <img class="p-top__about-number p-top__about-number04" src="<?php echo get_template_directory_uri(); ?>/images/top/about-number04.png" alt="04">
                     <h3 class="p-top__about-item-title">夢を叶える<br>力をつけたい</h3>
                     <div class="p-top__about-item-img-wrapper">
@@ -217,16 +217,16 @@
                     </div>
                 </div>
             </div>
-            <div class="c-btn__wrapper p-top__about-more-btn-wrapper">
-                <a class="c-btn p-top__about-more-btn" href="<?php echo home_url('about'); ?>"><img class="c-btn__circle-arrow p-top__about-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/btn-circle-arrow.png" alt="">デコボコをもっと知る</a>
+            <div class="c-btn__wrapper p-top__about-more-btn-wrapper fadeUp">
+                <a class="c-btn p-top__about-more-btn" href="<?php echo esc_url( home_url( '/about' ) ); ?>"><span class="c-btn__circle-bg p-top__about-more-btn-circle-bg"><img class="c-btn__circle-arrow p-top__about-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span>デコボコをもっと知る</a>
             </div>
         </div>
     </section>
 
     <!-- voice -->
     <section class="p-top__voice">
-        <h2 class="p-top__voice-title">生徒さん・保護者さまの声</h2>
-        <div class="p-top__voice-slider-container">
+        <h2 class="p-top__voice-title fadeUp">生徒さん・保護者さまの声</h2>
+        <div class="p-top__voice-slider-container fadeUp">
             <div class="p-top__voice-slider-arrow-wrapper">
                 <div class="swiper-button-prev p-top__voice-prev">
                     <img class="p-top__voice-prev-img" src="<?php echo get_template_directory_uri(); ?>/images/top/voice-slider-arrow-left.png" alt="前へ">
@@ -368,39 +368,39 @@
         <div class="p-top__guide-bg"></div>
         <div class="p-top__guide-container">
             <div class="p-top__guide-wrapper">
-                <div class="p-top__guide-img-wrapper">
+                <div class="p-top__guide-img-wrapper fadeUp">
                     <img class="p-top__guide-img" src="<?php echo get_template_directory_uri(); ?>/images/top/guide-img01.png" alt="">
                 </div>
                 <div class="p-top__guide-btn-container">
-                    <div class="c-section__title-wrapper">
+                    <div class="c-section__title-wrapper fadeUp">
                         <span class="c-section__title-en">Course Info</span>
                         <h2 class="c-section__title-ja">コース・料金のご案内</h2>
                     </div>
-                    <div class="p-top__guide-btn-wrapper">
-                        <a href="<?php echo home_url('shougakusei'); ?>" class="p-top__guide-btn">小学生コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo home_url('chuukousei'); ?>" class="p-top__guide-btn">中高生コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo home_url('daigakusei-shakaijin'); ?>" class="p-top__guide-btn">大学生・社会人コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo home_url('kyoiku-hogosha'); ?>" class="p-top__guide-btn">教育関係者・保護者コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                    <div class="p-top__guide-btn-wrapper fadeUp">
+                        <a href="<?php echo esc_url( home_url( '/shougakusei' ) ); ?>" class="p-top__guide-btn">小学生コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/chuukousei' ) ); ?>" class="p-top__guide-btn">中高生コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/daigakusei-shakaijin' ) ); ?>" class="p-top__guide-btn">大学生・社会人コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/kyoiku-hogosha' ) ); ?>" class="p-top__guide-btn">教育関係者・保護者コース<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="p-top__guide-wrapper p-top__guide-wrapper-reverse">
                 <div class="p-top__guide-btn-container p-top__guide-btn-container-reverse">
-                    <div class="c-section__title-wrapper">
+                    <div class="c-section__title-wrapper fadeUp">
                         <span class="c-section__title-en">Admission Info</span>
                         <h2 class="c-section__title-ja">入塾のご案内</h2>
                     </div>
-                    <div class="p-top__guide-btn-wrapper">
-                        <a href="<?php echo home_url('flow'); ?>" class="p-top__guide-btn">入塾・受講の流れ<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo home_url('faq'); ?>" class="p-top__guide-btn">よくあるご質問<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo home_url('reservation/#session'); ?>" class="p-top__guide-btn">説明会について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo home_url('reservation/#consulting'); ?>" class="p-top__guide-btn">個別相談について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                    <div class="p-top__guide-btn-wrapper fadeUp">
+                        <a href="<?php echo esc_url( home_url( '/flow' ) ); ?>" class="p-top__guide-btn">入塾・受講の流れ<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="p-top__guide-btn">よくあるご質問<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" class="p-top__guide-btn">説明会について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" class="p-top__guide-btn">個別相談について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
                     </div>
-                    <div class="p-top__guide-link-wrapper">
+                    <div class="p-top__guide-link-wrapper fadeUp">
                         <a href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="p-top__guide-link">資料請求<img class="p-top__guide-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
                     </div>
                 </div>
-                <div class="p-top__guide-img-wrapper">
+                <div class="p-top__guide-img-wrapper fadeUp">
                     <img class="p-top__guide-img" src="<?php echo get_template_directory_uri(); ?>/images/top/guide-img02.png" alt="">
                 </div>
             </div>

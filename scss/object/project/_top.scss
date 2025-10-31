@@ -51,6 +51,7 @@
                 position: absolute;
                 top: 80%;
                 left: 6.67%;
+                z-index: 1;
                 @include mixin.mid {
                     left: 0;
                     width: 112px;
@@ -135,6 +136,17 @@
                     font-size: 3.5rem;
                 }
             }
+            .p-top__mv__main-title .char {
+                display: inline-block;
+                opacity: 0;
+                transform: translateY(5px);
+            }
+            /* GSAP開始前に一瞬でも見えないようにする */
+            .p-top__mv__img-wrapper,
+            .p-top__mv__main-title-wrapper {
+                opacity: 0;
+                visibility: hidden;
+            }
         }
     }
 }
@@ -159,6 +171,8 @@
             flex-wrap: wrap;
             row-gap: 20px;
             column-gap: 35px;
+            opacity: 0;
+            visibility: hidden;
             @include mixin.mid {
                 column-gap: 50px;
             }
@@ -168,6 +182,10 @@
                     letter-spacing: 0.14em;
                     font-weight: 500;
                     color: color.$textColor;
+                    transition: color 0.3s ease;
+                    &:hover {
+                        color: #388d60;
+                    }
                 }
                 .p-news__category-link-all {
                     color: #388d60;
@@ -183,17 +201,32 @@
         grid-template-columns: 45% 45%;
         margin: 43px 0;
         row-gap: 30px;
+        opacity: 0;
+        visibility: hidden;
         @include mixin.mid {
             grid-template-columns: 21.5% 21.5% 21.5% 21.5%;
             row-gap: 0;
         }
         .p-top__news-contents-wrapper {
-            display: flex;
+            display: none;
             flex-direction: column;
             row-gap: 18px;
             width: 100%;
+            transition: all 0.3s ease;
+            // 🔹 1件目と2件目は常に表示（スマホで2件）
+            &:nth-child(-n + 2) {
+                display: flex;
+            }
+            // 🔹 タブレット以上では4件表示
             @include mixin.mid {
+                display: flex; // まず全件表示
                 row-gap: 30px;
+                &:nth-child(n + 5) {
+                display: none; // 5件目以降は非表示（4件まで）
+                }
+            }
+            &:hover {
+                opacity: 0.8;
             }
             .p-top__news-contents-img-wrapper {
                 width: 100%;
@@ -273,6 +306,13 @@
             width: fit-content;
             column-gap: 20px;
             padding: 0 11px 0 30px;
+            .p-top__news-more-btn-circle-bg {
+                width: 30px;
+                height: 30px;
+                .p-top__news-arrow {
+                    width: 13px;
+                }
+            }
         }
     }
 }
@@ -281,7 +321,7 @@
 .p-top__message {
     position: relative;
     z-index: 0;
-    margin-top: -6%;
+    margin-top: -4%;
     .p-top__message-bg {
         position: absolute;
         width: 100%;
@@ -686,22 +726,20 @@
                     margin: 0 auto;
                 }
                 @include mixin.mid {
-                    justify-content: flex-start;
-                    width: fit-content;
                     column-gap: 30px;
                     height: 85px;
-                    padding: 0 62px 0 23px;
+                    padding: 0 0 0 23px;
                     border-radius: 43px;
                     font-size: 1.8rem;
                 }
-                .p-top__about-btn-circle-arrow {
+                .p-top__about-more-btn-circle-bg {
                     width: 40px;
-                    height: auto;
+                    height: 40px;
                     position: absolute;
                     left: 20px;
                     @include mixin.mid {
                         width: 48px;
-                        position: static;
+                        height: 48px;
                     }
                 }
             }
@@ -1040,6 +1078,7 @@
                         font-weight: 500;
                         font-size: 1.7rem;
                         color: color.$textColor;
+                        transition: color 0.3s ease;
                         @include mixin.mid {
                             font-size: 2rem;
                             height: 78px;
@@ -1049,6 +1088,13 @@
                         .p-top__guide-arrow {
                             width: 22px;
                             height: auto;
+                            transition: transform 0.3s ease;
+                        }
+                        &:hover {
+                            color: #388d60;
+                            .p-top__guide-arrow {
+                                transform: translateX(5px);
+                            }
                         }
                     }
                 }
@@ -1064,10 +1110,14 @@
                         border-bottom: 1px solid color.$textColor;
                         width: fit-content;
                         padding: 0 0 5px;
+                        transition: color 0.3s ease;
                         .p-top__guide-link-icon {
                             width: 16px;
                             height: auto;
                             vertical-align: middle;
+                        }
+                        &:hover {
+                            color: #388d60;
                         }
                     }
                 }

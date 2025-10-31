@@ -79,9 +79,16 @@
                             display: flex;
                             align-items: stretch;
                             cursor: pointer;
-                            padding: 0 25px 0 0;
+                            padding: 0 35px 0 0;
                             transition: all 0.3s;
                             position: relative;
+                            transition: opacity 0.3s ease;
+                            @include mixin.mid {
+                                padding: 0 25px 0 0;
+                            }
+                            &:hover {
+                                opacity: 0.8;
+                            }
                             .p-faq__question-icon {
                                 font-size: 2.2rem;
                                 font-weight: 500;
@@ -99,13 +106,13 @@
                             }
                             .p-faq__question-text-sub {
                                 text-align: left;
-                                font-size: 1.8rem;
                                 font-weight: 500;
                                 line-height: 1.8;
                                 padding: 15px 0 15px 20px;
                                 letter-spacing: 0.14em;
                                 color: color.$textColor;
                                 width: 90%;
+                                font-size: 1.6rem;
                                 @include mixin.mid {
                                     font-size: 2.1rem;
                                     line-height: 2;
@@ -118,12 +125,14 @@
                                 text-indent: 100%;
                                 white-space: nowrap;
                                 overflow: hidden;
-                                width: 21px;
-                                height: 21px;
+                                width: 15px;
+                                height: 15px;
                                 right: 15px;
                                 top: 50%;
                                 transform: translateY(-50%);
                                 @include mixin.mid {
+                                    width: 21px;
+                                    height: 21px;
                                     right: 25px;
                                 }
                             }
@@ -132,15 +141,21 @@
                                 content: '';
                                 position: absolute;
                                 width: 100%;
-                                height: 3px;
+                                height: 2px;
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%, -50%);
                                 background: #266b45;
+                                @include mixin.mid {
+                                    height: 3px;
+                                }
                             }
                             .toggle-btn:before {
-                                width: 3px;
+                                width: 2px;
                                 height: 100%;
+                                @include mixin.mid {
+                                    width: 3px;
+                                }
                             }
                             .toggle-btn.open::before {
                                 opacity: 0;
@@ -173,13 +188,14 @@
                                     width: 90%;
                                     text-align: left;
                                     font-weight: 500;
-                                    font-size: 1.5rem;
+                                    font-size: 1.4rem;
                                     line-height: 1.8;
                                     letter-spacing: 0.14em;
                                     color: color.$textColor;
                                     padding: 15px 0 15px 20px;
                                     @include mixin.mid {
                                         line-height: 2;
+                                        font-size: 1.6rem;
                                         padding: 20px 0 20px 30px;
                                     }
                                     a {

@@ -50,7 +50,7 @@
                     // ステータスをリセット
                     unset($_SESSION['cf7_status']);
                     ?>
-                    <a class="p-contact__complete-toppage" href="<?php echo home_url(); ?>">TOPに戻る</a>
+                    <a class="p-contact__complete-toppage" href="<?php echo esc_url( home_url( '/' ) ); ?>">TOPに戻る</a>
                 </div>
             </div>
         </div>

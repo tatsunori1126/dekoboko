@@ -40,6 +40,8 @@
         .p-reservation__wrapper {
             .p-reservation__title-wrapper {
                 text-align: center;
+                opacity: 0;
+                visibility: hidden;
                 .p-reservation__page-title-en {
                     font-size: 1.5rem;
                 }
@@ -53,6 +55,8 @@
                     justify-content: space-between;
                 }
                 .p-reservation__column-img-wrapper {
+                    opacity: 0;
+                    visibility: hidden;
                     @include mixin.sub {
                         width: 60%;
                         margin: 0 auto;
@@ -78,6 +82,8 @@
                         font-weight: 500;
                         color: #266b45;
                         line-height: 1.83;
+                        opacity: 0;
+                        visibility: hidden;
                         @include mixin.mid {
                             font-size: 2.8rem;
                         }
@@ -105,11 +111,16 @@
                                 padding: 0 12px 0 44px;
                                 width: fit-content;
                             }
-                            .p-reservation__link-arrow {
+                            .p-reservation__link-circle-bg {
                                 position: absolute;
                                 right: 15px;
+                                width: 30px;
+                                height: 30px;
                                 @include mixin.mid {
                                     position: static;
+                                }
+                                .p-reservation__link-arrow {
+                                    width: 12px;
                                 }
                             }
                         }
@@ -254,13 +265,20 @@
                         padding-left: 0;
                         border-radius: 42px;
                     }
-                    .p-reservation__circle-arrow {
+                    .p-reservation__link-circle-bg {
                         position: absolute;
                         right: 15px;
                         width: 30px;
-                        height: auto;
+                        height: 30px;
                         @include mixin.mid {
                             width: 45px;
+                            height: 45px;
+                        }
+                    }
+                    .p-reservation__circle-arrow {
+                        width: 13px;
+                        @include mixin.mid {
+                            width: 18px;
                         }
                     }
                 }

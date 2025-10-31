@@ -4,6 +4,8 @@
 
 // トップページセクションタイトル
 .c-section__title-wrapper {
+    opacity: 0;
+    visibility: hidden;
     .c-section__title-en {
         font-size: 1.5rem;
         letter-spacing: 0.14em;

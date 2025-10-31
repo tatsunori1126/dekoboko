@@ -38,28 +38,28 @@
         </div>
         <div class="p-course__container">
             <div class="p-course__column-wrapper">
-                <div class="p-course__column-img-wrapper">
+                <div class="p-course__column-img-wrapper fadeUp">
                     <img class="p-course__column-img" src="<?php echo get_template_directory_uri(); ?>/images/course/daigakusei-shakaijin/sub-img.png" alt="">
                 </div>
                 <div class="p-course__column-main-wrapper">
                     <h2 class="p-course__column-main-title-wrapper">
-                        <span class="p-course__column-main-title">集中したい日も、</span>
-                        <span class="p-course__column-main-title">リラックスしたい日も。</span>
-                        <span class="p-course__column-main-title">自分のスタイルで学べる居場所を。</span>
+                        <span class="p-course__column-main-title fadeUp">集中したい日も、</span>
+                        <span class="p-course__column-main-title fadeUp">リラックスしたい日も。</span>
+                        <span class="p-course__column-main-title fadeUp">自分のスタイルで学べる居場所を。</span>
                     </h2>
                     <div class="p-course__column-main-icon-wrapper">
-                        <h3 class="p-course__column-main-icon-title">自習室を開放し、<br>学びを支援するコース。<br>TOEICやビジネス講座も公開予定。</h3>
-                        <div class="p-course__column-main-icon-img-wrapper">
+                        <h3 class="p-course__column-main-icon-title fadeUp">自習室を開放し、<br>学びを支援するコース。<br>TOEICやビジネス講座も公開予定。</h3>
+                        <div class="p-course__column-main-icon-img-wrapper fadeUp">
                             <img class="p-course__column-main-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/course/daigakusei-shakaijin/icon.png" alt="">
                         </div>
                     </div>
-                    <p class="p-course__column-main-text">大学生や社会人にとって、学び続けることは未来を広げる大切な要素です。<br>DEKObokoでは、資格取得や就職・転職活動、研究やレポート作成など、一人ひとりの目標に合った学び場を提供します。<br>集中して取り組めるスペースと、交流や相談ができるスペースの両方を備えているため、その日の気分や目的に合わせて活用可能。また、他の利用者や講師、塾の中高生の生徒たちとの対話を通して新しい視点やアイデアに触れることで、今までとは違った考えや感情とも出会えるかも。<br>DEKObokoは「学びも仕事も前に進められる場所」として、大学生・社会人の挑戦を応援します！</p>
-                    <div class="p-course__btn-container">
+                    <p class="p-course__column-main-text fadeUp">大学生や社会人にとって、学び続けることは未来を広げる大切な要素です。<br>DEKObokoでは、資格取得や就職・転職活動、研究やレポート作成など、一人ひとりの目標に合った学び場を提供します。<br>集中して取り組めるスペースと、交流や相談ができるスペースの両方を備えているため、その日の気分や目的に合わせて活用可能。また、他の利用者や講師、塾の中高生の生徒たちとの対話を通して新しい視点やアイデアに触れることで、今までとは違った考えや感情とも出会えるかも。<br>DEKObokoは「学びも仕事も前に進められる場所」として、大学生・社会人の挑戦を応援します！</p>
+                    <div class="p-course__btn-container fadeUp">
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url('daigakusei-shakaijin/#daigakusei_course'); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo esc_url( home_url( '/daigakusei-shakaijin/#daigakusei_course' ) ); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
                         </div>
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url('daigakusei-shakaijin/#daigakusei_price'); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo esc_url( home_url( '/daigakusei-shakaijin/#daigakusei_price' ) ); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
                         </div>
                     </div>
                 </div>
@@ -213,10 +213,10 @@
                                 <?php endif; ?>
                                 <div class="p-course__bottom-btn-container">
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url('daigakusei-shakaijin/#daigakusei_price'); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/daigakusei-shakaijin/#daigakusei_price' ) ); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
                                     </div>
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url('reservation/#consulting'); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
                                     </div>
                                 </div>
                                 <?php endif; ?>

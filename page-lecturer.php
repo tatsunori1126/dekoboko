@@ -33,7 +33,7 @@
                 </div>
             <?php endif; ?>
             <div class="p-lecturer__container">
-                <div class="p-lecturer__wrapper">
+                <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
                         <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
                         <span class="p-lecturer__nickname">タッキー/あやっち/あやてぃー</span>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-lecturer__wrapper">
+                <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
                         <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
                         <span class="p-lecturer__nickname">りょーちん</span>
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-lecturer__wrapper">
+                <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
                         <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
                         <span class="p-lecturer__nickname">あんちゃん</span>
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-lecturer__wrapper">
+                <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
                         <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
                         <span class="p-lecturer__nickname">たなかれいり</span>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-lecturer__wrapper">
+                <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
                         <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
                         <span class="p-lecturer__nickname">きょうちゃん</span>

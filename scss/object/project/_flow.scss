@@ -17,6 +17,8 @@
         }
         .p-flow__title-wrapper {
             text-align: center;
+            opacity: 0;
+            visibility: hidden;
             .p-flow__page-title-en {
                 font-size: 1.6rem;
             }
@@ -32,6 +34,8 @@
                     row-gap: 35px;
                     margin-top: 60px;
                     .p-flow__wrapper {
+                        opacity: 0;
+                        visibility: hidden;
                         display: flex;
                         flex-direction: column;
                         @include mixin.sub {
@@ -146,6 +150,10 @@
                                     a {
                                         color: #388d60;
                                         text-decoration: underline;
+                                        transition: opacity 0.3s ease;
+                                        &:hover {
+                                            opacity: 0.8;
+                                        }
                                     }
                                 }
                             }

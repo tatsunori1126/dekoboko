@@ -37,12 +37,12 @@
             <div class="c-inner">
                 <div class="p-flow__container-box">
                     <section class="p-flow__section">
-                        <div class="c-section__page-title-wrapper p-flow__title-wrapper">
+                        <div class="c-section__page-title-wrapper p-flow__title-wrapper fadeUp">
                             <h2 class="c-section__page-title">入塾までの流れ</h2>
                             <span class="c-section__page-title-en p-flow__page-title-en">Enrollment</span>
                         </div>
                         <div class="p-flow__box">
-                            <div class="p-flow__wrapper">
+                            <div class="p-flow__wrapper fadeUp">
                                 <div class="p-flow__icon">
                                     <span class="p-flow__num">STEP<span class="p-flow__num-font">01</span></span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/flow/enrollment-icon01.png" alt="STEP01">
@@ -50,11 +50,11 @@
                                 <div class="p-flow__content">
                                     <h3 class="p-flow__title">お問い合わせ</h3>
                                     <div class="p-flow__text-wrapper">
-                                        <p class="p-flow__text">まずはお気軽にお問い合わせください。<br><a href="https://lin.ee/ivHAxks" target="_blank">公式LINE</a> または <a href="<?php echo home_url('contact-input'); ?>">専用フォーム</a> からご連絡いただけます。</p>
+                                        <p class="p-flow__text">まずはお気軽にお問い合わせください。<br><a href="https://lin.ee/ivHAxks" target="_blank">公式LINE</a> または <a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">専用フォーム</a> からご連絡いただけます。</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-flow__wrapper">
+                            <div class="p-flow__wrapper fadeUp">
                                 <div class="p-flow__icon">
                                     <span class="p-flow__num">STEP 02</span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/flow/enrollment-icon02.png" alt="STEP02">
@@ -66,7 +66,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-flow__wrapper">
+                            <div class="p-flow__wrapper fadeUp">
                                 <div class="p-flow__icon p-flow__icon--last">
                                     <span class="p-flow__num">STEP 03</span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/flow/enrollment-icon03.png" alt="STEP03">
@@ -81,12 +81,12 @@
                         </div>
                     </section>
                     <section class="p-flow__section">
-                        <div class="c-section__page-title-wrapper p-flow__title-wrapper">
+                        <div class="c-section__page-title-wrapper p-flow__title-wrapper fadeUp">
                             <h2 class="c-section__page-title">受講までの流れ</h2>
                             <span class="c-section__page-title-en p-flow__page-title-en">Course Participation</span>
                         </div>
                         <div class="p-flow__box">
-                            <div class="p-flow__wrapper">
+                            <div class="p-flow__wrapper fadeUp">
                                 <div class="p-flow__icon">
                                     <span class="p-flow__num">STEP<span class="p-flow__num-font">01</span></span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/flow/participation-icon01.png" alt="STEP01">
@@ -98,7 +98,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-flow__wrapper">
+                            <div class="p-flow__wrapper fadeUp">
                                 <div class="p-flow__icon">
                                     <span class="p-flow__num">STEP 02</span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/flow/participation-icon02.png" alt="STEP02">
@@ -110,7 +110,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-flow__wrapper">
+                            <div class="p-flow__wrapper fadeUp">
                                 <div class="p-flow__icon p-flow__icon--last">
                                     <span class="p-flow__num">STEP 03</span>
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/flow/participation-icon03.png" alt="STEP03">

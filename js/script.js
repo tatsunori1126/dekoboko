@@ -55,6 +55,56 @@ jQuery(function () {
         });
     });
 });
+// ▼ ページロード完了後にアンカー位置を再調整
+window.addEventListener('load', function() {
+    const hash = window.location.hash;
+    if (hash) {
+        const target = document.querySelector(hash);
+        if (target) {
+            setTimeout(() => {
+                const position = target.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo(0, position); // ← スムーススクロールを削除して瞬時に移動
+            }, 100); // ページ構築完了後に1回だけジャンプ
+        }
+    }
+});
+
+// メインビジュアルのアニメーション
+document.addEventListener("DOMContentLoaded", () => {
+    const tl = gsap.timeline({ delay: 0.5 }); // サイト読み込みから0.5秒で開始
+
+    // ① まずは画像とテキストを可視化
+    gsap.set([".p-top__mv__img-wrapper", ".p-top__mv__main-title-wrapper"], {
+        visibility: "visible",
+        opacity: 1 // ここでvisibleにしてからopacityアニメに入る
+    });
+
+    // ② 画像：下からふわっと表示
+    tl.from(".p-top__mv__img-wrapper", {
+        y: 20,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    // ③ 各タイトル行の文字を分割
+    const titles = document.querySelectorAll(".p-top__mv__main-title");
+    titles.forEach(title => {
+        const chars = title.textContent.split("");
+        title.innerHTML = chars.map(ch => `<span class="char">${ch}</span>`).join("");
+    });
+
+    // ④ 各行を順番に表示（行間に少し時間を置く）
+    titles.forEach((title, index) => {
+        tl.to(title.querySelectorAll(".char"), {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            ease: "power2.out",
+            stagger: 0.14, // 文字ごとの遅延
+        }, index === 0 ? "-=0.2" : "+=0.08");
+    });
+});
 
 
 jQuery(function () {
@@ -203,41 +253,39 @@ jQuery(function($){
     });
 });
 
-// 価格表の行の高さを同期
+// コース料金表の行高さ同期
 function syncAllCourseTableHeights() {
-    // すべての価格表を対象に処理
     const wrappers = document.querySelectorAll('.p-course__price-table-wrapper');
-
     wrappers.forEach(wrapper => {
         const fixedRows = wrapper.querySelectorAll('.p-course__price-table--fixed tbody tr');
         const scrollRows = wrapper.querySelectorAll('.p-course__price-table-scroll tbody tr');
         const fixedHeader = wrapper.querySelector('.p-course__price-table--fixed thead tr');
         const scrollHeader = wrapper.querySelector('.p-course__price-table-scroll thead tr');
-
         if (!fixedRows.length || !scrollRows.length) return;
 
         // 一旦リセット
-        fixedRows.forEach((row, i) => {
-            row.style.height = 'auto';
-            if (scrollRows[i]) scrollRows[i].style.height = 'auto';
-        });
+        [...fixedRows, ...scrollRows].forEach(row => (row.style.height = 'auto'));
         if (fixedHeader && scrollHeader) {
             fixedHeader.style.height = 'auto';
             scrollHeader.style.height = 'auto';
         }
 
-        // 行の高さを同期
+        // 行の高さを同期（小数点誤差吸収）
         fixedRows.forEach((row, i) => {
-            const fixedHeight = row.offsetHeight;
-            const scrollHeight = scrollRows[i]?.offsetHeight || 0;
+            const fixedHeight = Math.ceil(row.getBoundingClientRect().height);
+            const scrollHeight = scrollRows[i] ? Math.ceil(scrollRows[i].getBoundingClientRect().height) : 0;
             const maxHeight = Math.max(fixedHeight, scrollHeight);
+
             row.style.height = `${maxHeight}px`;
             if (scrollRows[i]) scrollRows[i].style.height = `${maxHeight}px`;
         });
 
-        // ヘッダーの高さも同期
+        // ヘッダーの高さも同期（こちらも誤差吸収）
         if (fixedHeader && scrollHeader) {
-            const headerHeight = Math.max(fixedHeader.offsetHeight, scrollHeader.offsetHeight);
+            const headerHeight = Math.max(
+            Math.ceil(fixedHeader.getBoundingClientRect().height),
+            Math.ceil(scrollHeader.getBoundingClientRect().height)
+            );
             fixedHeader.style.height = `${headerHeight}px`;
             scrollHeader.style.height = `${headerHeight}px`;
         }

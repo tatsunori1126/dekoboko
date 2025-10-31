@@ -38,28 +38,28 @@
         </div>
         <div class="p-course__container">
             <div class="p-course__column-wrapper">
-                <div class="p-course__column-img-wrapper">
+                <div class="p-course__column-img-wrapper fadeUp">
                     <img class="p-course__column-img" src="<?php echo get_template_directory_uri(); ?>/images/course/chuukousei/sub-img.png" alt="">
                 </div>
                 <div class="p-course__column-main-wrapper">
                     <h2 class="p-course__column-main-title-wrapper">
-                        <span class="p-course__column-main-title">「学びたい！」も、</span>
-                        <span class="p-course__column-main-title">「自分らしくありたい！」も、</span>
-                        <span class="p-course__column-main-title">迷いや葛藤を力に変えて。</span>
+                        <span class="p-course__column-main-title fadeUp">「学びたい！」も、</span>
+                        <span class="p-course__column-main-title fadeUp">「自分らしくありたい！」も、</span>
+                        <span class="p-course__column-main-title fadeUp">迷いや葛藤を力に変えて。</span>
                     </h2>
                     <div class="p-course__column-main-icon-wrapper">
-                        <h3 class="p-course__column-main-icon-title">挑戦や不安に寄り添い、<br>“自分らしい学び”を<br>実現するコース。</h3>
-                        <div class="p-course__column-main-icon-img-wrapper">
+                        <h3 class="p-course__column-main-icon-title fadeUp">挑戦や不安に寄り添い、<br>“自分らしい学び”を<br>実現するコース。</h3>
+                        <div class="p-course__column-main-icon-img-wrapper fadeUp">
                             <img class="p-course__column-main-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/course/chuukousei/icon.png" alt="">
                         </div>
                     </div>
-                    <p class="p-course__column-main-text">中高生期は、学力への意欲と同時に、進路や人間関係への迷いや自己不信が生まれる時期です。DEKObokoは「勉強したい」「変わりたい」「ちょっと立ち止まりたい」そのすべての気持ちを尊重し、一人ひとりに合った学び方を提案します。<br>DYLコースでは、学力向上を基盤に、学習計画の立て方や習慣化を身につけ、成績や偏差値の向上だけでなく、自ら選び行動する力を育てます。<br>FYLコースでは、不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。少人数授業や対話を通して、自分のペースで学び直し、再び挑戦する力を育みます。<br>学び方に正解はありません。DEKObokoは、それぞれのペースとタイミングに合わせて、一歩ずつ未来に進むサポートをします。</p>
-                    <div class="p-course__btn-container">
+                    <p class="p-course__column-main-text fadeUp">中高生期は、学力への意欲と同時に、進路や人間関係への迷いや自己不信が生まれる時期です。DEKObokoは「勉強したい」「変わりたい」「ちょっと立ち止まりたい」そのすべての気持ちを尊重し、一人ひとりに合った学び方を提案します。<br>DYLコースでは、学力向上を基盤に、学習計画の立て方や習慣化を身につけ、成績や偏差値の向上だけでなく、自ら選び行動する力を育てます。<br>FYLコースでは、不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。少人数授業や対話を通して、自分のペースで学び直し、再び挑戦する力を育みます。<br>学び方に正解はありません。DEKObokoは、それぞれのペースとタイミングに合わせて、一歩ずつ未来に進むサポートをします。</p>
+                    <div class="p-course__btn-container fadeUp">
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url('chuukousei/#chuukousei_course'); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo esc_url( home_url( '/chuukousei/#chuukousei_course' ) ); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
                         </div>
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url('chuukousei/#chuukousei_price'); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo esc_url( home_url( '/chuukousei/#chuukousei_price' ) ); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
                         </div>
                     </div>
                 </div>
@@ -213,10 +213,10 @@
                                 <?php endif; ?>
                                 <div class="p-course__bottom-btn-container">
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url('chuukousei/#chuukousei_price'); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/chuukousei/#chuukousei_price' ) ); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
                                     </div>
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url('reservation/#consulting'); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
                                     </div>
                                 </div>
                                 <?php endif; ?>
@@ -240,7 +240,6 @@
                     <div class="p-course__price-container">
                         <div class="p-course__price-wrapper">
                             <div class="p-course__price-table-wrapper">
-                                <!-- 固定列 -->
                                 <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
                                         <tr><th>DYLコース</th></tr>
@@ -267,7 +266,6 @@
                                     </tbody>
                                 </table>
 
-                                <!-- スクロール部分 -->
                                 <div class="p-course__price-table-scroll scroll-hint">
                                     <table class="p-course__price-table">
                                         <thead>
@@ -332,7 +330,6 @@
 
                         <div class="p-course__price-wrapper">
                             <div class="p-course__price-table-wrapper">
-                                <!-- 固定列 -->
                                 <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
                                         <tr><th>FYLコース</th></tr>
@@ -357,7 +354,6 @@
                                     </tbody>
                                 </table>
 
-                                <!-- スクロール部分 -->
                                 <div class="p-course__price-table-scroll scroll-hint">
                                     <table class="p-course__price-table">
                                         <thead>
@@ -400,7 +396,6 @@
 
                         <div class="p-course__price-wrapper">
                             <div class="p-course__price-table-wrapper">
-                                <!-- 固定列 -->
                                 <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
                                         <tr><th>テスト対策/季節講習</th></tr>
@@ -415,7 +410,6 @@
                                     </tbody>
                                 </table>
 
-                                <!-- スクロール部分 -->
                                 <div class="p-course__price-table-scroll scroll-hint">
                                     <table class="p-course__price-table">
                                         <thead>
@@ -441,7 +435,6 @@
 
                         <div class="p-course__price-wrapper">
                             <div class="p-course__price-table-wrapper">
-                                <!-- 固定列 -->
                                 <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
                                         <tr><th>諸費用<span class="min-font">（月額）</span></th></tr>
@@ -453,7 +446,6 @@
                                     </tbody>
                                 </table>
 
-                                <!-- スクロール部分 -->
                                 <div class="p-course__price-table-scroll scroll-hint">
                                     <table class="p-course__price-table">
                                         <thead>

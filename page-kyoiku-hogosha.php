@@ -38,28 +38,28 @@
         </div>
         <div class="p-course__container">
             <div class="p-course__column-wrapper">
-                <div class="p-course__column-img-wrapper">
+                <div class="p-course__column-img-wrapper fadeUp">
                     <img class="p-course__column-img" src="<?php echo get_template_directory_uri(); ?>/images/course/kyoiku-hogosha/sub-img.png" alt="">
                 </div>
                 <div class="p-course__column-main-wrapper">
                     <h2 class="p-course__column-main-title-wrapper">
-                        <span class="p-course__column-main-title">子どもを支える大人が、</span>
-                        <span class="p-course__column-main-title">安心して学び、語り合い、</span>
-                        <span class="p-course__column-main-title">新しい一歩を踏み出せる場を。</span>
+                        <span class="p-course__column-main-title fadeUp">子どもを支える大人が、</span>
+                        <span class="p-course__column-main-title fadeUp">安心して学び、語り合い、</span>
+                        <span class="p-course__column-main-title fadeUp">新しい一歩を踏み出せる場を。</span>
                     </h2>
                     <div class="p-course__column-main-icon-wrapper">
-                        <h3 class="p-course__column-main-icon-title">教育や子育てについて語り合い、<br>つながり、学べるコース。</h3>
-                        <div class="p-course__column-main-icon-img-wrapper">
+                        <h3 class="p-course__column-main-icon-title fadeUp">教育や子育てについて語り合い、<br>つながり、学べるコース。</h3>
+                        <div class="p-course__column-main-icon-img-wrapper fadeUp">
                             <img class="p-course__column-main-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/course/kyoiku-hogosha/icon.png" alt="">
                         </div>
                     </div>
-                    <p class="p-course__column-main-text">子どもの成長を支える大人にとっても、「安心して語り合い、学べる場」は必要です。DEKObokoでは、教育関係者や保護者が集まり、子育てや教育に関する悩みや経験を共有し合う時間を用意しています。<br>さらに、心理学や発達科学の知見をベースにした講座を受講できるのも大きな特徴です。「子どもとの関わり方」「自己肯定感の育て方」「発達の個性への理解」といったテーマを専門的に学ぶことで、日々の子育てや教育に役立てることができます。「他の家庭ではどうしているんだろう？」「この対応でよかったのかな？」そんな日常の問いに応えながら、大人自身も学び、成長できるのがDEKObokoの保護者コースです。<br>子どもにとっても保護者にとっても安心できる学びのコミュニティ。ここでの経験が、家庭や学校での子育てをより前向きにしていきます。</p>
-                    <div class="p-course__btn-container">
+                    <p class="p-course__column-main-text fadeUp">子どもの成長を支える大人にとっても、「安心して語り合い、学べる場」は必要です。DEKObokoでは、教育関係者や保護者が集まり、子育てや教育に関する悩みや経験を共有し合う時間を用意しています。<br>さらに、心理学や発達科学の知見をベースにした講座を受講できるのも大きな特徴です。「子どもとの関わり方」「自己肯定感の育て方」「発達の個性への理解」といったテーマを専門的に学ぶことで、日々の子育てや教育に役立てることができます。「他の家庭ではどうしているんだろう？」「この対応でよかったのかな？」そんな日常の問いに応えながら、大人自身も学び、成長できるのがDEKObokoの保護者コースです。<br>子どもにとっても保護者にとっても安心できる学びのコミュニティ。ここでの経験が、家庭や学校での子育てをより前向きにしていきます。</p>
+                    <div class="p-course__btn-container fadeUp">
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url('kyoiku-hogosha/#kyoiku_course'); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo esc_url( home_url( '/kyoiku-hogosha/#kyoiku_course' ) ); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
                         </div>
                         <div class="p-course__btn-wrapper">
-                            <a class="p-course__btn" href="<?php echo home_url('kyoiku-hogosha/#kyoiku_price'); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
+                            <a class="p-course__btn" href="<?php echo esc_url( home_url( '/kyoiku-hogosha/#kyoiku_price' ) ); ?>" data-scroll-link>料金一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金一覧をみる"></a>
                         </div>
                     </div>
                 </div>
@@ -213,10 +213,10 @@
                                 <?php endif; ?>
                                 <div class="p-course__bottom-btn-container">
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url('kyoiku-hogosha/#kyoiku_price'); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/kyoiku-hogosha/#kyoiku_price' ) ); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
                                     </div>
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo home_url('reservation/#consulting'); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
                                     </div>
                                 </div>
                                 <?php endif; ?>

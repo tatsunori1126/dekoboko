@@ -35,39 +35,39 @@
             <nav class="p-header__nav">
                 <ul class="p-header__nav-list-wrapper">
                     <li class="p-header__nav-list has-submenu">
-                        <a class="p-header__nav-link" href="<?php echo home_url('about'); ?>">デコボコとは</a>
+                        <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/about' ) ); ?>">デコボコとは</a>
                         <ul class="p-header__submenu">
-                            <li><a href="<?php echo home_url('about/#concept'); ?>" data-scroll-link>コンセプト</a></li>
-                            <li><a href="<?php echo home_url('about/#philosophy'); ?>" data-scroll-link>教育方針</a></li>
-                            <li><a href="<?php echo home_url('about/#company'); ?>" data-scroll-link>会社概要</a></li>
-                            <li><a href="<?php echo home_url('about/#access'); ?>" data-scroll-link>アクセス案内</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/about/#concept' ) ); ?>" data-scroll-link>コンセプト</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/about/#philosophy' ) ); ?>" data-scroll-link>教育方針</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/about/#company' ) ); ?>" data-scroll-link>会社概要</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/about/#access' ) ); ?>" data-scroll-link>アクセス案内</a></li>
                         </ul>
                     </li>
                     <li class="p-header__nav-list has-submenu">
                         <div class="p-header__nav-link">コース</div>
                         <ul class="p-header__submenu">
-                            <li><a href="<?php echo home_url('shougakusei'); ?>">小学生コース</a></li>
-                            <li><a href="<?php echo home_url('chuukousei'); ?>">中高生コース</a></li>
-                            <li><a href="<?php echo home_url('daigakusei-shakaijin'); ?>">大学生・社会人コース</a></li>
-                            <li><a href="<?php echo home_url('kyoiku-hogosha'); ?>">教育関係者・保護者コース</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/shougakusei' ) ); ?>">小学生コース</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/chuukousei' ) ); ?>">中高生コース</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/daigakusei-shakaijin' ) ); ?>">大学生・社会人コース</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha' ) ); ?>">教育関係者・保護者コース</a></li>
                         </ul>
                     </li>
                     <li class="p-header__nav-list">
-                        <a class="p-header__nav-link" href="<?php echo home_url('results'); ?>">実績</a>
+                        <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/results' ) ); ?>">実績</a>
                     </li>
                     <li class="p-header__nav-list">
-                        <a class="p-header__nav-link" href="<?php echo home_url('lecturer'); ?>">講師</a>
+                        <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/lecturer' ) ); ?>">講師</a>
                     </li>
                     <li class="p-header__nav-list">
-                        <a class="p-header__nav-link" href="<?php echo home_url('facility'); ?>">施設</a>
+                        <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設</a>
                     </li>
                     <li class="p-header__nav-list has-submenu">
-                        <a class="p-header__nav-link" href="<?php echo home_url('reservation'); ?>">入塾案内</a>
+                        <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/reservation' ) ); ?>">入塾案内</a>
                         <ul class="p-header__submenu">
-                            <li><a href="<?php echo home_url('flow'); ?>">入塾・受講の流れ</a></li>
-                            <li><a href="<?php echo home_url('faq'); ?>">よくあるご質問</a></li>
-                            <li><a href="<?php echo home_url('reservation/#session'); ?>" data-scroll-link>ご説明について</a></li>
-                            <li><a href="<?php echo home_url('reservation/#consulting'); ?>" data-scroll-link>個別相談について</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・受講の流れ</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>ご説明について</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談について</a></li>
                         </ul>
                     </li>
                     <li class="p-header__nav-list">
@@ -93,20 +93,20 @@
                                 <div class="p-header__hamburger-nav-title">デコボコについて</div>
                                 <div class="p-header__hamburger-nav-block">
                                     <ul class="p-header__hamburger-nav-list">
-                                        <li><a href="<?php echo home_url('about'); ?>">デコボコとは</a></li>
-                                        <li><a href="<?php echo home_url('about/#concept'); ?>" data-scroll-link>コンセプト</a></li>
-                                        <li><a href="<?php echo home_url('about/#philosophy'); ?>" data-scroll-link>教育方針</a></li>
-                                        <li><a href="<?php echo home_url('about/#company'); ?>" data-scroll-link>会社概要</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/about' ) ); ?>">デコボコとは</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/about/#concept' ) ); ?>" data-scroll-link>コンセプト</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/about/#philosophy' ) ); ?>" data-scroll-link>教育方針</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/about/#company' ) ); ?>" data-scroll-link>会社概要</a></li>
                                     </ul>
                                     <ul class="p-header__hamburger-nav-list">
-                                        <li><a href="<?php echo home_url('about/#access'); ?>" data-scroll-link>アクセス</a></li>
-                                        <li><a href="<?php echo home_url('results'); ?>">合格実績</a></li>
-                                        <li><a href="<?php echo home_url('lecturer'); ?>">講師紹介</a></li>
-                                        <li><a href="<?php echo home_url('facility'); ?>">教室紹介</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/about/#access' ) ); ?>" data-scroll-link>アクセス</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/results' ) ); ?>">合格実績</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/lecturer' ) ); ?>">講師紹介</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/facility' ) ); ?>">教室紹介</a></li>
                                     </ul>
                                     <ul class="p-header__hamburger-nav-list">
                                         <li><a href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a></li>
-                                        <li><a href="<?php echo home_url('contact-input'); ?>">お問い合わせ</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -115,30 +115,30 @@
                                 <div class="p-header__hamburger-nav-list-wrapper">
                                     <div class="p-header__hamburger-nav-title">コース案内</div>
                                     <ul class="p-header__hamburger-nav-list">
-                                        <li><a href="<?php echo home_url('shougakusei'); ?>">小学生コース</a></li>
-                                        <li><a href="<?php echo home_url('chuukousei'); ?>">中高生コース</a></li>
-                                        <li><a href="<?php echo home_url('daigakusei-shakaijin'); ?>">大学生・社会人コース</a></li>
-                                        <li><a href="<?php echo home_url('kyoiku-hogosha'); ?>">教育関係者・保護者コース</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/shougakusei' ) ); ?>">小学生コース</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/chuukousei' ) ); ?>">中高生コース</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/daigakusei-shakaijin' ) ); ?>">大学生・社会人コース</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha' ) ); ?>">教育関係者・保護者コース</a></li>
                                     </ul>
                                 </div>
                                 <!-- ▼ 料金案内 -->
                                 <div class="p-header__hamburger-nav-list-wrapper">
                                     <div class="p-header__hamburger-nav-title">料金案内</div>
                                     <ul class="p-header__hamburger-nav-list">
-                                        <li><a href="<?php echo home_url('shougakusei/#shougakusei_price'); ?>" data-scroll-link>小学生</a></li>
-                                        <li><a href="<?php echo home_url('chuukousei/#chuukousei_price'); ?>" data-scroll-link>中高生</a></li>
-                                        <li><a href="<?php echo home_url('daigakusei-shakaijin/#daigakusei_price'); ?>" data-scroll-link>大学生・社会人</a></li>
-                                        <li><a href="<?php echo home_url('kyoiku-hogosha/#kyoiku_price'); ?>" data-scroll-link>教育関係者・保護者</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/shougakusei/#shougakusei_price' ) ); ?>" data-scroll-link>小学生</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/chuukousei/#chuukousei_price' ) ); ?>" data-scroll-link>中高生</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/daigakusei-shakaijin/#daigakusei_price' ) ); ?>" data-scroll-link>大学生・社会人</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha/#kyoiku_price' ) ); ?>" data-scroll-link>教育関係者・保護者</a></li>
                                     </ul>
                                 </div>
                                 <!-- ▼ 入塾のご案内 -->
                                 <div class="p-header__hamburger-nav-list-wrapper">
                                     <div class="p-header__hamburger-nav-title">入塾のご案内</div>
                                     <ul class="p-header__hamburger-nav-list">
-                                        <li><a href="<?php echo home_url('flow'); ?>">入塾・受講の流れ</a></li>
-                                        <li><a href="<?php echo home_url('faq'); ?>">よくあるご質問</a></li>
-                                        <li><a href="<?php echo home_url('reservation/#session'); ?>" data-scroll-link>説明会予約</a></li>
-                                        <li><a href="<?php echo home_url('reservation/#consulting'); ?>" data-scroll-link>個別相談予約</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・受講の流れ</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>説明会予約</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談予約</a></li>
                                         <li><a href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">資料請求<img class="p-header__hamburger-nav-list-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a></li>
                                     </ul>
                                 </div>
@@ -160,7 +160,7 @@
                                 <div class="p-header__hamburger-btn-title">お問い合わせ</div>
                                 <div class="p-header__hamburger-btn-box">
                                     <div class="p-header__hamburger-btn-block">
-                                        <a class="p-header__hamburger-btn p-header__hamburger-btn-white" href="<?php echo home_url('contact-input'); ?>">メールフォームへ<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt="矢印"></a>
+                                        <a class="p-header__hamburger-btn p-header__hamburger-btn-white" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">メールフォームへ<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt="矢印"></a>
                                     </div>
                                     <div class="p-header__hamburger-btn-block">
                                         <a class="p-header__hamburger-btn p-header__hamburger-btn-white" href="https://lin.ee/ivHAxks" target="_blank">公式LINEへ<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt="矢印"></a>

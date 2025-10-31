@@ -36,11 +36,19 @@
             width: 260px;
         }
         @include mixin.sub {
-            width: 50px;
+            width: 60px;
             height: 155px;
             writing-mode: vertical-rl;
             border-radius: 25px 0 0 25px;
             font-size: 1.4rem;
+            transform: translateX(10px);
+            padding-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        &:hover {
+            @include mixin.sub {
+                transform: translateX(0);
+            }
         }
         .fixed-cv-icon {
             width: 12px;
@@ -99,8 +107,12 @@
     }
     .p-header__logo-link-page {
         width: 190px;
+        transition: opacity 0.3s ease;
         @include mixin.mid {
             width: 251px;
+        }
+        &:hover {
+            opacity: 0.8;
         }
     }
     .p-header__nav-container {
@@ -201,13 +213,17 @@
                 z-index: 1000;
                 color: #FFFFFF;
                 text-align: center;
+                transition: opacity 0.3s ease;
                 @include mixin.mid {
                     width: 70px;
                     height: 70px;
                 }
+                &:hover {
+                    opacity: 0.8;
+                }
                 .p-header__hamburger-bar {
                     width: 14px;
-                    height: 1.5px;
+                    height: 1.4px;
                     background-color: #FFFFFF;
                     margin: 2px 0;
                     display: block;
@@ -215,7 +231,7 @@
                     transition: all 0.3s ease;
                     @include mixin.mid {
                         width: 20px;
-                        height: 2.5px;
+                        height: 2px;
                         margin: 2.5px 0;
                     }
                 }
@@ -289,10 +305,14 @@
                         width: 172px;
                         display: block;
                         margin: 0 auto 45px;
+                        transition: opacity 0.3s ease;
                         img {
                             width: 100%;
                             height: auto;
                             vertical-align: middle;
+                        }
+                        &:hover {
+                            opacity: 0.8;
                         }
                     }
                     .p-header__hamburger-nav-container {
@@ -445,10 +465,18 @@
                                         display: flex;
                                         align-items: center;
                                         justify-content: space-between;
+                                        transition: opacity 0.3s ease;
                                         .p-header__hamburger-btn-arrow {
                                             width: 15px;
                                             height: auto;
                                             vertical-align: middle;
+                                            transition: transform 0.3s ease;
+                                        }
+                                        &:hover {
+                                            opacity: 0.8;
+                                            .p-header__hamburger-btn-arrow {
+                                                transform: translateX(5px);
+                                            }
                                         }
                                     }
                                     .p-header__hamburger-btn-green {
@@ -488,6 +516,10 @@
                                 color: color.$textColor;
                                 width: fit-content;
                                 border-bottom: 1px solid color.$textColor;
+                                transition: color 0.3s ease;
+                                &:hover {
+                                    color: #388d60;
+                                }
                             }
                         }
                     }

@@ -76,7 +76,7 @@
                     <a class="p-news__contents-wrapper" href="<?php the_permalink(); ?>">
                         <div class="p-news__contents-img-wrapper">
                             <?php if (has_post_thumbnail()) : ?>
-                                <?php the_post_thumbnail('full', array('class' => 'p-news__contents-img')); ?>
+                                <?php the_post_thumbnail('news-thumb', array('class' => 'p-news__contents-img')); ?>
                             <?php else : ?>
                                 <?php
                                 // 🔹 NoImage選択メタデータを取得
@@ -86,7 +86,7 @@
                                 }
                                 $noimage_path = get_template_directory_uri() . '/images/noimage/' . $selected_noimage . '.png';
                                 ?>
-                                <img src="<?php echo esc_url($noimage_path); ?>" alt="<?php the_title_attribute(); ?>" class="p-news__contents-img no-image" />
+                                <img src="<?php echo esc_url($noimage_path); ?>" alt="<?php the_title_attribute(); ?>" class="p-news__contents-img no-image" width="436" height="326" />
                             <?php endif; ?>
                         </div>
 

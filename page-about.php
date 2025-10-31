@@ -35,18 +35,18 @@
         </div>
         <section id="concept" class="p-about__concept">
             <div class="p-about__concept-container">
-                <div class="p-about__concept-img-wrapper">
+                <div class="p-about__concept-img-wrapper fadeUp">
                     <img class="p-about__concept-img" src="<?php echo get_template_directory_uri(); ?>/images/about/concept-img.png" alt="">
                 </div>
                 <div class="p-about__concept-text-wrapper">
-                    <span class="p-about__concept-title-en">Concept</span>
+                    <span class="p-about__concept-title-en fadeUp">Concept</span>
                     <div class="p-about__concept-column-wrapper">
                         <h2 class="p-about__concept-title-ja-wrapper">
-                            <span class="p-about__concept-title-ja">明日が来るのが、</span>
-                            <span class="p-about__concept-title-ja">ちょっと楽しみになる</span>
-                            <span class="p-about__concept-title-ja">学習塾。</span>
+                            <span class="p-about__concept-title-ja fadeUp">明日が来るのが、</span>
+                            <span class="p-about__concept-title-ja fadeUp">ちょっと楽しみになる</span>
+                            <span class="p-about__concept-title-ja fadeUp">学習塾。</span>
                         </h2>
-                        <p class="p-about__concept-text">学習習慣と思考力、コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。<br>それが、「 Co-learning park DEKOboko 」です。<br>私たちは、学びをテストの点数や偏差値だけで評価しません。<br>一人ひとりが“その人”になっていくこと、<br class="c-sp-hidden">“自分らしい生き方”を歩んでいける力を育んでいくこと。<br>それを何より大切にしています。</p>
+                        <p class="p-about__concept-text fadeUp">学習習慣と思考力、コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。<br>それが、「 Co-learning park DEKOboko 」です。<br>私たちは、学びをテストの点数や偏差値だけで評価しません。<br>一人ひとりが“その人”になっていくこと、<br class="c-sp-hidden">“自分らしい生き方”を歩んでいける力を育んでいくこと。<br>それを何より大切にしています。</p>
                     </div>
                 </div>
             </div>
@@ -55,9 +55,9 @@
             <div class="p-about__important-bg-wave"></div>
             <div class="c-inner">
                 <div class="p-about__important-container">
-                    <h2 class="p-about__important-title">大切にしている<br class="c-pc-hidden"><span class="p-about__important-title-font">4</span>つのこと</h2>
+                    <h2 class="p-about__important-title fadeUp">大切にしている<br class="c-pc-hidden"><span class="p-about__important-title-font">4</span>つのこと</h2>
                     <div class="p-about__important-box">
-                        <div class="p-about__important-wrapper">
+                        <div class="p-about__important-wrapper fadeUp">
                             <div class="p-about__important-item-title-wrapper">
                                 <div class="p-about__important-item-number-wrapper">
                                     <img class="p-about__important-item-number" src="<?php echo get_template_directory_uri(); ?>/images/about/important-number01.png" alt="01">
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-about__important-wrapper">
+                        <div class="p-about__important-wrapper fadeUp">
                             <div class="p-about__important-item-title-wrapper">
                                 <div class="p-about__important-item-number-wrapper">
                                     <img class="p-about__important-item-number" src="<?php echo get_template_directory_uri(); ?>/images/about/important-number02.png" alt="02">
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-about__important-wrapper">
+                        <div class="p-about__important-wrapper fadeUp">
                             <div class="p-about__important-item-title-wrapper">
                                 <div class="p-about__important-item-number-wrapper">
                                     <img class="p-about__important-item-number" src="<?php echo get_template_directory_uri(); ?>/images/about/important-number03.png" alt="03">
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-about__important-wrapper">
+                        <div class="p-about__important-wrapper fadeUp">
                             <div class="p-about__important-item-title-wrapper">
                                 <div class="p-about__important-item-number-wrapper">
                                     <img class="p-about__important-item-number" src="<?php echo get_template_directory_uri(); ?>/images/about/important-number04.png" alt="04">
@@ -151,13 +151,13 @@
         </section>
         <section class="p-about__method">
             <div class="c-inner">
-                <div class="c-section__page-title-wrapper p-about__method-title-wrapper">
+                <div class="c-section__page-title-wrapper p-about__method-title-wrapper fadeUp">
                     <h2 class="c-section__page-title">DEKOメソッド</h2>
                     <span class="c-section__page-title-en p-about__method-page-title-en">Method</span>
                 </div>
-                <p class="p-about__method-top-text">「メソッド」とは、目的を達成するための手順や手法のこと。<br>私たちは、学びのプロセスを4つの段階に整理し、独自のメソッドとして支援を行っています。</p>
+                <p class="p-about__method-top-text fadeUp">「メソッド」とは、目的を達成するための手順や手法のこと。<br>私たちは、学びのプロセスを4つの段階に整理し、独自のメソッドとして支援を行っています。</p>
                 <div class="p-about__method-container">
-                    <div class="p-about__method-wrapper">
+                    <div class="p-about__method-wrapper fadeUp">
                         <div class="p-about__method-item-title-wrapper">
                             <div class="p-about__method-item-title-en-wrapper">
                                 <span class="p-about__method-item-title-big-en">D</span>
@@ -172,7 +172,7 @@
                             <p class="p-about__method-item-text">DEKObokoでの学びは、まず“飛び込むこと”から始まります。新しい環境に身を置き、自分のペースで挑戦してみること。ぜひ勇気を出して一歩を踏み出してもらいたいと思っています。</p>
                         </div>
                     </div>
-                    <div class="p-about__method-wrapper">
+                    <div class="p-about__method-wrapper fadeUp">
                         <div class="p-about__method-item-title-wrapper">
                             <div class="p-about__method-item-title-en-wrapper">
                                 <span class="p-about__method-item-title-big-en">E</span>
@@ -187,7 +187,7 @@
                             <p class="p-about__method-item-text">DEKObokoでは、問いを通じた「対話」を学びの中心に置いています。授業中の問いかけ、対話、雑談など、あらゆる場面で自分の言葉で話し、違いを認め合い、自分や他者への理解が深まっていきます。</p>
                         </div>
                     </div>
-                    <div class="p-about__method-wrapper">
+                    <div class="p-about__method-wrapper fadeUp">
                         <div class="p-about__method-item-title-wrapper">
                             <div class="p-about__method-item-title-en-wrapper">
                                 <span class="p-about__method-item-title-big-en">K</span>
@@ -202,7 +202,7 @@
                             <p class="p-about__method-item-text">メタ学習・伴走学習・自走学習を通じて、自身や他者と向き合いながら、「学ぶ意味」や「成長の実感」を知っていきます。この過程が、「できる喜び」「知る楽しさ」へとつながっていきます。</p>
                         </div>
                     </div>
-                    <div class="p-about__method-wrapper">
+                    <div class="p-about__method-wrapper fadeUp">
                         <div class="p-about__method-item-title-wrapper">
                             <div class="p-about__method-item-title-en-wrapper">
                                 <span class="p-about__method-item-title-big-en">O</span>
@@ -222,17 +222,17 @@
         </section>
         <section id="philosophy" class="p-about__philosophy">
             <div class="c-inner">
-                <div class="c-section__page-title-wrapper p-about__philosophy-title-wrapper">
+                <div class="c-section__page-title-wrapper p-about__philosophy-title-wrapper fadeUp">
                     <h2 class="c-section__page-title">教育理念</h2>
                     <span class="c-section__page-title-en p-about__philosophy-page-title-en">Philosophy</span>
                 </div>
                 <div class="p-about__philosophy-container">
                     <div class="p-about__philosophy-text-wrapper">
-                        <p class="p-about__philosophy-text">人は、安心できる「居場所」と、深くつながる「対話」、そして変化に応じられる「柔軟性」によって、自分らしく育っていきます。</p>
-                        <p class="p-about__philosophy-text">DEKObokoは、「誰もが自分の人生の主役」という想いのもと、その人らしさを育む場をつくり、出会いと関わりの中で「ともに生きる力」を育てていきます。</p>
-                        <p class="p-about__philosophy-text">私たちは、中高生・浪人生・不登校生・発達障がいのある方・通信制の生徒・大学生・社会人・保護者など、さまざまな立場の人々が、感情と対話を通してゆるやかにつながり合える学びの場を日々育んでいます。</p>
+                        <p class="p-about__philosophy-text fadeUp">人は、安心できる「居場所」と、深くつながる「対話」、そして変化に応じられる「柔軟性」によって、自分らしく育っていきます。</p>
+                        <p class="p-about__philosophy-text fadeUp">DEKObokoは、「誰もが自分の人生の主役」という想いのもと、その人らしさを育む場をつくり、出会いと関わりの中で「ともに生きる力」を育てていきます。</p>
+                        <p class="p-about__philosophy-text fadeUp">私たちは、中高生・浪人生・不登校生・発達障がいのある方・通信制の生徒・大学生・社会人・保護者など、さまざまな立場の人々が、感情と対話を通してゆるやかにつながり合える学びの場を日々育んでいます。</p>
                     </div>
-                    <div class="p-about__philosophy-img-wrapper">
+                    <div class="p-about__philosophy-img-wrapper fadeUp">
                         <img class="p-about__philosophy-img" src="<?php echo get_template_directory_uri(); ?>/images/about/philosophy-img.png" alt="居場所・柔軟性・対話・共に生きる力">
                     </div>
                 </div>
@@ -242,24 +242,24 @@
             <div class="p-about__message-bg-wave"></div>
             <div class="c-inner">
                 <div class="p-about__message-container">
-                    <div class="p-about__message-img-wrapper">
+                    <div class="p-about__message-img-wrapper fadeUp">
                         <img class="p-about__message-img" src="<?php echo get_template_directory_uri(); ?>/images/about/message-img.png" alt="代表取締役 熊谷 歩真">
                     </div>
                     <div class="p-about__message-text-container">
                         <div class="p-about__message-text-title-wrapper">
-                            <span class="p-about__message-text-title-en">Message</span>
+                            <span class="p-about__message-text-title-en fadeUp">Message</span>
                             <h2 class="p-about__message-text-title-box">
-                                <span class="p-about__message-text-title">それぞれの</span>
-                                <span class="p-about__message-text-title">「デコボコ」をうけとめ、</span>
-                                <span class="p-about__message-text-title">ともに育つ場へ</span>
+                                <span class="p-about__message-text-title fadeUp">それぞれの</span>
+                                <span class="p-about__message-text-title fadeUp">「デコボコ」をうけとめ、</span>
+                                <span class="p-about__message-text-title fadeUp">ともに育つ場へ</span>
                             </h2>
                         </div>
-                        <div class="p-about__message-img-wrapper-sp">
+                        <div class="p-about__message-img-wrapper-sp fadeUp">
                             <img class="p-about__message-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/about/message-img.png" alt="代表取締役 熊谷 歩真">
                         </div>
                         <div class="p-about__message-text-wrapper">
-                            <p class="p-about__message-text">人にはそれぞれ、得意や不得意、心の揺らぎがあります。DEKObokoは、そうした違いや個性をありのままに“その人らしさ”として受けとめることから始まります。<br>自分のペースで意味のある学びを重ね、迷いながらでも前に進めるように、必要なときは支え合える関係を大切にしています。<br>安心できる空間と、前に進みたくなる気持ちの両方が積み重なっていく“学びの場”を、これからも丁寧に育て続けます。</p>
-                            <div class="p-about__message-post-name">代表取締役<span class="p-about__message-name">熊谷 歩真</span></div>
+                            <p class="p-about__message-text fadeUp">人にはそれぞれ、得意や不得意、心の揺らぎがあります。DEKObokoは、そうした違いや個性をありのままに“その人らしさ”として受けとめることから始まります。<br>自分のペースで意味のある学びを重ね、迷いながらでも前に進めるように、必要なときは支え合える関係を大切にしています。<br>安心できる空間と、前に進みたくなる気持ちの両方が積み重なっていく“学びの場”を、これからも丁寧に育て続けます。</p>
+                            <div class="p-about__message-post-name fadeUp">代表取締役<span class="p-about__message-name">熊谷 歩真</span></div>
                         </div>
                     </div>
                 </div>
@@ -267,11 +267,11 @@
         </section>
         <section id="company" class="p-about__company">
             <div class="c-inner">
-                <div class="c-section__page-title-wrapper p-about__company-title-wrapper">
+                <div class="c-section__page-title-wrapper p-about__company-title-wrapper fadeUp">
                     <h2 class="c-section__page-title p-about__company-page-title">会社概要</h2>
                     <span class="c-section__page-title-en p-about__company-page-title-en">Company</span>
                 </div>
-                <dl class="p-about__company-info-list">
+                <dl class="p-about__company-info-list fadeUp">
                     <div class="p-about__company-info-item">
                         <dt>会社名</dt>
                         <dd>株式会社DEKOboko</dd>
@@ -306,15 +306,15 @@
         </section>
         <section id="access" class="p-about__access">
             <div class="c-inner">
-                <div class="c-section__page-title-wrapper p-about__access-title-wrapper">
+                <div class="c-section__page-title-wrapper p-about__access-title-wrapper fadeUp">
                     <h2 class="c-section__page-title p-about__access-page-title">アクセス案内</h2>
                     <span class="c-section__page-title-en p-about__access-page-title-en">Access</span>
                 </div>
                 <div class="p-about__access-container">
-                    <div class="p-about__access-img-wrapper">
+                    <div class="p-about__access-img-wrapper fadeUp">
                         <img class="p-about__access-img" src="<?php echo get_template_directory_uri(); ?>/images/about/access-img.png" alt="">
                     </div>
-                    <div class="p-about__access-detail-wrapper">
+                    <div class="p-about__access-detail-wrapper fadeUp">
                         <div class="p-about__access-detail-box">
                             <h3 class="p-about__access-detail-title">名称</h3>
                             <p class="p-about__access-detail-text">Co-learning park DEKOboko</p>
@@ -337,15 +337,15 @@
                 <div class="p-about__access-means-container">
                     <h3 class="p-about__access-means-title">交通手段</h3>
                     <div class="p-about__access-means-contents-box">
-                        <div class="p-about__access-means-wrapper">
+                        <div class="p-about__access-means-wrapper fadeUp">
                             <h4 class="p-about__access-means-item-title">お車・自転車でお越しの場合</h4>
                             <p class="p-about__access-means-item-text">お近くに有料コインパーキング・<br class="c-tab-hidden">有料駐輪場がございます。</p>
                         </div>
-                        <div class="p-about__access-means-wrapper">
+                        <div class="p-about__access-means-wrapper fadeUp">
                             <h4 class="p-about__access-means-item-title">電車でお越しの場合</h4>
                             <p class="p-about__access-means-item-text">西武新宿線「新所沢駅」から<br class="c-tab-hidden">徒歩約2分〜3分。</p>
                         </div>
-                        <div class="p-about__access-means-wrapper">
+                        <div class="p-about__access-means-wrapper fadeUp">
                             <h4 class="p-about__access-means-item-title">バスでお越しの場合</h4>
                             <p class="p-about__access-means-item-text">所沢市コミュニティバス 西路線<br class="c-tab-hidden">「松葉町」バス停下車、徒歩約5分。</p>
                             <p class="p-about__access-means-item-detail">※「新所沢駅東口」からも徒歩約<br class="c-tab-hidden">2〜3分でお越しいただけます。</p>

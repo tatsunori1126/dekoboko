@@ -16,9 +16,6 @@
                 <span class="c-section__page-title-en">News</span>
             </div>
         </div>
-        <div class="c-circle__page-top-main-img-wrapper-sp">
-            <img class="c-circle__page-top-main-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/course/shougakusei/page-main-img.png" alt="">
-        </div>
         <div class="c-inner">
             <div class="p-news__bread-category-wrapper">
             <?php if(!is_front_page()): ?>
@@ -71,19 +68,18 @@
                 ?>
                     <a class="p-news__contents-wrapper" href="<?php the_permalink(); ?>">
                         <div class="p-news__contents-img-wrapper">
-                            <?php if (has_post_thumbnail()) : ?>
-                                <?php the_post_thumbnail('full', array('class' => 'p-news__contents-img')); ?>
-                            <?php else : ?>
-                                <?php
-                                // 🔹 NoImage選択メタデータを取得
-                                $selected_noimage = get_post_meta(get_the_ID(), '_noimage_select', true);
-                                if (empty($selected_noimage)) {
-                                    $selected_noimage = 'noimage1'; // 初期値は noimage1.png
-                                }
-                                $noimage_path = get_template_directory_uri() . '/images/noimage/' . $selected_noimage . '.png';
-                                ?>
-                                <img src="<?php echo esc_url($noimage_path); ?>" alt="<?php the_title_attribute(); ?>" class="p-news__contents-img no-image" />
-                            <?php endif; ?>
+                        <?php if (has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail('news-thumb', array('class' => 'p-news__contents-img')); ?>
+                        <?php else : ?>
+                            <?php
+                            $selected_noimage = get_post_meta(get_the_ID(), '_noimage_select', true);
+                            if (empty($selected_noimage)) {
+                                $selected_noimage = 'noimage1';
+                            }
+                            $noimage_path = get_template_directory_uri() . '/images/noimage/' . $selected_noimage . '.png';
+                            ?>
+                            <img src="<?php echo esc_url($noimage_path); ?>" alt="<?php the_title_attribute(); ?>" class="p-news__contents-img no-image" width="436" height="326" />
+                        <?php endif; ?>
                         </div>
     
                         <div class="p-news__contents-box">

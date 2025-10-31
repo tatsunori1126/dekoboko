@@ -36,6 +36,8 @@
             margin: 55% 0 0;
         }
         .p-lecturer__wrapper {
+            opacity: 0;
+            visibility: hidden;
             @include mixin.mid {
                 width: 43.87%;
             }

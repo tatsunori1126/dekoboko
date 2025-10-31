@@ -39,3 +39,9 @@
         display: block;
     }
 }
+.c-sp-only {
+    display: none;
+    @include mixin.tab {
+        display: inline-block;
+    }
+}

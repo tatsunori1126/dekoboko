@@ -26,6 +26,8 @@
             }
             .p-about__concept-img-wrapper {
                 width: 88%;
+                opacity: 0;
+                visibility: hidden;
                 @include mixin.mid {
                     width: 37%;
                 }
@@ -53,6 +55,8 @@
                     letter-spacing: 0.14em;
                     font-weight: 500;
                     color: #388d60;
+                    opacity: 0;
+                    visibility: hidden;
                 }
                 .p-about__concept-column-wrapper {
                     display: flex;
@@ -74,6 +78,8 @@
                             align-items: center;
                             width: fit-content;
                             padding: 0 13px;
+                            opacity: 0;
+                            visibility: hidden;
                             @include mixin.tab {
                                 padding: 0 20px;
                             }

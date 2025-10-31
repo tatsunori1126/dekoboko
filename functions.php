@@ -77,7 +77,7 @@ function enqueue_theme_assets() {
 
     // Scroll Hint JS
     wp_enqueue_script('scroll-hint-js', 'https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js', array(), null, true);
-    
+
     // jQuery
     wp_enqueue_script('jquery');
 
@@ -338,3 +338,8 @@ function remove_course_editor_support() {
   remove_post_type_support('course', 'editor');
 }
 add_action('init', 'remove_course_editor_support');
+
+
+// お知らせ（news）用のサムネイルサイズを登録
+add_theme_support('post-thumbnails'); // まだ書いていない場合は必須
+add_image_size('news-thumb', 436, 326, true); // true はハードクロップ（中央トリミング）
