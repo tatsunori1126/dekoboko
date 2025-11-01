@@ -7604,5 +7604,75 @@ body::before {
   opacity: 0.8;
 }
 
+.p-privacy {
+  position: relative;
+  z-index: 1;
+  padding: 115px 0;
+  margin-top: -85px;
+}
+@media (min-width: 1000px) {
+  .p-privacy {
+    margin-top: -105px;
+    margin-bottom: -15%;
+    padding: 170px 0 280px;
+  }
+}
+.p-privacy .p-privacy__container {
+  margin: 80px 0 0;
+}
+@media (min-width: 1000px) {
+  .p-privacy .p-privacy__container {
+    margin: 120px 0 50px;
+  }
+}
+.p-privacy .p-privacy__container .p-privacy__top-text {
+  margin-bottom: 45px;
+  line-height: 1.75;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0d3425;
+  letter-spacing: 0.14em;
+}
+@media (min-width: 1000px) {
+  .p-privacy .p-privacy__container .p-privacy__top-text {
+    font-size: 1.6rem;
+    margin-bottom: 60px;
+  }
+}
+.p-privacy .p-privacy__container .p-privacy__section-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.p-privacy .p-privacy__container .p-privacy__section-container .p-privacy__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.p-privacy .p-privacy__container .p-privacy__section-container .p-privacy__wrapper .p-privacy__section-title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.75;
+  color: #005a38;
+}
+@media (min-width: 1000px) {
+  .p-privacy .p-privacy__container .p-privacy__section-container .p-privacy__wrapper .p-privacy__section-title {
+    font-size: 2.4rem;
+  }
+}
+.p-privacy .p-privacy__container .p-privacy__section-container .p-privacy__wrapper .p-privacy__section-text {
+  font-size: 1.5rem;
+  line-height: 2;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: #0d3425;
+}
+@media (min-width: 1000px) {
+  .p-privacy .p-privacy__container .p-privacy__section-container .p-privacy__wrapper .p-privacy__section-text {
+    font-size: 1.6rem;
+  }
+}
+
 /* Utility
    ----------------------------------------------------------------- */
