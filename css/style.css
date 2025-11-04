@@ -2631,7 +2631,7 @@ body::before {
   padding: 0 0 30px;
   border-radius: 50px;
   /* ▼ 二重グリッド構造（細かい線＋太い線） */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
   /* ▼ グリッドの間隔設定 */
   background-size: 20px 20px, 20px 20px, 40px 40px, 40px 40px;
   background-repeat: repeat;
@@ -4686,7 +4686,7 @@ body::before {
   -moz-column-gap: 20px;
        column-gap: 20px;
   /* ▼ 二重グリッド構造（細かい線＋太い線） */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
   /* ▼ グリッドの間隔設定 */
   background-size: 20px 20px, 20px 20px, 40px 40px, 40px 40px;
   background-repeat: repeat;
@@ -5001,7 +5001,7 @@ body::before {
 }
 .p-faq .p-faq__container .p-faq__question-container .p-faq__question-wrapper .p-faq__question-item-box .p-faq__question-box {
   /* ▼ 二重グリッド構造（細かい線＋太い線） */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
   /* ▼ グリッドの間隔設定 */
   background-size: 20px 20px, 20px 20px, 40px 40px, 40px 40px;
   background-repeat: repeat;
@@ -5342,7 +5342,7 @@ body::before {
   padding: 60px 40px 40px;
   background: #f5f4ec;
   /* ▼ 二重グリッド構造（細かい線＋太い線） */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
   /* ▼ グリッドの間隔設定 */
   background-size: 20px 20px, 20px 20px, 40px 40px, 40px 40px;
   background-repeat: repeat;
@@ -6475,7 +6475,7 @@ body::before {
   padding: 20px;
   background: #f5f4ec;
   /* ▼ 二重グリッド構造（細かい線＋太い線） */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px), linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
   /* ▼ グリッドの間隔設定 */
   background-size: 20px 20px, 20px 20px, 40px 40px, 40px 40px;
   background-repeat: repeat;

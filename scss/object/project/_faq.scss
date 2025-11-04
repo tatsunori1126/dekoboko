@@ -52,12 +52,12 @@
                         /* ▼ 二重グリッド構造（細かい線＋太い線） */
                         background-image:
                         /* 細かいグリッド（薄い） */
-                        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                        linear-gradient(to right, rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0, 0, 0, 0.015) 1px, transparent 1px),
     
                         /* 広いグリッド（少し濃い） */
-                        linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+                        linear-gradient(to right, rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
     
                         /* ▼ グリッドの間隔設定 */
                         background-size:
