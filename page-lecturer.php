@@ -35,7 +35,7 @@
             <div class="p-lecturer__container">
                 <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
-                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
+                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="瀧上 彩斗">
                         <span class="p-lecturer__nickname">タッキー/あやっち/あやてぃー</span>
                     </div>
                     <div class="p-lecturer__text-wrapper">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
-                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
+                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img02.png" alt="毛塚 亮">
                         <span class="p-lecturer__nickname">りょーちん</span>
                     </div>
                     <div class="p-lecturer__text-wrapper">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
-                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
+                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img03.png" alt="安 卓修">
                         <span class="p-lecturer__nickname">あんちゃん</span>
                     </div>
                     <div class="p-lecturer__text-wrapper">
@@ -107,7 +107,7 @@
                 </div>
                 <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
-                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
+                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/noimage.png" alt="田中 伶利">
                         <span class="p-lecturer__nickname">たなかれいり</span>
                     </div>
                     <div class="p-lecturer__text-wrapper">
@@ -131,7 +131,7 @@
                 </div>
                 <div class="p-lecturer__wrapper fadeUp">
                     <div class="p-lecturer__img-wrapper">
-                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img01.png" alt="講師写真">
+                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img05.png" alt="髙田 響">
                         <span class="p-lecturer__nickname">きょうちゃん</span>
                     </div>
                     <div class="p-lecturer__text-wrapper">
