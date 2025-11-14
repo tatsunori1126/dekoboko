@@ -162,7 +162,7 @@
                             <span class="p-facility__text-title fadeUp">未来につながる、</span>
                             <span class="p-facility__text-title fadeUp">もうひとつの学習空間</span>
                         </h3>
-                        <p class="p-facility__text fadeUp">DEKObokoの自習室は、学校や職場、家庭や自宅とは違う「もうひとつの学びの場」です。小・中・高校生は授業以外の時間に自習エリアで自主学習を進め、大学生や社会人はレンタルスペースとして幅広い目的にご利用いただけます。<br>安心して集中できる環境と、気持ちを切り替えられる交流の場。ここでの学びや出会いが、あなたの未来を育てていきます。<br>Wi-Fiや電源を完備しているため、パソコンを使った勉強や仕事にも最適。休憩時にはソファや給湯スペースでリフレッシュすることもできます。<br>人の気配を感じながら「集中」と「リラックス」を両立できる──。DEKObokoは、学びを続けるあなたを支える学習空間です。</p>
+                        <p class="p-facility__text fadeUp">DEKObokoの自習室は、学校や職場、家庭や自宅とは違う「もうひとつの学びの場」です。小・中・高校生は授業以外の時間に自習エリアで自主学習を進め、大学生や社会人はレンタルスペースとして幅広い目的にご利用いただけます。<br>安心して集中できる環境と、気持ちを切り替えられる交流の場。ここでの学びや出会いが、あなたの未来を育てていきます。<br>Wi-Fiや電源を完備しているため、パソコンを使った勉強や仕事にも最適。休憩時にはソファや給湯スペースでリフレッシュすることもできます。<br>人の気配を感じながら「集中」と「リラックス」を両立できる―DEKObokoは、学びを続けるあなたを支える学習空間です。</p>
                         <div class="c-btn__wrapper fadeUp">
                             <a class="c-btn p-facility__rental-link" href="https://lin.ee/ivHAxks" target="_blank">LINE予約へ進む<span class="c-btn__circle-bg p-facility__rental-link-circle-bg"><img class="c-btn__circle-arrow p-facility__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                         </div>

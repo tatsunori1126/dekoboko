@@ -390,7 +390,6 @@
 
                             <ul class="p-course__price-note">
                                 <li class="p-course__price-note-text">※お子さんに勉強する意思がある場合のみ「居場所学習コース」「受験対策コース」は申し込み可能です。</li>
-                                <li class="p-course__price-note-text">※居場所学習コースの勉強時間は「10:00〜12:00」or「13:00〜15:00」の間です。</li>
                             </ul>
                         </div>
 

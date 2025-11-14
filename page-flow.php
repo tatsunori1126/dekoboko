@@ -38,7 +38,7 @@
                 <div class="p-flow__container-box">
                     <section class="p-flow__section">
                         <div class="c-section__page-title-wrapper p-flow__title-wrapper fadeUp">
-                            <h2 class="c-section__page-title">入塾までの流れ</h2>
+                            <h2 class="c-section__page-title">入塾・入会までの流れ</h2>
                             <span class="c-section__page-title-en p-flow__page-title-en">Enrollment</span>
                         </div>
                         <div class="p-flow__box">
@@ -72,9 +72,9 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/flow/enrollment-icon03.png" alt="STEP03">
                                 </div>
                                 <div class="p-flow__content">
-                                    <h3 class="p-flow__title">ご入塾手続き</h3>
+                                    <h3 class="p-flow__title">ご入塾手続き・ご入会手続き</h3>
                                     <div class="p-flow__text-wrapper">
-                                        <p class="p-flow__text">DEKObokoで学びたい！と思っていただけましたら、ご入塾のお手続きを進めます。必要書類のご案内や費用・スケジュールの確認を行い、初回授業の日程を決定いたします。</p>
+                                        <p class="p-flow__text">DEKObokoで学びたい！と思っていただけましたら、ご入塾・ご入会のお手続きを進めます。必要書類のご案内や費用・スケジュールの確認を行い、初回授業の日程やご受講の日時を決定いたします。</p>
                                     </div>
                                 </div>
                             </div>

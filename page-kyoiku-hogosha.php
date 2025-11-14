@@ -18,7 +18,7 @@
         </div>
         <div class="c-inner">
             <div class="c-section__page-title-wrapper">
-                <h1 class="c-section__page-title">教育関係者<br>・保護者向け<br class="c-sp-hidden">コース</h1>
+                <h1 class="c-section__page-title">保護者向け<br class="c-sp-hidden">コース</h1>
                 <span class="c-section__page-title-en p-flow__page-title-en">Course</span>
             </div>
         </div>
@@ -226,7 +226,7 @@
                     </div>
                     <?php wp_reset_postdata(); ?>
                     <?php else : ?>
-                    <p class="p-course__no-item">現在、教育関係者・保護者向けのコースは準備中です。</p>
+                    <p class="p-course__no-item">現在、保護者向けのコースは準備中です。</p>
                     <?php endif; ?>
                 </div>
             </section>
@@ -237,7 +237,7 @@
                         <span class="c-section__page-title-en p-course__page-title-en">Price</span>
                     </div>
                     <div class="p-course__price-container">
-                        <p class="p-course__price-none">現在、教育関係者・保護者向けの料金案内は準備中です。</p>
+                        <p class="p-course__price-none">現在、保護者向けの料金案内は準備中です。</p>
                     </div>
                 </div>
             </section>

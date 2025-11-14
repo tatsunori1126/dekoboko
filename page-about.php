@@ -42,8 +42,8 @@
                     <span class="p-about__concept-title-en fadeUp">Concept</span>
                     <div class="p-about__concept-column-wrapper">
                         <h2 class="p-about__concept-title-ja-wrapper">
-                            <span class="p-about__concept-title-ja fadeUp">明日が来るのが、</span>
-                            <span class="p-about__concept-title-ja fadeUp">ちょっと楽しみになる</span>
+                            <span class="p-about__concept-title-ja fadeUp">明日がちょっと</span>
+                            <span class="p-about__concept-title-ja fadeUp">楽しみになる</span>
                             <span class="p-about__concept-title-ja fadeUp">学習塾。</span>
                         </h2>
                         <p class="p-about__concept-text fadeUp">学習習慣と思考力、コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。<br>それが、「 Co-learning park DEKOboko 」です。<br>私たちは、学びをテストの点数や偏差値だけで評価しません。<br>一人ひとりが“その人”になっていくこと、<br class="c-sp-hidden">“自分らしい生き方”を歩んでいける力を育んでいくこと。<br>それを何より大切にしています。</p>
@@ -122,7 +122,7 @@
                             </div>
                             <div class="p-about__important-item-text-wrapper">
                                 <div class="p-about__important-item-text-block">
-                                    <p class="p-about__important-item-text">学びを深めていく中で欠かせないのが<span class="p-about__important-item-text-font">「対話」</span>です。DEKObokoでは、講師や仲間との対話を通じて、自身の考えや価値観を言葉にし、他者とすり合わせる機会を大切にしています。自分の気持ちを<span class="p-about__important-item-text-font">表現する力</span>、相手の話を聞いて<span class="p-about__important-item-text-font">受けとめる力</span>、違いを<span class="p-about__important-item-text-font">認める姿勢</span>。対話の積み重ねが、自己理解と他者理解の両方を育んでいきます。また、他者との関わりを通して、「自分はどう在りたいか」に気づくこともあります。一人では得られない気づきや、他社に支えられる経験も、DEKObokoでの学びの一部です。</p>
+                                    <p class="p-about__important-item-text">学びを深めていく中で欠かせないのが<span class="p-about__important-item-text-font">「対話」</span>です。DEKObokoでは、講師や仲間との対話を通じて、自身の考えや価値観を言葉にし、他者とすり合わせる機会を大切にしています。自分の気持ちを<span class="p-about__important-item-text-font">表現する力</span>、相手の話を聞いて<span class="p-about__important-item-text-font">受けとめる力</span>、違いを<span class="p-about__important-item-text-font">認める姿勢</span>。対話の積み重ねが、自己理解と他者理解の両方を育んでいきます。また、他者との関わりを通して、「自分はどう在りたいか」に気づくこともあります。一人では得られない気づきや、他者に支えられる経験も、DEKObokoでの学びの一部です。</p>
                                 </div>
                                 <div class="p-about__important-item-img-wrapper">
                                     <img class="p-about__important-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/important-img03.png" alt="">
@@ -208,7 +208,7 @@
                                 <span class="p-about__method-item-title-big-en">O</span>
                                 <span class="p-about__method-item-title-en">Outreach</span>
                             </div>
-                            <h3 class="p-about__method-item-title">未来に向けて<br>挑戦していく</h3>
+                            <h3 class="p-about__method-item-title">未来に向けて<br>試行錯誤していく</h3>
                         </div>
                         <div class="p-about__method-item-img-wrapper">
                             <div class="p-about__method-item-img-box">

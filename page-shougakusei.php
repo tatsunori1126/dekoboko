@@ -48,7 +48,7 @@
                         <span class="p-course__column-main-title fadeUp">大切な第一歩。</span>
                     </h2>
                     <div class="p-course__column-main-icon-wrapper">
-                        <h3 class="p-course__column-main-icon-title fadeUp">安心できる居場所で<br>ワクワクを広げながら、<br>「学びたい！」を育むコース</h3>
+                        <h3 class="p-course__column-main-icon-title fadeUp">安心できる居場所で<br>自分のやりたいことを<br>広げながら、<br>お子さんを受け入れるコース</h3>
                         <div class="p-course__column-main-icon-img-wrapper fadeUp">
                             <img class="p-course__column-main-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/course/shougakusei/icon.png" alt="">
                         </div>
@@ -290,7 +290,6 @@
 
                             <ul class="p-course__price-note">
                                 <li class="p-course__price-note-text">※お子さんに勉強する意思がある場合のみ「居場所学習コース」「受験対策コース」は申し込み可能です。</li>
-                                <li class="p-course__price-note-text">※居場所学習コースの勉強時間は「10:00〜12:00」or「13:00〜15:00」の間です。</li>
                             </ul>
                         </div>
                     </div>

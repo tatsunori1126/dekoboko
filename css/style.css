@@ -858,13 +858,7 @@ body::before {
   vertical-align: middle;
 }
 .p-header .p-header__logo-link-page {
-  width: 190px;
   transition: opacity 0.3s ease;
-}
-@media (min-width: 1000px) {
-  .p-header .p-header__logo-link-page {
-    width: 251px;
-  }
 }
 .p-header .p-header__logo-link-page:hover {
   opacity: 0.8;

@@ -18,17 +18,17 @@
 <body ontouchstart="" <?php body_class(); ?>> <!-- ontouchstart="" スマホ2回タップしないとリンク先に飛ばない問題の対策 -->
     <?php wp_body_open(); ?>
     <div class="fixed-cv-wrapper">
-        <a class="fixed-cv-link fixed-cv-link-orange" href="https://lin.ee/ivHAxks" target="_blank"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon1.png" alt="説明会の参加">説明会の参加</a>
+        <a class="fixed-cv-link fixed-cv-link-orange" href="<?php echo esc_url( home_url( '/reservation' ) ); ?>" target="_blank"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon1.png" alt="説明会の参加">説明会の参加</a>
         <a class="fixed-cv-link fixed-cv-link-green" href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon2.png" alt="資料請求する">資料請求する</a>
     </div>
     <header class="l-header p-header">
     <?php if (is_front_page() || is_home()) : ?>
         <div class="p-header__logo-link">
-            <img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="Co-Learning park DEKOboko 明日が来るのが、ちょっと楽しみになる学習塾。">
+            <img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="Co-Learning park DEKOboko 明日がちょっと楽しみになる学習塾。">
         </div>
     <?php else : ?>
         <a class="p-header__logo-link p-header__logo-link-page" href="<?php echo esc_url( home_url('/')); ?>">
-            <img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/images/common/logo-ver2.png" alt="Co-Learning park DEKOboko">
+            <img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="Co-Learning park DEKOboko 明日がちょっと楽しみになる学習塾。">
         </a>
     <?php endif; ?>
         <div class="p-header__nav-container">
@@ -49,7 +49,7 @@
                             <li><a href="<?php echo esc_url( home_url( '/shougakusei' ) ); ?>">小学生コース</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/chuukousei' ) ); ?>">中高生コース</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/daigakusei-shakaijin' ) ); ?>">大学生・社会人コース</a></li>
-                            <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha' ) ); ?>">教育関係者・保護者コース</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha' ) ); ?>">保護者コース</a></li>
                         </ul>
                     </li>
                     <li class="p-header__nav-list">
@@ -66,8 +66,8 @@
                         <ul class="p-header__submenu">
                             <li><a href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・受講の流れ</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問</a></li>
-                            <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>ご説明について</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談について</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>ご説明について</a></li>
                         </ul>
                     </li>
                     <li class="p-header__nav-list">
@@ -107,6 +107,7 @@
                                     <ul class="p-header__hamburger-nav-list">
                                         <li><a href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">プライバシーポリシー</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -118,7 +119,7 @@
                                         <li><a href="<?php echo esc_url( home_url( '/shougakusei' ) ); ?>">小学生コース</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/chuukousei' ) ); ?>">中高生コース</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/daigakusei-shakaijin' ) ); ?>">大学生・社会人コース</a></li>
-                                        <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha' ) ); ?>">教育関係者・保護者コース</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha' ) ); ?>">保護者コース</a></li>
                                     </ul>
                                 </div>
                                 <!-- ▼ 料金案内 -->
@@ -128,7 +129,7 @@
                                         <li><a href="<?php echo esc_url( home_url( '/shougakusei/#shougakusei_price' ) ); ?>" data-scroll-link>小学生</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/chuukousei/#chuukousei_price' ) ); ?>" data-scroll-link>中高生</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/daigakusei-shakaijin/#daigakusei_price' ) ); ?>" data-scroll-link>大学生・社会人</a></li>
-                                        <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha/#kyoiku_price' ) ); ?>" data-scroll-link>教育関係者・保護者</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/kyoiku-hogosha/#kyoiku_price' ) ); ?>" data-scroll-link>保護者</a></li>
                                     </ul>
                                 </div>
                                 <!-- ▼ 入塾のご案内 -->
@@ -137,8 +138,8 @@
                                     <ul class="p-header__hamburger-nav-list">
                                         <li><a href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・受講の流れ</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問</a></li>
-                                        <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>説明会予約</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談予約</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>説明会予約</a></li>
                                         <li><a href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">資料請求<img class="p-header__hamburger-nav-list-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a></li>
                                     </ul>
                                 </div>
@@ -152,7 +153,7 @@
                                         <a class="p-header__hamburger-btn p-header__hamburger-btn-green" href="https://lin.ee/ivHAxks" target="_blank">説明会のご予約<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt="矢印"></a>
                                     </div>
                                     <div class="p-header__hamburger-btn-block">
-                                        <a class="p-header__hamburger-btn p-header__hamburger-btn-green" href="https://timerex.net/s/colpa22.1212_d4ee/ab0d6dfe" target="_blank">個別面談のご予約<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt="矢印"></a>
+                                        <a class="p-header__hamburger-btn p-header__hamburger-btn-green" href="https://timerex.net/s/colpa22.1212_d4ee/ab0d6dfe" target="_blank">個別相談のご予約<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt="矢印"></a>
                                     </div>
                                 </div>
                             </div>

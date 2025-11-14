@@ -106,11 +106,7 @@
         }
     }
     .p-header__logo-link-page {
-        width: 190px;
         transition: opacity 0.3s ease;
-        @include mixin.mid {
-            width: 251px;
-        }
         &:hover {
             opacity: 0.8;
         }

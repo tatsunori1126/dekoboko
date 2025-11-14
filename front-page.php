@@ -158,8 +158,8 @@
             <div class="p-top__message-title-container">
                 <div class="p-top__message-title-wrapper fadeUp">
                     <h2 class="p-top__message-title-box">
-                        <span class="p-top__message-title p-top__message-title01">明日が来るのが、</span>
-                        <span class="p-top__message-title p-top__message-title02">ちょっと楽しみになる</span>
+                        <span class="p-top__message-title p-top__message-title01">明日がちょっと</span>
+                        <span class="p-top__message-title p-top__message-title02">楽しみになる</span>
                         <span class="p-top__message-title p-top__message-title03">学習塾。</span>
                     </h2>
                     <span class="p-top__message-title-en">Message</span>
