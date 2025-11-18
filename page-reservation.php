@@ -47,7 +47,9 @@
                         </div>
                         <div class="p-reservation__column-text-wrapper">
                             <h3 class="p-reservation__column-text-title fadeUp">一人ひとりに合わせた学び方を、<br class="c-sp-only">じっくりとご相談いただけます。</h3>
-                            <p class="p-reservation__column-text fadeUp">より具体的にご相談されたい方には、個別相談をご用意しています。<br>お子さまの状況やご家庭のご希望をお伺いし、一人ひとりに合わせた学び方をご提案いたします。不登校・発達特性・進学など、どんなテーマでも安心してお話しください。</p>
+                            <div class="p-reservation__column-text-block">
+                                <p class="p-reservation__column-text fadeUp">より具体的にご相談されたい方には、個別相談をご用意しています。<br>お子さまの状況やご家庭のご希望をお伺いし、一人ひとりに合わせた学び方をご提案いたします。不登校・発達特性・進学など、どんなテーマでも安心してお話しください。</p>
+                            </div>
                             <div class="c-btn__wrapper p-reservation__btn-wrapper fadeUp">
                                 <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">LINE予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                             </div>
@@ -67,7 +69,7 @@
                                 <div class="p-reservation__merit-item-number-wrapper p-reservation__merit-item-number-wrapper02">
                                     <img class="p-reservation__merit-item-number" src="<?php echo get_template_directory_uri(); ?>/images/reservation/number02.png" alt="02">
                                 </div>
-                                <h4 class="p-reservation__merit-item-title">保護者のお悩みに<br>じっくり相談できる</h4>
+                                <h4 class="p-reservation__merit-item-title">お子さんに関する<br>お悩みごとを<br>じっくり相談できる</h4>
                                 <p class="p-reservation__merit-text">「学校に行きづらい」、「宿題をやらない」など、日常の細かなお悩みも安心してご相談いただけます。</p>
                             </div>
                             <div class="p-reservation__merit-item-wrapper fadeUp">
@@ -80,7 +82,7 @@
                         </div>
                     </div>
                     <div class="c-btn__wrapper p-reservation__btn-wrapper fadeUp">
-                        <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">LINEで説明会の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
+                        <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">LINEで個別相談の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                     </div>
                 </div>
 
@@ -95,9 +97,15 @@
                         </div>
                         <div class="p-reservation__column-text-wrapper">
                             <h3 class="p-reservation__column-text-title fadeUp">DEKObokoの想いや<br class="c-sp-only">学びのスタイルを、<br class="c-sp-only">まずは説明会で体感ください。</h3>
-                            <p class="p-reservation__column-text fadeUp">DEKObokoの雰囲気や学びのスタイルを、まずは知っていただくために説明会を開催しています。教室の環境やカリキュラムについて、実際にご覧いただきながらご説明します。「自分に合っているかな？」という疑問を解消する場として、お気軽にご参加ください。</p>
+                            <div class="p-reservation__column-text-block">
+                                <p class="p-reservation__column-text fadeUp">DEKObokoの想いと、保護者支援プログラムの価値をまずは説明会でご体感ください。</p>
+                                <p class="p-reservation__column-text fadeUp">子どもへの関わり方、学習伴走のコツ、家庭内コミュニケーション。<br>DEKObokoでは、保護者の方が「安心して子育てに向き合える土台」と「明日から使える実践知」を提供しています。</p>
+                                <p class="p-reservation__column-text fadeUp">本説明会では、約60分をかけて<br>・保護者向けコースの内容<br>・アプローチの背景にある心理学・教育学の根拠<br>・家庭での変化が生まれるメカニズム<br>について、実例を交えながらわかりやすくお伝えします。</p>
+                                <p class="p-reservation__column-text fadeUp">「子どもとの関わりをもっと良くしたい」<br>「自分も学び直しながら、家庭を整えていきたい」<br>そんなお気持ちを、ぜひ一度ご参加ください。</p>
+                                <p class="p-reservation__column-text fadeUp">ご不安やご質問を安心して相談いただける場として、どうぞお気軽にご参加ください。</p>
+                            </div>
                             <div class="c-btn__wrapper p-reservation__btn-wrapper fadeUp">
-                                <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">LINE予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
+                                <a class="c-btn p-reservation__link" href="https://lin.ee/ivHAxks" target="_blank">説明会に参加する<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                             </div>
                         </div>
                     </div>

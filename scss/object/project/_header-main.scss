@@ -20,7 +20,6 @@
         bottom: auto;
     }
     .fixed-cv-link {
-        width: 155px;
         height: 35px;
         display: flex;
         align-items: center;
@@ -32,18 +31,20 @@
         letter-spacing: 0.14em;
         box-shadow: 0px 5px 5px 0px rgba(86, 85, 84, 0.15);
         column-gap: 8px;
+        padding: 0 15px;
         @include mixin.tab {
             width: 260px;
         }
         @include mixin.sub {
             width: 60px;
-            height: 155px;
+            height: auto;
             writing-mode: vertical-rl;
             border-radius: 25px 0 0 25px;
             font-size: 1.4rem;
             transform: translateX(10px);
             padding-right: 10px;
             transition: transform 0.3s ease;
+            padding: 10px 0;
         }
         &:hover {
             @include mixin.sub {

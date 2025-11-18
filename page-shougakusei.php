@@ -48,13 +48,19 @@
                         <span class="p-course__column-main-title fadeUp">大切な第一歩。</span>
                     </h2>
                     <div class="p-course__column-main-icon-wrapper">
-                        <h3 class="p-course__column-main-icon-title fadeUp">安心できる居場所で<br>自分のやりたいことを<br>広げながら、<br>お子さんを受け入れるコース</h3>
+                        <h3 class="p-course__column-main-icon-title fadeUp">安心できる居場所で<br>自分のやりたいを<br>広げながら、<br>お子さんを受け入れるコース</h3>
                         <div class="p-course__column-main-icon-img-wrapper fadeUp">
                             <img class="p-course__column-main-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/course/shougakusei/icon.png" alt="">
                         </div>
                     </div>
-                    <p class="p-course__column-main-text fadeUp">小学生の毎日は、新しい発見や感情の出会いであふれています。挑戦してうまくいった喜びもあれば、失敗して悔しい思いをする日もあります。DEKObokoでは、その一つひとつを大切に受け止め、学びと成長につなげていきます。<br>主にFYLコースで受け入れております。FYLコースでは宿題や自習のサポートだけでなく、遊びや仲間との関わりも大切にしながら「学ぶって楽しい」と思える体験を重ねます。<br>「できた！」の達成感も、「今日はちょっと休みたい」の気持ちも、その子にとって大切な時間。DEKObokoは、子どもの個性に寄り添いながら、安心できる学びの毎日を支えます。</p>
-                    <p class="p-course__column-sub-text fadeUp">※DYLコースでは原則小学生の受け入れは行っておりませんが、ご希望の方はぜひご相談ください。</p>
+                    <p class="p-course__column-main-text fadeUp">小学生の毎日は、新しい発見や感情の出会いであふれています。挑戦してうまくいった喜びもあれば、失敗して悔しい思いをする日もあります。DEKObokoでは、その一つひとつを大切に受け止め、学びと成長につなげていきます。<br>「できた！」の達成感も、「今日はちょっと休みたい」の気持ちも、その子にとって大切な時間。DEKObokoは、子どもの個性に寄り添いながら、安心できる学びの毎日を支えます。</p>
+                    <p class="p-course__column-sub-text fadeUp">※主にFYLコースで受け入れております。<br>DYLコースでは原則小学生の受け入れは行っておりませんが、ご希望の方はぜひご相談ください。</p>
+                    <div class="p-course__explanation-text-wrapper">
+                        <div class="p-course__explanation-text-block fadeUp">
+                            <span class="p-course__explanation-sub-text">FYLコースとは</span>
+                            <p class="p-course__explanation-text">宿題や自習のサポートだけでなく、遊びや仲間との関わりも大切にしながら「誰かと話すって、学ぶって楽しい」と思える体験を重ねます。</p>
+                        </div>
+                    </div>
                     <div class="p-course__btn-container fadeUp">
                         <div class="p-course__btn-wrapper">
                             <a class="p-course__btn" href="<?php echo esc_url( home_url( '/shougakusei/#shougakusei_course' ) ); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>

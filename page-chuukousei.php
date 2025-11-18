@@ -53,7 +53,17 @@
                             <img class="p-course__column-main-icon-img" src="<?php echo get_template_directory_uri(); ?>/images/course/chuukousei/icon.png" alt="">
                         </div>
                     </div>
-                    <p class="p-course__column-main-text fadeUp">中高生期は、学力への意欲と同時に、進路や人間関係への迷いや自己不信が生まれる時期です。DEKObokoは「勉強したい」「変わりたい」「ちょっと立ち止まりたい」そのすべての気持ちを尊重し、一人ひとりに合った学び方を提案します。<br>DYLコースでは、学力向上を基盤に、学習計画の立て方や習慣化を身につけ、成績や偏差値の向上だけでなく、自ら選び行動する力を育てます。<br>FYLコースでは、不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。少人数授業や対話を通して、自分のペースで学び直し、再び挑戦する力を育みます。<br>学び方に正解はありません。DEKObokoは、それぞれのペースとタイミングに合わせて、一歩ずつ未来に進むサポートをします。</p>
+                    <p class="p-course__column-main-text fadeUp">中高生期は、学力への意欲と同時に、進路や人間関係への迷いや自己不信が生まれる時期です。DEKObokoは「勉強したい」「変わりたい」「ちょっと立ち止まりたい」そのすべての気持ちを尊重し、一人ひとりに合った学び方を提案します。<br>学び方に正解はありません。DEKObokoは、それぞれのペースとタイミングに合わせて、一歩ずつ未来に進むサポートをします。</p>
+                    <div class="p-course__explanation-text-wrapper">
+                        <div class="p-course__explanation-text-block fadeUp">
+                            <span class="p-course__explanation-sub-text">DYLコースとは</span>
+                            <p class="p-course__explanation-text">学力向上を基盤に、学習計画の立て方や習慣化を身につけ、成績や偏差値の向上だけでなく、自ら選び行動する力を育てます。</p>
+                        </div>
+                        <div class="p-course__explanation-text-block fadeUp">
+                            <span class="p-course__explanation-sub-text">FYLコースとは</span>
+                            <p class="p-course__explanation-text">不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。少人数授業や対話を通して、自分のペースで学び直し、再び挑戦する力を育みます。</p>
+                        </div>
+                    </div>
                     <div class="p-course__btn-container fadeUp">
                         <div class="p-course__btn-wrapper">
                             <a class="p-course__btn" href="<?php echo esc_url( home_url( '/chuukousei/#chuukousei_course' ) ); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>

@@ -756,7 +756,6 @@ body::before {
   }
 }
 .fixed-cv-wrapper .fixed-cv-link {
-  width: 155px;
   height: 35px;
   display: flex;
   align-items: center;
@@ -769,6 +768,7 @@ body::before {
   box-shadow: 0px 5px 5px 0px rgba(86, 85, 84, 0.15);
   -moz-column-gap: 8px;
        column-gap: 8px;
+  padding: 0 15px;
 }
 @media (min-width: 600px) {
   .fixed-cv-wrapper .fixed-cv-link {
@@ -778,13 +778,14 @@ body::before {
 @media (min-width: 800px) {
   .fixed-cv-wrapper .fixed-cv-link {
     width: 60px;
-    height: 155px;
+    height: auto;
     writing-mode: vertical-rl;
     border-radius: 25px 0 0 25px;
     font-size: 1.4rem;
     transform: translateX(10px);
     padding-right: 10px;
     transition: transform 0.3s ease;
+    padding: 10px 0;
   }
 }
 @media (min-width: 800px) {
@@ -3022,6 +3023,59 @@ body::before {
 .p-top__voice .p-top__voice-slider-container .p-top__voice-slider .p-top__voice-pagination .swiper-pagination-bullet-active {
   background: #9ebe94;
 }
+.p-top__voice .p-top__voice-more-btn-wrapper {
+  margin-top: 80px;
+  padding: 0 6.67%;
+}
+@media (min-width: 800px) {
+  .p-top__voice .p-top__voice-more-btn-wrapper {
+    margin-top: 120px;
+  }
+}
+.p-top__voice .p-top__voice-more-btn-wrapper .p-top__voice-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border-radius: 35px;
+  font-size: 1.5rem;
+  position: relative;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  padding: 0 0 0 30px;
+}
+@media (min-width: 600px) {
+  .p-top__voice .p-top__voice-more-btn-wrapper .p-top__voice-more-btn {
+    width: 360px;
+    justify-content: left;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .p-top__voice .p-top__voice-more-btn-wrapper .p-top__voice-more-btn {
+    height: 85px;
+    padding: 0 0 0 23px;
+    border-radius: 43px;
+    font-size: 1.8rem;
+  }
+}
+.p-top__voice .p-top__voice-more-btn-wrapper .p-top__voice-more-btn .p-top__voice-more-btn-circle-bg {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 20px;
+}
+@media (min-width: 600px) {
+  .p-top__voice .p-top__voice-more-btn-wrapper .p-top__voice-more-btn .p-top__voice-more-btn-circle-bg {
+    position: static;
+  }
+}
+@media (min-width: 1000px) {
+  .p-top__voice .p-top__voice-more-btn-wrapper .p-top__voice-more-btn .p-top__voice-more-btn-circle-bg {
+    width: 48px;
+    height: 48px;
+  }
+}
 
 .p-top__guide {
   position: relative;
@@ -4042,13 +4096,18 @@ body::before {
     font-size: 3rem;
   }
 }
-.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text {
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-block {
+  margin: 35px 0 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-block .p-reservation__column-text {
   font-size: 1.6rem;
   letter-spacing: 0.14em;
   font-weight: 500;
   color: #0d3425;
   line-height: 2.187;
-  margin: 35px 0 40px;
 }
 .p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link {
   height: 55px;
@@ -6280,6 +6339,42 @@ body::before {
     width: 87%;
     font-size: 1.6rem;
   }
+}
+.p-course .p-course__container .p-course__column-wrapper .p-course__column-main-wrapper .p-course__explanation-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+  margin: 60px 0 0;
+}
+@media (min-width: 1200px) {
+  .p-course .p-course__container .p-course__column-wrapper .p-course__column-main-wrapper .p-course__explanation-text-wrapper {
+    width: 87%;
+  }
+}
+.p-course .p-course__container .p-course__column-wrapper .p-course__column-main-wrapper .p-course__explanation-text-wrapper .p-course__explanation-text-block {
+  position: relative;
+  border-radius: 5px;
+  background: rgba(245, 244, 236, 0.8);
+  padding: 30px 25px 12px;
+}
+.p-course .p-course__container .p-course__column-wrapper .p-course__column-main-wrapper .p-course__explanation-text-wrapper .p-course__explanation-text-block .p-course__explanation-sub-text {
+  color: #f5f4ec;
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  background: #266b45;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 20px;
+  position: absolute;
+  top: -17px;
+  left: 0;
+}
+.p-course .p-course__container .p-course__column-wrapper .p-course__column-main-wrapper .p-course__explanation-text-wrapper .p-course__explanation-text-block .p-course__explanation-text {
+  color: #0d3425;
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  line-height: 2.187;
 }
 .p-course .p-course__container .p-course__column-wrapper .p-course__column-main-wrapper .p-course__column-sub-text {
   font-size: 1.4rem;

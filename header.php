@@ -18,7 +18,7 @@
 <body ontouchstart="" <?php body_class(); ?>> <!-- ontouchstart="" スマホ2回タップしないとリンク先に飛ばない問題の対策 -->
     <?php wp_body_open(); ?>
     <div class="fixed-cv-wrapper">
-        <a class="fixed-cv-link fixed-cv-link-orange" href="<?php echo esc_url( home_url( '/reservation' ) ); ?>" target="_blank"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon1.png" alt="説明会の参加">説明会の参加</a>
+        <a class="fixed-cv-link fixed-cv-link-orange" href="<?php echo esc_url( home_url( '/reservation' ) ); ?>"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon1.png" alt="相談・説明会に参加">相談・説明会に参加</a>
         <a class="fixed-cv-link fixed-cv-link-green" href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon2.png" alt="資料請求する">資料請求する</a>
     </div>
     <header class="l-header p-header">
@@ -34,6 +34,9 @@
         <div class="p-header__nav-container">
             <nav class="p-header__nav">
                 <ul class="p-header__nav-list-wrapper">
+                    <li class="p-header__nav-list">
+                        <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/' ) ); ?>">TOPページ</a>
+                    </li>
                     <li class="p-header__nav-list has-submenu">
                         <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/about' ) ); ?>">デコボコとは</a>
                         <ul class="p-header__submenu">
@@ -67,7 +70,7 @@
                             <li><a href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・受講の流れ</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談について</a></li>
-                            <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>ご説明について</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>説明会について</a></li>
                         </ul>
                     </li>
                     <li class="p-header__nav-list">

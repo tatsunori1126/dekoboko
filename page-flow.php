@@ -60,7 +60,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/flow/enrollment-icon02.png" alt="STEP02">
                                 </div>
                                 <div class="p-flow__content">
-                                    <h3 class="p-flow__title">説明会・個別相談</h3>
+                                    <h3 class="p-flow__title">個別相談・説明会</h3>
                                     <div class="p-flow__text-wrapper">
                                         <p class="p-flow__text">DEKObokoでは、入塾前に教室の雰囲気や学び方を知っていただく場として、説明会や個別相談を実施しています。保護者の方のご不安やお子さまの特性についても、丁寧にお伺いいたします。</p>
                                     </div>
@@ -117,6 +117,50 @@
                                 </div>
                                 <div class="p-flow__content">
                                     <h3 class="p-flow__title">授業スタート</h3>
+                                    <div class="p-flow__text-wrapper">
+                                        <p class="p-flow__text">いよいよ学びのスタートです。安心できるDEKObokoの環境で、ワクワクする学びをはじめましょう！</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="p-flow__section">
+                        <div class="c-section__page-title-wrapper p-flow__title-wrapper fadeUp">
+                            <h2 class="c-section__page-title">受講までの流れ<br class="c-sub-hidden">（保護者コース）</h2>
+                            <span class="c-section__page-title-en p-flow__page-title-en">Course Participation</span>
+                        </div>
+                        <div class="p-flow__box">
+                            <div class="p-flow__wrapper fadeUp">
+                                <div class="p-flow__icon">
+                                    <span class="p-flow__num">STEP<span class="p-flow__num-font">01</span></span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/flow/participation-icon01.png" alt="STEP01">
+                                </div>
+                                <div class="p-flow__content">
+                                    <h3 class="p-flow__title">説明会の参加</h3>
+                                    <div class="p-flow__text-wrapper">
+                                        <p class="p-flow__text">まずはオリエンテーションを行い、お子さまの学習スタイルや得意・不得意・目標などを確認します。一人ひとりに合った学び方を一緒にデザインしていきます。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-flow__wrapper fadeUp">
+                                <div class="p-flow__icon">
+                                    <span class="p-flow__num">STEP 02</span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/flow/enrollment-icon03.png" alt="STEP02">
+                                </div>
+                                <div class="p-flow__content">
+                                    <h3 class="p-flow__title">入会手続き</h3>
+                                    <div class="p-flow__text-wrapper">
+                                        <p class="p-flow__text">講師と相談しながら、無理なく続けられる学習計画を立てます。計画では、塾での学習だけでなく、ご家庭での過ごし方や生活リズムも含め、お子さまに合った計画をつくります。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-flow__wrapper fadeUp">
+                                <div class="p-flow__icon p-flow__icon--last">
+                                    <span class="p-flow__num">STEP 03</span>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/flow/participation-icon03.png" alt="STEP03">
+                                </div>
+                                <div class="p-flow__content">
+                                    <h3 class="p-flow__title">受講スタート</h3>
                                     <div class="p-flow__text-wrapper">
                                         <p class="p-flow__text">いよいよ学びのスタートです。安心できるDEKObokoの環境で、ワクワクする学びをはじめましょう！</p>
                                     </div>

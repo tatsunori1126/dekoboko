@@ -122,7 +122,7 @@
                                     <div class="p-facility__equipment-img-wrapper">
                                         <img class="p-facility__equipment-img" src="<?php echo get_template_directory_uri(); ?>/images/facility/class-equipment05.png" alt="授業席">
                                     </div>
-                                    <h4 class="p-facility__equipment-title">授業席</h4>
+                                    <h4 class="p-facility__equipment-title">冷蔵庫</h4>
                                 </div>
                                 <div class="p-facility__equipment-wrapper fadeUp">
                                     <div class="p-facility__equipment-img-wrapper">

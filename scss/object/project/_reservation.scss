@@ -91,13 +91,18 @@
                             font-size: 3rem;
                         }
                     }
-                    .p-reservation__column-text {
-                        font-size: 1.6rem;
-                        letter-spacing: 0.14em;
-                        font-weight: 500;
-                        color: color.$textColor;
-                        line-height: 2.187;
+                    .p-reservation__column-text-block {
                         margin: 35px 0 40px;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 20px;
+                        .p-reservation__column-text {
+                            font-size: 1.6rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: color.$textColor;
+                            line-height: 2.187;
+                        }
                     }
                     .p-reservation__btn-wrapper {
                         .p-reservation__link {
