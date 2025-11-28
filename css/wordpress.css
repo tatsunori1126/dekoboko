@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* ACF ラジオボタン（アイコン選択）カスタムレイアウト */
+.acf-field[data-name=voice_icon] .acf-radio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px; /* 上下16px 左右24pxくらいが見やすい */
+  align-items: center;
+}
+
+.acf-field[data-name=voice_icon] .acf-radio-list li {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  background: #fafafa;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+/* ホバー時 */
+.acf-field[data-name=voice_icon] .acf-radio-list li:hover {
+  background: #f0f8ff;
+  border-color: #66aaff;
+}
+
+/* 選択中のとき見た目を少し強調 */
+.acf-field[data-name=voice_icon] .acf-radio-list input:checked + img,
+.acf-field[data-name=voice_icon] .acf-radio-list input:checked ~ span {
+  opacity: 1;
+}
+
+.acf-field[data-name=voice_icon] .acf-radio-list input:checked + img {
+  outline: 2px solid #4a90e2;
+  border-radius: 50%;
+}
+
+/* テキスト（ICON01）部分 */
+.acf-field[data-name=voice_icon] .acf-radio-list li span {
+  font-size: 13px;
+  color: #333;
+}
+
+/* ACF ラジオリストの before を完全無効化 */
+.acf-field[data-name=voice_icon] .acf-radio-list::before {
+  display: none !important;
+  content: none !important;
+}

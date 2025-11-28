@@ -93,17 +93,20 @@
                 }
             }
             .p-top__mv__img-wrapper {
+                overflow-x: hidden;
                 @include mixin.mid {
+                    overflow-x: visible;
                     width: 93%;
                     margin: 0 auto;
                 }
                 .p-top__mv-img {
-                    width: 100%;
+                    width: 135%;
+                    transform: translateX(-30px);
+                    height: auto;
                     display: block;
-                    img {
+                    @include mixin.mid {
                         width: 100%;
-                        height: auto;
-                        vertical-align: middle;
+                        transform: translateX(0);
                     }
                 }
             }
@@ -904,10 +907,31 @@
                                 .p-top__voice-slider-item-top-title-box {
                                     display: flex;
                                     flex-direction: column;
-                                    row-gap: 5px;
+                                    row-gap: 8px;
                                     // width: 48%;
                                     @include mixin.mid {
                                         width: auto;
+                                    }
+                                    .p-top__voice-category-label {
+                                        border-radius: 5px;
+                                        height: 22px;
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 0 9px;
+                                        font-size: 1.1rem;
+                                        font-weight: 500;
+                                        color: #fffefb;
+                                        letter-spacing: 0.14em;
+                                        width: fit-content;
+                                    }
+                                    /* 保護者の声 → 現状の色のまま */
+                                    .p-top__voice-category-label--parents {
+                                        background: #388d60;
+                                    }
+    
+                                    /* 卒業生の声 → 新しい色 */
+                                    .p-top__voice-category-label--students {
+                                        background: #db7a27;
                                     }
                                     .p-top__voice-slider-item-top-title {
                                         font-size: 1.6rem;

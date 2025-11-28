@@ -108,6 +108,21 @@ function enqueue_gsap_with_scrolltrigger() {
 add_action('wp_enqueue_scripts', 'enqueue_gsap_with_scrolltrigger');
 
 /***********************************************************
+ * 管理画面（Gutenberg + Classic Editor）専用CSSの読み込み
+ ***********************************************************/
+function enqueue_admin_wp_styles() {
+  wp_enqueue_style(
+      'admin-wp-style',
+      get_template_directory_uri() . '/css/wordpress.css',
+      [],
+      filemtime(get_template_directory() . '/css/wordpress.css')
+  );
+}
+add_action('admin_enqueue_scripts', 'enqueue_admin_wp_styles');
+add_action('enqueue_block_editor_assets', 'enqueue_admin_wp_styles');
+
+
+/***********************************************************
 * カスタム投稿によって表示件数を変える
 ***********************************************************/
 function change_posts_per_page($query) {
@@ -120,10 +135,22 @@ function change_posts_per_page($query) {
       return;
   }
 
+  // カスタム投稿タイプ "news" のアーカイブページの場合
+  if ( $query->is_post_type_archive('voice') ) {
+    $query->set( 'posts_per_page', 8 );
+    return;
+  }
+
   // タクソノミー "news_category" のアーカイブページの場合
   if ( $query->is_tax('news_category') ) {
       $query->set( 'posts_per_page', 16 );
       return;
+  }
+
+  // タクソノミー "news_category" のアーカイブページの場合
+  if ( $query->is_tax('voice_category') ) {
+    $query->set( 'posts_per_page', 8 );
+    return;
   }
 }
 add_action( 'pre_get_posts', 'change_posts_per_page' );
@@ -343,3 +370,32 @@ add_action('init', 'remove_course_editor_support');
 // お知らせ（news）用のサムネイルサイズを登録
 add_theme_support('post-thumbnails'); // まだ書いていない場合は必須
 add_image_size('news-thumb', 436, 326, true); // true はハードクロップ（中央トリミング）
+
+
+// ACF カスタムフィールド：voice_icon の選択肢を動的に生成
+add_filter('acf/load_field/name=voice_icon', function ($field) {
+
+  $base = get_template_directory_uri() . '/images/voice/';
+
+  $icons = [];
+  for ($i = 1; $i <= 20; $i++) {
+      // 01, 02 のようなゼロ詰め
+      $num = sprintf('%02d', $i);
+      $key = 'icon' . $num; // 保存される値（例：icon01）
+
+      $label = sprintf(
+          '<img src="%s%s.png" style="width:40px;height:40px; display:inline-block; vertical-align:middle; margin-right:8px;"> %s',
+          $base,
+          $key,
+          strtoupper($key)
+      );
+
+      $icons[$key] = $label;
+  }
+
+  $field['choices'] = $icons;
+  $field['return_format'] = 'value';
+
+  return $field;
+});
+

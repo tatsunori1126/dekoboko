@@ -75,6 +75,9 @@
                                 <a class="p-footer__nav-menu-link" href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
+                                <a class="p-footer__nav-menu-link" href="<?php echo get_post_type_archive_link('voice'); ?>">利用者の声</a>
+                            </li>
+                            <li class="p-footer__nav-menu-list-item">
                                 <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">

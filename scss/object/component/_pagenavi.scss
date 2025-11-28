@@ -53,9 +53,94 @@
             .last {
                 background: color.$subColor;
             }
+            .nextpostslink, .previouspostslink {
+                display: none;
+                .fa-chevron-right {
+                    color: #266b45;
+                }
+                .fa-chevron-left {
+                    color: #266b45;
+                }
+            }
         }
     }
 }
+
+.p-voice__arrow {
+    .c-pagination {
+        .wp-pagenavi {
+            a {
+                width: 40px;
+                height: 40px;
+                @include mixin.tab {
+                    width: 45px;
+                    height: 45px;
+                }
+                @include mixin.sub {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .nextpostslink, .previouspostslink {
+                border: none;
+                width: auto;
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                font-size: 0;
+                font-weight: 500;
+                letter-spacing: 0.14em;
+                color: color.$textColor;
+                @include mixin.tab {
+                    font-size: 1.4rem;
+                }
+                @include mixin.sub {
+                    font-size: 1.6rem;
+                }
+                .fa-chevron-right {
+                    color: #266b45;
+                    font-size: 1.6rem;
+                }
+                .fa-chevron-left {
+                    color: #266b45;
+                    font-size: 1.6rem;
+                }
+            }
+            .current {
+                width: 40px;
+                height: 40px;
+                @include mixin.tab {
+                    width: 45px;
+                    height: 45px;
+                }
+                @include mixin.sub {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .page, .current, .extend, .last {
+                order: 2; /* page と last をすべて真ん中へ */
+            }
+            .larger {
+                display: none;
+                @include mixin.tab {
+                    display: flex;
+                }
+            }
+
+            .previouspostslink {
+                order: 1;
+            }
+            .nextpostslink {
+                order: 3;
+            }
+        }
+    }
+}
+
+
+
+
 
 // 詳細ページページネーション
 .c-single__pagenavi-box {

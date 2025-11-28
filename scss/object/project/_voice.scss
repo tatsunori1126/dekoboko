@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@use "../../foundation/mixin";
+@use "../utility/color";
+.p-voice {
+    padding: 115px 0;
+    margin-top: -85px;
+    position: relative;
+    z-index: 1;
+    @include mixin.mid {
+        margin-top: -105px;
+        padding: 200px 0 100px;
+    }
+    .p-voice__container {
+        margin: 80px 0 0;
+        @include mixin.mid {
+            margin: 30% 0 0;
+        }
+        .p-voice__inner {
+            padding: 0 6.67%;
+            @include mixin.mid {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0;
+            }
+            .p-voice__category-container {
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: 1.5px solid rgba(0, 90, 56, 0.3);
+                gap: 15px 20px;
+                padding-bottom: 30px;
+                @include mixin.mid {
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    padding-bottom: 50px;
+                    gap: 0;
+                }
+                li {
+                    .p-voice__category-link {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+                        letter-spacing: 0.14em;
+                        font-weight: 500;
+                        border: 1px solid #729e82;
+                        background: color.$subColor;
+                        color: #266b45;
+                        transition: all 0.2s ease;
+                        position: relative;
+                        padding: 0 10px;
+                        height: 40px;
+                        font-size: 1.4rem;
+                        @include mixin.mid {
+                            font-size: 1.6rem;
+                            width: 250px;
+                            height: 50px;
+                            padding: 0;
+                        }
+                        /* ↓マーク */
+                        &::after {
+                            @include mixin.mid {
+                                content: "↓";
+                                position: absolute;
+                                right: 10px;
+                                font-size: 1.5rem;
+                                margin-left: 10px;
+                                transform: translateY(-1px);
+                            }
+                        }
+                        &:hover {
+                            background-color: #266b45;
+                            color: color.$subColor;
+                        }
+                        &.active {
+                            background-color: #266b45;
+                            color: color.$subColor;
+                            &::after {
+                                color: color.$subColor;
+                            }
+                        }
+                    }
+                }
+            }
+            .p-voice__contents-container {
+                margin-bottom: 60px;
+                .p-voice__contents-wrapper {
+                    padding: 35px 10px 45px;
+                    border-bottom: 1.5px solid rgba(0, 90, 56, 0.3);
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 40px;
+                    @include mixin.sub {
+                        padding: 50px 15px 70px;
+                    }
+                    .p-voice__contents-top-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 20px;
+                        @include mixin.sub {
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+                        .p-voice__contents-top-box {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 25px;
+                            .p-voice__icon {
+                                width: 80px;
+                                height: auto;
+                                @include mixin.sub {
+                                    width: 90px;
+                                }
+                            }
+                            .p-voice__contents-top-title-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 15px;
+                                .p-voice__category-label {
+                                    border-radius: 5px;
+                                    height: 22px;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0 9px;
+                                    font-size: 1.1rem;
+                                    font-weight: 500;
+                                    color: #fffefb;
+                                    letter-spacing: 0.14em;
+                                    width: fit-content;
+                                }
+                                /* 保護者の声 → 現状の色のまま */
+                                .p-voice__category-label--parents {
+                                    background: #388d60;
+                                }
+
+                                /* 卒業生の声 → 新しい色 */
+                                .p-voice__category-label--students {
+                                    background: #db7a27;
+                                }
+                                .p-voice__contents-box {
+                                    .p-voice__contents-title {
+                                        font-size: 1.6rem;
+                                        font-weight: 700;
+                                        letter-spacing: 0.14em;
+                                        color: color.$textColor;
+                                        line-height: 1;
+                                    }
+                                }
+                                .p-voice__course {
+                                    color: #388d60;
+                                    font-size: 1.3rem;
+                                    font-weight: 700;
+                                    letter-spacing: 0.14em;
+                                }
+                            }
+                        }
+                        .p-voice__rate-wrapper {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 15px;
+                            justify-content: right;
+                            @include mixin.sub {
+                                justify-content: inherit;
+                            }
+                            .p-voice__rate-label {
+                                font-size: 1.4rem;
+                                letter-spacing: 0.14em;
+                                color: #388d60;
+                                font-weight: 700;
+                                @include mixin.sub {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                            .p-voice__rate-img {
+                                width: 120px;
+                                height: auto;
+                                @include mixin.sub {
+                                    width: 140px;
+                                }
+                            }
+                        }
+                    }
+                    .p-voice__comment {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 25px;
+                        .p-voice__comment-title-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 15px;
+                            .p-voice__comment-title {
+                                background: rgba(56, 141, 96, 0.1);
+                                border-radius: 5px;
+                                padding: 8px 15px;
+                                font-size: 1.4rem;
+                                letter-spacing: 0.14em;
+                                font-weight: 500;
+                                color: #388d60;
+                                line-height: 1.7;
+                                @include mixin.sub {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                            .p-voice__comment-text {
+                                font-size: 1.5rem;
+                                letter-spacing: 0.14em;
+                                font-weight: 500;
+                                color: color.$textColor;
+                                line-height: 2;
+                                @include mixin.sub {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

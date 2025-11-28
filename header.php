@@ -76,6 +76,9 @@
                     <li class="p-header__nav-list">
                         <a class="p-header__nav-link" href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a>
                     </li>
+                    <li class="p-header__nav-list">
+                        <a class="p-header__nav-link" href="<?php echo get_post_type_archive_link('voice'); ?>">利用者の声</a>
+                    </li>
                 </ul>
             </nav>
             <div class="p-header__hamburger-container">
@@ -109,6 +112,7 @@
                                     </ul>
                                     <ul class="p-header__hamburger-nav-list">
                                         <li><a href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a></li>
+                                        <li><a href="<?php echo get_post_type_archive_link('voice'); ?>">利用者の声</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">プライバシーポリシー</a></li>
                                     </ul>
