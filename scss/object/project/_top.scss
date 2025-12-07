@@ -1141,11 +1141,15 @@
                         justify-content: space-between;
                         background: color.$subColor;
                         border-radius: 10px;
-                        letter-spacing: 0.14em;
+                        font-size: 1.6rem;
+                        letter-spacing: 0.1em;
                         font-weight: 500;
-                        font-size: 1.7rem;
                         color: color.$textColor;
                         transition: color 0.3s ease;
+                        @include mixin.tab {
+                            letter-spacing: 0.14em;
+                            font-size: 1.7rem;
+                        }
                         @include mixin.mid {
                             font-size: 2rem;
                             height: 78px;
@@ -1153,9 +1157,12 @@
                             width: 436px;
                         }
                         .p-top__guide-arrow {
-                            width: 22px;
+                            width: 18px;
                             height: auto;
                             transition: transform 0.3s ease;
+                            @include mixin.tab {
+                                width: 22px;
+                            }
                         }
                         &:hover {
                             color: #388d60;

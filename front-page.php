@@ -386,13 +386,13 @@
                         <h2 class="c-section__title-ja">入塾のご案内</h2>
                     </div>
                     <div class="p-top__guide-btn-wrapper fadeUp">
-                        <a href="<?php echo esc_url( home_url( '/flow' ) ); ?>" class="p-top__guide-btn">入塾・受講の流れ<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="p-top__guide-btn">よくあるご質問<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" class="p-top__guide-btn">個別相談について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
-                        <a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" class="p-top__guide-btn">説明会について<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/flow' ) ); ?>" class="p-top__guide-btn">入塾・入会の流れ<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="p-top__guide-btn">よくあるご質問・お問い合わせ<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" class="p-top__guide-btn">個別相談・体験授業<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
+                        <a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" class="p-top__guide-btn">セミナー<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
                     </div>
                     <div class="p-top__guide-link-wrapper fadeUp">
-                        <a href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="p-top__guide-link">資料請求<img class="p-top__guide-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
+                        <a href="https://lin.ee/aaQVtZ7" target="_blank" class="p-top__guide-link">資料請求<img class="p-top__guide-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
                     </div>
                 </div>
                 <div class="p-top__guide-img-wrapper fadeUp">

@@ -575,6 +575,7 @@
                             }
                             .p-course__bottom-btn-wrapper {
                                 .p-course__bottom-btn {
+                                    font-size: 1.5rem;
                                     height: 70px;
                                     display: flex;
                                     align-items: center;
@@ -582,14 +583,17 @@
                                     background: color.$subColor;
                                     border-radius: 35px;
                                     border: 1.5px solid #266b45;
-                                    font-size: 1.8rem;
-                                    letter-spacing: 0.14em;
                                     font-weight: 500;
                                     color: #266b45;
                                     position: relative;
+                                    letter-spacing: 0.12em;
                                     transition: opacity 0.3s ease;
+                                    @include mixin.tab {
+                                        letter-spacing: 0.14em;
+                                        font-size: 1.8rem;
+                                    }
                                     @include mixin.mid {
-                                        width: 340px;
+                                        width: 380px;
                                     }
                                     &:hover {
                                         opacity: 0.8;
@@ -598,14 +602,18 @@
                                         }
                                     }
                                     .p-course__bottom-btn-arrow {
-                                        width: 16px;
                                         height: auto;
                                         vertical-align: middle;
                                         position: absolute;
-                                        right: 30px;
+                                        right: 12px;
                                         top: 50%;
                                         transform: translateY(-50%);
                                         transition: transform 0.3s ease;
+                                        width: 14px;
+                                        @include mixin.tab {
+                                            width: 16px;
+                                            right: 30px;
+                                        }
                                     }
                                 }
                             }

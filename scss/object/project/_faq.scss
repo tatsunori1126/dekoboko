@@ -162,6 +162,19 @@
                                 transform: rotate(90deg);
                             }
                         }
+                        .p-faq__question-text-block-contact {
+                            cursor: default;
+                            &:hover {
+                                opacity: 1;
+                            }
+                            .p-faq__question-text-sub-contact {
+                                width: 100%;
+                                a {
+                                    color: #388d60;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
                         .p-faq__answer-text-box {
                             display: none;
                             padding: 0 25px 0 0;

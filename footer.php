@@ -25,8 +25,8 @@
                 <div class="p-footer__access-contact-wrapper">
                     <h2 class="p-footer__access-contact-title">お問い合わせ</h2>
                     <div class="p-footer__access-contact-btn-wrapper">
-                        <a class="p-footer__access-contact-link" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">メールフォームへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
                         <a class="p-footer__access-contact-link" href="https://lin.ee/ivHAxks" target="_blank">公式LINEへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
+                        <a class="p-footer__access-contact-link" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">メールフォームへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -35,8 +35,8 @@
                     <h2 class="p-footer__nav-reservation-title">ご予約はこちら</h2>
                     <span class="p-footer__nav-reservation-line"></span>
                     <div class="p-footer__nav-reservation-btn-wrapper">
-                        <a class="p-footer__nav-reservation-link" href="https://timerex.net/s/colpa22.1212_d4ee/ab0d6dfe" target="_blank">個別相談<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
-                        <a class="p-footer__nav-reservation-link" href="https://lin.ee/ivHAxks" target="_blank">説明会<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                        <a class="p-footer__nav-reservation-link" href="https://timerex.net/s/colpa22.1212_d4ee/ab0d6dfe" target="_blank">個別相談・体験授業<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                        <a class="p-footer__nav-reservation-link" href="https://lin.ee/ivHAxks" target="_blank">セミナー<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
                     </div>
                 </div>
                 <div class="p-footer__nav-menu-wrapper">
@@ -130,19 +130,19 @@
                         <div class="p-footer__nav-menu-bottom-box">
                             <ul class="p-footer__nav-menu-bottom-list">
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・受講の流れ</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・入会の流れ</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問・お問い合わせ</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談予約</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談・体験授業</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>説明会予約</a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>セミナー</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="https://www.canva.com/design/DAGq9X0qTp0/7FvEGecvfFYR2yavn0GXHQ/edit?utm_content=DAGq9X0qTp0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">資料請求<img class="p-footer__nav-menu-bottom-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="https://lin.ee/aaQVtZ7" target="_blank">資料請求<img class="p-footer__nav-menu-bottom-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
                                 </li>
                             </ul>
                         </div>

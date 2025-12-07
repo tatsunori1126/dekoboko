@@ -61,7 +61,7 @@
                         </div>
                         <div class="p-course__explanation-text-block fadeUp">
                             <span class="p-course__explanation-sub-text">FYLコースとは</span>
-                            <p class="p-course__explanation-text">不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。少人数授業や対話を通して、自分のペースで学び直し、再び挑戦する力を育みます。</p>
+                            <p class="p-course__explanation-text">不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。希望に応じて、対話を通して自分のペースで学び直し、"勉強に挑戦したい"という気持ちを後押しします。</p>
                         </div>
                     </div>
                     <div class="p-course__btn-container fadeUp">
@@ -226,7 +226,7 @@
                                         <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/chuukousei/#chuukousei_price' ) ); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
                                     </div>
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談・体験授業はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談・体験授業はこちら"></a>
                                     </div>
                                 </div>
                                 <?php endif; ?>
@@ -257,20 +257,14 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                戦略的学習コース<br>
-                                                <span class="min-font">（対面/オンライン）80分</span>
+                                                チーム学習コース<br>
+                                                <span class="min-font">[週1回チーム学習＋週1回チューター指導]</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                鬼のスパルタ学習コース<br>
-                                                <span class="min-font">[定期テスト/受験/小論文/面接]<br>（オンライン）55分</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                カスタム学習コース<br>
-                                                <span class="min-font">[テスト/小論文/面接/特別対応/資格・検定]<br>（対面/オンライン）55分</span>
+                                                子別学習コース<br>
+                                                <span class="min-font">[テスト/小論文/面接/特別対応/資格・検定等]</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -281,61 +275,25 @@
                                         <thead>
                                             <tr>
                                                 <th>月4回</th>
-                                                <th>月6回</th>
                                                 <th>月8回</th>
-                                                <th>月10回</th>
-                                                <th>月12回</th>
                                                 <th>1コマ</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>
-                                                    27,600円<span class="min-font">（6ヶ月間）</span><br>
-                                                    20,700円<span class="min-font">（6ヶ月以降）</span>
-                                                </td>
-                                                <td>
-                                                    39,600円<span class="min-font">（6ヶ月間）</span><br>
-                                                    29,700円<span class="min-font">（6ヶ月以降）</span>
-                                                </td>
-                                                <td>
-                                                    50,400円<span class="min-font">（6ヶ月間）</span><br>
-                                                    37,800円<span class="min-font">（6ヶ月以降）</span>
-                                                </td>
-                                                <td>
-                                                    60,000円<span class="min-font">（6ヶ月間）</span><br>
-                                                    45,000円<span class="min-font">（6ヶ月以降）</span>
-                                                </td>
-                                                <td>
-                                                    68,300円<span class="min-font">（6ヶ月間）</span><br>
-                                                    51,300円<span class="min-font">（6ヶ月以降）</span>
-                                                </td>
+                                                <td>-</td>
+                                                <td>33,000円</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>8,100円</td>
-                                            </tr>
-                                            <tr>
-                                                <td>26,400円</td>
-                                                <td>39,600円</td>
-                                                <td>48,000円</td>
-                                                <td>60,000円</td>
-                                                <td>-</td>
-                                                <td>-</td>
+                                                <td>25,200円</td>
+                                                <td>45,600円</td>
+                                                <td>6,000円</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-
-                            <ul class="p-course__price-note">
-                                <li class="p-course__price-note-text">※「鬼のスパルタ学習コース」は、最低10コマ以上です。限定3名までとなります。</li>
-                            </ul>
                         </div>
 
                         <div class="p-course__price-wrapper">
@@ -411,10 +369,10 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1対2<span class="min-font">（80分）</span></td>
+                                            <td>1対2</td>
                                         </tr>
                                         <tr>
-                                            <td>1対1<span class="min-font">（80分）</span></td>
+                                            <td>1対1</td>
                                         </tr>
                                     </tbody>
                                 </table>

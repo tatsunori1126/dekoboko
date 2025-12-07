@@ -484,6 +484,7 @@ body::before {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
 }
 .c-breadcrumbs .c-breadcrumbs__inner span {
   flex-shrink: 0;
@@ -962,7 +963,7 @@ body::before {
 .p-header .p-header__nav-container .p-header__nav {
   display: none;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .p-header .p-header__nav-container .p-header__nav {
     display: block;
     position: relative;
@@ -1274,8 +1275,8 @@ body::before {
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-max-content;
+  width: max-content;
   letter-spacing: 0.14em;
   color: #0d3425;
   text-decoration: none;
@@ -1330,7 +1331,7 @@ body::before {
   row-gap: 17px;
 }
 .p-header .p-header__nav-container .p-header__hamburger-container .p-header__hamburger-nav-wrapper .p-header__hamburger-nav-wrapper-inner .p-header__hamburger-btn-container .p-header__hamburger-btn-wrapper .p-header__hamburger-btn-box .p-header__hamburger-btn-block .p-header__hamburger-btn {
-  width: 230px;
+  width: 290px;
   height: 55px;
   border-radius: 28px;
   padding: 0 20px 0 28px;
@@ -1726,7 +1727,7 @@ body::before {
   .p-footer .p-footer__container .p-footer__nav-wrapper .p-footer__nav-reservation-wrapper .p-footer__nav-reservation-btn-wrapper .p-footer__nav-reservation-link {
     height: 55px;
     border-radius: 28px;
-    width: 216px;
+    width: 240px;
     padding: 0 20px 0 30px;
     font-size: 1.6rem;
   }
@@ -1868,8 +1869,8 @@ body::before {
   align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-max-content;
+  width: max-content;
   transition: color 0.3s ease;
 }
 .p-footer .p-footer__container .p-footer__nav-wrapper .p-footer__nav-menu-bottom-container .p-footer__nav-menu-bottom-wrapper .p-footer__nav-menu-bottom-box .p-footer__nav-menu-bottom-list .p-footer__nav-menu-bottom-list-item .p-footer__nav-menu-bottom-link:hover {
@@ -1880,7 +1881,7 @@ body::before {
     align-items: baseline;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .p-footer .p-footer__container .p-footer__nav-wrapper .p-footer__nav-menu-bottom-container .p-footer__nav-menu-bottom-wrapper .p-footer__nav-menu-bottom-box .p-footer__nav-menu-bottom-list .p-footer__nav-menu-bottom-list-item .p-footer__nav-menu-bottom-link {
     align-items: center;
   }
@@ -3307,11 +3308,17 @@ body::before {
   justify-content: space-between;
   background: #f5f4ec;
   border-radius: 10px;
-  letter-spacing: 0.14em;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
   font-weight: 500;
-  font-size: 1.7rem;
   color: #0d3425;
   transition: color 0.3s ease;
+}
+@media (min-width: 600px) {
+  .p-top__guide .p-top__guide-container .p-top__guide-wrapper .p-top__guide-btn-container .p-top__guide-btn-wrapper .p-top__guide-btn {
+    letter-spacing: 0.14em;
+    font-size: 1.7rem;
+  }
 }
 @media (min-width: 1000px) {
   .p-top__guide .p-top__guide-container .p-top__guide-wrapper .p-top__guide-btn-container .p-top__guide-btn-wrapper .p-top__guide-btn {
@@ -3322,9 +3329,14 @@ body::before {
   }
 }
 .p-top__guide .p-top__guide-container .p-top__guide-wrapper .p-top__guide-btn-container .p-top__guide-btn-wrapper .p-top__guide-btn .p-top__guide-arrow {
-  width: 22px;
+  width: 18px;
   height: auto;
   transition: transform 0.3s ease;
+}
+@media (min-width: 600px) {
+  .p-top__guide .p-top__guide-container .p-top__guide-wrapper .p-top__guide-btn-container .p-top__guide-btn-wrapper .p-top__guide-btn .p-top__guide-arrow {
+    width: 22px;
+  }
 }
 .p-top__guide .p-top__guide-container .p-top__guide-wrapper .p-top__guide-btn-container .p-top__guide-btn-wrapper .p-top__guide-btn:hover {
   color: #388d60;
@@ -4365,8 +4377,13 @@ body::before {
 @media (min-width: 1200px) {
   .p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
     letter-spacing: 0.14em;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     margin-bottom: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
+    font-size: 2.1rem;
   }
 }
 .p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-text {
@@ -5279,6 +5296,19 @@ body::before {
 .p-faq .p-faq__container .p-faq__question-container .p-faq__question-wrapper .p-faq__question-item-box .p-faq__question-box .p-faq__question-text-block .toggle-btn.open::before {
   opacity: 0;
   transform: rotate(90deg);
+}
+.p-faq .p-faq__container .p-faq__question-container .p-faq__question-wrapper .p-faq__question-item-box .p-faq__question-box .p-faq__question-text-block-contact {
+  cursor: default;
+}
+.p-faq .p-faq__container .p-faq__question-container .p-faq__question-wrapper .p-faq__question-item-box .p-faq__question-box .p-faq__question-text-block-contact:hover {
+  opacity: 1;
+}
+.p-faq .p-faq__container .p-faq__question-container .p-faq__question-wrapper .p-faq__question-item-box .p-faq__question-box .p-faq__question-text-block-contact .p-faq__question-text-sub-contact {
+  width: 100%;
+}
+.p-faq .p-faq__container .p-faq__question-container .p-faq__question-wrapper .p-faq__question-item-box .p-faq__question-box .p-faq__question-text-block-contact .p-faq__question-text-sub-contact a {
+  color: #388d60;
+  text-decoration: underline;
 }
 .p-faq .p-faq__container .p-faq__question-container .p-faq__question-wrapper .p-faq__question-item-box .p-faq__question-box .p-faq__answer-text-box {
   display: none;
@@ -6916,6 +6946,7 @@ body::before {
   }
 }
 .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__bottom-btn-container .p-course__bottom-btn-wrapper .p-course__bottom-btn {
+  font-size: 1.5rem;
   height: 70px;
   display: flex;
   align-items: center;
@@ -6923,16 +6954,21 @@ body::before {
   background: #f5f4ec;
   border-radius: 35px;
   border: 1.5px solid #266b45;
-  font-size: 1.8rem;
-  letter-spacing: 0.14em;
   font-weight: 500;
   color: #266b45;
   position: relative;
+  letter-spacing: 0.12em;
   transition: opacity 0.3s ease;
+}
+@media (min-width: 600px) {
+  .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__bottom-btn-container .p-course__bottom-btn-wrapper .p-course__bottom-btn {
+    letter-spacing: 0.14em;
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 1000px) {
   .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__bottom-btn-container .p-course__bottom-btn-wrapper .p-course__bottom-btn {
-    width: 340px;
+    width: 380px;
   }
 }
 .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__bottom-btn-container .p-course__bottom-btn-wrapper .p-course__bottom-btn:hover {
@@ -6942,14 +6978,20 @@ body::before {
   transform: translateY(-50%) translateX(5px);
 }
 .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__bottom-btn-container .p-course__bottom-btn-wrapper .p-course__bottom-btn .p-course__bottom-btn-arrow {
-  width: 16px;
   height: auto;
   vertical-align: middle;
   position: absolute;
-  right: 30px;
+  right: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition: transform 0.3s ease;
+  width: 14px;
+}
+@media (min-width: 600px) {
+  .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__bottom-btn-container .p-course__bottom-btn-wrapper .p-course__bottom-btn .p-course__bottom-btn-arrow {
+    width: 16px;
+    right: 30px;
+  }
 }
 .p-course .p-course__container .p-course__list .p-course__no-item {
   margin-top: 65px;

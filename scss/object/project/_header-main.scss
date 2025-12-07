@@ -118,7 +118,7 @@
         column-gap: 32px;
         .p-header__nav {
             display: none;
-            @include mixin.pcMax {
+            @include mixin.pc {
                 display: block;
                 position: relative;
             }
@@ -400,7 +400,7 @@
                                             align-items: center;
                                             font-size: 1.5rem;
                                             font-weight: 500;
-                                            width: fit-content;
+                                            width: max-content;
                                             letter-spacing: 0.14em;
                                             color: color.$textColor;
                                             text-decoration: none;
@@ -455,7 +455,7 @@
                                 row-gap: 17px;
                                 .p-header__hamburger-btn-block {
                                     .p-header__hamburger-btn {
-                                        width: 230px;
+                                        width: 290px;
                                         height: 55px;
                                         border-radius: 28px;
                                         padding: 0 20px 0 28px;

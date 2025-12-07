@@ -58,7 +58,7 @@
                     <div class="p-course__explanation-text-wrapper">
                         <div class="p-course__explanation-text-block fadeUp">
                             <span class="p-course__explanation-sub-text">FYLコースとは</span>
-                            <p class="p-course__explanation-text">宿題や自習のサポートだけでなく、遊びや仲間との関わりも大切にしながら「誰かと話すって、学ぶって楽しい」と思える体験を重ねます。</p>
+                            <p class="p-course__explanation-text">不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。希望に応じて、対話を通して自分のペースで学び直し、"勉強に挑戦したい"という気持ちを後押しします。</p>
                         </div>
                     </div>
                     <div class="p-course__btn-container fadeUp">
@@ -223,7 +223,7 @@
                                         <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/shougakusei/#shougakusei_price' ) ); ?>" data-scroll-link>料金をみる<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="料金をみる"></a>
                                     </div>
                                     <div class="p-course__bottom-btn-wrapper">
-                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談はこちら"></a>
+                                        <a class="p-course__bottom-btn" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談・体験授業はこちら<img class="p-course__bottom-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="個別相談・体験授業はこちら"></a>
                                     </div>
                                 </div>
                                 <?php endif; ?>

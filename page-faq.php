@@ -15,7 +15,7 @@
         </div>
         <div class="c-inner">
             <div class="c-section__page-title-wrapper">
-                <h1 class="c-section__page-title">よくあるご質問</h1>
+                <h1 class="c-section__page-title">よくあるご質問・<br>お問い合わせ</h1>
                 <span class="c-section__page-title-en p-faq__page-title-en">FAQ</span>
             </div>
         </div>
@@ -103,7 +103,7 @@
                                 <dd class="p-faq__answer-text-box">
                                     <div class="p-faq__answer-text-block">
                                         <span class="p-faq__answer-icon">A</span>
-                                        <p class="p-faq__question-answer-text">まずはお問い合わせ後、説明会や個別相談で学びのスタイルをご確認いただきます。その後、ご希望に合わせて入塾手続きを行い、オリエンテーションを経て授業や自習を開始します。</p>
+                                        <p class="p-faq__question-answer-text">まずはお問い合わせ後、セミナーや個別相談・体験授業で学びのスタイルをご確認いただきます。その後、ご希望に合わせて入塾手続きを行い、オリエンテーションを経て授業や自習を開始します。</p>
                                     </div>
                                 </dd>
                             </dl>
@@ -330,6 +330,16 @@
                                     </div>
                                 </dd>
                             </dl>
+                        </div>
+                    </div>
+                    <div class="p-faq__question-wrapper">
+                        <h3 class="p-faq__question-title">お問い合わせ</h3>
+                        <div class="p-faq__question-item-box">
+                            <div class="p-faq__question-box">
+                                <div class="p-faq__question-text-block p-faq__question-text-block-contact">
+                                    <p class="p-faq__question-text-sub p-faq__question-text-sub-contact">まずはお気軽にお問い合わせください。<br><a href="https://lin.ee/ivHAxks" target="_blank">公式LINE</a> または <a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">専用フォーム</a> からご連絡いただけます。</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

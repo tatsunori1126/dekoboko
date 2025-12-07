@@ -153,6 +153,54 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="p-lecturer__wrapper fadeUp">
+                    <div class="p-lecturer__img-wrapper">
+                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img06.png" alt="髙橋 知尋">
+                        <span class="p-lecturer__nickname">ちーちゃん</span>
+                    </div>
+                    <div class="p-lecturer__text-wrapper">
+                        <div class="p-lecturer__name-wrapper">
+                            <h2 class="p-lecturer__name">髙橋 知尋</h2>
+                            <span class="p-lecturer__subname">Chihiro Takahashi</span>
+                            <span class="p-lecturer__subname">理科・数学・英語</span>
+                        </div>
+                        <p class="p-lecturer__text">初めまして！<br>マーケティング部の髙橋知尋です！<br>普段は法学部に通う大学生をしています！<br>DEKObokoでは主に、Instagramの投稿などを同じマーケティング部の人と日々作って検討しており、たまにDYLコースでも教えたりもしています。<br>得意教科は社会科で、世界史が特に大好きです。<br>もし塾で見かけることがあったら気軽に声かけてください！！</p>
+                        <div class="p-lecturer__hobby-container">
+                            <div class="p-lecturer__hobby-wrapper">
+                                <h3 class="p-lecturer__hobby-title">趣味・好きなこと</h3>
+                                <ul class="p-lecturer__hobby-list">
+                                    <li class="p-lecturer__hobby-item"></li>
+                                    <li class="p-lecturer__hobby-item"></li>
+                                    <li class="p-lecturer__hobby-item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-lecturer__wrapper fadeUp">
+                    <div class="p-lecturer__img-wrapper">
+                        <img class="p-lecturer__img" src="<?php echo get_template_directory_uri(); ?>/images/lecturer/item-img07.png" alt="高橋 佳穂">
+                        <span class="p-lecturer__nickname">かほちゃん</span>
+                    </div>
+                    <div class="p-lecturer__text-wrapper">
+                        <div class="p-lecturer__name-wrapper">
+                            <h2 class="p-lecturer__name">高橋 佳穂</h2>
+                            <span class="p-lecturer__subname">Kaho Takahashi</span>
+                            <span class="p-lecturer__subname">理科・数学・英語</span>
+                        </div>
+                        <p class="p-lecturer__text">はじめまして、マーケティング部・FYLコース担当の高橋佳穂です。普段は大学生として子どもの心理について学んでいます。<br>実は私もこの塾の生徒で、みんなと同じように授業を受けています。<br>“分からない気持ち”も“できた嬉しさ”も共有しながら、楽しくサポートしたいです！<br>気軽に声をかけてくださいね。</p>
+                        <div class="p-lecturer__hobby-container">
+                            <div class="p-lecturer__hobby-wrapper">
+                                <h3 class="p-lecturer__hobby-title">趣味・好きなこと</h3>
+                                <ul class="p-lecturer__hobby-list">
+                                    <li class="p-lecturer__hobby-item">お菓子作り</li>
+                                    <li class="p-lecturer__hobby-item">料理</li>
+                                    <li class="p-lecturer__hobby-item">ゲーム</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
