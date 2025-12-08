@@ -144,7 +144,7 @@
                                 <div class="p-header__hamburger-nav-list-wrapper">
                                     <div class="p-header__hamburger-nav-title">入塾のご案内</div>
                                     <ul class="p-header__hamburger-nav-list">
-                                        <li><a href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・受講の流れ</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・入会の流れ</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談・体験授業</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>セミナー</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問・お問い合わせ</a></li>

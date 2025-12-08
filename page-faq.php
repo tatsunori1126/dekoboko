@@ -103,7 +103,7 @@
                                 <dd class="p-faq__answer-text-box">
                                     <div class="p-faq__answer-text-block">
                                         <span class="p-faq__answer-icon">A</span>
-                                        <p class="p-faq__question-answer-text">まずはお問い合わせ後、セミナーや個別相談・体験授業で学びのスタイルをご確認いただきます。その後、ご希望に合わせて入塾手続きを行い、オリエンテーションを経て授業や自習を開始します。</p>
+                                        <p class="p-faq__question-answer-text">まずはお問い合わせ後、個別相談・体験授業・セミナー等で当塾の特徴や将来の目標、お悩み事に関する目線合わせをさせていただきます。その後、入塾をご希望される場合は入塾手続きを行い、受講スタートとなります。</p>
                                     </div>
                                 </dd>
                             </dl>
@@ -204,7 +204,7 @@
                                 <dd class="p-faq__answer-text-box">
                                     <div class="p-faq__answer-text-block">
                                         <span class="p-faq__answer-icon">A</span>
-                                        <p class="p-faq__question-answer-text">学習の段階(3つの段階)に応じて、1対1から少人数（概ね2〜5名）を基本とし、対話や質問がしやすい環境を大切にしています。</p>
+                                        <p class="p-faq__question-answer-text">学習の段階(3つの段階)に応じて、1対1から少人数（3対2）を基本とし、対話や質問がしやすい環境を大切にしています。</p>
                                     </div>
                                 </dd>
                             </dl>
@@ -231,6 +231,32 @@
                                     <div class="p-faq__answer-text-block">
                                         <span class="p-faq__answer-icon">A</span>
                                         <p class="p-faq__question-answer-text">現状は自習室の提供がメインとなります。今後、キャリアコーチング、AIやDXといったスキル、起業やマーケティングといったビジネススキル、TOEIC講座も順次開講予定です。</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="p-faq__question-box">
+                                <dt class="p-faq__question-text-block">
+                                    <span class="p-faq__question-icon">Q</span>
+                                    <p class="p-faq__question-text-sub">保護者も学べる機会はありますか？</p>
+                                    <span class="toggle-btn">開く</span>
+                                </dt>
+                                <dd class="p-faq__answer-text-box">
+                                    <div class="p-faq__answer-text-block">
+                                        <span class="p-faq__answer-icon">A</span>
+                                        <p class="p-faq__question-answer-text">はい。保護者向けの講座では、心理学や発達科学の知見をベースに、子どもの自己肯定感の育て方やコミュニケーションの工夫などを学ぶことができます。交流会も定期的に行っています。</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="p-faq__question-box">
+                                <dt class="p-faq__question-text-block">
+                                    <span class="p-faq__question-icon">Q</span>
+                                    <p class="p-faq__question-text-sub">自習室利用はどんな内容ですか？</p>
+                                    <span class="toggle-btn">開く</span>
+                                </dt>
+                                <dd class="p-faq__answer-text-box">
+                                    <div class="p-faq__answer-text-block">
+                                        <span class="p-faq__answer-icon">A</span>
+                                        <p class="p-faq__question-answer-text">自習室利用は塾内生以外にも一般開放しております。ぜひお気軽にご利用ください！詳しくは<a href="<?php echo esc_url( home_url( '/facility/#rental' ) ); ?>" data-scroll-link>こちら</a>をご確認ください。</p>
                                     </div>
                                 </dd>
                             </dl>
@@ -307,19 +333,6 @@
                             <dl class="p-faq__question-box">
                                 <dt class="p-faq__question-text-block">
                                     <span class="p-faq__question-icon">Q</span>
-                                    <p class="p-faq__question-text-sub">保護者も学べる機会はありますか？</p>
-                                    <span class="toggle-btn">開く</span>
-                                </dt>
-                                <dd class="p-faq__answer-text-box">
-                                    <div class="p-faq__answer-text-block">
-                                        <span class="p-faq__answer-icon">A</span>
-                                        <p class="p-faq__question-answer-text">はい。保護者向けの講座では、心理学や発達科学の知見をベースに、子どもの自己肯定感の育て方やコミュニケーションの工夫などを学ぶことができます。交流会も定期的に行っています。</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl class="p-faq__question-box">
-                                <dt class="p-faq__question-text-block">
-                                    <span class="p-faq__question-icon">Q</span>
                                     <p class="p-faq__question-text-sub">授業や自習の際に、どんなサポートがありますか？</p>
                                     <span class="toggle-btn">開く</span>
                                 </dt>
@@ -327,6 +340,19 @@
                                     <div class="p-faq__answer-text-block">
                                         <span class="p-faq__answer-icon">A</span>
                                         <p class="p-faq__question-answer-text">学習計画の立て方や勉強方法のアドバイスだけでなく、気持ちの面でのサポートも行っています。安心して学べる環境をつくることが第一です。</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="p-faq__question-box">
+                                <dt class="p-faq__question-text-block">
+                                    <span class="p-faq__question-icon">Q</span>
+                                    <p class="p-faq__question-text-sub">セミナーはどんなことをしますか？</p>
+                                    <span class="toggle-btn">開く</span>
+                                </dt>
+                                <dd class="p-faq__answer-text-box">
+                                    <div class="p-faq__answer-text-block">
+                                        <span class="p-faq__answer-icon">A</span>
+                                        <p class="p-faq__question-answer-text">保護者の方が我が子とどう関わればいいかに関するセミナーを主に実施いたします。毎月第2土曜日・第4土曜日に実施しています。詳しくは<a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>こちら</a>からご確認ください。時間や詳しいテーマについては<a href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a>からご確認ください。</p>
                                     </div>
                                 </dd>
                             </dl>

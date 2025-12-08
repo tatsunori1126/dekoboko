@@ -148,7 +148,7 @@
                 </div>
             </section>
 
-            <section class="p-facility__wrapper p-facility__wrapper--rental">
+            <section id="rental" class="p-facility__wrapper p-facility__wrapper--rental">
                 <div class="c-section__page-title-wrapper p-facility__title-wrapper fadeUp">
                     <h2 class="c-section__page-title">自習室レンタル</h2>
                     <span class="c-section__page-title-en p-facility__page-title-en">Study Space Rental</span>

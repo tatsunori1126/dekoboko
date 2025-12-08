@@ -36,7 +36,7 @@
                 </div>
             <?php endif; ?>
             <div class="p-reservation__container">
-            <div id="consulting" class="p-reservation__wrapper">
+                <div id="consulting" class="p-reservation__wrapper">
                     <div class="c-section__page-title-wrapper p-reservation__title-wrapper fadeUp">
                         <h2 class="c-section__page-title">個別相談・<br class="c-tab-hidden">体験授業のご予約</h2>
                         <span class="c-section__page-title-en p-reservation__page-title-en">Individual Consultation</span>
@@ -101,8 +101,8 @@
                                 <p class="p-reservation__column-text fadeUp">DEKObokoでは、「安心して試せる環境」と「明日から使える実践知」をキーワードに、子どもの学びと心を支えるサポートを行っています。</p>
                                 <p class="p-reservation__column-text fadeUp">本セミナーでは、<br>・子どもへの声かけや関わり方<br>・勉強の伴走の仕方<br>・家庭内コミュニケーションの整え方<br>について、臨床心理学・発達心理学・教育学・脳科学の知見をベースに、事例を交えながらお伝えします。</p>
                                 <p class="p-reservation__column-text fadeUp">「うちの子、このままで大丈夫かな…」<br>「勉強を教える以前に、関わり方に自信がない…」<br>そんな不安やモヤモヤを、一緒に“言語化”し、具体的な打ち手まで落とし込んでいく時間です。</p>
-                                <p class="p-reservation__column-text fadeUp">●セミナーで得られること<br>・今日から使える「声かけ」と「関わり方」のポイントがわかる<br>・宿題・勉強に向き合えない背景を、心理学的な視点から整理できる<br>・イライラや不安が生まれにくい家庭内コミュニケーションの工夫が学べる<br>・「頑張れる子」ではなく、「自分で整えながら進める子」を育てる考え方が理解できる<br>・DEKObokoが実践している支援メソッドの全体像を知ることができる</p>
-                                <p class="p-reservation__column-text fadeUp">●こんな方におすすめです<br>・お子さまの不登校・学習の遅れ・凸凹特性などに悩んでいる保護者の方<br>・家庭の中で子どもとどう関わっていいか分からなくて方針を見つけたい方<br>・将来、子ども・保護者支援に関わる仕事をしたい・すでに携わっている方</p>
+                                <p class="p-reservation__column-text fadeUp"><span class="p-reservation__column-text-font">●セミナーで得られること</span><br>・今日から使える「声かけ」と「関わり方」のポイントがわかる<br>・宿題・勉強に向き合えない背景を、心理学的な視点から整理できる<br>・イライラや不安が生まれにくい家庭内コミュニケーションの工夫が学べる<br>・「頑張れる子」ではなく、「自分で整えながら進める子」を育てる考え方が理解できる<br>・DEKObokoが実践している支援メソッドの全体像を知ることができる</p>
+                                <p class="p-reservation__column-text fadeUp"><span class="p-reservation__column-text-font">●こんな方におすすめです</span><br>・お子さまの不登校・学習の遅れ・凸凹特性などに悩んでいる保護者の方<br>・家庭の中で子どもとどう関わっていいか分からなくて方針を見つけたい方<br>・将来、子ども・保護者支援に関わる仕事をしたい・すでに携わっている方</p>
                             </div>
                             <div class="c-btn__wrapper p-reservation__btn-wrapper fadeUp">
                                 <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-0kZWVBjp?liff_id=1661073504-0kZWVBjp&group_id=154145" target="_blank">セミナー参加の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>

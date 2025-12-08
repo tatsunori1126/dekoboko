@@ -102,6 +102,10 @@
                             font-weight: 500;
                             color: color.$textColor;
                             line-height: 2.187;
+                            .p-reservation__column-text-font {
+                                font-weight: 700;
+                                color: #266b45;
+                            }
                         }
                     }
                     .p-reservation__btn-wrapper {

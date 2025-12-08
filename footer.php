@@ -53,12 +53,12 @@
                                 <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/about/#philosophy' ) ); ?>" data-scroll-link>教育方針</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/about/#company' ) ); ?>" data-scroll-link>会社概要</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/about/#access' ) ); ?>" data-scroll-link>アクセス</a>
                             </li>
                         </ul>
                         <ul class="p-footer__nav-menu-list">
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/about/#access' ) ); ?>" data-scroll-link>アクセス</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo get_post_type_archive_link('voice'); ?>">利用者の声</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
                                 <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/results' ) ); ?>">合格実績</a>
@@ -67,18 +67,18 @@
                                 <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/lecturer' ) ); ?>">講師紹介</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/facility' ) ); ?>">教室紹介</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設紹介</a>
                             </li>
                         </ul>
                         <ul class="p-footer__nav-menu-list">
                             <li class="p-footer__nav-menu-list-item">
+                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a>
+                            </li>
+                            <li class="p-footer__nav-menu-list-item">
                                 <a class="p-footer__nav-menu-link" href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="<?php echo get_post_type_archive_link('voice'); ?>">利用者の声</a>
-                            </li>
-                            <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/about/#company' ) ); ?>" data-scroll-link>会社概要</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
                                 <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">プライバシーポリシー</a>
@@ -133,13 +133,13 @@
                                     <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/flow' ) ); ?>">入塾・入会の流れ</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問・お問い合わせ</a>
-                                </li>
-                                <li class="p-footer__nav-menu-bottom-list-item">
                                     <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談・体験授業</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
                                     <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>セミナー</a>
+                                </li>
+                                <li class="p-footer__nav-menu-bottom-list-item">
+                                    <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問・お問い合わせ</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
                                     <a class="p-footer__nav-menu-bottom-link" href="https://lin.ee/aaQVtZ7" target="_blank">資料請求<img class="p-footer__nav-menu-bottom-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>

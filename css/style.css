@@ -4238,6 +4238,10 @@ body::before {
   color: #0d3425;
   line-height: 2.187;
 }
+.p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-block .p-reservation__column-text .p-reservation__column-text-font {
+  font-weight: 700;
+  color: #266b45;
+}
 .p-reservation .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link {
   height: 55px;
   display: flex;
@@ -5123,6 +5127,306 @@ body::before {
 .p-flow .p-flow__container .p-flow__container-box .p-flow__section .p-flow__box .p-flow__wrapper .p-flow__content .p-flow__text-wrapper .p-flow__text a:hover {
   opacity: 0.8;
 }
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container {
+    row-gap: 195px;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__title-wrapper {
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__title-wrapper .p-reservation__page-title-en {
+  font-size: 1.5rem;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 100px;
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-img-wrapper {
+  opacity: 0;
+  visibility: hidden;
+}
+@media (min-width: 800px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-img-wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-img-wrapper {
+    width: 36.6%;
+    margin: 0;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-img-wrapper .p-reservation__column-img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper {
+  margin-top: 20px;
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper {
+    width: 57.4%;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-title {
+  font-size: 2.4rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+  line-height: 1.83;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-title {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-title {
+    font-size: 3rem;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-block {
+  margin: 35px 0 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-block .p-reservation__column-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #0d3425;
+  line-height: 2.187;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__column-text-block .p-reservation__column-text .p-reservation__column-text-font {
+  font-weight: 700;
+  color: #266b45;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  border-radius: 27px;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link {
+    padding: 0 12px 0 44px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__link-circle-bg {
+  position: absolute;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__link-circle-bg {
+    position: static;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__column-container .p-reservation__column-text-wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__link-circle-bg .p-reservation__link-arrow {
+  width: 12px;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+  margin-bottom: 55px;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title {
+  position: relative;
+  font-size: 2rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em; /* テキストと点線の間の余白（調整OK） */
+  white-space: nowrap; /* 改行防止 */
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title {
+    font-size: 2.5rem;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title::before, .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-title::after {
+  content: "";
+  flex: 1; /* 点線を自動伸縮 */
+  border-bottom: 2px dotted #006d41;
+  height: 1px;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+@media (min-width: 800px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container {
+    flex-direction: row;
+    row-gap: 0;
+    justify-content: space-between;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper {
+  position: relative;
+  background: #fffaed;
+  border-radius: 50px;
+  padding: 40px 20px 35px;
+  /* ▼ 二重グリッド構造（細かい線＋太い線） */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  /* ▼ グリッドの間隔設定 */
+  background-size: 20px 20px, 20px 20px;
+  background-repeat: repeat;
+  /* ▼ 全レイヤーを右下に同じだけずらす（例：5px） */
+  background-position: 0px 5px, 5px 5px; /* 細かい横線 */
+}
+@media (min-width: 800px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper {
+    width: 32%;
+    padding: 40px 20px 30px;
+    border-radius: 30px;
+  }
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper {
+    border-radius: 50px;
+    width: 31.2%;
+    padding: 55px 24px 45px;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper {
+  position: absolute;
+  width: 46px;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper .p-reservation__merit-item-number {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper02,
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-number-wrapper03 {
+  width: 52px;
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
+  font-size: 2rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  color: #266b45;
+  line-height: 1.67;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 800px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+  }
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+  }
+}
+@media (min-width: 1200px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
+    letter-spacing: 0.14em;
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-item-title {
+    font-size: 2.1rem;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  line-height: 2.187;
+}
+@media (min-width: 800px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-text {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__merit-wrapper .p-reservation__merit-item-container .p-reservation__merit-item-wrapper .p-reservation__merit-text {
+    font-size: 1.6rem;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link {
+  height: 55px;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.6rem;
+  padding-right: 25px;
+}
+@media (min-width: 600px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link {
+    height: 85px;
+    padding-left: 0;
+    border-radius: 42px;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__link-circle-bg {
+  position: absolute;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__link-circle-bg {
+    width: 45px;
+    height: 45px;
+  }
+}
+.p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__circle-arrow {
+  width: 13px;
+}
+@media (min-width: 1000px) {
+  .p-flow .p-flow__container .p-flow__container-box .p-reservation__container .p-reservation__wrapper .p-reservation__btn-wrapper .p-reservation__link .p-reservation__circle-arrow {
+    width: 18px;
+  }
+}
 
 .p-faq {
   padding: 115px 0;
@@ -5356,6 +5660,7 @@ body::before {
 .p-faq .p-faq__container .p-faq__question-container .p-faq__question-wrapper .p-faq__question-item-box .p-faq__question-box .p-faq__answer-text-box .p-faq__answer-text-block .p-faq__question-answer-text a {
   text-decoration: underline;
   text-underline-offset: 20%;
+  color: #388d60;
 }
 
 .p-about {
@@ -7304,6 +7609,9 @@ body::before {
   .p-contact .p-contact__container .p-contact__form .wpcf7 form .contact-input-item-container .contact-input-item-box .contact-input-item-title {
     font-size: 1.7rem;
   }
+}
+.p-contact .p-contact__container .p-contact__form .wpcf7 form .contact-input-item-container .contact-input-item-box .contact-input-item-title .contact-input-item-title-font {
+  font-size: 1.2rem;
 }
 .p-contact .p-contact__container .p-contact__form .wpcf7 form .contact-input-item-container .contact-input-item-box .hissu {
   display: flex;
