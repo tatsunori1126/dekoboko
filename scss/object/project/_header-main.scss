@@ -134,6 +134,7 @@
                         letter-spacing: 0.14em;
                         font-weight: 500;
                         transition: color 0.3s ease;
+                        display: block;
                         // cursor: pointer;
                         &:hover {
                             color: #008f5c; // 緑系のアクセントカラー

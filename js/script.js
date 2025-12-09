@@ -19,41 +19,47 @@ jQuery(function () {
     jQuery(function ($) {
         const hamburger = $('#js-hamburger');
         const navWrapper = $('.p-header__hamburger-nav-wrapper');
-
+        const body = $('body');
+    
         // ハンバーガーメニュー開閉
         hamburger.on('click', function () {
-            $(this).toggleClass('is-open');
-            navWrapper.toggleClass('is-open');
+            const isOpen = $(this).toggleClass('is-open').hasClass('is-open');
+            navWrapper.toggleClass('is-open', isOpen);
+    
+            // 背景スクロール制御
+            if (isOpen) {
+                body.addClass('is-menu-open');
+            } else {
+                body.removeClass('is-menu-open');
+            }
         });
-
+    
         // ページ内リンク + ハンバーガー連動
         $('[data-scroll-link]').on('click', function (e) {
             const href = $(this).attr('href');
             const currentPath = window.location.pathname;
             const linkUrl = new URL(href, window.location.origin);
             const linkPath = linkUrl.pathname;
-
+    
             // mailto:リンクは除外
             if (href.startsWith('mailto:')) return;
-
+    
             // 同一ページならスムーススクロール
             if (currentPath === linkPath) {
                 e.preventDefault();
                 const target = $(linkUrl.hash === '' ? 'html' : linkUrl.hash);
                 const position = target.offset().top;
-
+    
                 // ハンバーガー閉じる
-                if (hamburger.hasClass('is-open')) {
-                    hamburger.removeClass('is-open');
-                    navWrapper.removeClass('is-open');
-                }
-
-                // スムーススクロール
+                hamburger.removeClass('is-open');
+                navWrapper.removeClass('is-open');
+                body.removeClass('is-menu-open');
+    
                 $('html, body').animate({ scrollTop: position }, speed, 'swing');
             }
-            // 別ページなら通常遷移（home_url指定でもOK）
         });
     });
+    
 });
 // ▼ ページロード完了後にアンカー位置を再調整
 window.addEventListener('load', function() {

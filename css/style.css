@@ -316,6 +316,11 @@ body::before {
   z-index: 1;
 }
 
+body.is-menu-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -986,6 +991,7 @@ body::before {
   letter-spacing: 0.14em;
   font-weight: 500;
   transition: color 0.3s ease;
+  display: block;
 }
 .p-header .p-header__nav-container .p-header__nav .p-header__nav-list-wrapper .p-header__nav-list .p-header__nav-link:hover {
   color: #008f5c;
@@ -7105,6 +7111,9 @@ body::before {
     font-size: 1.6rem;
   }
 }
+.p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__list-column-wrapper .p-course__list-desc p strong {
+  color: #266b45;
+}
 .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__list-detail-table {
   width: 100%;
   border-collapse: collapse;
@@ -7205,6 +7214,8 @@ body::before {
   .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__list-recommend .p-course__list-recommend-list {
     flex-direction: row;
     flex-wrap: wrap;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
     width: 80%;
   }
 }
@@ -7217,6 +7228,7 @@ body::before {
   -moz-column-gap: 8px;
        column-gap: 8px;
   font-size: 1.4rem;
+  line-height: 1.7;
 }
 @media (min-width: 1000px) {
   .p-course .p-course__container .p-course__list .p-course__list-container .p-course__list-item .p-course__detail-container .p-course__list-recommend .p-course__list-recommend-list .p-course__list-recommend-item {
@@ -7233,6 +7245,7 @@ body::before {
   display: inline-block;
   width: 12px;
   height: 12px;
+  flex-shrink: 0;
   border-radius: 50%;
   background-color: #388d60;
 }

@@ -608,9 +608,6 @@
                 background: color.$subColor;
                 padding: 0 0 30px;
                 border-radius: 50px;
-                @include mixin.tab {
-                    width: 46%;
-                }
                 /* ▼ 二重グリッド構造（細かい線＋太い線） */
                 background-image:
                 /* 細かいグリッド（薄い） */
@@ -634,6 +631,9 @@
                 5px 5px,  /* 細かい横線 */
                 3px 5px,  /* 広い縦線 */
                 5px 5px;  /* 広い横線 */
+                @include mixin.tab {
+                    width: 46%;
+                }
 
                 .p-top__about-number {
                     display: block;

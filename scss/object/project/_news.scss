@@ -54,10 +54,6 @@
         border-radius: 25px;
         padding: 28px 20px 10px;
         margin: 50px 0 60px;
-        @include mixin.mid {
-            border-radius: 50px;
-            padding: 90px 100px 60px;
-        }
         /* ▼ 二重グリッド構造（細かい線＋太い線） */
         background-image:
         /* 細かいグリッド（薄い） */
@@ -81,6 +77,10 @@
         5px 5px,  /* 細かい横線 */
         0px 5px,  /* 広い縦線 */
         5px 5px;  /* 広い横線 */
+        @include mixin.mid {
+            border-radius: 50px;
+            padding: 90px 100px 60px;
+        }
         .p-news__single-post-category-box {
             display: flex;
             align-items: center;

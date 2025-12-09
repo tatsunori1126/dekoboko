@@ -449,6 +449,11 @@
                                 @include mixin.mid {
                                     font-size: 1.6rem;
                                 }
+                                p {
+                                    strong {
+                                        color: #266b45;
+                                    }
+                                }
                             }
                         }
                         .p-course__list-detail-table {
@@ -536,6 +541,7 @@
                                 @include mixin.pc {
                                     flex-direction: row;
                                     flex-wrap: wrap;
+                                    column-gap: 10px;
                                     width: 80%;
                                 }
                                 .p-course__list-recommend-item {
@@ -546,6 +552,7 @@
                                     align-items: baseline;
                                     column-gap: 8px;
                                     font-size: 1.4rem;
+                                    line-height: 1.7;
                                     @include mixin.mid {
                                         font-size: 1.6rem;
                                     }
@@ -557,6 +564,7 @@
                                         display: inline-block;
                                         width: 12px;
                                         height: 12px;
+                                        flex-shrink: 0;
                                         border-radius: 50%;
                                         background-color: #388d60;
                                     }

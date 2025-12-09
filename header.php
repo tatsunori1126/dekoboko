@@ -100,21 +100,20 @@
                                 <div class="p-header__hamburger-nav-title">デコボコについて</div>
                                 <div class="p-header__hamburger-nav-block">
                                     <ul class="p-header__hamburger-nav-list">
-                                        <li><a href="<?php echo esc_url( home_url( '/about' ) ); ?>">デコボコとは</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/about/#concept' ) ); ?>" data-scroll-link>コンセプト</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/about/#philosophy' ) ); ?>" data-scroll-link>教育方針</a></li>
-                                        <li><a href="<?php echo esc_url( home_url( '/about/#access' ) ); ?>" data-scroll-link>アクセス</a></li>
-                                    </ul>
-                                    <ul class="p-header__hamburger-nav-list">
                                         <li><a href="<?php echo get_post_type_archive_link('voice'); ?>">利用者の声</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/results' ) ); ?>">合格実績</a></li>
-                                        <li><a href="<?php echo esc_url( home_url( '/lecturer' ) ); ?>">講師紹介</a></li>
-                                        <li><a href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設紹介</a></li>
                                     </ul>
                                     <ul class="p-header__hamburger-nav-list">
+                                        <li><a href="<?php echo esc_url( home_url( '/lecturer' ) ); ?>">講師紹介</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設紹介</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a></li>
                                         <li><a href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a></li>
+                                    </ul>
+                                    <ul class="p-header__hamburger-nav-list">
                                         <li><a href="<?php echo esc_url( home_url( '/about/#company' ) ); ?>" data-scroll-link>会社概要</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/about/#access' ) ); ?>" data-scroll-link>アクセス</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">プライバシーポリシー</a></li>
                                     </ul>
                                 </div>
