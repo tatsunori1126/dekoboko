@@ -723,7 +723,7 @@
                 font-size: 1.5rem;
                 position: relative;
                 column-gap: 24px;
-                padding: 0 0 0 30px;
+                padding: 0 30px 0 0;
                 @include mixin.tab {
                     width: 360px;
                     margin: 0 auto;
@@ -731,7 +731,7 @@
                 @include mixin.mid {
                     column-gap: 30px;
                     height: 85px;
-                    padding: 0 0 0 23px;
+                    padding: 0 23px 0 0;
                     border-radius: 43px;
                     font-size: 1.8rem;
                 }
@@ -739,7 +739,7 @@
                     width: 40px;
                     height: 40px;
                     position: absolute;
-                    left: 20px;
+                    right: 20px;
                     @include mixin.mid {
                         width: 48px;
                         height: 48px;
@@ -1022,16 +1022,16 @@
             font-size: 1.5rem;
             position: relative;
             column-gap: 24px;
-            padding: 0 0 0 30px;
+            padding: 0 30px 0 0;
             @include mixin.tab {
                 width: 360px;
-                justify-content: left;
+                justify-content: right;
                 margin: 0 auto;
             }
             @include mixin.mid {
                 // column-gap: 30px;
                 height: 85px;
-                padding: 0 0 0 23px;
+                padding: 0 23px 0 0;
                 border-radius: 43px;
                 font-size: 1.8rem;
             }
@@ -1039,7 +1039,7 @@
                 position: absolute;
                 width: 40px;
                 height: 40px;
-                left: 20px;
+                right: 20px;
                 @include mixin.tab {
                     position: static;
                 }

@@ -114,6 +114,79 @@
                         font-weight: 500;
                         color: color.$textColor;
                         line-height: 2.187;
+                        .p-facility__text-orange {
+                            color: #db7a27;
+                        }
+                    }
+                    .p-facility__text-block-sub {
+                        margin: 30px 0;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 15px;
+                        .p-facility__text-block-title {
+                            font-size: 1.6rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 700;
+                            color: color.$textColor;
+                        }
+                        .p-facility__text-block-number-box {
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 15px;
+                            .p-facility__text-block-number-wrapper {
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 5px;
+                                .p-facility__text-block-number-title {
+                                    font-size: 1.6rem;
+                                    letter-spacing: 0.14em;
+                                    font-weight: 700;
+                                    color: #266b45;
+                                    line-height: 1.7;
+                                }
+                                .p-facility__text-block-number-text {
+                                    font-size: 1.6rem;
+                                    letter-spacing: 0.14em;
+                                    font-weight: 500;
+                                    color: color.$textColor;
+                                    line-height: 2.187;
+                                }
+                            }
+                        }
+                    }
+                    .p-facility__recommend-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 15px;
+                        .p-facility__recommend-title {
+                            font-size: 1.6rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 700;
+                            color: color.$textColor;
+                            line-height: 1.7;
+                        }
+                        .p-facility__recommend-text {
+                            font-size: 1.6rem;
+                            letter-spacing: 0.14em;
+                            font-weight: 500;
+                            color: color.$textColor;
+                            line-height: 2.187;
+                        }
+                    }
+                    .p-facility__rental-btn-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 12px;
+                        @include mixin.tab {
+                            flex-direction: row;
+                            column-gap: 12px;
+                        }
+                        @include mixin.mid {
+                            flex-direction: column;
+                        }
+                        @include mixin.pc {
+                            flex-direction: row;
+                        }
                     }
                 }
             }
@@ -258,7 +331,7 @@
                 display: flex;
                 align-items: center;
                 column-gap: 30px;
-                width: fit-content;
+                width: 250px;
                 border-radius: 27px;
                 .p-facility__rental-link-circle-bg {
                     width: 30px;
@@ -267,6 +340,11 @@
                         width: 15px;
                     }
                 }
+            }
+            .p-facility__rental-link-contact {
+                padding: 0 12px 0 0;
+                column-gap: 10px;
+                justify-content: right;
             }
             .p-facility__rental-box {
                 padding: 0 6.67%;

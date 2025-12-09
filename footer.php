@@ -61,7 +61,7 @@
                                 <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/lecturer' ) ); ?>">講師紹介</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
-                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設紹介</a>
+                                <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設・自習室紹介</a>
                             </li>
                             <li class="p-footer__nav-menu-list-item">
                                 <a class="p-footer__nav-menu-link" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a>

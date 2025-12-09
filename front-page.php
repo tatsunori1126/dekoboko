@@ -215,7 +215,7 @@
                 </div>
             </div>
             <div class="c-btn__wrapper p-top__about-more-btn-wrapper fadeUp">
-                <a class="c-btn p-top__about-more-btn" href="<?php echo esc_url( home_url( '/about' ) ); ?>"><span class="c-btn__circle-bg p-top__about-more-btn-circle-bg"><img class="c-btn__circle-arrow p-top__about-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span>デコボコをもっと知る</a>
+                <a class="c-btn p-top__about-more-btn" href="<?php echo esc_url( home_url( '/about' ) ); ?>">デコボコをもっと知る<span class="c-btn__circle-bg p-top__about-more-btn-circle-bg"><img class="c-btn__circle-arrow p-top__about-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
             </div>
         </div>
     </section>
@@ -354,7 +354,7 @@
             </div>
         </div>
         <div class="c-btn__wrapper p-top__voice-more-btn-wrapper fadeUp">
-            <a class="c-btn p-top__voice-more-btn" href="<?php echo get_post_type_archive_link('voice'); ?>"><span class="c-btn__circle-bg p-top__voice-more-btn-circle-bg"><img class="c-btn__circle-arrow p-top__voice-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span>利用者の声をもっとみる</a>
+            <a class="c-btn p-top__voice-more-btn" href="<?php echo get_post_type_archive_link('voice'); ?>">利用者の声をもっとみる<span class="c-btn__circle-bg p-top__voice-more-btn-circle-bg"><img class="c-btn__circle-arrow p-top__voice-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
         </div>
     </section>
 

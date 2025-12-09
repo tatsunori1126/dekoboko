@@ -162,8 +162,43 @@
                             <span class="p-facility__text-title fadeUp">未来につながる、</span>
                             <span class="p-facility__text-title fadeUp">もうひとつの学習空間</span>
                         </h3>
-                        <p class="p-facility__text fadeUp">DEKObokoの自習室は、学校や職場、家庭や自宅とは違う「もうひとつの学びの場」です。小・中・高校生は授業以外の時間に自習エリアで自主学習を進め、大学生や社会人はレンタルスペースとして幅広い目的にご利用いただけます。<br>安心して集中できる環境と、気持ちを切り替えられる交流の場。ここでの学びや出会いが、あなたの未来を育てていきます。<br>Wi-Fiや電源を完備しているため、パソコンを使った勉強や仕事にも最適。休憩時にはソファや給湯スペースでリフレッシュすることもできます。<br>人の気配を感じながら「集中」と「リラックス」を両立できる―DEKObokoは、学びを続けるあなたを支える学習空間です。</p>
-                        <div class="c-btn__wrapper fadeUp">
+                        <div class="p-facility__text-block">
+                            <p class="p-facility__text fadeUp">
+                                DEKObokoの自習室コースは、学校や職場、自宅とは少しちがう「もうひとつの学びの場」です。<br>
+                                小・中・高校生の塾生はもちろん、<span class="p-facility__text-orange">塾外生・大学生・社会人など、多世代の学び手が集まり、各自の目標に向かって手を動かす共学スペース</span>としてご利用いただけます。<br>
+                                一人用ブースで自分のスペースは守りながらも、周りには同じように勉強や仕事に向き合う人の気配があります。<br>
+                                <span class="p-facility__text-orange">ほどよい静けさと「みんなも頑張っている」という空気感</span>の中で、集中と安心の両方を感じられる学習環境です。<br>
+                                Wi-Fiや電源も完備しているため、パソコンを使った勉強やレポート作成、リモートワークにも最適。<br>
+                                休憩時間には、世代の違う利用者同士で軽く言葉を交わし、学びやキャリアの話に広がることもあります。
+                            </p>
+                            <div class="p-facility__text-block-sub">
+                                <h3 class="p-facility__text-block-title">◎特徴</h3>
+                                <div class="p-facility__text-block-number-box">
+                                    <div class="p-facility__text-block-number-wrapper">
+                                        <h4 class="p-facility__text-block-number-title">① 集中しやすいけれど、ちゃんと人の気配がある空間</h4>
+                                        <p class="p-facility__text-block-number-text">完全な無音の“サイレントルーム”ではなく、それぞれが静かに作業している気配が伝わる、自習室らしい空気感があります。自宅で一人きりで勉強するのとは違う、「みんなも頑張っているから、自分ももうひと踏ん張りしようかな」と思える場です。</p>
+                                    </div>
+                                    <div class="p-facility__text-block-number-wrapper">
+                                        <h4 class="p-facility__text-block-number-title">② 静かに作業しつつ、必要なときは会話や交流もOK</h4>
+                                        <p class="p-facility__text-block-number-text">基本は「学びや仕事に向き合う時間」が中心ですが、ちょっとした質問や情報交換、世間話程度の会話は歓迎しています。大声で騒いだり、長時間の雑談で誰かの集中を妨げることは控えつつ、多世代がゆるく声をかけ合える“リビングのような自習室”をイメージしています。</p>
+                                    </div>
+                                    <div class="p-facility__text-block-number-wrapper">
+                                        <h4 class="p-facility__text-block-number-title">③ 多世代交流を大切に</h4>
+                                        <p class="p-facility__text-block-number-text">中高生・大学生・社会人・保護者など、さまざまな立場の人が、同じ空間でそれぞれの「学び」を進めています。ふとしたきっかけで、「その資格ってどんな勉強するんですか？」「そのレポート、おもしろそうですね」といった会話が生まれることもあります。ただ一人で机に向かうだけでなく、多世代から刺激を受けたい方におすすめの環境です。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-facility__recommend-wrapper">
+                                <h3 class="p-facility__recommend-title">◎こんな方におすすめ</h3>
+                                <p class="p-facility__recommend-text">
+                                    ・「同じように頑張っている人がいる空間」の方がやる気が出る人<br>
+                                    ・世代の違う人と、学びやキャリアの話をしてみたい人<br>
+                                    ・「ただ静かなだけの自習室」よりは、ゆるくつながりながら学びたい人
+                                </p>
+                            </div>
+                        </div>
+                        <div class="c-btn__wrapper p-facility__rental-btn-wrapper fadeUp">
+                            <a class="c-btn p-facility__rental-link p-facility__rental-link-contact" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせへ進む<span class="c-btn__circle-bg p-facility__rental-link-circle-bg"><img class="c-btn__circle-arrow p-facility__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                             <a class="c-btn p-facility__rental-link" href="https://lin.ee/ivHAxks" target="_blank">LINE予約へ進む<span class="c-btn__circle-bg p-facility__rental-link-circle-bg"><img class="c-btn__circle-arrow p-facility__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                         </div>
                     </div>

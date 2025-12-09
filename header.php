@@ -66,7 +66,7 @@
                         <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/lecturer' ) ); ?>">講師</a>
                     </li>
                     <li class="p-header__nav-list">
-                        <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設</a>
+                        <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設・自習室</a>
                     </li>
                     <li class="p-header__nav-list has-submenu">
                         <a class="p-header__nav-link" href="<?php echo esc_url( home_url( '/reservation' ) ); ?>">入塾案内</a>
@@ -107,7 +107,7 @@
                                     </ul>
                                     <ul class="p-header__hamburger-nav-list">
                                         <li><a href="<?php echo esc_url( home_url( '/lecturer' ) ); ?>">講師紹介</a></li>
-                                        <li><a href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設紹介</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/facility' ) ); ?>">施設・自習室紹介</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせ</a></li>
                                         <li><a href="<?php echo get_post_type_archive_link('news'); ?>">NEWS</a></li>
                                     </ul>

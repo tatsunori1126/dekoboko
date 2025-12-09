@@ -37,7 +37,7 @@
                     <h2 class="p-results__title">2025年度の進学実績</h2>
                     <div class="p-results__block">
                         <div class="p-results__box">
-                            <h3 class="p-results__subtitle">高校</h3>
+                            <h3 class="p-results__subtitle">高校・高専</h3>
                             <ul class="p-results__list">
                                 <li class="p-results__item">・クラーク記念国際高等学校<br class="c-tab-hidden">（FYLコース）</li>
                                 <li class="p-results__item">・星野高等学校<br class="c-tab-hidden">（DYLコース）</li>
@@ -49,7 +49,7 @@
                             </ul>
                         </div>
                         <div class="p-results__box">
-                            <h3 class="p-results__subtitle">大学</h3>
+                            <h3 class="p-results__subtitle">大学・短期大学</h3>
                             <ul class="p-results__list">
                                 <li class="p-results__item">・日本体育大学<br class="c-tab-hidden">（CYLコース）</li>
                                 <li class="p-results__item">・国士館大学<br class="c-tab-hidden">（DYLコース）</li>
@@ -66,7 +66,7 @@
                     <h2 class="p-results__title">過去の進学実績</h2>
                     <div class="p-results__block">
                         <div class="p-results__box">
-                            <h3 class="p-results__subtitle">高校</h3>
+                            <h3 class="p-results__subtitle">高校・高専</h3>
                             <div class="p-results__past-container">
                                 <div class="p-results__past-wrapper">
                                     <h4 class="p-results__past-year">東京都</h4>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <div class="p-results__box">
-                            <h3 class="p-results__subtitle">大学</h3>
+                            <h3 class="p-results__subtitle">大学・短期大学</h3>
                             <div class="p-results__past-container">
                                 <div class="p-results__past-wrapper">
                                     <ul class="p-results__list">

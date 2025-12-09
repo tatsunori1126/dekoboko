@@ -162,16 +162,17 @@
                         <div class="p-lecturer__name-wrapper">
                             <h2 class="p-lecturer__name">髙橋 知尋</h2>
                             <span class="p-lecturer__subname">Chihiro Takahashi</span>
-                            <span class="p-lecturer__subname">小論文・社会・生物</span>
+                            <span class="p-lecturer__subname">社会</span>
                         </div>
                         <p class="p-lecturer__text">初めまして！<br>マーケティング部の髙橋知尋です！<br>普段は法学部に通う大学生をしています！<br>DEKObokoでは主に、Instagramの投稿などを同じマーケティング部の人と日々作って検討しており、たまにDYLコースでも教えたりもしています。<br>得意教科は社会科で、世界史が特に大好きです。<br>もし塾で見かけることがあったら気軽に声かけてください！！</p>
                         <div class="p-lecturer__hobby-container">
                             <div class="p-lecturer__hobby-wrapper">
                                 <h3 class="p-lecturer__hobby-title">趣味・好きなこと</h3>
                                 <ul class="p-lecturer__hobby-list">
-                                    <li class="p-lecturer__hobby-item"></li>
-                                    <li class="p-lecturer__hobby-item"></li>
-                                    <li class="p-lecturer__hobby-item"></li>
+                                    <li class="p-lecturer__hobby-item">・KPOPアイドル</li>
+                                    <li class="p-lecturer__hobby-item">・韓流ドラマ</li>
+                                    <li class="p-lecturer__hobby-item">・音楽鑑賞</li>
+                                    <li class="p-lecturer__hobby-item">・絵を描くこと</li>
                                 </ul>
                             </div>
                         </div>
