@@ -358,7 +358,7 @@
                             </dl>
                         </div>
                     </div>
-                    <div class="p-faq__question-wrapper">
+                    <div id="faq_contact" class="p-faq__question-wrapper">
                         <h3 class="p-faq__question-title">お問い合わせ</h3>
                         <div class="p-faq__question-item-box">
                             <div class="p-faq__question-box">

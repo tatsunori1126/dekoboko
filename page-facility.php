@@ -198,7 +198,7 @@
                             </div>
                         </div>
                         <div class="c-btn__wrapper p-facility__rental-btn-wrapper fadeUp">
-                            <a class="c-btn p-facility__rental-link p-facility__rental-link-contact" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">お問い合わせへ進む<span class="c-btn__circle-bg p-facility__rental-link-circle-bg"><img class="c-btn__circle-arrow p-facility__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
+                            <a class="c-btn p-facility__rental-link p-facility__rental-link-contact" href="<?php echo esc_url( home_url( '/faq/#faq_contact' ) ); ?>" data-scroll-link>お問い合わせへ進む<span class="c-btn__circle-bg p-facility__rental-link-circle-bg"><img class="c-btn__circle-arrow p-facility__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                             <a class="c-btn p-facility__rental-link" href="https://lin.ee/ivHAxks" target="_blank">LINE予約へ進む<span class="c-btn__circle-bg p-facility__rental-link-circle-bg"><img class="c-btn__circle-arrow p-facility__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                         </div>
                     </div>
