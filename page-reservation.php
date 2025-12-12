@@ -51,7 +51,7 @@
                                 <p class="p-reservation__column-text fadeUp">より具体的にご相談されたい方には、個別相談や体験授業をご用意しています。<br>お子さまの状況やご家庭のご希望をお伺いし、一人ひとりに合わせた学び方をご提案いたします。不登校・発達特性・進学など、どんなテーマでも安心してお話しください。また体験授業も随時受け付けておりますので個別相談の際に、お気軽にお申し付けください。<br><br>※体験授業のみご希望の場合は、公式LINEにてその旨お問い合わせください。</p>
                             </div>
                             <div class="c-btn__wrapper p-reservation__btn-wrapper fadeUp">
-                                <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-0kZWVBjp?liff_id=1661073504-0kZWVBjp&is=3mNMMSmaD2" target="_blank">個別相談の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
+                                <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=afQf1S&liff_id=1661073504-4vwK7MWY" target="_blank">個別相談の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="c-btn__wrapper p-reservation__btn-wrapper fadeUp">
-                        <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-0kZWVBjp?liff_id=1661073504-0kZWVBjp&is=3mNMMSmaD2" target="_blank">個別相談の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
+                        <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=afQf1S&liff_id=1661073504-4vwK7MWY" target="_blank">個別相談の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                     </div>
                 </div>
 
@@ -105,7 +105,7 @@
                                 <p class="p-reservation__column-text fadeUp"><span class="p-reservation__column-text-font">●こんな方におすすめです</span><br>・お子さまの不登校・学習の遅れ・凸凹特性などに悩んでいる保護者の方<br>・家庭の中で子どもとどう関わっていいか分からなくて方針を見つけたい方<br>・将来、子ども・保護者支援に関わる仕事をしたい・すでに携わっている方</p>
                             </div>
                             <div class="c-btn__wrapper p-reservation__btn-wrapper fadeUp">
-                                <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-0kZWVBjp?liff_id=1661073504-0kZWVBjp&group_id=154145" target="_blank">セミナー参加の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
+                                <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=ObsW8e&liff_id=1661073504-4vwK7MWY" target="_blank">セミナー参加の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__link-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                             </div>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                     <div class="c-btn__wrapper p-reservation__btn-wrapper fadeUp">
-                        <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-0kZWVBjp?liff_id=1661073504-0kZWVBjp&group_id=154145" target="_blank">セミナー参加の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
+                        <a class="c-btn p-reservation__link" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=ObsW8e&liff_id=1661073504-4vwK7MWY" target="_blank">セミナー参加の予約へ進む<span class="c-btn__circle-bg p-reservation__link-circle-bg"><img class="c-btn__circle-arrow p-reservation__circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
                     </div>
                 </div>
             </div>

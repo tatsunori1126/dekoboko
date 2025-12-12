@@ -190,7 +190,7 @@ add_filter('wpcf7_validate_email*', 'wpcf7_custom_email_validation_filter', 20, 
 
 /* recaptchaの読み込みを設定したページ以外読み込ませないように */
 function load_recaptcha_js() {
-  if (!is_page(array('contact-input', 'contact-confirm'))) {
+  if (!is_page(array('contact-input'))) {
       wp_deregister_script('google-recaptcha');
   }
 }

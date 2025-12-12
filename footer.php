@@ -35,8 +35,8 @@
                     <h2 class="p-footer__nav-reservation-title">ご予約はこちら</h2>
                     <span class="p-footer__nav-reservation-line"></span>
                     <div class="p-footer__nav-reservation-btn-wrapper">
-                        <a class="p-footer__nav-reservation-link" href="https://timerex.net/s/colpa22.1212_d4ee/ab0d6dfe" target="_blank">個別相談・体験授業<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
-                        <a class="p-footer__nav-reservation-link" href="https://lin.ee/ivHAxks" target="_blank">セミナー<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                        <a class="p-footer__nav-reservation-link" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=afQf1S&liff_id=1661073504-4vwK7MWY" target="_blank">個別相談・体験授業<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                        <a class="p-footer__nav-reservation-link" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=ObsW8e&liff_id=1661073504-4vwK7MWY" target="_blank">セミナー<img class="p-footer__nav-reservation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
                     </div>
                 </div>
                 <div class="p-footer__nav-menu-wrapper">
