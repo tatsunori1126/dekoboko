@@ -19,7 +19,7 @@
     <?php wp_body_open(); ?>
     <div class="fixed-cv-wrapper">
         <a class="fixed-cv-link fixed-cv-link-orange" href="<?php echo esc_url( home_url( '/reservation' ) ); ?>"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon1.png" alt="相談・セミナーに参加">相談・セミナーに参加</a>
-        <a class="fixed-cv-link fixed-cv-link-green" href="https://drive.google.com/file/d/1D4j45l9M-T13L0St5vE6114yLH0PnQb5/view?usp=drive_link" target="_blank"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon2.png" alt="資料請求する">資料請求する</a>
+        <a class="fixed-cv-link fixed-cv-link-green" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=zpIxO6&liff_id=1661073504-4vwK7MWY" target="_blank"><img class="fixed-cv-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/fixed-icon2.png" alt="資料請求する">資料請求する</a>
     </div>
     <header class="l-header p-header">
     <?php if (is_front_page() || is_home()) : ?>
@@ -147,7 +147,7 @@
                                         <li><a href="<?php echo esc_url( home_url( '/reservation/#consulting' ) ); ?>" data-scroll-link>個別相談・体験授業</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/reservation/#session' ) ); ?>" data-scroll-link>セミナー</a></li>
                                         <li><a href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問・お問い合わせ</a></li>
-                                        <li><a href="https://lin.ee/aaQVtZ7" target="_blank">資料請求<img class="p-header__hamburger-nav-list-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a></li>
+                                        <li><a href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=zpIxO6&liff_id=1661073504-4vwK7MWY" target="_blank">資料請求<img class="p-header__hamburger-nav-list-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a></li>
                                     </ul>
                                 </div>
                             </div>

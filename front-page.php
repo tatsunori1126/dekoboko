@@ -392,7 +392,7 @@
                         <a href="<?php echo esc_url( home_url( '/faq' ) ); ?>" class="p-top__guide-btn">よくあるご質問・お問い合わせ<img class="p-top__guide-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt=""></a>
                     </div>
                     <div class="p-top__guide-link-wrapper fadeUp">
-                        <a href="https://lin.ee/aaQVtZ7" target="_blank" class="p-top__guide-link">資料請求<img class="p-top__guide-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
+                        <a href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=zpIxO6&liff_id=1661073504-4vwK7MWY" target="_blank" class="p-top__guide-link">資料請求<img class="p-top__guide-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
                     </div>
                 </div>
                 <div class="p-top__guide-img-wrapper fadeUp">

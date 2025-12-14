@@ -139,7 +139,7 @@
                                     <a class="p-footer__nav-menu-bottom-link" href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問・お問い合わせ</a>
                                 </li>
                                 <li class="p-footer__nav-menu-bottom-list-item">
-                                    <a class="p-footer__nav-menu-bottom-link" href="https://lin.ee/aaQVtZ7" target="_blank">資料請求<img class="p-footer__nav-menu-bottom-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
+                                    <a class="p-footer__nav-menu-bottom-link" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=zpIxO6&liff_id=1661073504-4vwK7MWY" target="_blank">資料請求<img class="p-footer__nav-menu-bottom-link-icon" src="<?php echo get_template_directory_uri(); ?>/images/common/link-icon.png" alt=""></a>
                                 </li>
                             </ul>
                         </div>
