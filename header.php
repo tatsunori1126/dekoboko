@@ -168,7 +168,7 @@
                                 <div class="p-header__hamburger-btn-title">お問い合わせ</div>
                                 <div class="p-header__hamburger-btn-box">
                                     <div class="p-header__hamburger-btn-block">
-                                        <a class="p-header__hamburger-btn p-header__hamburger-btn-white" href="https://lin.ee/ivHAxks" target="_blank">公式LINEへ<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt="矢印"></a>
+                                        <a class="p-header__hamburger-btn p-header__hamburger-btn-white" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=DBAlAF&liff_id=1661073504-4vwK7MWY" target="_blank">公式LINEへ<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt="矢印"></a>
                                     </div>
                                     <div class="p-header__hamburger-btn-block">
                                         <a class="p-header__hamburger-btn p-header__hamburger-btn-white" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">メールフォームへ<img class="p-header__hamburger-btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt="矢印"></a>

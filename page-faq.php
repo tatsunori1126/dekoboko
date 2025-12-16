@@ -363,7 +363,7 @@
                         <div class="p-faq__question-item-box">
                             <div class="p-faq__question-box">
                                 <div class="p-faq__question-text-block p-faq__question-text-block-contact">
-                                    <p class="p-faq__question-text-sub p-faq__question-text-sub-contact">まずはお気軽にお問い合わせください。<br><a href="https://lin.ee/ivHAxks" target="_blank">公式LINE</a> または <a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">専用フォーム</a> からご連絡いただけます。</p>
+                                    <p class="p-faq__question-text-sub p-faq__question-text-sub-contact">まずはお気軽にお問い合わせください。<br><a href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=DBAlAF&liff_id=1661073504-4vwK7MWY" target="_blank">公式LINE</a> または <a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">専用フォーム</a> からご連絡いただけます。</p>
                                 </div>
                             </div>
                         </div>

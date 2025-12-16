@@ -25,7 +25,7 @@
                 <div class="p-footer__access-contact-wrapper">
                     <h2 class="p-footer__access-contact-title">お問い合わせ</h2>
                     <div class="p-footer__access-contact-btn-wrapper">
-                        <a class="p-footer__access-contact-link" href="https://lin.ee/ivHAxks" target="_blank">公式LINEへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
+                        <a class="p-footer__access-contact-link" href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=DBAlAF&liff_id=1661073504-4vwK7MWY" target="_blank">公式LINEへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
                         <a class="p-footer__access-contact-link" href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">メールフォームへ<img class="p-footer__access-contact-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right.png" alt=""></a>
                     </div>
                 </div>

@@ -50,7 +50,7 @@
                                 <div class="p-flow__content">
                                     <h3 class="p-flow__title">個別相談・体験授業・セミナー</h3>
                                     <div class="p-flow__text-wrapper">
-                                        <p class="p-flow__text">DEKObokoでは、入塾前に当塾の雰囲気や学び方、教育への考え方を知っていただく場として、個別相談や体験授業、セミナーを実施しています。保護者の方のご不安の解消やお子さまの特性やDEKObokoとの相性についても、丁寧に確認させていただきます。<br>まずはお気軽にお問い合わせください。<br><a href="https://lin.ee/ivHAxks" target="_blank">公式LINE</a> または <a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">専用フォーム</a> からご連絡いただけます。</p>
+                                        <p class="p-flow__text">DEKObokoでは、入塾前に当塾の雰囲気や学び方、教育への考え方を知っていただく場として、個別相談や体験授業、セミナーを実施しています。保護者の方のご不安の解消やお子さまの特性やDEKObokoとの相性についても、丁寧に確認させていただきます。<br>まずはお気軽にお問い合わせください。<br><a href="https://liff.line.me/1661073504-4vwK7MWY/landing?follow=%40552hbhyv&lp=DBAlAF&liff_id=1661073504-4vwK7MWY" target="_blank">公式LINE</a> または <a href="<?php echo esc_url( home_url( '/contact-input' ) ); ?>">専用フォーム</a> からご連絡いただけます。</p>
                                     </div>
                                 </div>
                             </div>
