@@ -232,34 +232,71 @@
                     <img class="p-top__voice-next-img" src="<?php echo get_template_directory_uri(); ?>/images/top/voice-slider-arrow-right.png" alt="次へ">
                 </div>
             </div>
+
             <div class="swiper p-top__voice-slider">
                 <ul class="swiper-wrapper p-top__voice-slider-box">
                 <?php
-                $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-                $args = array(
+                /**
+                 * =====================================
+                 * 1. 保護者・卒業生をそれぞれ取得
+                 * =====================================
+                 */
+                $parents_query = new WP_Query([
                     'post_type'      => 'voice',
-                    'posts_per_page' => 8,   // トップページは10件くらいでOK
-                    'paged'          => 1,
-                );
-                $the_query = new WP_Query($args);
+                    'posts_per_page' => 4,
+                    'orderby'        => 'date',
+                    'order'          => 'DESC',
+                    'tax_query'      => [
+                        [
+                            'taxonomy' => 'voice_category',
+                            'field'    => 'slug',
+                            'terms'    => 'parents',
+                        ],
+                    ],
+                ]);
 
-                if ($the_query->have_posts()) :
-                    while ($the_query->have_posts()) : $the_query->the_post();
-                        
+                $students_query = new WP_Query([
+                    'post_type'      => 'voice',
+                    'posts_per_page' => 4,
+                    'orderby'        => 'date',
+                    'order'          => 'DESC',
+                    'tax_query'      => [
+                        [
+                            'taxonomy' => 'voice_category',
+                            'field'    => 'slug',
+                            'terms'    => 'students',
+                        ],
+                    ],
+                ]);
+
+                $parents_posts  = $parents_query->posts;
+                $students_posts = $students_query->posts;
+
+                /**
+                 * =====================================
+                 * 2. 交互に表示
+                 * =====================================
+                 */
+                $max = max(count($parents_posts), count($students_posts));
+
+                for ($i = 0; $i < $max; $i++) :
+
+                    // ===== 保護者の声 =====
+                    if (!empty($parents_posts[$i])) :
+                        $post = $parents_posts[$i];
+                        setup_postdata($post);
+
                         // ACF
                         $icon   = get_field('voice_icon');
                         $course = get_field('voice_course');
-                        $rate   = get_field('voice_rate'); // 満足度(1〜5)
+                        $rate   = get_field('voice_rate');
                 ?>
                     <li class="swiper-slide p-top__voice-slider-list">
                         <div class="p-top__voice-slider-item">
 
-                            <!-- ===== 上トップ部分（archive の構造準拠） ===== -->
                             <div class="p-top__voice-slider-item-top-wrapper">
-
                                 <div class="p-top__voice-slider-item-top-title-wrapper">
 
-                                    <!-- ICON -->
                                     <div class="p-top__voice-slider-item-top-icon-wrapper">
                                         <?php if ($icon) : ?>
                                             <img class="p-top__voice-slider-item-top-icon"
@@ -269,94 +306,144 @@
                                     </div>
 
                                     <div class="p-top__voice-slider-item-top-title-box">
-                                        <!-- カテゴリ（保護者の声 / 卒業生の声） -->
                                         <?php
-                                            $terms = get_the_terms(get_the_ID(), 'voice_category');
-                                            if (!empty($terms) && !is_wp_error($terms)) :
-                                                // 最初のタームだけ取得
-                                                $term = $terms[0];
+                                        $terms = get_the_terms(get_the_ID(), 'voice_category');
+                                        if (!empty($terms) && !is_wp_error($terms)) :
+                                            $term = $terms[0];
                                         ?>
                                             <div class="p-top__voice-category-label p-top__voice-category-label--<?php echo esc_attr($term->slug); ?>">
                                                 <?php echo esc_html($term->name); ?>
                                             </div>
                                         <?php endif; ?>
 
-                                        <!-- タイトル -->
-                                        <h3 class="p-top__voice-slider-item-top-title">
-                                            <?php the_title(); ?>
-                                        </h3>
+                                        <h3 class="p-top__voice-slider-item-top-title"><?php the_title(); ?></h3>
 
-                                        <!-- コース名 -->
                                         <?php if ($course) : ?>
                                             <span class="p-top__voice-slider-item-top-course-link">
                                                 #<?php echo esc_html($course); ?>
                                             </span>
                                         <?php endif; ?>
-
                                     </div>
                                 </div>
 
-                                <!-- 満足度 -->
                                 <div class="p-top__voice-slider-item-top-star-wrapper">
                                     <div class="p-top__voice-slider-item-top-star-title">満足度</div>
                                     <div class="p-top__voice-slider-item-top-star-img-wrapper">
-
-                                    <?php 
-                                    $rate = get_field('voice_rate');
-
-                                    if ($rate !== '' && $rate !== null) {
-
-                                        // 数値化して小数点第1位に整形（4 → 4.0 / 4.5 → 4.5）
-                                        $rate_formatted = number_format((float)$rate, 1);
-
-                                        // 画像ファイルとして存在する値の一覧
-                                        $valid_values = [
-                                            '0.0', '0.5',
-                                            '1.0', '1.5',
-                                            '2.0', '2.5',
-                                            '3.0', '3.5',
-                                            '4.0', '4.5',
-                                            '5.0'
-                                        ];
-
-                                        if (in_array($rate_formatted, $valid_values, true)) : ?>
+                                        <?php
+                                        if ($rate !== '' && $rate !== null) :
+                                            $rate_formatted = number_format((float)$rate, 1);
+                                        ?>
                                             <img class="p-top__voice-slider-item-top-star-img"
                                                 src="<?php echo get_template_directory_uri(); ?>/images/voice/satisfaction-<?php echo esc_attr($rate_formatted); ?>.png"
                                                 alt="満足度 <?php echo esc_attr($rate_formatted); ?>">
                                         <?php endif; ?>
-
-                                    <?php } ?>
                                     </div>
                                 </div>
+                            </div>
 
-                            </div><!-- /.p-top__voice-slider-item-top-wrapper -->
-
-                            <!-- ===== 本文（archive のコメントではなく本文のみ） ===== -->
                             <div class="p-top__voice-slider-item-text-wrapper">
                                 <div class="p-top__voice-slider-item-text">
                                     <?php the_content(); ?>
                                 </div>
                             </div>
 
-                        </div><!-- /.p-top__voice-slider-item -->
+                        </div>
                     </li>
-
                 <?php
-                    endwhile;
-                endif;
+                    endif;
+
+                    // ===== 卒業生の声 =====
+                    if (!empty($students_posts[$i])) :
+                        $post = $students_posts[$i];
+                        setup_postdata($post);
+
+                        $icon   = get_field('voice_icon');
+                        $course = get_field('voice_course');
+                        $rate   = get_field('voice_rate');
+                ?>
+                    <li class="swiper-slide p-top__voice-slider-list">
+                        <div class="p-top__voice-slider-item">
+
+                            <div class="p-top__voice-slider-item-top-wrapper">
+                                <div class="p-top__voice-slider-item-top-title-wrapper">
+
+                                    <div class="p-top__voice-slider-item-top-icon-wrapper">
+                                        <?php if ($icon) : ?>
+                                            <img class="p-top__voice-slider-item-top-icon"
+                                                src="<?php echo get_template_directory_uri(); ?>/images/voice/<?php echo esc_attr($icon); ?>.png"
+                                                alt="">
+                                        <?php endif; ?>
+                                    </div>
+
+                                    <div class="p-top__voice-slider-item-top-title-box">
+                                        <?php
+                                        $terms = get_the_terms(get_the_ID(), 'voice_category');
+                                        if (!empty($terms) && !is_wp_error($terms)) :
+                                            $term = $terms[0];
+                                        ?>
+                                            <div class="p-top__voice-category-label p-top__voice-category-label--<?php echo esc_attr($term->slug); ?>">
+                                                <?php echo esc_html($term->name); ?>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <h3 class="p-top__voice-slider-item-top-title"><?php the_title(); ?></h3>
+
+                                        <?php if ($course) : ?>
+                                            <span class="p-top__voice-slider-item-top-course-link">
+                                                #<?php echo esc_html($course); ?>
+                                            </span>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+
+                                <div class="p-top__voice-slider-item-top-star-wrapper">
+                                    <div class="p-top__voice-slider-item-top-star-title">満足度</div>
+                                    <div class="p-top__voice-slider-item-top-star-img-wrapper">
+                                        <?php
+                                        if ($rate !== '' && $rate !== null) :
+                                            $rate_formatted = number_format((float)$rate, 1);
+                                        ?>
+                                            <img class="p-top__voice-slider-item-top-star-img"
+                                                src="<?php echo get_template_directory_uri(); ?>/images/voice/satisfaction-<?php echo esc_attr($rate_formatted); ?>.png"
+                                                alt="満足度 <?php echo esc_attr($rate_formatted); ?>">
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-top__voice-slider-item-text-wrapper">
+                                <div class="p-top__voice-slider-item-text">
+                                    <?php the_content(); ?>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                <?php
+                    endif;
+
+                endfor;
 
                 wp_reset_postdata();
                 ?>
-
                 </ul>
 
                 <div class="p-top__voice-pagination swiper-pagination"></div>
             </div>
         </div>
+
         <div class="c-btn__wrapper p-top__voice-more-btn-wrapper fadeUp">
-            <a class="c-btn p-top__voice-more-btn" href="<?php echo get_post_type_archive_link('voice'); ?>">利用者の声をもっとみる<span class="c-btn__circle-bg p-top__voice-more-btn-circle-bg"><img class="c-btn__circle-arrow p-top__voice-btn-circle-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png" alt=""></span></a>
+            <a class="c-btn p-top__voice-more-btn" href="<?php echo get_post_type_archive_link('voice'); ?>">
+                利用者の声をもっとみる
+                <span class="c-btn__circle-bg p-top__voice-more-btn-circle-bg">
+                    <img class="c-btn__circle-arrow p-top__voice-btn-circle-arrow"
+                        src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-black.png"
+                        alt="">
+                </span>
+            </a>
         </div>
     </section>
+
 
     <!-- guide -->
     <section class="p-top__guide">
