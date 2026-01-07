@@ -6358,59 +6358,68 @@ body.is-menu-open {
     background-image: url("../images/about/message-bg-wave.png");
   }
 }
-.p-about .p-about__message .p-about__message-container {
-  display: flex;
-  flex-direction: column;
+.p-about .p-about__message .p-about__message-box {
   padding: 150px 0;
-}
-@media (min-width: 800px) {
-  .p-about .p-about__message .p-about__message-container {
-    flex-direction: row;
-    padding: 230px 0;
-    justify-content: space-between;
-  }
-}
-.p-about .p-about__message .p-about__message-container .p-about__message-img-wrapper {
-  display: none;
-}
-@media (min-width: 800px) {
-  .p-about .p-about__message .p-about__message-container .p-about__message-img-wrapper {
-    display: block;
-    width: 39.5%;
-  }
-}
-.p-about .p-about__message .p-about__message-container .p-about__message-img-wrapper .p-about__message-img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container {
   display: flex;
   flex-direction: column;
   row-gap: 50px;
 }
 @media (min-width: 800px) {
-  .p-about .p-about__message .p-about__message-container .p-about__message-text-container {
+  .p-about .p-about__message .p-about__message-box {
+    padding: 230px 0;
+  }
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .p-about .p-about__message .p-about__message-box .p-about__message-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-img-wrapper {
+  display: none;
+}
+@media (min-width: 800px) {
+  .p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-img-wrapper {
+    display: block;
+    width: 39.5%;
+  }
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-img-wrapper .p-about__message-img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+@media (min-width: 800px) {
+  .p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container {
     width: 53.5%;
   }
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-en {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-en {
   font-size: 1.5rem;
   letter-spacing: 0.14em;
   font-weight: 500;
   color: #388d60;
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-box {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-box {
   display: flex;
   flex-direction: column;
   row-gap: 6px;
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-box .p-about__message-text-title {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-box .p-about__message-text-title {
   width: -moz-fit-content;
   width: fit-content;
   background: #f5f4ec;
@@ -6425,44 +6434,44 @@ body.is-menu-open {
   height: 45px;
 }
 @media (min-width: 800px) {
-  .p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-box .p-about__message-text-title {
+  .p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-box .p-about__message-text-title {
     font-size: 2.4rem;
     height: 50px;
   }
 }
 @media (min-width: 1000px) {
-  .p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-box .p-about__message-text-title {
+  .p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-title-wrapper .p-about__message-text-title-box .p-about__message-text-title {
     height: 55px;
     padding: 0 20px;
     font-size: 3rem;
   }
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-img-wrapper-sp {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-img-wrapper-sp {
   width: 100%;
 }
 @media (min-width: 800px) {
-  .p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-img-wrapper-sp {
+  .p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-img-wrapper-sp {
     display: none;
   }
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-img-wrapper-sp .p-about__message-img-sp {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-img-wrapper-sp .p-about__message-img-sp {
   width: 100%;
   height: auto;
   vertical-align: middle;
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-wrapper {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-wrapper .p-about__message-text {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-wrapper .p-about__message-text {
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   color: #0d3425;
   line-height: 2.187;
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-wrapper .p-about__message-post-name {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-wrapper .p-about__message-post-name {
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.14em;
@@ -6472,8 +6481,37 @@ body.is-menu-open {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.p-about .p-about__message .p-about__message-container .p-about__message-text-container .p-about__message-text-wrapper .p-about__message-post-name .p-about__message-name {
+.p-about .p-about__message .p-about__message-box .p-about__message-container .p-about__message-text-container .p-about__message-text-wrapper .p-about__message-post-name .p-about__message-name {
   font-size: 2.3rem;
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border: 1px solid #0d3425;
+  border-radius: 20px;
+  padding: 30px;
+}
+@media (min-width: 800px) {
+  .p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper {
+    border-radius: 25px;
+  }
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__message-profile-name {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #0d3425;
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__message-profile-name .p-about__message-profile-name-font {
+  font-size: 1.2rem;
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__message-profile-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #0d3425;
+  line-height: 2.187;
 }
 .p-about .p-about__company {
   padding: 80px 0 65px;

@@ -241,26 +241,32 @@
         <section class="p-about__message">
             <div class="p-about__message-bg-wave"></div>
             <div class="c-inner">
-                <div class="p-about__message-container">
-                    <div class="p-about__message-img-wrapper fadeUp">
-                        <img class="p-about__message-img" src="<?php echo get_template_directory_uri(); ?>/images/about/message-img.png" alt="代表取締役 熊谷 歩真">
+                <div class="p-about__message-box">
+                    <div class="p-about__message-container">
+                        <div class="p-about__message-img-wrapper fadeUp">
+                            <img class="p-about__message-img" src="<?php echo get_template_directory_uri(); ?>/images/about/message-img.png" alt="代表取締役 熊谷 歩真">
+                        </div>
+                        <div class="p-about__message-text-container">
+                            <div class="p-about__message-text-title-wrapper">
+                                <span class="p-about__message-text-title-en fadeUp">Message</span>
+                                <h2 class="p-about__message-text-title-box">
+                                    <span class="p-about__message-text-title fadeUp">それぞれの</span>
+                                    <span class="p-about__message-text-title fadeUp">「デコボコ」をうけとめ、</span>
+                                    <span class="p-about__message-text-title fadeUp">ともに育つ場へ</span>
+                                </h2>
+                            </div>
+                            <div class="p-about__message-img-wrapper-sp fadeUp">
+                                <img class="p-about__message-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/about/message-img.png" alt="代表取締役 熊谷 歩真">
+                            </div>
+                            <div class="p-about__message-text-wrapper">
+                                <p class="p-about__message-text fadeUp">人にはそれぞれ、得意や不得意、心の揺らぎがあります。DEKObokoは、そうした違いや個性をありのままに“その人らしさ”として受けとめることから始まります。<br>自分のペースで意味のある学びを重ね、迷いながらでも前に進めるように、必要なときは支え合える関係を大切にしています。<br>安心できる空間と、前に進みたくなる気持ちの両方が積み重なっていく“学びの場”を、これからも丁寧に育て続けます。</p>
+                                <div class="p-about__message-post-name fadeUp">代表取締役<span class="p-about__message-name">熊谷 歩真</span></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-about__message-text-container">
-                        <div class="p-about__message-text-title-wrapper">
-                            <span class="p-about__message-text-title-en fadeUp">Message</span>
-                            <h2 class="p-about__message-text-title-box">
-                                <span class="p-about__message-text-title fadeUp">それぞれの</span>
-                                <span class="p-about__message-text-title fadeUp">「デコボコ」をうけとめ、</span>
-                                <span class="p-about__message-text-title fadeUp">ともに育つ場へ</span>
-                            </h2>
-                        </div>
-                        <div class="p-about__message-img-wrapper-sp fadeUp">
-                            <img class="p-about__message-img-sp" src="<?php echo get_template_directory_uri(); ?>/images/about/message-img.png" alt="代表取締役 熊谷 歩真">
-                        </div>
-                        <div class="p-about__message-text-wrapper">
-                            <p class="p-about__message-text fadeUp">人にはそれぞれ、得意や不得意、心の揺らぎがあります。DEKObokoは、そうした違いや個性をありのままに“その人らしさ”として受けとめることから始まります。<br>自分のペースで意味のある学びを重ね、迷いながらでも前に進めるように、必要なときは支え合える関係を大切にしています。<br>安心できる空間と、前に進みたくなる気持ちの両方が積み重なっていく“学びの場”を、これからも丁寧に育て続けます。</p>
-                            <div class="p-about__message-post-name fadeUp">代表取締役<span class="p-about__message-name">熊谷 歩真</span></div>
-                        </div>
+                    <div class="p-about__message-profile-text-wrapper fadeUp">
+                        <div class="p-about__message-profile-name">熊谷 歩真<span class="p-about__message-profile-name-font">（くまがい あゆま）</span></div>
+                        <p class="p-about__message-profile-text">1992年生まれ。東京大学大学院修了。<br>専門は臨床心理学、発達心理学、対人支援論、学習環境論。<br>これまで不登校や学習支援など、150名以上の子ども・若者・保護者の方の相談支援に携わる。<br class="c-sub-block">また、保護者の方や教員向けの講演活動も多数。<br>2016年より子ども食堂を立ち上げ、約６年間代表も務める。<br class="c-sub-block">現在は企業研修や社会人向けのDXやAI活用、ビジネス基礎の指導にも携わり、子どもから大人まで、「問い」を大切にした安心できる学びの場をつくり続けている。<br class="c-sub-block">あだ名はくまちゃん。</p>
                     </div>
                 </div>
             </div>
