@@ -257,14 +257,7 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                チーム学習コース<br>
-                                                <span class="min-font">[週1回チーム学習＋週1回チューター指導]</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                子別学習コース<br>
-                                                <span class="min-font">[テスト/小論文/面接/特別対応/資格・検定等]</span>
+                                                DYLコース
                                             </td>
                                         </tr>
                                     </tbody>
@@ -276,19 +269,53 @@
                                             <tr>
                                                 <th>月4回</th>
                                                 <th>月8回</th>
-                                                <th>1コマ</th>
+                                                <th>月12回</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>-</td>
-                                                <td>33,000円</td>
-                                                <td>-</td>
-                                            </tr>
-                                            <tr>
-                                                <td>25,200円</td>
+                                                <td>26,400円</td>
                                                 <td>45,600円</td>
-                                                <td>5,700円</td>
+                                                <td>64,800円<br><span class="min-font">※諸費用免除</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-course__price-wrapper">
+                            <div class="p-course__price-table-wrapper">
+                                <table class="p-course__price-table p-course__price-table--fixed">
+                                    <thead>
+                                        <tr><th>DYLコース</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                子別学習コース<br>
+                                                <span class="min-font">（オプション）</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="p-course__price-table-scroll scroll-hint">
+                                    <table class="p-course__price-table">
+                                        <thead>
+                                            <tr>
+                                                <th>4コマまで<br><span class="min-font">（追加）</span></th>
+                                                <th>4コマまで<br><span class="min-font">（単体）</span></th>
+                                                <th>5コマ以降<br><span class="min-font">（追加）</span></th>
+                                                <th>5コマ以降<br><span class="min-font">（単体）</span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>5,100円</td>
+                                                <td>6,900円</td>
+                                                <td>4,800円</td>
+                                                <td>6,300円</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -309,14 +336,14 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                居場所学習コース
+                                            <td>居場所学習コース<br>
+                                                <span class="min-font">（45分：少人数）</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                受験対策コース<br>
-                                                <span class="min-font">（80分まで：1対1）</span>
+                                                学習支援・<br class="c-sub-hidden">受験対策コース<br>
+                                                <span class="min-font">（60分：1対1）</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -334,22 +361,22 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>9,720円</td>
-                                                <td>19,440円</td>
-                                                <td>9,720円</td>
-                                                <td>19,440円</td>
+                                                <td>12,000円</td>
+                                                <td>24,000円</td>
+                                                <td>12,000円</td>
+                                                <td>24,000円</td>
                                             </tr>
                                             <tr>
                                                 <td>16,200円</td>
-                                                <td>29,160円</td>
-                                                <td>18,000円</td>
                                                 <td>32,400円</td>
+                                                <td>18,000円</td>
+                                                <td>36,000円</td>
                                             </tr>
                                             <tr>
-                                                <td>22,800円</td>
-                                                <td>41,040円</td>
+                                                <td>22,500円</td>
+                                                <td>45,000円</td>
                                                 <td>25,200円</td>
-                                                <td>45,600円</td>
+                                                <td>50,400円</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -357,7 +384,7 @@
                             </div>
 
                             <ul class="p-course__price-note">
-                                <li class="p-course__price-note-text">※お子さんに勉強する意思がある場合のみ「居場所学習コース」「受験対策コース」は申し込み可能です。</li>
+                                <li class="p-course__price-note-text">※お子さんに勉強する意思がある場合のみ「居場所学習コース」「学習支援・受験対策コース」は申し込み可能です。</li>
                             </ul>
                         </div>
 
@@ -419,12 +446,14 @@
                                             <tr>
                                                 <th>DYL<span class="min-font">（中学生）</span></th>
                                                 <th>DYL<span class="min-font">（高校生・既卒生）</span></th>
-                                                <th>FYL</th>
+                                                <th>FYL<span class="min-font">（中学生以下）</span></th>
+                                                <th>FYL<span class="min-font">（高校生）</span></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1,500円</td>
+                                                <td>3,000円</td>
                                                 <td>3,000円</td>
                                                 <td>4,500円</td>
                                             </tr>

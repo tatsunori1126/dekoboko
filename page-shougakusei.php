@@ -254,8 +254,17 @@
                                     </thead>
                                     <tbody>
                                         <tr><td>居場所コース</td></tr>
-                                        <tr><td>居場所学習コース</td></tr>
-                                        <tr><td>受験対策コース<br class="c-sub-hidden"><span class="min-font">（80分まで：1対1）</span></td></tr>
+                                        <tr>
+                                            <td>居場所学習コース<br>
+                                                <span class="min-font">（45分：少人数）</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                学習支援・<br class="c-sub-hidden">受験対策コース<br>
+                                                <span class="min-font">（60分：1対1）</span>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
 
@@ -272,20 +281,20 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>9,720円</td>
-                                                <td>19,440円</td>
+                                                <td>12,000円</td>
+                                                <td>24,000円</td>
                                                 <td>-</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <td>12,600円</td>
-                                                <td>22,680円</td>
+                                                <td>15,000円</td>
+                                                <td>30,000円</td>
                                                 <td>-</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <td>要相談</td>
-                                                <td>要相談</td>
+                                                <td>18,720円</td>
+                                                <td>37,440円</td>
                                                 <td>-</td>
                                                 <td>-</td>
                                             </tr>
@@ -295,7 +304,7 @@
                             </div>
 
                             <ul class="p-course__price-note">
-                                <li class="p-course__price-note-text">※お子さんに勉強する意思がある場合のみ「居場所学習コース」「受験対策コース」は申し込み可能です。</li>
+                                <li class="p-course__price-note-text">※お子さんに勉強する意思がある場合のみ「居場所学習コース」「学習支援・受験対策コース」は申し込み可能です。</li>
                             </ul>
                         </div>
                     </div>
