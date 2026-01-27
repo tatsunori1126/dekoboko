@@ -96,7 +96,7 @@
                                                 <span class="p-about__important-item-text-list-item-number">2</span>
                                                 <span class="p-about__important-item-text-list-item-font">伴走学習</span>
                                             </div>
-                                            <span class="p-about__important-item-text-list-item-dot">…</span>講師と一緒に計画を立て、自分のペースで進めていく
+                                            <span class="p-about__important-item-text-list-item-dot">…</span>目標を決め、1対1の個別指導で一緒に進めていく
                                         </li>
                                         <li class="p-about__important-item-text-list-item">
                                             <div class="p-about__important-item-text-list-item-box">
@@ -112,6 +112,7 @@
                                     <img class="p-about__important-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/important-img02.png" alt="">
                                 </div>
                             </div>
+                            <a class="p-about__important-link" href="https://co-learningpark.com/news/180/" target="_blank">DEKObokoの授業の仕方について<img class="p-about__feeling-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
                         </div>
                         <div class="p-about__important-wrapper fadeUp">
                             <div class="p-about__important-item-title-wrapper">
@@ -165,11 +166,17 @@
                             </div>
                             <h3 class="p-about__method-item-title">新たな環境に<br>飛び込む</h3>
                         </div>
-                        <div class="p-about__method-item-img-wrapper">
-                            <div class="p-about__method-item-img-box">
-                                <img class="p-about__method-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/method-img01.png" alt="">
+                        <div class="p-about__method-item-img-wrapper p-about__method-item-img-wrapper-other">
+                            <div class="p-about__method-item-img-block">
+                                <div class="p-about__method-item-img-box">
+                                    <img class="p-about__method-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/method-img01.png" alt="">
+                                </div>
+                                <p class="p-about__method-item-text">DEKObokoでの学びは、まず“飛び込むこと”から始まります。新しい環境に身を置き、自分のペースで挑戦してみること。ぜひ勇気を出して一歩を踏み出してもらいたいと思っています。</p>
                             </div>
-                            <p class="p-about__method-item-text">DEKObokoでの学びは、まず“飛び込むこと”から始まります。新しい環境に身を置き、自分のペースで挑戦してみること。ぜひ勇気を出して一歩を踏み出してもらいたいと思っています。</p>
+                            <div class="p-about__method-link-wrapper">
+                                <a class="p-about__method-link" href="https://co-learningpark.com/news/173/" target="_blank">DEKOboko流 学習を支える5つの土台<img class="p-about__feeling-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                                <a class="p-about__method-link" href="https://co-learningpark.com/news/174/" target="_blank">DEKOboko流 12の学びの原則<img class="p-about__feeling-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="p-about__method-wrapper fadeUp">
@@ -195,11 +202,16 @@
                             </div>
                             <h3 class="p-about__method-item-title">学び、<br>そして知る</h3>
                         </div>
-                        <div class="p-about__method-item-img-wrapper">
-                            <div class="p-about__method-item-img-box">
-                                <img class="p-about__method-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/method-img03.png" alt="">
+                        <div class="p-about__method-item-img-wrapper p-about__method-item-img-wrapper-other">
+                            <div class="p-about__method-item-img-block">
+                                <div class="p-about__method-item-img-box">
+                                    <img class="p-about__method-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/method-img03.png" alt="">
+                                </div>
+                                <p class="p-about__method-item-text">メタ学習・伴走学習・自走学習を通じて、自身や他者と向き合いながら、「学ぶ意味」や「成長の実感」を知っていきます。この過程が、「できる喜び」「知る楽しさ」へとつながっていきます。</p>
                             </div>
-                            <p class="p-about__method-item-text">メタ学習・伴走学習・自走学習を通じて、自身や他者と向き合いながら、「学ぶ意味」や「成長の実感」を知っていきます。この過程が、「できる喜び」「知る楽しさ」へとつながっていきます。</p>
+                            <div class="p-about__method-link-wrapper">
+                                <a class="p-about__method-link" href="https://co-learningpark.com/news/180/" target="_blank">DEKObokoの授業の仕方について<img class="p-about__feeling-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="p-about__method-wrapper fadeUp">
@@ -267,6 +279,7 @@
                     <div class="p-about__message-profile-text-wrapper fadeUp">
                         <div class="p-about__message-profile-name">熊谷 歩真<span class="p-about__message-profile-name-font">（くまがい あゆま）</span></div>
                         <p class="p-about__message-profile-text">1992年生まれ。東京大学大学院修了。<br>専門は臨床心理学、発達心理学、対人支援論、学習環境論。<br>これまで不登校や学習支援など、150名以上の子ども・若者・保護者の方の相談支援に携わる。<br class="c-sub-block">また、保護者の方や教員向けの講演活動も多数。<br>2016年より子ども食堂を立ち上げ、約６年間代表も務める。<br class="c-sub-block">現在は企業研修や社会人向けのDXやAI活用、ビジネス基礎の指導にも携わり、子どもから大人まで、「問い」を大切にした安心できる学びの場をつくり続けている。<br class="c-sub-block">あだ名はくまちゃん。</p>
+                        <a class="p-about__feeling-link" href="https://co-learningpark.com/news/167/" target="_blank">この塾をつくった背景・想い<img class="p-about__feeling-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
                     </div>
                 </div>
             </div>

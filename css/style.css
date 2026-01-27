@@ -6168,6 +6168,54 @@ body.is-menu-open {
   height: auto;
   vertical-align: middle;
 }
+.p-about .p-about__important .p-about__important-container .p-about__important-box .p-about__important-wrapper .p-about__important-link {
+  background: #005a38;
+  height: 44px;
+  border-radius: 22px;
+  padding: 0 17px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: #f5f4ec;
+  transition: opacity 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin: 20px auto 0;
+}
+@media (min-width: 600px) {
+  .p-about .p-about__important .p-about__important-container .p-about__important-box .p-about__important-wrapper .p-about__important-link {
+    font-size: 1.5rem;
+    letter-spacing: 0.14em;
+    margin: 40px auto 0;
+  }
+}
+@media (min-width: 800px) {
+  .p-about .p-about__important .p-about__important-container .p-about__important-box .p-about__important-wrapper .p-about__important-link {
+    margin: 0 auto 0;
+  }
+}
+.p-about .p-about__important .p-about__important-container .p-about__important-box .p-about__important-wrapper .p-about__important-link:hover {
+  opacity: 0.8;
+}
+.p-about .p-about__important .p-about__important-container .p-about__important-box .p-about__important-wrapper .p-about__important-link:hover .p-about__feeling-arrow-right {
+  transform: translateX(5px);
+}
+.p-about .p-about__important .p-about__important-container .p-about__important-box .p-about__important-wrapper .p-about__important-link .p-about__feeling-arrow-right {
+  width: 13px;
+  height: auto;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+@media (min-width: 1000px) {
+  .p-about .p-about__important .p-about__important-container .p-about__important-box .p-about__important-wrapper .p-about__important-link .p-about__feeling-arrow-right {
+    width: 15px;
+  }
+}
 .p-about .p-about__method {
   padding: 60px 0 70px;
 }
@@ -6286,6 +6334,70 @@ body.is-menu-open {
 @media (min-width: 800px) {
   .p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper .p-about__method-item-text {
     width: 68.14%;
+  }
+}
+.p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-item-img-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+  }
+}
+.p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-top: 20px;
+}
+@media (min-width: 800px) {
+  .p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-link-wrapper {
+    margin-top: 0;
+  }
+}
+.p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-link-wrapper .p-about__method-link {
+  background: #005a38;
+  height: 44px;
+  border-radius: 22px;
+  padding: 0 17px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: #f5f4ec;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin: 0 auto 0;
+}
+@media (min-width: 600px) {
+  .p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-link-wrapper .p-about__method-link {
+    font-size: 1.5rem;
+    letter-spacing: 0.14em;
+  }
+}
+.p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-link-wrapper .p-about__method-link:hover {
+  opacity: 0.8;
+}
+.p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-link-wrapper .p-about__method-link:hover .p-about__feeling-arrow-right {
+  transform: translateX(5px);
+}
+.p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-link-wrapper .p-about__method-link .p-about__feeling-arrow-right {
+  width: 13px;
+  height: auto;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+@media (min-width: 1000px) {
+  .p-about .p-about__method .p-about__method-container .p-about__method-wrapper .p-about__method-item-img-wrapper-other .p-about__method-link-wrapper .p-about__method-link .p-about__feeling-arrow-right {
+    width: 15px;
   }
 }
 .p-about .p-about__philosophy {
@@ -6512,6 +6624,48 @@ body.is-menu-open {
   letter-spacing: 0.14em;
   color: #0d3425;
   line-height: 2.187;
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__feeling-link {
+  background: #005a38;
+  height: 44px;
+  border-radius: 22px;
+  padding: 0 17px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: #f5f4ec;
+  transition: opacity 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin: 20px auto 0;
+}
+@media (min-width: 600px) {
+  .p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__feeling-link {
+    font-size: 1.5rem;
+    letter-spacing: 0.14em;
+  }
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__feeling-link:hover {
+  opacity: 0.8;
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__feeling-link:hover .p-about__feeling-arrow-right {
+  transform: translateX(5px);
+}
+.p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__feeling-link .p-about__feeling-arrow-right {
+  width: 13px;
+  height: auto;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+@media (min-width: 1000px) {
+  .p-about .p-about__message .p-about__message-box .p-about__message-profile-text-wrapper .p-about__feeling-link .p-about__feeling-arrow-right {
+    width: 15px;
+  }
 }
 .p-about .p-about__company {
   padding: 80px 0 65px;

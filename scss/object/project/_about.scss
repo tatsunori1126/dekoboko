@@ -358,6 +358,46 @@
                             }
                         }
                     }
+                    .p-about__important-link {
+                        background: color.$mainColor;
+                        height: 44px;
+                        border-radius: 22px;
+                        padding: 0 17px 0 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 1.1rem;
+                        letter-spacing: 0.08em;
+                        font-weight: 500;
+                        color: color.$subColor;
+                        transition: opacity 0.3s ease;
+                        width: fit-content;
+                        column-gap: 10px;
+                        margin: 20px auto 0;
+                        @include mixin.tab {
+                            font-size: 1.5rem;
+                            letter-spacing: 0.14em;
+                            margin: 40px auto 0;
+                        }
+                        @include mixin.sub {
+                            margin: 0 auto 0;
+                        }
+                        &:hover {
+                            opacity: 0.8;
+                            .p-about__feeling-arrow-right {
+                                transform: translateX(5px);
+                            }
+                        }
+                        .p-about__feeling-arrow-right {
+                            width: 13px;
+                            height: auto;
+                            vertical-align: middle;
+                            transition: transform 0.3s ease;
+                            @include mixin.mid {
+                                width: 15px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -467,6 +507,63 @@
                         color: color.$textColor;
                         @include mixin.sub {
                             width: 68.14%;
+                        }
+                    }
+                }
+                .p-about__method-item-img-wrapper-other {
+                    display: flex;
+                    flex-direction: column;
+                    .p-about__method-item-img-block {
+                        @include mixin.sub {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 35px 0;
+                        }
+                    }
+                    .p-about__method-link-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 15px;
+                        margin-top: 20px;
+                        @include mixin.sub {
+                            margin-top: 0;
+                        }
+                        .p-about__method-link {
+                            background: color.$mainColor;
+                            height: 44px;
+                            border-radius: 22px;
+                            padding: 0 17px 0 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            font-size: 1.4rem;
+                            letter-spacing: 0.08em;
+                            font-weight: 500;
+                            color: color.$subColor;
+                            transition: opacity 0.3s ease;
+                            width: 100%;
+                            column-gap: 10px;
+                            margin: 0 auto 0;
+                            @include mixin.tab {
+                                font-size: 1.5rem;
+                                letter-spacing: 0.14em;
+                            }
+                            &:hover {
+                                opacity: 0.8;
+                                .p-about__feeling-arrow-right {
+                                    transform: translateX(5px);
+                                }
+                            }
+                            .p-about__feeling-arrow-right {
+                                width: 13px;
+                                height: auto;
+                                vertical-align: middle;
+                                transition: transform 0.3s ease;
+                                @include mixin.mid {
+                                    width: 15px;
+                                }
+                            }
                         }
                     }
                 }
@@ -672,6 +769,42 @@
                     letter-spacing: 0.14em;
                     color: color.$textColor;
                     line-height: 2.187;
+                }
+                .p-about__feeling-link {
+                    background: color.$mainColor;
+                    height: 44px;
+                    border-radius: 22px;
+                    padding: 0 17px 0 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 1.4rem;
+                    letter-spacing: 0.08em;
+                    font-weight: 500;
+                    color: color.$subColor;
+                    transition: opacity 0.3s ease;
+                    width: fit-content;
+                    column-gap: 10px;
+                    margin: 20px auto 0;
+                    @include mixin.tab {
+                        font-size: 1.5rem;
+                        letter-spacing: 0.14em;
+                    }
+                    &:hover {
+                        opacity: 0.8;
+                        .p-about__feeling-arrow-right {
+                            transform: translateX(5px);
+                        }
+                    }
+                    .p-about__feeling-arrow-right {
+                        width: 13px;
+                        height: auto;
+                        vertical-align: middle;
+                        transition: transform 0.3s ease;
+                        @include mixin.mid {
+                            width: 15px;
+                        }
+                    }
                 }
             }
         }

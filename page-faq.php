@@ -204,7 +204,20 @@
                                 <dd class="p-faq__answer-text-box">
                                     <div class="p-faq__answer-text-block">
                                         <span class="p-faq__answer-icon">A</span>
-                                        <p class="p-faq__question-answer-text">学習の段階(3つの段階)に応じて、1対1から少人数（3対2）を基本とし、対話や質問がしやすい環境を大切にしています。</p>
+                                        <p class="p-faq__question-answer-text">学習の段階(3つの段階)に応じて、1対1から少人数（3対1〜2）を基本とし、対話や質問がしやすい環境を大切にしています。</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="p-faq__question-box">
+                                <dt class="p-faq__question-text-block">
+                                    <span class="p-faq__question-icon">Q</span>
+                                    <p class="p-faq__question-text-sub">3つの学習ステップはどのコースでもすべてやらないとダメですか？</p>
+                                    <span class="toggle-btn">開く</span>
+                                </dt>
+                                <dd class="p-faq__answer-text-box">
+                                    <div class="p-faq__answer-text-block">
+                                        <span class="p-faq__answer-icon">A</span>
+                                        <p class="p-faq__question-answer-text">DYLコースのみ原則3つの学習ステップ全てを経験していただきます。目的やご要望によっては「子別学習」で必要な箇所のみピンポイントで実施する等は可能です。またFYLコースの「学習支援・受験対策コース」では原則3つの学習ステップの一部を採用して授業に活用しています。詳細は担当者にご確認ください。</p>
                                     </div>
                                 </dd>
                             </dl>
