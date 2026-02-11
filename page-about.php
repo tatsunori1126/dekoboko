@@ -72,6 +72,7 @@
                                     <img class="p-about__important-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/important-img01.png" alt="">
                                 </div>
                             </div>
+                            <a class="p-about__important-link" href="https://co-learningpark.com/news/205/" target="_blank">居場所を大切にする理由について<img class="p-about__feeling-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
                         </div>
                         <div class="p-about__important-wrapper fadeUp">
                             <div class="p-about__important-item-title-wrapper">
@@ -129,6 +130,7 @@
                                     <img class="p-about__important-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/important-img03.png" alt="">
                                 </div>
                             </div>
+                            <a class="p-about__important-link" href="https://co-learningpark.com/news/201/" target="_blank">授業中に大切にしてることについて<img class="p-about__feeling-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
                         </div>
                         <div class="p-about__important-wrapper fadeUp">
                             <div class="p-about__important-item-title-wrapper">
@@ -145,6 +147,7 @@
                                     <img class="p-about__important-item-img" src="<?php echo get_template_directory_uri(); ?>/images/about/important-img04.png" alt="">
                                 </div>
                             </div>
+                            <a class="p-about__important-link" href="https://co-learningpark.com/news/206/" target="_blank">自走力（自己効力感）について<img class="p-about__feeling-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
                         </div>
                     </div>
                 </div>

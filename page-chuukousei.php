@@ -64,6 +64,9 @@
                             <p class="p-course__explanation-text">不登校や学校に行きづらさを感じる生徒にとって安心できる「もうひとつの居場所」。希望に応じて、対話を通して自分のペースで学び直し、"勉強に挑戦したい"という気持ちを後押しします。</p>
                         </div>
                     </div>
+                    <div class="p-course__explanation-btn-wrapper fadeUp">
+                        <a class="p-course__explanation-link" href="https://co-learningpark.com/news/200/">コース選択ガイドはこちら<img class="p-course__explanation-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                    </div>
                     <div class="p-course__btn-container fadeUp">
                         <div class="p-course__btn-wrapper">
                             <a class="p-course__btn" href="<?php echo esc_url( home_url( '/chuukousei/#chuukousei_course' ) ); ?>" data-scroll-link>コース一覧をみる<img class="p-course__btn-arrow" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-ver1.png" alt="コース一覧をみる"></a>
