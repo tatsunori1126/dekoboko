@@ -47,6 +47,9 @@
                             <span class="p-about__concept-title-ja fadeUp">学習塾。</span>
                         </h2>
                         <p class="p-about__concept-text fadeUp">学習習慣と思考力、コミュニケーション力を育む<br class="c-sp-hidden">“自分を育てる学びの場”。<br>それが、「 Co-learning park DEKOboko 」です。<br>私たちは、学びをテストの点数や偏差値だけで評価しません。<br>一人ひとりが“その人”になっていくこと、<br class="c-sp-hidden">“自分らしい生き方”を歩んでいける力を育んでいくこと。<br>それを何より大切にしています。</p>
+                        <div class="p-about__concept-btn-wrapper fadeUp">
+                            <a class="p-about__concept-link" href="https://co-learningpark.com/news/212/">私たちの考える教育観について<img class="p-about__concept-arrow-right" src="<?php echo get_template_directory_uri(); ?>/images/common/arrow-right-white.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>

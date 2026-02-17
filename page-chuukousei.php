@@ -270,24 +270,27 @@
                                     <table class="p-course__price-table">
                                         <thead>
                                             <tr>
-                                                <th>月4回</th>
-                                                <th>月8回</th>
-                                                <th>月12回</th>
+                                                <th>月4回<br><span class="min-font">（トライ）</span></th>
+                                                <th>月8回<br><span class="min-font">（スタンダード）</span></th>
+                                                <th>月12回<br><span class="min-font">（インテンシブ）</span></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>26,400円</td>
-                                                <td>45,600円</td>
-                                                <td>64,800円<br><span class="min-font">※諸費用免除</span></td>
+                                                <td>26,400円→21,000円</td>
+                                                <td>45,000円→38,400円<br><span class="min-font">※夏期講習10コマ分免除</span></td>
+                                                <td>64,800円→58,200円<br><span class="min-font">※夏期講習15コマ分免除<br>※諸費用免除</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                            <ul class="p-course__price-note">
+                                <li class="p-course__price-note-text">※自走学習時に料金が変更になります</li>
+                            </ul>
                         </div>
 
-                        <div class="p-course__price-wrapper">
+                        <!-- <div class="p-course__price-wrapper">
                             <div class="p-course__price-table-wrapper">
                                 <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
@@ -324,7 +327,7 @@
                                     </table>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="p-course__price-wrapper">
                             <div class="p-course__price-table-wrapper">
@@ -365,9 +368,9 @@
                                         <tbody>
                                             <tr>
                                                 <td>12,000円</td>
-                                                <td>24,000円</td>
+                                                <td>18,000円</td>
                                                 <td>12,000円</td>
-                                                <td>24,000円</td>
+                                                <td>18,000円</td>
                                             </tr>
                                             <tr>
                                                 <td>16,200円</td>
@@ -395,7 +398,7 @@
                             <div class="p-course__price-table-wrapper">
                                 <table class="p-course__price-table p-course__price-table--fixed">
                                     <thead>
-                                        <tr><th>テスト対策/季節講習</th></tr>
+                                        <tr><th>追加オプション<br><span class="min-font">（テスト対策・小論文・面接練習・季節講習・その他）</span></th></tr>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -417,8 +420,8 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>3,600円<span class="min-font">/コマ</span></td>
-                                                <td>3,000円<span class="min-font">/コマ</span></td>
+                                                <td>4,500円<span class="min-font">/コマ</span></td>
+                                                <td>3,900円<span class="min-font">/コマ</span></td>
                                             </tr>
                                             <tr>
                                                 <td>6,000円<span class="min-font">/コマ</span></td>
@@ -458,7 +461,7 @@
                                                 <td>1,500円</td>
                                                 <td>3,000円</td>
                                                 <td>3,000円</td>
-                                                <td>4,500円</td>
+                                                <td>3,000円</td>
                                             </tr>
                                         </tbody>
                                     </table>

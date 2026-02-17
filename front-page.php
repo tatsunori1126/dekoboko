@@ -194,7 +194,7 @@
                 </div>
                 <div class="p-top__about-wrapper fadeUp">
                     <img class="p-top__about-number p-top__about-number02" src="<?php echo get_template_directory_uri(); ?>/images/top/about-number02.png" alt="02">
-                    <h3 class="p-top__about-item-title">がんばらなくても<br>続けられる学びがしたい</h3>
+                    <h3 class="p-top__about-item-title">｢なぜ｣を大切に<br>本質的な理解をしたい</h3>
                     <div class="p-top__about-item-img-wrapper">
                         <img class="p-top__about-item-img p-top__about-item-img02" src="<?php echo get_template_directory_uri(); ?>/images/top/about-img02.png" alt="">
                     </div>

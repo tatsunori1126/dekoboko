@@ -278,28 +278,20 @@
                                             <tr>
                                                 <th>小学生<br>月4回</th>
                                                 <th>小学生<br>月8回</th>
-                                                <th>週3回（月12回）</th>
-                                                <th>1コマ</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>12,000円</td>
-                                                <td>24,000円</td>
-                                                <td>-</td>
-                                                <td>-</td>
+                                                <td>18,000円</td>
                                             </tr>
                                             <tr>
                                                 <td>15,000円</td>
                                                 <td>30,000円</td>
-                                                <td>-</td>
-                                                <td>-</td>
                                             </tr>
                                             <tr>
                                                 <td>18,720円</td>
                                                 <td>37,440円</td>
-                                                <td>-</td>
-                                                <td>-</td>
                                             </tr>
                                         </tbody>
                                     </table>
