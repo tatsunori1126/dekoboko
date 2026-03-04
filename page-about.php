@@ -93,7 +93,7 @@
                                                 <span class="p-about__important-item-text-list-item-number">1</span>
                                                 <span class="p-about__important-item-text-list-item-font">メタ学習</span>
                                             </div>
-                                            <span class="p-about__important-item-text-list-item-dot">…</span>自分のクセや傾向を知り、学習スタイルを整える
+                                            <span class="p-about__important-item-text-list-item-dot">…</span>自分の癖を知り、学び方を学び学習スタイルを整える
                                         </li>
                                         <li class="p-about__important-item-text-list-item">
                                             <div class="p-about__important-item-text-list-item-box">
